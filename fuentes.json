@@ -149,6 +149,7 @@
       "es",
       "es-orig"
     ],
-    "videos_por_canal": 6
+    "videos_por_canal": 6,
+    "dias_maximos": 7
   }
 }

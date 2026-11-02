@@ -11,7 +11,7 @@ import re
 import subprocess
 import sys
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -197,6 +197,12 @@ def main():
             estado["vistos"].setdefault(handle, []).append(video["id"])
             if not vtt:
                 print("     - sin subtitulos: " + video["titulo"][:60])
+                continue
+            # Un video de hace un mes no es noticia: se marca visto y se sigue.
+            dias = parametros.get("dias_maximos", 7)
+            limite = (datetime.now(timezone.utc) - timedelta(days=dias)).strftime("%Y-%m-%d")
+            if fecha < limite:
+                print("     - viejo (" + fecha + "): " + video["titulo"][:50])
                 continue
             texto = limpiar_vtt(vtt)
             archivo = TRANSCRIPCIONES / (fecha + "_" + handle.lstrip("@") + "_" + video["id"] + ".txt")
