@@ -158,6 +158,15 @@ article.nota p{margin-bottom:1.05em;font-size:1.06rem}
 .video{position:relative;aspect-ratio:16/9;margin:4px 0 22px;background:var(--crema);border:1px solid var(--linea)}
 .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video .pie{position:absolute;bottom:0;left:0;right:0;background:rgba(18,22,28,.85);color:#fff;font-family:var(--dato);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px}
+.momentos{margin:-18px 0 26px;border:1px solid var(--linea);border-top:0;background:var(--crema)}
+.momentos h3{font-family:var(--dato);font-size:.63rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gris);margin:0;padding:11px 13px 0}
+.momentos ol{list-style:none;margin:0;padding:7px 13px 12px}
+.momentos li{display:flex;gap:10px;align-items:baseline;padding:6px 0;font-size:.93rem;border-top:1px solid var(--linea)}
+.momentos li:first-child{border-top:0}
+.momentos li a{flex:0 0 auto;font-family:var(--dato);font-size:.78rem;font-weight:600;color:#fff;background:var(--tinta);text-decoration:none;padding:3px 7px}
+.momentos li a:hover{background:var(--celeste)}
+.momentos .marca{font-family:var(--dato);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gris);border:1px solid var(--linea);background:#fff;padding:1px 5px;margin-left:6px;white-space:nowrap}
+article.nota p a.min{font-family:var(--dato);font-weight:600;font-size:.95em;color:var(--celeste);text-decoration:none;border-bottom:1px dotted currentColor}
 .tapa-foto{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;margin-bottom:13px;background:var(--crema)}
 .nota-foto{float:right;width:132px;aspect-ratio:16/9;object-fit:cover;margin:3px 0 8px 14px;background:var(--crema)}
 @media (max-width:520px){.nota-foto{width:104px;margin-left:10px}}
@@ -274,10 +283,91 @@ def video_fuente(fuente):
     ident = id_video(fuente.get("video", ""))
     if not ident:
         return ""
-    return ('<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/' + esc(ident) +
+    return ('<div class="video"><iframe id="reproductor" data-video="' + esc(ident) +
+            '" src="https://www.youtube-nocookie.com/embed/' + esc(ident) +
             '" title="' + esc(fuente.get("programa", "")[:90]) + '" loading="lazy" allowfullscreen '
             'referrerpolicy="strict-origin-when-cross-origin"></iframe><span class="pie">Fuente: ' +
             esc(fuente.get("nombre", "")) + "</span></div>")
+
+
+def segundos(minuto):
+    """'00:05:52' -> 352. Tambien entiende '5:52' y '1' (un minuto suelto)."""
+    numeros = [int(n) for n in re.findall(r"\d+", minuto or "")]
+    if not numeros:
+        return None
+    if len(numeros) == 1:
+        return numeros[0] * 60
+    if len(numeros) == 2:
+        return numeros[0] * 60 + numeros[1]
+    return numeros[0] * 3600 + numeros[1] * 60 + numeros[2]
+
+
+def reloj(total):
+    """Segundos -> '5:52' o '1:16:40', sin ceros de adorno adelante."""
+    horas, resto = divmod(int(total), 3600)
+    minutos, segs = divmod(resto, 60)
+    if horas:
+        return str(horas) + ":" + str(minutos).zfill(2) + ":" + str(segs).zfill(2)
+    return str(minutos) + ":" + str(segs).zfill(2)
+
+
+def link_momento(url, total):
+    """YouTube arranca el video en ese segundo exacto con &t=NNNs."""
+    ident = id_video(url)
+    return "https://www.youtube.com/watch?v=" + ident + "&t=" + str(int(total)) + "s" if ident else ""
+
+
+def momentos_html(nota):
+    """La lista de minutos clickeables debajo del reproductor.
+
+    El <a> apunta a YouTube para que ande sin JavaScript y para que los
+    buscadores vean un link de verdad; el script de la nota lo intercepta y
+    mueve el reproductor de la propia pagina, que para el lector es mas comodo.
+    """
+    url = nota.get("fuente", {}).get("video", "")
+    if not id_video(url):
+        return ""
+    filas = []
+    for hecho in nota.get("hechos", []):
+        total = segundos(hecho.get("minuto", ""))
+        if total is None:
+            continue
+        marca = '<span class="marca">version</span>' if hecho.get("tipo") == "version" else ""
+        filas.append('<li><a class="salto" href="' + esc(link_momento(url, total)) + '" data-t="' +
+                     str(int(total)) + '">' + reloj(total) + '</a><span>' +
+                     esc(hecho.get("hecho", "")) + marca + "</span></li>")
+    if not filas:
+        return ""
+    return '<div class="momentos"><h3>Ir al momento exacto</h3><ol>' + "".join(filas) + "</ol></div>"
+
+
+PATRON_MINUTO = re.compile(r"\bminutos?\s+(\d{1,2}:\d{2}(?::\d{2})?|\d{1,3})\b")
+
+
+def enlazar_minutos(html, url):
+    """'minuto 5:52' en el texto pasa a ser un link al segundo exacto."""
+    if not id_video(url):
+        return html
+
+    def cambiar(hallado):
+        total = segundos(hallado.group(1))
+        if total is None:
+            return hallado.group(0)
+        return ('<a class="min salto" href="' + esc(link_momento(url, total)) + '" data-t="' +
+                str(int(total)) + '">' + hallado.group(0) + "</a>")
+
+    return PATRON_MINUTO.sub(cambiar, html)
+
+
+# Un solo reproductor por nota, asi que con el id alcanza. Si el navegador no
+# corre JavaScript el link sigue sirviendo: abre YouTube en ese segundo.
+SALTO_JS = ("<script>document.querySelectorAll('a.salto').forEach(function(a){"
+            "a.addEventListener('click',function(e){"
+            "var m=document.getElementById('reproductor');if(!m||!m.dataset.video)return;"
+            "e.preventDefault();"
+            "m.src='https://www.youtube-nocookie.com/embed/'+m.dataset.video+'?start='"
+            "+a.dataset.t+'&autoplay=1';"
+            "m.scrollIntoView({block:'center',behavior:'smooth'});});});</script>")
 
 
 def pie_fuente(liga, por_defecto):
@@ -542,17 +632,24 @@ def main():
     # ---------------- notas ----------------
     for nota in notas:
         fuente = nota.get("fuente", {})
-        parrafos = "".join("<p>" + esc(p) + "</p>" for p in nota.get("cuerpo", []))
-        hechos = [h for h in nota.get("hechos", []) if h.get("minuto")]
+        parrafos = "".join("<p>" + enlazar_minutos(esc(p), fuente.get("video", "")) + "</p>"
+                           for p in nota.get("cuerpo", []))
+        hechos = [h for h in nota.get("hechos", []) if segundos(h.get("minuto", "")) is not None]
+        arranque = segundos(hechos[0]["minuto"]) if hechos else None
+        directo = ""
+        if arranque is not None:
+            directo = (' o ir directo al <a class="salto" href="' +
+                       esc(link_momento(fuente.get("video", ""), arranque)) + '" data-t="' +
+                       str(int(arranque)) + '">minuto ' + reloj(arranque) + "</a>")
         pie = ('<div class="fuente">Lo dijo en <strong>' + esc(fuente.get("programa", "")) + "</strong>, de " +
                esc(fuente.get("nombre", "")) + '. <a href="' + esc(fuente.get("video", "")) +
-               '" rel="noopener">Ver el video</a>' +
-               (" (minuto " + esc(hechos[0]["minuto"]) + ")" if hechos else "") + ".</div>")
+               '" rel="noopener">Ver el video completo</a>' + directo + ".</div>")
         cuerpo = ('<div class="grilla"><div><article class="nota"><span class="sello">' +
                   esc(nota.get("categoria", "fútbol")) + '</span><h1 class="titulo">' +
                   esc(nota.get("titulo", "")) + '</h1><p class="bajada">' + esc(nota.get("bajada", "")) +
                   '</p><span class="firma">' + fecha_larga(nota.get("fecha", "")) + " · vía " +
-                  esc(fuente.get("nombre", "")) + "</span>" + video_fuente(fuente) + parrafos + pie +
+                  esc(fuente.get("nombre", "")) + "</span>" + video_fuente(fuente) +
+                  momentos_html(nota) + parrafos + pie + SALTO_JS +
                   "</article></div><aside>" +
                   "".join(html_anuncio(a) for a in anuncios) + "</aside></div>")
         # Schema NewsArticle: le dice a Google que esto es una noticia, de cuando

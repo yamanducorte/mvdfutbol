@@ -204,7 +204,7 @@
     "video": "https://www.youtube.com/watch?v=wtptAMM6q-g",
     "publicado": "2026-11-01",
     "estado": "escrita",
-    "nota": "2026-11-01-danubio-descendio-a-la-segunda-division-segun-informo-fabro"
+    "nota": "2026-11-01-danubio-descendio-a-la-segunda-division-y-nacional-sigue-en-la-pelea"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-30_Fabro6__9Pk9Fr0WGg.txt",
@@ -331,5 +331,68 @@
     "publicado": "2026-10-03",
     "estado": "escrita",
     "nota": "2026-10-03-la-lista-14-14-entrego-su-solicitud-de-registro-en-penarol"
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-02_elespectador810_wxaUswFVnL4.txt",
+    "fuente": "El Espectador 810",
+    "titulo": "LOS MISMOS LOCOS | PROGRAMA COMPLETO | 2/11/2026",
+    "video": "https://www.youtube.com/watch?v=wxaUswFVnL4",
+    "publicado": "2026-11-02",
+    "estado": "escrita",
+    "nota": "2026-11-02-progreso-y-danubio-descendieron-de-la-primera-division"
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-02_ObservaUY_F8iZYcLF7-0.txt",
+    "fuente": "Observa",
+    "titulo": "PARO DOCENTE en MONTEVIDEO: ADES alerta por el AUMENTO de la VIOLENCIA en las AULAS",
+    "video": "https://www.youtube.com/watch?v=F8iZYcLF7-0",
+    "publicado": "2026-11-02",
+    "estado": "descartado",
+    "motivo": "Gremio docente (Ades Montevideo, su presidenta Verónica Méndez) anuncia paro en Montevideo por aumento de violencia en liceos, con reclamos concretos de cargos y presupuesto."
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-02_Sport890ok_oc_UYkRcyfE.txt",
+    "fuente": "Sport 890",
+    "titulo": "�MI IDEA ES ESTAR EN DANUBIO, SI AS� LO QUIERE LA DIRIGENCIA, EL ENTRENADOR, QUIERO SEGUIR ATAJANDO\"",
+    "video": "https://www.youtube.com/watch?v=oc_UYkRcyfE",
+    "publicado": "2026-11-02",
+    "estado": "escrita",
+    "nota": "2026-11-02-el-arquero-de-danubio-quiere-seguir-en-el-club-tras-el-descenso"
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-02_Sport890ok_n30rdP-s4B4.txt",
+    "fuente": "Sport 890",
+    "titulo": "�UNA GESTI�N DEFICIENTE: TODO LO QUE PASA EN LO DEPORTIVO, POL�TICO E INSTITUCIONAL ES UN REFLEJO�",
+    "video": "https://www.youtube.com/watch?v=n30rdP-s4B4",
+    "publicado": "2026-11-02",
+    "estado": "escrita",
+    "nota": "2026-11-02-marcelo-areco-cuestiono-con-dureza-la-gestion-de-la-directiva-de-penar"
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-02_Sport890ok_zRi9jKD1Rl8.txt",
+    "fuente": "Sport 890",
+    "titulo": "�EL HAMBRE DE GANAR QUE HAY AC� ADENTRO ES UNA DE LAS COSAS FUNDAMENTALES QUE TENEMOS�",
+    "video": "https://www.youtube.com/watch?v=zRi9jKD1Rl8",
+    "publicado": "2026-11-02",
+    "estado": "descartado",
+    "motivo": "Entrevista a un jugador de Liverpool sobre el momento del equipo, pero sin hechos nuevos ni informacion de pases, lesiones o decisiones; son declaraciones de tono general y de balance, no noticias accionables."
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-02_Sport890ok_wvrFgyO4WpM.txt",
+    "fuente": "Sport 890",
+    "titulo": "�CAMBIAR, ERA A MITAD DE A�O; TENEMOS QUE APOSTAR A DIEGO, QUE TIENE EXPERIENCIA EN DEFINICIONES�",
+    "video": "https://www.youtube.com/watch?v=wvrFgyO4WpM",
+    "publicado": "2026-11-02",
+    "estado": "escrita",
+    "nota": "2026-11-02-alejandro-gonzalez-la-chance-de-cambiar-al-tecnico-era-a-mitad-de-ano"
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-02_elparedontv_qTGXcbui8xo.txt",
+    "fuente": "El Paredon TV",
+    "titulo": "NO pude terminar de ver la entrevista a Ruglio en Polideportivo | Elecciones Pe�arol",
+    "video": "https://www.youtube.com/watch?v=qTGXcbui8xo",
+    "publicado": "2026-11-02",
+    "estado": "descartado",
+    "motivo": "El video es mayormente una critica y opinion del presentador (Leo Jaime) sobre la gestion del presidente de Penarol, Ignacio Rulio, con relato de resultados ya conocidos y chicanas; no aporta informacion nueva de fichajes, lesiones o decisiones verificables, y las pocas afirmaciones concretas son opinion o comparacion."
   }
 ]

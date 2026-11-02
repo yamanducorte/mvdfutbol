@@ -27,6 +27,10 @@ MODELO_FILTRO = "claude-haiku-5-5"
 MODELO_REDACTOR = "claude-opus-5-5"
 # (entrada, salida) en dolares por millon de tokens
 PRECIOS = {"claude-haiku-5-5": (0.10, 0.50), "claude-opus-5-5": (4.00, 20.00)}
+# La consola de Windows no es UTF-8: imprimir un titulo con un caracter raro
+# tiraba todo el script abajo. Que reemplace el caracter y siga de largo.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
 
 REGLAS = """Sos el editor de un medio digital de futbol uruguayo. Trabajas sobre el
 transcripto automatico de un video de YouTube de un programa deportivo.
@@ -41,8 +45,15 @@ Reglas que no se negocian:
 - Esto es un medio de FUTBOL. Si el video habla de otro deporte (hipica, basquetbol,
   ciclismo), de politica general, de espectaculos o de salud, devolve es_de_futbol
   en false y es_noticia en false, por mas que el programa sea deportivo.
-- Distingui informacion de rumor. Si el que habla dice "me dicen", "se habla", "parece",
-  eso es una version, no un hecho confirmado."""
+- Distingui informacion de rumor, pero no al reves. Un dato publico y comprobable que el
+  que habla afirma de plano -un resultado, un gol, una tarjeta, un descenso, un ascenso,
+  una expulsion, una lesion que ya ocurrio, una renuncia o un despido que ya paso, un
+  fichaje ya firmado- es
+  "confirmado". Nadie se inventa eso al aire y cualquiera lo puede verificar al dia
+  siguiente: va como hecho, sin reservas y sin condicional.
+- "version" es solo para lo que todavia no paso o para lo que el que habla pone en boca de
+  otros: "me dicen", "se habla", "parece", "estan negociando", "no va a seguir el ano que
+  viene", "lo quiere tal club", "yo creo que". Ahi si corresponde la reserva."""
 
 ESQUEMA_FILTRO = """Devolve SOLO un objeto JSON con esta forma, sin texto alrededor:
 {
@@ -167,8 +178,19 @@ Escribis la nota para publicar. Como se escribe:
 - Atribui siempre: nombra el programa y la fuente. El lector tiene que poder ir al video.
 - Las citas textuales van entre comillas y son cortas. No reproduzcas parrafos del
   transcripto: contalo con tus palabras y cita solo la frase que importa.
-- Lo que el filtro marco como "version" se escribe como version ("segun dijo", "trascendio"),
-  nunca como hecho confirmado.
+- Lo que el filtro marco como "confirmado" se escribe derecho, en afirmativo, como lo
+  escribiria cualquier diario: "Danubio descendio a la Segunda Division". Nada de
+  "supuestamente", "habria", "al parecer" ni "debe tomarse como una version": es un hecho.
+  La atribucion va igual, pero una sola vez y en el cuerpo, no pegada a cada oracion.
+- El titulo de un hecho confirmado no lleva "segun informo tal": dice la noticia y punto.
+  El "segun" en el titulo se usa solo cuando lo que se titula es una version o la opinion
+  de alguien.
+- Lo que el filtro marco como "version" se escribe como version ("segun dijo", "trascendio",
+  "manejo la posibilidad"), nunca como hecho confirmado.
+- No escribas sobre el video ni sobre el transcripto. Al lector no le importa que "el dato
+  aparece al comienzo del video" ni que "el tramo no permite precisar de quien se trata":
+  si un dato no se entiende, se omite y listo. Si nombras el minuto, escribilo asi:
+  "minuto 5:52", porque el sitio lo convierte en un link al segundo exacto del video.
 - Si hay algo en "dudas", no lo afirmes: omitilo o escribilo con la reserva correspondiente.
 - Nada de titulos carnada, nada de preguntas en el titulo, nada de emojis.
 

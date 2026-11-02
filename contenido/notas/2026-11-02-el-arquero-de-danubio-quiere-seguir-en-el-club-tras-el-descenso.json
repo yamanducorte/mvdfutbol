@@ -1,0 +1,55 @@
+{
+  "titulo": "El arquero de Danubio quiere seguir en el club tras el descenso",
+  "bajada": "Danubio descendió a la Segunda División. Su arquero dijo en Sport 890 que su idea es quedarse el año próximo, siempre que la dirigencia y el entrenador lo quieran.",
+  "cuerpo": [
+    "El arquero de Danubio afirmó que su intención es continuar en el club la próxima temporada, ya en la Segunda División, si la dirigencia y el cuerpo técnico así lo deciden. Lo dijo en una entrevista con Sport 890, días después de que el equipo perdiera la categoría.",
+    "Danubio descendió a la Segunda División. El equipo consumó la pérdida de la categoría en la fecha anterior a la entrevista, y el esfuerzo del arquero no alcanzó para sostener al club en Primera.",
+    "Consultado sobre su futuro, el golero fue claro sobre sus preferencias. \"Mi idea es estar en Danubio, como lo he hecho hasta ahora\", dijo en el minuto 5:53, y enseguida aclaró que eso depende de que \"así lo quiere la dirigencia, el entrenador\". También manifestó su deseo de seguir atajando.",
+    "Su continuidad, por lo tanto, no está definida. El propio arquero reconoció que todavía no se detuvo a analizar el escenario de la temporada próxima: \"No he pensado ni un poco\" en lo que va a pasar el año que viene, señaló, y dejó esa discusión para más adelante.",
+    "Mientras tanto, a Danubio le resta completar el año. Quedan dos partidos por disputar en el campeonato, a los que se suma la Copa Uruguay, un torneo que en la charla se describió como una competencia en sí misma y en la que el club tiene todavía la posibilidad de pelear por un título, según se planteó en el minuto 1:28.",
+    "Con el descenso ya consumado, el foco inmediato del plantel pasa por cerrar el campeonato y competir en la Copa. Las decisiones sobre la conformación del equipo para la Segunda División quedarán en manos de la dirigencia y del entrenador, a quienes el arquero dejó la última palabra sobre su permanencia."
+  ],
+  "etiquetas": [
+    "Danubio",
+    "Descenso",
+    "Segunda División",
+    "Copa Uruguay",
+    "Arqueros"
+  ],
+  "categoria": "primera",
+  "slug": "2026-11-02-el-arquero-de-danubio-quiere-seguir-en-el-club-tras-el-descenso",
+  "fecha": "2026-11-02",
+  "publicado_utc": "2026-11-02T22:43:00+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "Sport 890",
+    "programa": "�MI IDEA ES ESTAR EN DANUBIO, SI AS� LO QUIERE LA DIRIGENCIA, EL ENTRENADOR, QUIERO SEGUIR ATAJANDO\"",
+    "video": "https://www.youtube.com/watch?v=oc_UYkRcyfE"
+  },
+  "hechos": [
+    {
+      "hecho": "Danubio descendió de categoría (consumó el descenso en la fecha previa a la entrevista).",
+      "cita": "Mauro, ... no le dio para que el equipo mantuviera la categoría.",
+      "minuto": "00:00:30",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Quedan dos partidos de campeonato más la Copa Uruguay por disputar.",
+      "cita": "Todavía quedan dos partidos por jugar... más la Copa A Uruguay, que es un torneo en sí mismo que Danubio, imagino, va a querer ganar.",
+      "minuto": "00:01:28",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Cochea afirma que su idea es seguir en Danubio el año que viene, en la segunda división profesional, si la dirigencia y el entrenador lo quieren.",
+      "cita": "mi idea es estar en la Nubio, como lo he hecho hasta ahora... si así lo quiere la dirigencia el entrenador.",
+      "minuto": "00:05:53",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Cochea dice que no ha pensado todavía en el año que viene y que se verá más adelante.",
+      "cita": "la verdad que no, no he pensado ni un poco el año que viene que va a pasar.",
+      "minuto": "00:05:53",
+      "tipo": "confirmado"
+    }
+  ]
+}

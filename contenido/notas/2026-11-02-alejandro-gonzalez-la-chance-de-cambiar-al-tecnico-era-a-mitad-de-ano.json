@@ -1,0 +1,74 @@
+{
+  "titulo": "Alejandro González: la chance de cambiar al técnico era a mitad de año",
+  "bajada": "El dirigente de Peñarol respaldó a Diego Aguirre en Sport 890. También habló del futuro electoral del oficialismo y anunció una herramienta con inteligencia artificial para gestionar transferencias.",
+  "cuerpo": [
+    "Alejandro González, dirigente de Peñarol, sostuvo en Sport 890 que el momento para cambiar de entrenador era a mitad de año. Hoy, dijo, el club tiene que respaldar a Diego Aguirre: \"Tenemos que apostar a Diego, que tiene experiencia en definiciones\" (minuto 4:38).",
+    "González también cuestionó el arbitraje del último partido de Peñarol. Apuntó en particular a la anulación de un gol y a la expulsión de un jugador aurinegro (minuto 5:46).",
+    "Sobre la concentración del plantel, explicó que fue un pedido de la parte deportiva y que el presidente del club lo aceptó. \"Fue una solicitud de la parte deportiva\", señaló (minuto 11:55).",
+    "El dirigente anunció que el martes presentará, junto a una empresa que trabaja con el área deportiva, una herramienta de software con inteligencia artificial. Servirá para gestionar transferencias y para colocar a los jugadores que no llegan a Primera División (minuto 15:21).",
+    "En el plano político, González contó que su agrupación se reunirá en plenario para definir cómo sigue y hasta qué fecha esperará la decisión del presidente sobre una eventual candidatura. \"Vamos a decir cómo continuamos y hasta qué fecha capaz que esperamos a Nacho o no\", dijo (minuto 21:46).",
+    "Según González, las cinco agrupaciones del oficialismo siguen trabajando juntas. Manejó la posibilidad de una candidatura conjunta si el actual presidente no se presenta: \"Estemos pensando capaz que en una candidatura en conjunto si no está Nacho\" (minuto 18:27).",
+    "Por último, mencionó que el club trabaja en un sistema de ingreso con biometría facial y en un centro de monitoreo propio para su estadio. El proyecto todavía no fue aprobado. Según explicó, se presentará al Consejo Directivo \"cuando tengamos todo medianamente redondeado\" (minuto 24:18)."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Diego Aguirre",
+    "Alejandro González",
+    "Elecciones en Peñarol",
+    "Dirigencia"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-11-02-alejandro-gonzalez-la-chance-de-cambiar-al-tecnico-era-a-mitad-de-ano",
+  "fecha": "2026-11-02",
+  "publicado_utc": "2026-11-02T22:44:03+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "Sport 890",
+    "programa": "�CAMBIAR, ERA A MITAD DE A�O; TENEMOS QUE APOSTAR A DIEGO, QUE TIENE EXPERIENCIA EN DEFINICIONES�",
+    "video": "https://www.youtube.com/watch?v=wvrFgyO4WpM"
+  },
+  "hechos": [
+    {
+      "hecho": "González afirma que la oportunidad de cambiar de técnico era a mitad de año y que hoy considera que hay que apostar a Diego Aguirre.",
+      "cita": "tenemos que apostar a Diego, que tiene experiencia en definiciones",
+      "minuto": "00:04:38",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "González dice que se reunirá con la agrupación en plenario para definir hasta qué fecha esperan una definición de Nacho Rublio sobre su candidatura.",
+      "cita": "hoy también nosotros en plenario vamos a decir que cómo continuamos y hasta qué fecha capaz que esperamos a Nacho o no",
+      "minuto": "00:21:46",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Según González, las cinco agrupaciones del oficialismo siguen trabajando juntas y evalúan una candidatura conjunta si Rublio no va.",
+      "cita": "estemos pensando capaz que en una candidatura en conjunto si no está Nacho",
+      "minuto": "00:18:27",
+      "tipo": "version"
+    },
+    {
+      "hecho": "González informa que presentará una herramienta de software con inteligencia artificial para gestionar transferencias y colocar jugadores que no llegan a primera.",
+      "cita": "mañana martes vamos a a, yo voy a presentar con una empresa que que es la que con la que más trabaja la parte deportiva",
+      "minuto": "00:15:21",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "El club está trabajando en la implementación de ingreso con biometría facial y un centro de monitoreo propio en el Campeón del Siglo, aún sin aprobación del Consejo.",
+      "cita": "estamos junto a Fernández trabajando en eso... cuando tengamos todo medianamente redondeado, le presentaremos el consejo para poder este aprobarlo",
+      "minuto": "00:24:18",
+      "tipo": "version"
+    },
+    {
+      "hecho": "El plantel de Peñarol se concentra en Solanas por decisión de la parte deportiva, a pedido de la parte deportiva y avalada por el presidente.",
+      "cita": "Fue una solicitud de la parte deportivo y bueno, creo que en eso eh Nacho se dio a a realizarlo",
+      "minuto": "00:11:55",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "González cuestiona el arbitraje del partido ante Wanderers, en particular la anulación de un gol y la expulsión de un jugador de Peñarol.",
+      "cita": "la expulsión Angulo, una un jugador que entra, hace un gol que seguramente motive",
+      "minuto": "00:05:46",
+      "tipo": "confirmado"
+    }
+  ]
+}

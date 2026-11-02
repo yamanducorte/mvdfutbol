@@ -23,6 +23,10 @@ CANALES = DATOS / "canales.json"
 PENDIENTES = DATOS / "hallazgos" / "pendientes.json"
 AGENTE = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36"
 ENTIDADES = {"amp": "&", "quot": '"', "apos": "'", "#39": "'", "lt": "<", "gt": ">"}
+# La consola de Windows no es UTF-8: imprimir un titulo con un caracter raro
+# tiraba todo el script abajo. Que reemplace el caracter y siga de largo.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
 
 
 def leer_json(ruta, por_defecto):

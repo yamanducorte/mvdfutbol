@@ -1,0 +1,81 @@
+{
+  "titulo": "Marcelo Areco cuestionó con dureza la gestión de la directiva de Peñarol",
+  "bajada": "El exdirigente aurinegro criticó en Sport 890 el manejo económico e institucional del club a 45 días de las elecciones y planteó que la solución puede surgir de un acuerdo entre candidatos opositores.",
+  "cuerpo": [
+    "El exdirigente de Peñarol Marcelo Areco calificó de deficiente la gestión de la actual directiva aurinegra y sostuvo que lo que ocurre en el club en lo deportivo, lo político y lo institucional es un reflejo de ese manejo. Lo dijo en una entrevista en Sport 890, a 45 días de las elecciones en la institución.",
+    "Areco apuntó contra la decisión de pedir un crédito al Banco República sin que el tema pasara por el órgano de conducción del club. La dirigencia lo resolvió, según dijo, \"sin pasar por el consejo directivo\" (minuto 9:32).",
+    "También se refirió al pago de multas por incidentes y a la posterior formación de una comisión de seguridad, que a su juicio llegó tarde (minuto 9:50).",
+    "En el plano económico, Areco afirmó que el actual presidente recibió el club \"con 5 millones de dólares en caja y 5 millones de dólares a cobrar\", y que durante su gestión se gastaron unos 30 millones de dólares en sueldos y aportes (minuto 8:08).",
+    "El exdirigente repasó además la salida de Diego Aguirre del cargo de entrenador, que describió como el final de una etapa (minuto 23:34). En lo deportivo, opinó que el plantel no está bien en lo físico y que hay jugadores excedidos de peso (minuto 14:16).",
+    "Sobre el escenario electoral, Areco señaló que hay ocho candidatos y estimó que los indecisos están por encima del 25% del padrón (minuto 16:52). Planteó que entre tres de los aspirantes, entre ellos Freddy García, \"puede estar la solución de Peñarol\", y que deberían buscar un acuerdo (minuto 19:57).",
+    "Areco aclaró que no tiene intención de integrar ninguna lista, aunque mantiene conversaciones con todos los candidatos.",
+    "En otro tramo de la entrevista, el exdirigente cuestionó la trayectoria del actual presidente como integrante del consejo directivo en el período que comenzó en 2017. Según relató, faltó a dos de los tres años de ese período, lo que a su entender explica que no fuera objeto de críticas en aquel momento (minuto 29:58)."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Elecciones en Peñarol",
+    "Marcelo Areco",
+    "Diego Aguirre",
+    "Dirigencia"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-11-02-marcelo-areco-cuestiono-con-dureza-la-gestion-de-la-directiva-de-penar",
+  "fecha": "2026-11-02",
+  "publicado_utc": "2026-11-02T22:43:32+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "Sport 890",
+    "programa": "�UNA GESTI�N DEFICIENTE: TODO LO QUE PASA EN LO DEPORTIVO, POL�TICO E INSTITUCIONAL ES UN REFLEJO�",
+    "video": "https://www.youtube.com/watch?v=n30rdP-s4B4"
+  },
+  "hechos": [
+    {
+      "hecho": "Peñarol solicito un credito al Brou sin pasar por el consejo directivo, a 45 dias de la eleccion.",
+      "cita": "sin pasar por el consejo directivo, eh pide un crédito",
+      "minuto": "00:09:32",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Peñarol pago multas por unos 3.000 (cifra no clara en el transcripto) y se forma una comision de seguridad.",
+      "cita": "forma una comisión de seguridad. después que pagamos 3,0000 de de multas",
+      "minuto": "00:09:50",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Diego Aguirre dejo de ser tecnico de Peñarol, en lo que se describe como fin de ciclo.",
+      "cita": "se le cayó, que se terminó esta etapa",
+      "minuto": "00:23:34",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Areco afirma que Rubio recibio el club con 5 millones de dolares en caja y 5 millones a cobrar, y que se gastaron unos 30 millones en sueldos y aportes.",
+      "cita": "recibió el club con 5 millones de dólares en caja y 5 millones de dólares a cobrar",
+      "minuto": "00:08:08",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Areco sostiene que Freddy Garcia, Pablo Esquiabi y Evaristo Barrios serian la solucion y deberian unirse; el propio Areco dice que no quiere integrar listas pero habla con todos los candidatos.",
+      "cita": "entre esos tres candidatos, entreavi, entre Fredy, entre Baristo, puede estar la solución de Peñarol",
+      "minuto": "00:19:57",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Areco dice que hay ocho candidatos y que la cantidad de indecisos ronda el 25%.",
+      "cita": "tiene que estar arriba del 25% eh la cantidad de indecisos",
+      "minuto": "00:16:52",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Areco cuenta que Rubio no estuvo presente en dos de los tres anos de consejo directivo cuando era de la lista de 2017.",
+      "cita": "de 3 años falt, entonces no era combatido",
+      "minuto": "00:29:58",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Areco dice que el club no esta bien en lo fisico y que hay jugadores pasados de peso.",
+      "cita": "Vos ves que Peñarol está mal físicamente",
+      "minuto": "00:14:16",
+      "tipo": "version"
+    }
+  ]
+}

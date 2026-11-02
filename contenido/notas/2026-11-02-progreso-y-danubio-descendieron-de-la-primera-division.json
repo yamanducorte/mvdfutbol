@@ -1,0 +1,77 @@
+{
+  "titulo": "Progreso y Danubio descendieron de la Primera División",
+  "bajada": "Los dos clubes perdieron la categoría. El panel de Los Mismos Locos, de El Espectador 810, repasó además los dos goles de Maxi Gómez en el partido de Nacional y el invicto de Bella Vista en su cancha.",
+  "cuerpo": [
+    "Progreso y Danubio descendieron de la Primera División. El tema dominó la emisión del 2 de noviembre de 2026 de Los Mismos Locos, el programa de El Espectador 810, donde el panel analizó las dos caídas y otros temas de la fecha.",
+    "\"Progreso y Danubio bajan, o sea, dos descensos distintos\", resumieron en el programa (minuto 33:15). Los panelistas marcaron que cada caso tiene su propia historia.",
+    "En el caso de Danubio, el panel subrayó el peso del dato: \"dos descensos en 6 años\" (minuto 22:13).",
+    "Maxi Gómez convirtió dos goles en el partido de Nacional, que se jugó en una cancha pesada por la lluvia (minuto 21:27).",
+    "En el programa también se habló de la situación contractual de Daniel Carreño. Según se dijo, su contrato vence a fin de año y Flavio Perchman todavía no lo renovó. De acuerdo con lo que se comentó al aire, Carreño pidió \"que no le hablen de contrato\" hasta que termine la temporada (minuto 33:31).",
+    "Sobre Bella Vista, los panelistas destacaron el invicto del equipo como local. Estimaron que son \"28 partidos por ahí\" y lo atribuyeron a la mala calidad del césped sintético de su cancha (minuto 1:07:46). La cifra exacta no fue precisada.",
+    "El programa estuvo conducido por Adrián, junto a Marquiño, Yuri y José."
+  ],
+  "etiquetas": [
+    "Progreso",
+    "Danubio",
+    "Primera División",
+    "Descenso",
+    "Nacional",
+    "Maxi Gómez",
+    "Bella Vista",
+    "Daniel Carreño"
+  ],
+  "categoria": "primera",
+  "slug": "2026-11-02-progreso-y-danubio-descendieron-de-la-primera-division",
+  "fecha": "2026-11-02",
+  "publicado_utc": "2026-11-02T22:42:25+00:00",
+  "importancia": 2,
+  "fuente": {
+    "nombre": "El Espectador 810",
+    "programa": "LOS MISMOS LOCOS | PROGRAMA COMPLETO | 2/11/2026",
+    "video": "https://www.youtube.com/watch?v=wxaUswFVnL4"
+  },
+  "hechos": [
+    {
+      "hecho": "Progreso descendió de la Primera División",
+      "cita": "Progreso y Danubio bajan, o sea, dos descensos distintos",
+      "minuto": "00:33:15",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Danubio descendió de la Primera División",
+      "cita": "Danubio que digas vos dos descensos en 6 años a Danubio",
+      "minuto": "00:22:13",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Bella Vista tiene un invicto de partidos en su cancha del Nasasi por la mala calidad del sintético",
+      "cita": "Creo que son 28 partidos por ahí",
+      "minuto": "01:07:46",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Flavio Perchman todavía no renovó el contrato de Daniel Carreño, que vence a fin de año",
+      "cita": "no vence contrato a fin de año y Carreño dijo que no le hablen de contrato hasta que no termine esto",
+      "minuto": "00:33:31",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Maxi Gómez anotó dos goles en el partido de Nacional",
+      "cita": "Maxi Gómez, dos goles, cancha pesada con lluvia",
+      "minuto": "00:21:27",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Se dice que Josema vuelve a Nacional en julio",
+      "cita": "en julio viene eh acá dice no en julio viene Josema Nacional",
+      "minuto": "00:26:24",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sanabria/Sanviero estaría en Instituto de Argentina",
+      "cita": "Sanviero está en instituto de Argentina",
+      "minuto": "00:26:39",
+      "tipo": "version"
+    }
+  ]
+}

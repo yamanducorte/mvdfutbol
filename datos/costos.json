@@ -1,16 +1,16 @@
 {
   "2026-11-02": {
     "claude-haiku-5-5": {
-      "llamadas": 37,
-      "tokens_entrada": 582723,
-      "tokens_salida": 49250,
-      "usd": 0.08289
+      "llamadas": 45,
+      "tokens_entrada": 683294,
+      "tokens_salida": 59330,
+      "usd": 0.09799
     },
     "claude-opus-5-5": {
-      "llamadas": 22,
-      "tokens_entrada": 60470,
-      "tokens_salida": 56305,
-      "usd": 1.36795
+      "llamadas": 27,
+      "tokens_entrada": 75222,
+      "tokens_salida": 68195,
+      "usd": 1.66476
     }
   }
 }

@@ -1,0 +1,70 @@
+{
+  "titulo": "Danubio descendió a la Segunda División y Nacional sigue en la pelea",
+  "bajada": "Danubio perdió la categoría y Nacional ganó en forma agónica para seguir con chances en el Clausura. Fabro repasó además las bajas y la situación de Sebastián Coates.",
+  "cuerpo": [
+    "Danubio descendió a la Segunda División, mientras que Nacional ganó en forma agónica y sigue en carrera en el Torneo Clausura. Así lo repasó Fabro en su programa del 1 de noviembre, dedicado a la jornada del fútbol uruguayo.",
+    "Nacional consiguió en el cierre una victoria que lo mantiene con chances en el campeonato. Según la definió Fabro, fueron \"tres puntos importantísimos para seguir prendidito en el torneo Clausura\". El triunfo llega en un tramo decisivo, en el que cada resultado pesa en la tabla.",
+    "La otra cara de la fecha fue la de Danubio. El club de la Curva de Maroñas perdió la categoría y el próximo año jugará en la Segunda División. Fabro lo dijo sin vueltas en el minuto 0:59: \"hoy descendió a segunda división\".",
+    "En el programa también se repasaron las bajas. Luciano Rodríguez está lesionado de los ligamentos cruzados, una lesión que lo deja fuera de las canchas por un período prolongado. Fabro se refirió a su situación en el minuto 5:40.",
+    "Además, Lucas Rodríguez llegó a la quinta tarjeta amarilla y no podrá jugar la próxima fecha por suspensión, según se comentó en el minuto 16:49.",
+    "El conductor también se refirió al futuro de Sebastián Coates. Fabro sostuvo que el defensor \"no va a estar en la temporada que viene\", una afirmación sobre la próxima temporada que todavía no tiene confirmación oficial. El tema aparece en el minuto 6:55.",
+    "Con estos resultados, el campeonato entra en su recta final con Nacional todavía en la pelea por el Clausura y con Danubio ya confirmado entre los equipos que pierden la categoría. Las próximas fechas definirán si el equipo tricolor puede sostener su lucha por el título, sin los jugadores que quedaron fuera por lesión o por suspensión."
+  ],
+  "etiquetas": [
+    "Nacional",
+    "Danubio",
+    "Descenso",
+    "Torneo Clausura",
+    "Sebastián Coates",
+    "Luciano Rodríguez",
+    "Lucas Rodríguez"
+  ],
+  "categoria": "primera",
+  "slug": "2026-11-01-danubio-descendio-a-la-segunda-division-y-nacional-sigue-en-la-pelea",
+  "fecha": "2026-11-01",
+  "publicado_utc": "2026-11-02T22:45:16+00:00",
+  "importancia": 3,
+  "fuente": {
+    "nombre": "Fabro",
+    "programa": "NACIONAL GANÓ Y SIGUE EN LA PELEA -DANUBIO A LA B",
+    "video": "https://www.youtube.com/watch?v=wtptAMM6q-g"
+  },
+  "hechos": [
+    {
+      "hecho": "Danubio descendio a Segunda division",
+      "cita": "hoy descendió a segunda división",
+      "minuto": "00:00:59",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Nacional gano el partido y sigue en la pelea del torneo Clausura",
+      "cita": "Nacional ganó en forma agónica y consiguió tres puntos importantísimos para seguir prendidito en el torneo clausura",
+      "minuto": "00:00:00",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Luciano Rodriguez esta lesionado con ligamentos cruzados",
+      "cita": "Luciano Rodríguez, que está lesionado lamentablemente con los ligamentos cruzados",
+      "minuto": "00:05:40",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lucas Rodriguez se gano la quinta amarilla y no jugara la proxima fecha",
+      "cita": "se ganó la quinta amarilla, vuelve Bogio, no va a estar eh calvo",
+      "minuto": "00:16:49",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Coates no estara en la temporada que viene",
+      "cita": "lamentablemente no va a estar en la temporada que viene",
+      "minuto": "00:06:55",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Se especula que Bota es un fichaje que termino siendo suplente por su edad y que esta a punto de retirarse",
+      "cita": "ya un jugador veterano a punto de retirarse",
+      "minuto": "00:04:21",
+      "tipo": "version"
+    }
+  ]
+}
