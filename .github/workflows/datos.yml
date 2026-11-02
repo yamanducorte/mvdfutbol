@@ -23,6 +23,8 @@ jobs:
           python-version: "3.12"
       - name: Traer resultados y recalcular tablas
         run: python scripts/datos.py
+      - name: Tablas de Primera Division
+        run: python scripts/primera.py
       - name: Generar el sitio
         run: python scripts/sitio.py
       - name: Publicar si cambio algo

@@ -7,6 +7,9 @@ Juveniles, primera y lo que se dice en la radio. Medio digital uruguayo.
 - Notas sobre lo que dicen los protagonistas del fútbol en los programas deportivos de radio y YouTube, siempre con la fuente, el programa y el minuto del video.
 
 ## Campeonatos con tabla publicada
+- Primera División · Tabla anual: https://mvdfutbol.netlify.app/juveniles/primera-division-tabla-anual/
+- Primera División · Torneo Apertura: https://mvdfutbol.netlify.app/juveniles/primera-division-torneo-apertura/
+- Primera División · Torneo Clausura: https://mvdfutbol.netlify.app/juveniles/primera-division-torneo-clausura/
 - 1era Div Serie Campeonato 2026 Fem: https://mvdfutbol.netlify.app/juveniles/1era-div-serie-campeonato-2026-fem/
 - 1era Div Serie Permanencia 2026 Fem: https://mvdfutbol.netlify.app/juveniles/1era-div-serie-permanencia-2026-fem/
 - 2026 2da Div. Profesional Fase Regular: https://mvdfutbol.netlify.app/juveniles/2026-2da-div-profesional-fase-regular/

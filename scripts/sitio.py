@@ -194,13 +194,26 @@ def con_utm(url, origen):
     return url + ("&" if "?" in url else "?") + "utm_source=mvdfutbol&utm_medium=anuncio&utm_campaign=" + origen
 
 
+def pie_fuente(liga, por_defecto):
+    """Cada tabla cita de donde salio: La Movida, Wikipedia, lo que sea."""
+    texto = liga.get("credito") or por_defecto
+    if not texto:
+        return ""
+    enlace = liga.get("credito_url")
+    if enlace:
+        return '<p class="fuente"><a href="' + esc(enlace) + '" rel="noopener">' + esc(texto) + "</a></p>"
+    return '<p class="fuente">' + esc(texto) + "</p>"
+
+
 def ruta_liga(liga):
     """Cada campeonato vive bajo su seccion: /juveniles/, /ascenso/, /femenino/."""
     return "/" + liga.get("grupo", "juveniles") + "/" + slug(liga["nombre"]) + "/"
 
 
-TITULOS_GRUPO = {"juveniles": "Juveniles", "ascenso": "Segunda, Tercera y D", "femenino": "Fútbol femenino"}
+TITULOS_GRUPO = {"primera": "Primera División", "juveniles": "Juveniles",
+                 "ascenso": "Segunda, Tercera y D", "femenino": "Fútbol femenino"}
 INTRO_GRUPO = {
+    "primera": "Tabla anual, Torneo Clausura y Torneo Apertura del Campeonato Uruguayo.",
     "juveniles": "Tablas, resultados y fixture de cada categoría, de Sub 11 a Sub 19.",
     "ascenso": "Segunda División Profesional, Tercera División y Divisional D: posiciones y resultados fecha a fecha.",
     "femenino": "Primera y Segunda del fútbol femenino uruguayo: tablas, resultados y próxima fecha.",
@@ -210,7 +223,7 @@ INTRO_GRUPO = {
 def categorias_menu(ligas):
     """Atajos a las categorias que hoy tienen campeonato en curso."""
     atajos = []
-    for clave in ("juveniles", "ascenso", "femenino"):
+    for clave in ("primera", "juveniles", "ascenso", "femenino"):
         if any(l.get("grupo", "juveniles") == clave for l in ligas):
             atajos.append((TITULOS_GRUPO[clave].split(",")[0], "/" + clave + "/"))
     for numero in ("19", "17", "15"):
@@ -326,7 +339,8 @@ def main():
                    key=lambda n: (n or {}).get("publicado_utc", ""), reverse=True)
     notas = [n for n in notas if n and n.get("slug")]
     juveniles = leer_json(JUVENILES, {"ligas": [], "credito": ""})
-    ligas = [l for l in juveniles.get("ligas", []) if l.get("tabla")]
+    primera = leer_json(RAIZ / "datos" / "primera.json", {"ligas": []})
+    ligas = [l for l in (primera.get("ligas", []) + juveniles.get("ligas", [])) if l.get("tabla")]
     credito = juveniles.get("credito", "")
     anuncios = [a for a in leer_json(ANUNCIOS, {}).get("anuncios", []) if a.get("activo") and a.get("url")]
     PUBLICO.mkdir(parents=True, exist_ok=True)
@@ -341,8 +355,9 @@ def main():
     proximos = sorted((p for l in ligas for p in l.get("proximos_partidos", [])), key=lambda p: p["fecha"])
     # Primero los campeonatos del ano en curso: una tabla de 2025 no va en la portada.
     anio = str(datetime.now(timezone.utc).year)
-    ligas.sort(key=lambda l: (anio not in l["nombre"], l["nombre"]))
-    vigentes = [l for l in ligas if anio in l["nombre"]] or ligas
+    ligas.sort(key=lambda l: (l.get("grupo") != "primera", anio not in l["nombre"], l["nombre"]))
+    vigentes = [l for l in ligas
+                if anio in l["nombre"] or l.get("grupo") == "primera"] or ligas
     destacada = max(vigentes, key=lambda l: sum(f["pj"] for f in l["tabla"])) if vigentes else None
 
     # ---------------- portada ----------------
@@ -449,7 +464,7 @@ def main():
                   ' del fútbol uruguayo</h1><p class="intro">' + esc(INTRO_GRUPO[clave]) +
                   ' Las posiciones se calculan partido por partido y se actualizan solas cada '
                   'veinte minutos.</p><div class="grilla-ligas">' + fichas + "</div>" +
-                  ('<p class="fuente">' + esc(credito) + "</p>" if credito else "") + "</div></div>")
+                  pie_fuente(del_grupo[0], credito) + "</div></div>")
         escribir(clave + "/index.html", pagina(
             titulo + " del fútbol uruguayo: tablas y resultados · " + SITIO,
             "Posiciones, resultados y fixture de " + titulo.lower() + " del fútbol uruguayo, "
@@ -471,7 +486,7 @@ def main():
                   str(len(liga["tabla"])) + ' equipos</span><h1 class="titulo">' + esc(liga["nombre"]) +
                   '</h1><p class="intro">Lidera ' + esc(puntero["equipo"]) + " con " + str(puntero["pts"]) +
                   " puntos en " + str(puntero["pj"]) + " partidos.</p>" + html_tabla(liga["tabla"]) +
-                  ('<p class="fuente">' + esc(credito) + "</p>" if credito else "") + "</div><aside>" +
+                  pie_fuente(liga, credito) + "</div><aside>" +
                   "".join(lateral_liga) + "</aside></div>")
         escribir(ruta.strip("/") + "/index.html", pagina(
             liga["nombre"] + ": tabla de posiciones y resultados · " + SITIO,

@@ -1,0 +1,568 @@
+{
+ "generado": "2026-11-02T06:54:08+00:00",
+ "fuente": "https://es.wikipedia.org/wiki/Campeonato_Uruguayo_de_Primera_Divisi%C3%B3n_2026",
+ "credito": "Tabla: Wikipedia, «Campeonato Uruguayo de Primera División 2026» (CC BY-SA 4.0)",
+ "ligas": [
+  {
+   "id": "wiki-tabla-anual",
+   "grupo": "primera",
+   "nombre": "Primera División · Tabla anual",
+   "tabla": [
+    {
+     "equipo": "Peñarol",
+     "pj": 35,
+     "g": 19,
+     "e": 9,
+     "p": 7,
+     "gf": 52,
+     "gc": 28,
+     "dg": 24,
+     "pts": 65
+    },
+    {
+     "equipo": "Montevideo City",
+     "pj": 35,
+     "g": 19,
+     "e": 6,
+     "p": 10,
+     "gf": 59,
+     "gc": 41,
+     "dg": 18,
+     "pts": 63
+    },
+    {
+     "equipo": "Deportivo Maldonado",
+     "pj": 34,
+     "g": 18,
+     "e": 8,
+     "p": 8,
+     "gf": 54,
+     "gc": 32,
+     "dg": 22,
+     "pts": 62
+    },
+    {
+     "equipo": "Nacional",
+     "pj": 35,
+     "g": 19,
+     "e": 4,
+     "p": 12,
+     "gf": 53,
+     "gc": 42,
+     "dg": 11,
+     "pts": 61
+    },
+    {
+     "equipo": "Racing",
+     "pj": 35,
+     "g": 16,
+     "e": 12,
+     "p": 7,
+     "gf": 45,
+     "gc": 31,
+     "dg": 14,
+     "pts": 60
+    },
+    {
+     "equipo": "Liverpool",
+     "pj": 35,
+     "g": 16,
+     "e": 11,
+     "p": 8,
+     "gf": 47,
+     "gc": 31,
+     "dg": 16,
+     "pts": 59
+    },
+    {
+     "equipo": "Montevideo Wanderers",
+     "pj": 35,
+     "g": 14,
+     "e": 9,
+     "p": 12,
+     "gf": 42,
+     "gc": 44,
+     "dg": -2,
+     "pts": 51
+    },
+    {
+     "equipo": "Albion",
+     "pj": 34,
+     "g": 13,
+     "e": 7,
+     "p": 14,
+     "gf": 47,
+     "gc": 44,
+     "dg": 3,
+     "pts": 46
+    },
+    {
+     "equipo": "Juventud",
+     "pj": 35,
+     "g": 10,
+     "e": 11,
+     "p": 14,
+     "gf": 37,
+     "gc": 43,
+     "dg": -6,
+     "pts": 41
+    },
+    {
+     "equipo": "Central Español",
+     "pj": 35,
+     "g": 11,
+     "e": 8,
+     "p": 16,
+     "gf": 35,
+     "gc": 48,
+     "dg": -13,
+     "pts": 41
+    },
+    {
+     "equipo": "Defensor Sporting",
+     "pj": 35,
+     "g": 9,
+     "e": 12,
+     "p": 14,
+     "gf": 35,
+     "gc": 43,
+     "dg": -8,
+     "pts": 39
+    },
+    {
+     "equipo": "Cerro Largo",
+     "pj": 35,
+     "g": 9,
+     "e": 10,
+     "p": 16,
+     "gf": 33,
+     "gc": 41,
+     "dg": -8,
+     "pts": 37
+    },
+    {
+     "equipo": "Boston River",
+     "pj": 35,
+     "g": 10,
+     "e": 7,
+     "p": 18,
+     "gf": 34,
+     "gc": 47,
+     "dg": -13,
+     "pts": 37
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 35,
+     "g": 10,
+     "e": 7,
+     "p": 18,
+     "gf": 29,
+     "gc": 53,
+     "dg": -24,
+     "pts": 36
+    },
+    {
+     "equipo": "Progreso",
+     "pj": 35,
+     "g": 10,
+     "e": 5,
+     "p": 20,
+     "gf": 31,
+     "gc": 49,
+     "dg": -18,
+     "pts": 35
+    },
+    {
+     "equipo": "Danubio",
+     "pj": 35,
+     "g": 6,
+     "e": 14,
+     "p": 15,
+     "gf": 29,
+     "gc": 45,
+     "dg": -16,
+     "pts": 32
+    }
+   ],
+   "ultimos_resultados": [],
+   "proximos_partidos": [],
+   "credito": "Tabla: Wikipedia, «Campeonato Uruguayo de Primera División 2026» (CC BY-SA 4.0)",
+   "credito_url": "https://es.wikipedia.org/wiki/Campeonato_Uruguayo_de_Primera_Divisi%C3%B3n_2026"
+  },
+  {
+   "id": "wiki-torneo-clausura",
+   "grupo": "primera",
+   "nombre": "Primera División · Torneo Clausura",
+   "tabla": [
+    {
+     "equipo": "Liverpool",
+     "pj": 13,
+     "g": 9,
+     "e": 3,
+     "p": 1,
+     "gf": 22,
+     "gc": 8,
+     "dg": 14,
+     "pts": 30
+    },
+    {
+     "equipo": "Montevideo City",
+     "pj": 13,
+     "g": 9,
+     "e": 1,
+     "p": 3,
+     "gf": 26,
+     "gc": 14,
+     "dg": 12,
+     "pts": 28
+    },
+    {
+     "equipo": "Nacional",
+     "pj": 13,
+     "g": 8,
+     "e": 2,
+     "p": 3,
+     "gf": 19,
+     "gc": 13,
+     "dg": 6,
+     "pts": 26
+    },
+    {
+     "equipo": "Peñarol",
+     "pj": 13,
+     "g": 6,
+     "e": 5,
+     "p": 2,
+     "gf": 17,
+     "gc": 9,
+     "dg": 8,
+     "pts": 22
+    },
+    {
+     "equipo": "Deportivo Maldonado",
+     "pj": 12,
+     "g": 6,
+     "e": 3,
+     "p": 3,
+     "gf": 18,
+     "gc": 10,
+     "dg": 8,
+     "pts": 21
+    },
+    {
+     "equipo": "Racing",
+     "pj": 13,
+     "g": 5,
+     "e": 4,
+     "p": 4,
+     "gf": 18,
+     "gc": 14,
+     "dg": 4,
+     "pts": 19
+    },
+    {
+     "equipo": "Progreso",
+     "pj": 13,
+     "g": 6,
+     "e": 1,
+     "p": 6,
+     "gf": 13,
+     "gc": 15,
+     "dg": -2,
+     "pts": 19
+    },
+    {
+     "equipo": "Juventud",
+     "pj": 13,
+     "g": 4,
+     "e": 6,
+     "p": 3,
+     "gf": 12,
+     "gc": 10,
+     "dg": 2,
+     "pts": 18
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 13,
+     "g": 5,
+     "e": 3,
+     "p": 5,
+     "gf": 15,
+     "gc": 19,
+     "dg": -4,
+     "pts": 18
+    },
+    {
+     "equipo": "Montevideo Wanderers",
+     "pj": 13,
+     "g": 4,
+     "e": 4,
+     "p": 5,
+     "gf": 14,
+     "gc": 19,
+     "dg": -5,
+     "pts": 16
+    },
+    {
+     "equipo": "Boston River",
+     "pj": 13,
+     "g": 4,
+     "e": 3,
+     "p": 6,
+     "gf": 15,
+     "gc": 17,
+     "dg": -2,
+     "pts": 15
+    },
+    {
+     "equipo": "Albion",
+     "pj": 12,
+     "g": 4,
+     "e": 0,
+     "p": 8,
+     "gf": 15,
+     "gc": 20,
+     "dg": -5,
+     "pts": 12
+    },
+    {
+     "equipo": "Defensor Sporting",
+     "pj": 13,
+     "g": 3,
+     "e": 3,
+     "p": 7,
+     "gf": 16,
+     "gc": 23,
+     "dg": -7,
+     "pts": 12
+    },
+    {
+     "equipo": "Danubio",
+     "pj": 13,
+     "g": 2,
+     "e": 4,
+     "p": 7,
+     "gf": 7,
+     "gc": 15,
+     "dg": -8,
+     "pts": 10
+    },
+    {
+     "equipo": "Cerro Largo",
+     "pj": 13,
+     "g": 1,
+     "e": 6,
+     "p": 6,
+     "gf": 10,
+     "gc": 17,
+     "dg": -7,
+     "pts": 9
+    },
+    {
+     "equipo": "Central Español",
+     "pj": 13,
+     "g": 2,
+     "e": 2,
+     "p": 9,
+     "gf": 8,
+     "gc": 22,
+     "dg": -14,
+     "pts": 8
+    }
+   ],
+   "ultimos_resultados": [],
+   "proximos_partidos": [],
+   "credito": "Tabla: Wikipedia, «Campeonato Uruguayo de Primera División 2026» (CC BY-SA 4.0)",
+   "credito_url": "https://es.wikipedia.org/wiki/Campeonato_Uruguayo_de_Primera_Divisi%C3%B3n_2026"
+  },
+  {
+   "id": "wiki-torneo-apertura",
+   "grupo": "primera",
+   "nombre": "Primera División · Torneo Apertura",
+   "tabla": [
+    {
+     "equipo": "Racing",
+     "pj": 15,
+     "g": 9,
+     "e": 4,
+     "p": 2,
+     "gf": 23,
+     "gc": 14,
+     "dg": 9,
+     "pts": 31
+    },
+    {
+     "equipo": "Deportivo Maldonado",
+     "pj": 15,
+     "g": 9,
+     "e": 2,
+     "p": 4,
+     "gf": 24,
+     "gc": 16,
+     "dg": 8,
+     "pts": 29
+    },
+    {
+     "equipo": "Albion",
+     "pj": 15,
+     "g": 8,
+     "e": 4,
+     "p": 3,
+     "gf": 26,
+     "gc": 16,
+     "dg": 10,
+     "pts": 28
+    },
+    {
+     "equipo": "Peñarol",
+     "pj": 15,
+     "g": 8,
+     "e": 3,
+     "p": 4,
+     "gf": 23,
+     "gc": 16,
+     "dg": 7,
+     "pts": 27
+    },
+    {
+     "equipo": "Central Español",
+     "pj": 15,
+     "g": 7,
+     "e": 3,
+     "p": 5,
+     "gf": 23,
+     "gc": 22,
+     "dg": 1,
+     "pts": 24
+    },
+    {
+     "equipo": "Montevideo City",
+     "pj": 15,
+     "g": 6,
+     "e": 5,
+     "p": 4,
+     "gf": 22,
+     "gc": 16,
+     "dg": 6,
+     "pts": 23
+    },
+    {
+     "equipo": "Nacional",
+     "pj": 15,
+     "g": 7,
+     "e": 1,
+     "p": 7,
+     "gf": 26,
+     "gc": 21,
+     "dg": 5,
+     "pts": 22
+    },
+    {
+     "equipo": "Defensor Sporting",
+     "pj": 15,
+     "g": 5,
+     "e": 6,
+     "p": 4,
+     "gf": 13,
+     "gc": 11,
+     "dg": 2,
+     "pts": 21
+    },
+    {
+     "equipo": "Liverpool",
+     "pj": 15,
+     "g": 5,
+     "e": 5,
+     "p": 5,
+     "gf": 20,
+     "gc": 18,
+     "dg": 2,
+     "pts": 20
+    },
+    {
+     "equipo": "Montevideo Wanderers",
+     "pj": 15,
+     "g": 6,
+     "e": 2,
+     "p": 7,
+     "gf": 16,
+     "gc": 21,
+     "dg": -5,
+     "pts": 20
+    },
+    {
+     "equipo": "Danubio",
+     "pj": 15,
+     "g": 4,
+     "e": 6,
+     "p": 5,
+     "gf": 17,
+     "gc": 21,
+     "dg": -4,
+     "pts": 18
+    },
+    {
+     "equipo": "Cerro Largo",
+     "pj": 15,
+     "g": 5,
+     "e": 2,
+     "p": 8,
+     "gf": 16,
+     "gc": 19,
+     "dg": -3,
+     "pts": 17
+    },
+    {
+     "equipo": "Boston River",
+     "pj": 15,
+     "g": 5,
+     "e": 2,
+     "p": 8,
+     "gf": 14,
+     "gc": 20,
+     "dg": -6,
+     "pts": 17
+    },
+    {
+     "equipo": "Juventud",
+     "pj": 15,
+     "g": 4,
+     "e": 3,
+     "p": 8,
+     "gf": 17,
+     "gc": 22,
+     "dg": -5,
+     "pts": 15
+    },
+    {
+     "equipo": "Progreso",
+     "pj": 15,
+     "g": 2,
+     "e": 4,
+     "p": 9,
+     "gf": 12,
+     "gc": 23,
+     "dg": -11,
+     "pts": 10
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 15,
+     "g": 2,
+     "e": 4,
+     "p": 9,
+     "gf": 8,
+     "gc": 24,
+     "dg": -16,
+     "pts": 10
+    }
+   ],
+   "ultimos_resultados": [],
+   "proximos_partidos": [],
+   "credito": "Tabla: Wikipedia, «Campeonato Uruguayo de Primera División 2026» (CC BY-SA 4.0)",
+   "credito_url": "https://es.wikipedia.org/wiki/Campeonato_Uruguayo_de_Primera_Divisi%C3%B3n_2026"
+  }
+ ]
+}
