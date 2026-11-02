@@ -181,14 +181,27 @@ def modelo_whisper(nombre):
 
 
 def bajar_audio(video_id, tmp):
-    """Baja el audio tal como viene, sin reconvertir: asi no necesita ffmpeg."""
-    subprocess.run(
+    """Baja el audio tal como viene, sin reconvertir: asi no necesita ffmpeg.
+
+    Devuelve (archivo, motivo). Si el archivo es None, el motivo trae lo ultimo
+    que dijo yt-dlp, que es lo unico que sirve para entender por que fallo.
+    """
+    proceso = subprocess.run(
         ["yt-dlp", "-f", "bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio",
-         "--no-playlist", "--extractor-args", "youtube:lang=es",
+         "--no-playlist", "--no-warnings", "--retries", "3",
          "-o", str(tmp / (video_id + ".audio.%(ext)s")),
          "https://www.youtube.com/watch?v=" + video_id],
         capture_output=True, text=True, timeout=900, encoding="utf-8", errors="replace")
-    return next(iter(tmp.glob(video_id + ".audio.*")), None)
+    # Un .part es una bajada cortada: pasarselo a Whisper daria texto trunco.
+    completos = [a for a in tmp.glob(video_id + ".audio.*")
+                 if a.suffix not in (".part", ".ytdl") and a.stat().st_size > 0]
+    if completos:
+        return completos[0], ""
+    for basura in tmp.glob(video_id + ".audio.*"):
+        basura.unlink()
+    salida = (proceso.stderr or "") + (proceso.stdout or "")
+    lineas = [l.strip() for l in salida.splitlines() if l.strip()]
+    return None, (" | ".join(lineas[-3:]) if lineas else "yt-dlp no dijo nada")
 
 
 def whisper_disponible():
@@ -207,9 +220,9 @@ def transcribir_audio(video_id, tmp, ajustes):
     """
     audio = None
     try:
-        audio = bajar_audio(video_id, tmp)
+        audio, motivo = bajar_audio(video_id, tmp)
         if not audio:
-            print("        !! no se pudo bajar el audio")
+            print("        !! no se pudo bajar el audio: " + motivo[:300])
             return None
         modelo = modelo_whisper(ajustes.get("modelo", "small"))
         segmentos, _ = modelo.transcribe(
@@ -234,6 +247,26 @@ def transcribir_audio(video_id, tmp, ajustes):
             audio.unlink()
 
 
+def reintentar(estado, handle, video, parametros):
+    """Desmarca el video para que la proxima corrida lo intente de nuevo.
+
+    YouTube tarda en generar los subtitulos automaticos: un video de hace veinte
+    minutos puede no tenerlos y tenerlos mas tarde. Tirarlo en el primer intento
+    es perder la nota. Despues de unos cuantos intentos se da por perdido, asi no
+    queda reintentando para siempre y tapando a los demas.
+    """
+    tope = parametros.get("reintentos_sin_subtitulos", 6)
+    cuenta = estado["reintentos"].get(video["id"], 0) + 1
+    if cuenta > tope:
+        estado["reintentos"].pop(video["id"], None)
+        return False
+    estado["reintentos"][video["id"]] = cuenta
+    ya_vistos = estado["vistos"].setdefault(handle, [])
+    if ya_vistos and ya_vistos[-1] == video["id"]:
+        ya_vistos.pop()
+    return True
+
+
 def main():
     fuentes = leer_json(FUENTES, {})
     parametros = fuentes.get("parametros", {})
@@ -247,6 +280,7 @@ def main():
         print("  (faster-whisper no esta instalado aca: los videos sin subtitulos se saltean)")
         whisper = dict(whisper, activo=False)
     estado = leer_json(ESTADO, {"vistos": {}})
+    estado.setdefault("reintentos", {})
     cache_canales = leer_json(CANALES, {})
     solo_listar = "--listar" in sys.argv
 
@@ -308,7 +342,10 @@ def main():
                 # suele estar la nota. Se escucha el audio y se escribe solo.
                 tope = whisper.get("maximo_por_corrida", 2)
                 if not whisper.get("activo"):
-                    print("     - sin subtitulos: " + video["titulo"][:60])
+                    if reintentar(estado, handle, video, parametros):
+                        print("     - sin subtitulos todavia, se reintenta: " + video["titulo"][:48])
+                    else:
+                        print("     - sin subtitulos: " + video["titulo"][:60])
                     continue
                 if transcritos_whisper >= tope:
                     print("     - sin subtitulos, queda para la proxima corrida (ya van " +
@@ -326,6 +363,7 @@ def main():
                       str(video["duracion"] // 60) + " min): " + video["titulo"][:50])
                 texto = transcribir_audio(video["id"], tmp, whisper)
                 if not texto:
+                    reintentar(estado, handle, video, parametros)
                     continue
                 transcritos_whisper += 1
                 por_whisper = True
@@ -349,6 +387,7 @@ def main():
                 "publicado": fecha,
                 "estado": "sin_revisar",
             })
+            estado["reintentos"].pop(video["id"], None)
             nuevos_total += 1
             print("     + " + archivo.name + "  (" + str(len(texto.split())) + " palabras)")
 

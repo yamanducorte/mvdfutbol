@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://yamanducorte.github.io/mvdfutbol/sitemap.xml
-Sitemap: https://yamanducorte.github.io/mvdfutbol/sitemap-noticias.xml

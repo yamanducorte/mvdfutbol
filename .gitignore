@@ -2,3 +2,7 @@ datos/tmp/
 __pycache__/
 *.pyc
 .env
+
+# El sitio se genera en cada corrida y se publica como artefacto de Pages:
+# versionarlo solo producia conflictos entre el robot y los cambios a mano.
+publico/
