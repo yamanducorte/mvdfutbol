@@ -276,7 +276,8 @@ def main():
     parametros = fuentes.get("parametros", {})
     idiomas = parametros.get("idiomas_subtitulos", ["es"])
     whisper = fuentes.get("whisper", {})
-    transcritos_whisper = 0
+    transcritos_whisper = 0   # intentos de esta corrida (es lo que topea)
+    hechos_whisper = 0        # los que efectivamente salieron
     if whisper.get("activo") and not whisper_disponible():
         # Pasa en la maquina de casa, donde no hace falta instalarlo: el que
         # transcribe es GitHub. Se apaga y los videos sin subtitulos se saltean,
@@ -365,11 +366,14 @@ def main():
                     continue
                 print("     ~ sin subtitulos, escuchando el audio (" +
                       str(video["duracion"] // 60) + " min): " + video["titulo"][:50])
+                # El tope cuenta intentos, no exitos: bajar el audio y transcribir
+                # lleva minutos, y una corrida tiene que terminar aunque falle todo.
+                transcritos_whisper += 1
                 texto = transcribir_audio(video["id"], tmp, whisper)
                 if not texto:
                     reintentar(estado, handle, video, parametros)
                     continue
-                transcritos_whisper += 1
+                hechos_whisper += 1
                 por_whisper = True
             archivo = TRANSCRIPCIONES / (fecha + "_" + handle.lstrip("@") + "_" + video["id"] + ".txt")
             archivo.write_text(
@@ -402,8 +406,8 @@ def main():
         escribir_json(ESTADO, estado)
         escribir_json(PENDIENTES, pendientes)
         sin_revisar = sum(1 for p in pendientes if p["estado"] == "sin_revisar")
-        extra = (" (" + str(transcritos_whisper) + " por audio con Whisper)"
-                 if transcritos_whisper else "")
+        extra = (" (" + str(hechos_whisper) + " por audio con Whisper, " +
+                 str(transcritos_whisper) + " intento(s))" if transcritos_whisper else "")
         print("\n" + str(nuevos_total) + " transcripto(s) nuevo(s)" + extra +
               ". Pendientes de redaccion: " + str(sin_revisar))
 
