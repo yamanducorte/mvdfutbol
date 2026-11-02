@@ -112,14 +112,23 @@ def anotar_costo(registro, modelo, uso):
     return registro
 
 
-def pedir(cliente, modelo, system, mensaje, max_tokens):
+def pedir(cliente, modelo, system, mensaje, max_tokens, esfuerzo, pensar=True):
+    """esfuerzo importa: estos modelos piensan antes de responder y el pensamiento
+    consume max_tokens. Con el transcripto entero adentro, un esfuerzo alto se come
+    todo el presupuesto y devuelve una respuesta vacia."""
+    extra = {} if pensar else {"thinking": {"type": "disabled"}}
     respuesta = cliente.messages.create(
         model=modelo,
         max_tokens=max_tokens,
+        output_config={"effort": esfuerzo},
         system=system,
         messages=[{"role": "user", "content": mensaje}],
+        **extra,
     )
     texto = "".join(bloque.text for bloque in respuesta.content if bloque.type == "text")
+    if not texto.strip():
+        raise ValueError("respuesta vacia (stop_reason=" + str(respuesta.stop_reason) +
+                         ", salida=" + str(respuesta.usage.output_tokens) + " tokens)")
     return texto, respuesta.usage
 
 
@@ -129,7 +138,7 @@ def filtrar(cliente, transcripto, canal, registro):
         extra = ("\nEste canal no es solo de futbol. Si el video no trae a gente del futbol "
                  "hablando de futbol, devolve es_de_futbol en false y es_noticia en false.")
     texto, uso = pedir(cliente, MODELO_FILTRO, REGLAS + extra + "\n\n" + ESQUEMA_FILTRO,
-                       transcripto, 4000)
+                       transcripto, 6000, "low", pensar=False)
     anotar_costo(registro, MODELO_FILTRO, uso)
     return solo_json(texto), uso
 
@@ -162,7 +171,7 @@ Escribis la nota para publicar. Como se escribe:
 
 """ + ESQUEMA_NOTA)
     texto, uso = pedir(cliente, MODELO_REDACTOR, system,
-                       json.dumps(contexto, ensure_ascii=False, indent=1), 4000)
+                       json.dumps(contexto, ensure_ascii=False, indent=1), 8000, "medium")
     anotar_costo(registro, MODELO_REDACTOR, uso)
     return solo_json(texto), uso
 
@@ -178,7 +187,9 @@ def main():
     for canal in fuentes.get("youtube", []):
         por_handle[canal["nombre"]] = canal
     pendientes = leer_json(PENDIENTES, [])
-    cola = [p for p in pendientes if p.get("estado") == "sin_revisar"]
+    # Lo mas nuevo primero: si hay que cortar por limite, que se corte lo viejo.
+    cola = sorted((p for p in pendientes if p.get("estado") == "sin_revisar"),
+                  key=lambda p: p.get("publicado", ""), reverse=True)
     if limite:
         cola = cola[:limite]
     if not cola:

@@ -1,0 +1,83 @@
+{
+  "titulo": "Ruglio dio por casi segura la salida de Diego Aguirre de Peñarol",
+  "bajada": "El presidente aurinegro dijo que cree que es una \"certeza\" que el técnico se va y contó que tras el clásico hubo dirigentes que querían cesarlo. Lo dijo en Vamos Que Vamos, de El Espectador 810.",
+  "cuerpo": [
+    "El presidente de Peñarol, Ignacio Ruglio, dejó entrever que el ciclo de Diego Aguirre como entrenador está cerca de terminar. \"En el caso de Aguirre, yo creo que es certeza que se va\", afirmó en declaraciones que difundió Vamos Que Vamos, el programa de El Espectador 810, en su emisión del 1 de noviembre.",
+    "Ruglio habló además de una especie de pacto tácito de salida si el equipo no mejora. No se trata de una decisión oficial del club. Es la lectura del propio dirigente sobre el futuro inmediato del cuerpo técnico.",
+    "El presidente también se refirió a la discusión interna que se dio en la directiva después del clásico. Según su relato, una parte de los dirigentes quería cesar al técnico y la votación iba a ser ajustada. \"Si los votos estaban, eran seis a cinco, Diego estaba fuera\", dijo. Siempre según su versión, la continuidad del entrenador se sostuvo con el respaldo de la presidencia.",
+    "En el mismo programa se repasó el calendario del cierre del año. Según se informó, la AUF no programaría partidos el fin de semana del sábado 21 y el domingo 22 de noviembre por las elecciones del BPS. La última fecha del Clausura podría jugarse entre el lunes 23 y el miércoles 25, antes de la final de la Copa Libertadores del sábado 28. Por ahora esa fecha es una posibilidad y no está confirmada.",
+    "Vamos Que Vamos también recogió la palabra de los entrenadores. Daniel Carreño, técnico de Nacional, analizó el triunfo ante Danubio, que se definió con goles de Maxi Gómez, en un partido de mucha intensidad. \"Defendimos muy bien y en todo momento fuimos a buscarlo\", resumió.",
+    "El entrenador de Liverpool hizo autocrítica sobre el trabajo defensivo de su equipo. \"En el primer tiempo especialmente, yo no creo que hayamos tenido un buen partido en lo defensivo\", reconoció. Dijo que vio al equipo inquieto, aunque destacó el rendimiento de la última línea. También explicó que hizo un cambio para cuidar a un jugador que tenía cuatro tarjetas amarillas, para evitar que una quinta lo dejara afuera del partido siguiente.",
+    "Las declaraciones de Ruglio pueden escucharse a partir de la hora 1:09 del programa completo, publicado en el canal de YouTube de El Espectador 810."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Ignacio Ruglio",
+    "Diego Aguirre",
+    "Nacional",
+    "Liverpool",
+    "Danubio",
+    "Torneo Clausura",
+    "AUF"
+  ],
+  "categoria": "primera",
+  "slug": "2026-11-02-ruglio-dio-por-casi-segura-la-salida-de-diego-aguirre-de-penarol",
+  "fecha": "2026-11-02",
+  "publicado_utc": "2026-11-02T07:14:58+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "El Espectador 810",
+    "programa": "VAMOS QUE VAMOS | PROGRAMA COMPLETO | 1/11/2026",
+    "video": "https://www.youtube.com/watch?v=ZdzuDeK1kTQ"
+  },
+  "hechos": [
+    {
+      "hecho": "Ruglio afirma que la salida de Aguirre es casi una certeza y que existe una especie de pacto tácito para que ambos se vayan si Peñarol no mejora.",
+      "cita": "En el caso de Aguirre, yo creo que es certeza que se va.",
+      "minuto": "01:18:50",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Ruglio dice que parte de la directiva quería cesar a Aguirre y que el presidente lo blindó tras el clásico, aunque la votación iba a ser ajustada.",
+      "cita": "si Diego me permitiera... Diego estaba fuera. Si los votos estaban, eran seis a cinco, Diego estaba fuera.",
+      "minuto": "01:09:20",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Carreño dice que Nacional ganó a Danubio con goles de Maxi Gómez y que el partido se jugó con mucha intensidad.",
+      "cita": "Yo creo que defendimos muy bien este y en todo momento fuimos a buscarlo",
+      "minuto": "00:53:50",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Fosati afirma que Liverpool no defendió bien en el primer tiempo y que el equipo estaba inquieto, aunque la última línea trabajó bien.",
+      "cita": "en el primer tiempo especialmente, yo no creo que hayamos tenido un buen partido en lo defensivo.",
+      "minuto": "00:39:20",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Fosati indica que Gonzalo Bassal tenía cuatro amarillas y que lo sacó para evitar una quinta que lo dejara afuera del partido siguiente.",
+      "cita": "estaba con cuatro amarillas y dije, no lo puedo sacar... lo saqué",
+      "minuto": "00:42:50",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Según el programa, la última fecha del Clausura podría disputarse entre el lunes 23 y el miércoles 25 de noviembre, con la final de Libertadores el sábado 28.",
+      "cita": "podría definirse el Clausura lunes 23, martes 24, miércoles 25 por ahí más o menos",
+      "minuto": "00:34:50",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Según el programa, la AUF no tendría fútbol el fin de semana del 21 y 22 de noviembre por elecciones del BPS.",
+      "cita": "Sábado 21, domingo 22, ahí no se juega.",
+      "minuto": "00:34:00",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Según el comentario de Leo Benítez, Boca ganó a River y podría ser campeón argentino el sábado si vence a Defensa y Justicia.",
+      "cita": "ganando ese partido, dependiendo solo de Boca va a dar la vuelta olímpica",
+      "minuto": "01:30:05",
+      "tipo": "version"
+    }
+  ]
+}

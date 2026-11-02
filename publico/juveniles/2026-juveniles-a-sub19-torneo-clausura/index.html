@@ -68,6 +68,16 @@ aside{display:flex;flex-direction:column;gap:22px;min-width:0}
 .secundarias small,.firma{display:block;font-family:var(--dato);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--celeste);margin-bottom:4px}
 .secundarias p{color:var(--gris);font-size:.93rem;margin-top:5px}
 
+/* lista compacta de notas */
+.breves{display:grid;gap:0}
+.breve{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--linea);text-decoration:none}
+.breve:last-child{border-bottom:0}
+.breve:hover .tt{color:var(--celeste)}
+.breve .et{font-family:var(--dato);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--celeste);min-width:5.4rem}
+.breve .tt{font-family:var(--titular);font-weight:600;font-size:.98rem;line-height:1.25;min-width:0}
+.breve .fu{font-family:var(--dato);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gris);white-space:nowrap}
+@media (max-width:560px){.breve{grid-template-columns:1fr;gap:3px}.breve .fu{display:none}}
+
 /* franja de resultados */
 .franja{background:var(--crema);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);margin-top:26px;padding-block:18px}
 h2.rotulo,aside h2{font-family:var(--titular);font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:13px}
@@ -143,7 +153,7 @@ footer a{color:var(--celeste)}
 <header>
   <div class="ancho cab">
     <a class="logo" href="/">MVD<i>Fútbol</i></a>
-    <small>Montevideo · 2 de noviembre de 2026 · actualizado 07:06 UTC</small>
+    <small>Montevideo · 2 de noviembre de 2026 · actualizado 07:09 UTC</small>
   </div>
 </header>
 <div class="menu"><div class="ancho"><a href="/">Portada</a><a href="/primera/">Primera División</a><a href="/juveniles/" aria-current="page">Juveniles</a><a href="/ascenso/">Segunda</a><a href="/femenino/">Fútbol femenino</a><a href="/juveniles/2026-juveniles-a-sub19-torneo-clausura/">Sub 19</a><a href="/juveniles/2026-juveniles-a-sub17-torneo-clausura/">Sub 17</a><a href="/juveniles/2026-juveniles-a-sub15-torneo-clausura/">Sub 15</a></div></div>

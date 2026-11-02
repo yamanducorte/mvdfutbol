@@ -88,6 +88,16 @@ aside{display:flex;flex-direction:column;gap:22px;min-width:0}
 .secundarias small,.firma{display:block;font-family:var(--dato);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--celeste);margin-bottom:4px}
 .secundarias p{color:var(--gris);font-size:.93rem;margin-top:5px}
 
+/* lista compacta de notas */
+.breves{display:grid;gap:0}
+.breve{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--linea);text-decoration:none}
+.breve:last-child{border-bottom:0}
+.breve:hover .tt{color:var(--celeste)}
+.breve .et{font-family:var(--dato);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--celeste);min-width:5.4rem}
+.breve .tt{font-family:var(--titular);font-weight:600;font-size:.98rem;line-height:1.25;min-width:0}
+.breve .fu{font-family:var(--dato);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gris);white-space:nowrap}
+@media (max-width:560px){.breve{grid-template-columns:1fr;gap:3px}.breve .fu{display:none}}
+
 /* franja de resultados */
 .franja{background:var(--crema);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);margin-top:26px;padding-block:18px}
 h2.rotulo,aside h2{font-family:var(--titular);font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:13px}
@@ -471,6 +481,18 @@ def main():
             '<article><small>Campeonato</small><h3><a href="' + ruta_liga(l) + '">' +
             esc(l["nombre"]) + "</a></h3><p>Lidera " + esc(l["tabla"][0]["equipo"]) + " con " +
             str(l["tabla"][0]["pts"]) + " puntos.</p></article>" for l in ligas[1:5]) + "</div>")
+
+    # El resto de las notas, en lista compacta: la portada tiene que mostrar todo
+    # lo del dia sin convertirse en una pared de titulares gigantes.
+    if len(notas) > 5:
+        filas = []
+        for n in notas[5:24]:
+            filas.append('<a class="breve" href="/nota/' + esc(n["slug"]) + '/"><span class="et">' +
+                         esc(n.get("categoria", "fútbol")) + '</span><span class="tt">' +
+                         esc(n.get("titulo", "")) + '</span><span class="fu">' +
+                         esc(n.get("fuente", {}).get("nombre", "")) + "</span></a>")
+        columna += ('<div style="margin-top:30px"><h2 class="rotulo">Más noticias</h2>'
+                    '<div class="breves">' + "".join(filas) + "</div></div>")
 
     if resultados:
         columna += ('<div class="franja"><h2 class="rotulo">Juveniles · resultados de la fecha</h2>'
