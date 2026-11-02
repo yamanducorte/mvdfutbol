@@ -27,7 +27,7 @@ ARTICULO = "Campeonato Uruguayo de Primera División 2026"
 PAGINA = "https://es.wikipedia.org/wiki/" + urllib.parse.quote(ARTICULO.replace(" ", "_"))
 API = "https://es.wikipedia.org/w/api.php"
 # Wikipedia pide identificarse con un contacto en el User-Agent.
-AGENTE = "MVDFutbol/1.0 (https://mvdfutbol.netlify.app; yamanducorte@gmail.com)"
+AGENTE = "MVDFutbol/1.0 (https://yamanducorte.github.io/mvdfutbol; yamanducorte@gmail.com)"
 CREDITO = "Tabla: Wikipedia, «" + ARTICULO + "» (CC BY-SA 4.0)"
 # Que secciones publicamos y con que nombre. El resto del articulo se ignora.
 SECCIONES = [

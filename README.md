@@ -11,7 +11,7 @@ Medio digital de futbol uruguayo. Se actualiza solo.
 
 ## Como corre 24/7
 
-GitHub Actions: `datos.yml` cada 20 minutos (gratis), `noticias.yml` cada hora (usa el secret ANTHROPIC_API_KEY). Netlify publica `publico/` en cada commit.
+GitHub Actions: `datos.yml` cada 20 minutos (gratis), `noticias.yml` cada hora (usa el secret ANTHROPIC_API_KEY). Los dos publican `publico/` en GitHub Pages al terminar; `datos.yml` corre tambien en cada push.
 
 ## Reglas de contenido
 
