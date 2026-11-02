@@ -15,7 +15,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 NOTAS = RAIZ / "contenido" / "notas"
 AVISADOS = RAIZ / "datos" / "avisados.json"
-DOMINIO = "https://mvdfutbol.netlify.app"
+DOMINIO = "https://yamanducorte.github.io/mvdfutbol"
 CLAVE = "7f3c1a9d4b5e4c82a1d6e0f93b2c7a58"
 PUNTO = "https://api.indexnow.org/indexnow"
 
@@ -39,7 +39,7 @@ def main():
         print("nada nuevo para avisar")
         return
 
-    anfitrion = DOMINIO.split("//", 1)[1]
+    anfitrion = DOMINIO.split("//", 1)[1].split("/", 1)[0]
     cuerpo = json.dumps({
         "host": anfitrion,
         "key": CLAVE,

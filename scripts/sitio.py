@@ -22,7 +22,10 @@ ANUNCIOS = RAIZ / "anuncios.json"
 PUBLICO = RAIZ / "publico"
 
 SITIO = "MVD Fútbol"
-DOMINIO = "https://mvdfutbol.netlify.app"
+DOMINIO = "https://yamanducorte.github.io"
+# Subcarpeta en la que el hosting sirve el sitio. GitHub Pages publica el repo
+# bajo /mvdfutbol/; el dia que haya dominio propio esto queda en "" y listo.
+BASE = "/mvdfutbol"
 LEMA = "Juveniles, primera y lo que se dice en la radio"
 # Clave de IndexNow: avisa a Bing, Yandex y DuckDuckGo apenas se publica algo.
 # Google no usa IndexNow; para Google valen el sitemap de noticias y el RSS.
@@ -288,6 +291,20 @@ def pie_fuente(liga, por_defecto):
     return '<p class="fuente">' + esc(texto) + "</p>"
 
 
+def u(ruta):
+    """Enlace interno listo para el HTML.
+
+    Las rutas se escriben siempre desde la raiz logica del sitio ("/nota/x/") y
+    aca se les antepone la subcarpeta real del hosting.
+    """
+    return BASE + ruta
+
+
+def absoluta(ruta):
+    """La misma ruta con dominio: canonical, sitemap, RSS y schema."""
+    return DOMINIO + BASE + ruta
+
+
 def ruta_liga(liga):
     """Cada campeonato vive bajo su seccion: /juveniles/, /ascenso/, /femenino/."""
     return "/" + liga.get("grupo", "juveniles") + "/" + slug(liga["nombre"]) + "/"
@@ -320,7 +337,7 @@ def categorias_menu(ligas):
 def pagina(titulo, descripcion, contenido, ruta, ligas, seccion="", esquema=None, publicado=""):
     ahora = datetime.now(timezone.utc)
     enlaces = [("Portada", "/")] + categorias_menu(ligas)
-    menu = "".join('<a href="' + destino + '"' + (' aria-current="page"' if seccion == destino else "") +
+    menu = "".join('<a href="' + u(destino) + '"' + (' aria-current="page"' if seccion == destino else "") +
                    ">" + texto + "</a>" for texto, destino in enlaces)
     extra = ('<meta property="article:published_time" content="' + esc(publicado) + '">' if publicado else "")
     if esquema:
@@ -332,7 +349,7 @@ def pagina(titulo, descripcion, contenido, ruta, ligas, seccion="", esquema=None
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>""" + esc(titulo) + """</title>
 <meta name="description" content=\"""" + esc(descripcion) + """\">
-<link rel="canonical" href=\"""" + DOMINIO + esc(ruta) + """\">
+<link rel="canonical" href=\"""" + absoluta(esc(ruta)) + """\">
 <meta property="og:title" content=\"""" + esc(titulo) + """\">
 <meta property="og:description" content=\"""" + esc(descripcion) + """\">
 <meta property="og:type" content="website">
@@ -340,7 +357,7 @@ def pagina(titulo, descripcion, contenido, ruta, ligas, seccion="", esquema=None
 <meta property="og:site_name" content=\"""" + SITIO + """\">
 <meta name="theme-color" content="#12161c">
 """ + extra + """
-<link rel="alternate" type="application/rss+xml" title=\"""" + SITIO + """\" href="/rss.xml">
+<link rel="alternate" type="application/rss+xml" title=\"""" + SITIO + """\" href=\"""" + u("/rss.xml") + """\">
 <link rel="icon" href=\"""" + FAVICON + """\">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -350,7 +367,7 @@ def pagina(titulo, descripcion, contenido, ruta, ligas, seccion="", esquema=None
 <body>
 <header>
   <div class="ancho cab">
-    <a class="logo" href="/">MVD<i>Fútbol</i></a>
+    <a class="logo" href=\"""" + u("/") + """\">MVD<i>Fútbol</i></a>
     <small>Montevideo · """ + fecha_larga(ahora.isoformat()) + " · actualizado " + hora(ahora.isoformat()) + """ UTC</small>
   </div>
 </header>
@@ -452,15 +469,15 @@ def main():
     if notas:
         principal, resto = notas[0], notas[1:5]
         foto = miniatura(principal.get("fuente", {}).get("video", ""))
-        tapa = ('<a href="/nota/' + esc(principal["slug"]) + '/"><img class="tapa-foto" src="' +
+        tapa = ('<a href="' + u("/nota/") + esc(principal["slug"]) + '/"><img class="tapa-foto" src="' +
                 esc(foto) + '" alt="" loading="eager" width="1120" height="630"></a>') if foto else ""
-        apertura = ('<div class="apertura">' + tapa + '<span class="sello">Lo último</span><h1><a href="/nota/' +
+        apertura = ('<div class="apertura">' + tapa + '<span class="sello">Lo último</span><h1><a href="' + u("/nota/") +
                     esc(principal["slug"]) + '/">' + esc(principal.get("titulo", "")) + "</a></h1><p>" +
                     esc(principal.get("bajada", "")) + "</p></div>")
     elif destacada:
         puntero = destacada["tabla"][0]
         resto = []
-        apertura = ('<div class="apertura"><span class="sello dato">Juveniles</span><h1><a href="' + ruta_liga(destacada) + '">' + esc(puntero["equipo"]) + " lidera el " +
+        apertura = ('<div class="apertura"><span class="sello dato">Juveniles</span><h1><a href="' + u(ruta_liga(destacada)) + '">' + esc(puntero["equipo"]) + " lidera el " +
                     esc(destacada["nombre"]) + " con " + str(puntero["pts"]) + " puntos</a></h1><p>" +
                     "Ganó " + str(puntero["g"]) + " de " + str(puntero["pj"]) + " partidos y tiene " +
                     str(puntero["gf"]) + " goles a favor. La tabla completa, los resultados de la fecha y "
@@ -474,10 +491,10 @@ def main():
         tarjetas = []
         for posicion, n in enumerate(resto):
             thumb = miniatura(n.get("fuente", {}).get("video", ""))
-            imagen = ('<a href="/nota/' + esc(n["slug"]) + '/"><img class="nota-foto" src="' + esc(thumb) +
+            imagen = ('<a href="' + u("/nota/") + esc(n["slug"]) + '/"><img class="nota-foto" src="' + esc(thumb) +
                       '" alt="" loading="lazy" width="264" height="148"></a>') if thumb and posicion < 2 else ""
             tarjetas.append("<article><small>" + esc(n.get("fuente", {}).get("nombre", "")) + "</small>" +
-                            imagen + '<h3><a href="/nota/' + esc(n["slug"]) + '/">' +
+                            imagen + '<h3><a href="' + u("/nota/") + esc(n["slug"]) + '/">' +
                             esc(n.get("titulo", "")) + "</a></h3><p>" +
                             esc(recortar(n.get("bajada", ""))) + "</p></article>")
         columna += '<div class="secundarias">' + "".join(tarjetas) + "</div>"
@@ -485,7 +502,7 @@ def main():
         pass
     else:
         columna += ('<div class="secundarias">' + "".join(
-            '<article><small>Campeonato</small><h3><a href="' + ruta_liga(l) + '">' +
+            '<article><small>Campeonato</small><h3><a href="' + u(ruta_liga(l)) + '">' +
             esc(l["nombre"]) + "</a></h3><p>Lidera " + esc(l["tabla"][0]["equipo"]) + " con " +
             str(l["tabla"][0]["pts"]) + " puntos.</p></article>" for l in ligas[1:5]) + "</div>")
 
@@ -494,7 +511,7 @@ def main():
     if len(notas) > 5:
         filas = []
         for n in notas[5:24]:
-            filas.append('<a class="breve" href="/nota/' + esc(n["slug"]) + '/"><span class="et">' +
+            filas.append('<a class="breve" href="' + u("/nota/") + esc(n["slug"]) + '/"><span class="et">' +
                          esc(n.get("categoria", "fútbol")) + '</span><span class="tt">' +
                          esc(n.get("titulo", "")) + '</span><span class="fu">' +
                          esc(n.get("fuente", {}).get("nombre", "")) + "</span></a>")
@@ -510,7 +527,7 @@ def main():
         lateral.append("<div><h2>" + esc(destacada["nombre"]) + "</h2>" +
                        html_tabla(destacada["tabla"], 10, completa=False) +
                        '<p style="margin-top:9px"><a style="font-family:var(--dato);font-size:.72rem;'
-                       'letter-spacing:.1em;text-transform:uppercase;color:var(--celeste)" href="' + ruta_liga(destacada) + '">Tabla completa →</a></p></div>')
+                       'letter-spacing:.1em;text-transform:uppercase;color:var(--celeste)" href="' + u(ruta_liga(destacada)) + '">Tabla completa →</a></p></div>')
     if proximos:
         lateral.append("<div><h2>Próxima fecha</h2>" + html_partidos(proximos[:6], False) + "</div>")
     lateral += [html_anuncio(a) for a in anuncios]
@@ -548,7 +565,7 @@ def main():
             "datePublished": nota.get("publicado_utc", nota.get("fecha", "")),
             "dateModified": nota.get("publicado_utc", nota.get("fecha", "")),
             "inLanguage": "es-UY",
-            "mainEntityOfPage": DOMINIO + "/nota/" + nota["slug"] + "/",
+            "mainEntityOfPage": absoluta("/nota/" + nota["slug"] + "/"),
             "author": {"@type": "Organization", "name": SITIO},
             "publisher": {"@type": "Organization", "name": SITIO},
             "keywords": ", ".join(nota.get("etiquetas", [])),
@@ -565,7 +582,7 @@ def main():
         del_grupo = [l for l in ligas if l.get("grupo", "juveniles") == clave]
         if not del_grupo:
             continue
-        fichas = "".join('<a class="ficha" href="' + ruta_liga(l) + '"><b>' + esc(l["nombre"]) +
+        fichas = "".join('<a class="ficha" href="' + u(ruta_liga(l)) + '"><b>' + esc(l["nombre"]) +
                          "</b><small>" + str(len(l["tabla"])) + " equipos · lidera " +
                          esc(l["tabla"][0]["equipo"]) + " (" + str(l["tabla"][0]["pts"]) +
                          " pts)</small></a>" for l in del_grupo)
@@ -612,7 +629,7 @@ def main():
     hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     escribir("sitemap.xml",
              '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-             "".join("<url><loc>" + DOMINIO + u + "</loc><lastmod>" + hoy + "</lastmod></url>\n" for u in urls) +
+             "".join("<url><loc>" + absoluta(r) + "</loc><lastmod>" + hoy + "</lastmod></url>\n" for r in urls) +
              "</urlset>\n")
     # Sitemap de noticias: el canal oficial para que Google rastree rapido lo nuevo.
     # Solo admite articulos de los ultimos dos dias; mas viejos hay que sacarlos.
@@ -622,7 +639,7 @@ def main():
     escribir("sitemap-noticias.xml",
              '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
              'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n' +
-             "".join("<url><loc>" + DOMINIO + "/nota/" + n["slug"] + "/</loc><news:news>"
+             "".join("<url><loc>" + absoluta("/nota/" + n["slug"] + "/") + "</loc><news:news>"
                      "<news:publication><news:name>" + SITIO + "</news:name>"
                      "<news:language>es</news:language></news:publication>"
                      "<news:publication_date>" + esc(n.get("publicado_utc", "")) + "</news:publication_date>"
@@ -637,18 +654,19 @@ def main():
             return ""
     escribir("rss.xml",
              '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n'
-             "<title>" + SITIO + "</title><link>" + DOMINIO + "</link>\n"
+             "<title>" + SITIO + "</title><link>" + absoluta("/") + "</link>\n"
              "<description>" + LEMA + "</description><language>es-uy</language>\n" +
-             "".join("<item><title>" + esc(n.get("titulo", "")) + "</title><link>" + DOMINIO + "/nota/" +
-                     n["slug"] + "/</link><guid>" + DOMINIO + "/nota/" + n["slug"] + "/</guid>"
+             "".join("<item><title>" + esc(n.get("titulo", "")) + "</title><link>" +
+                     absoluta("/nota/" + n["slug"] + "/") + "</link><guid>" +
+                     absoluta("/nota/" + n["slug"] + "/") + "</guid>"
                      "<pubDate>" + rfc822(n.get("publicado_utc", "")) + "</pubDate><description>" +
                      esc(n.get("bajada", "")) + "</description></item>\n" for n in notas[:20]) +
              "</channel></rss>\n")
 
     escribir(INDEXNOW + ".txt", INDEXNOW + "\n")
     escribir(VERIFICACION_GOOGLE, "google-site-verification: " + VERIFICACION_GOOGLE + "\n")
-    escribir("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: " + DOMINIO + "/sitemap.xml\n"
-                           "Sitemap: " + DOMINIO + "/sitemap-noticias.xml\n")
+    escribir("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: " + absoluta("/sitemap.xml") + "\n"
+                           "Sitemap: " + absoluta("/sitemap-noticias.xml") + "\n")
     escribir("llms.txt",
              "# " + SITIO + "\n\n" + LEMA + ". Medio digital uruguayo.\n\n"
              "## Qué hay acá\n"
@@ -657,8 +675,10 @@ def main():
              "- Notas sobre lo que dicen los protagonistas del fútbol en los programas deportivos de "
              "radio y YouTube, siempre con la fuente, el programa y el minuto del video.\n\n"
              "## Campeonatos con tabla publicada\n" +
-             "".join("- " + l["nombre"] + ": " + DOMINIO + "/juveniles/" + slug(l["nombre"]) + "/\n" for l in ligas))
-    escribir("_headers", "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n")
+             "".join("- " + l["nombre"] + ": " + absoluta(ruta_liga(l)) + "\n" for l in ligas))
+    # .nojekyll: GitHub Pages no tiene que pasar el sitio por Jekyll, que se
+    # comeria cualquier archivo o carpeta que empiece con guion bajo.
+    escribir(".nojekyll", "")
 
     # Borrar paginas de notas que ya no existen: si se elimino una nota repetida,
     # su pagina no puede quedar viva (Google la tiene indexada).

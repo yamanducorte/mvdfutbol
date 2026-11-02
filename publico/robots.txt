@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mvdfutbol.netlify.app/sitemap.xml
-Sitemap: https://mvdfutbol.netlify.app/sitemap-noticias.xml
+Sitemap: https://yamanducorte.github.io/mvdfutbol/sitemap.xml
+Sitemap: https://yamanducorte.github.io/mvdfutbol/sitemap-noticias.xml

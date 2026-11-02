@@ -1,6 +1,7 @@
 name: Noticias
 
-# Escucha los canales, filtra y escribe. Esta es la unica parte que gasta API.
+# Escucha los canales, filtra, escribe y publica.
+# Esta es la unica parte que gasta API de Claude.
 on:
   schedule:
     - cron: "15 * * * *"
@@ -17,11 +18,16 @@ concurrency:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   escribir:
     runs-on: ubuntu-latest
     timeout-minutes: 50
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -39,7 +45,7 @@ jobs:
         run: python scripts/sitio.py
       - name: Avisar a los buscadores
         run: python scripts/avisar.py
-      - name: Publicar si cambio algo
+      - name: Guardar los cambios en el repo
         run: |
           git config user.name "mvdfutbol-bot"
           git config user.email "bot@users.noreply.github.com"
@@ -47,3 +53,12 @@ jobs:
           git diff --staged --quiet && echo "sin novedades" && exit 0
           git commit -m "Notas nuevas al $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
+      - name: Preparar GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Empaquetar el sitio
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: publico
+      - name: Publicar
+        id: despliegue
+        uses: actions/deploy-pages@v4
