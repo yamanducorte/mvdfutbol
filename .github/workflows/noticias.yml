@@ -67,10 +67,26 @@ jobs:
           git diff --staged --quiet && echo "sin novedades" && exit 0
           git commit -m "Notas nuevas al $(date -u '+%Y-%m-%d %H:%M UTC')"
           # Si alguien pusheo en el medio, se reintenta sobre lo nuevo en vez
-          # de fallar la corrida entera.
+          # de fallar la corrida entera. El unico archivo que choca de verdad es
+          # el estado del monitor, y ahi la respuesta es sumar lo que vieron las
+          # dos corridas, no elegir una.
           for intento in 1 2 3; do
             git push && exit 0
-            git pull --rebase --autostash origin main || break
+            git fetch origin main
+            if ! git rebase origin/main; then
+              if git diff --name-only --diff-filter=U | grep -qx datos/estado.json; then
+                git show :2:datos/estado.json > ../una.json
+                git show :3:datos/estado.json > ../otra.json
+                python scripts/unir_estado.py ../una.json ../otra.json datos/estado.json
+                git add datos/estado.json
+              fi
+              if git diff --name-only --diff-filter=U | grep -q .; then
+                echo "quedan conflictos que no se resuelven solos"
+                git rebase --abort
+                exit 1
+              fi
+              GIT_EDITOR=true git rebase --continue || { git rebase --abort; exit 1; }
+            fi
           done
           git push
       - name: Preparar GitHub Pages
