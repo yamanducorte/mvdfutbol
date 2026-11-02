@@ -107,6 +107,11 @@ td{padding:7px 4px;border-bottom:1px solid var(--linea)}
 tbody tr:last-child td{border-bottom:0}
 td.pos{color:var(--gris);width:1.5rem}
 td.eq{font-family:var(--lectura);font-size:.93rem}
+.escudo{vertical-align:-4px;margin-right:7px;flex:0 0 auto}
+.partido .v .escudo{margin:0 0 0 7px}
+.mk .escudo{margin-right:6px;vertical-align:-3px}
+.partido>span{display:flex;align-items:center;gap:0}
+.partido .v{justify-content:flex-end}
 td.pts{font-weight:600}
 tr.lider td.pos,tr.lider td.pts{color:var(--celeste)}
 
@@ -137,6 +142,12 @@ tr.lider td.pos,tr.lider td.pts{color:var(--celeste)}
 article.nota{max-width:38rem}
 article.nota .bajada{font-size:1.13rem;color:var(--gris);margin:13px 0 22px}
 article.nota p{margin-bottom:1.05em;font-size:1.06rem}
+.video{position:relative;aspect-ratio:16/9;margin:4px 0 22px;background:var(--crema);border:1px solid var(--linea)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video .pie{position:absolute;bottom:0;left:0;right:0;background:rgba(18,22,28,.85);color:#fff;font-family:var(--dato);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px}
+.tapa-foto{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;margin-bottom:13px;background:var(--crema)}
+.nota-foto{float:right;width:132px;aspect-ratio:16/9;object-fit:cover;margin:3px 0 8px 14px;background:var(--crema)}
+@media (max-width:520px){.nota-foto{width:104px;margin-left:10px}}
 .fuente{border-top:1px solid var(--linea);margin-top:26px;padding-top:14px;font-size:.9rem;color:var(--gris)}
 .fuente a{color:var(--celeste)}
 .vacio{border:1px dashed var(--linea);padding:20px;color:var(--gris);font-size:.95rem}
@@ -192,6 +203,62 @@ def con_utm(url, origen):
     if not url:
         return ""
     return url + ("&" if "?" in url else "?") + "utm_source=mvdfutbol&utm_medium=anuncio&utm_campaign=" + origen
+
+
+ESCUDOS = {}
+
+
+def cargar_escudos():
+    global ESCUDOS
+    ESCUDOS = leer_json(RAIZ / "escudos.json", {}).get("colores", {})
+
+
+def iniciales(nombre):
+    palabras = [p for p in re.split(r"[\s.]+", nombre) if p and p[0].isalpha()]
+    if len(palabras) == 1:
+        return palabras[0][:3].upper()
+    return "".join(p[0] for p in palabras[:3]).upper()
+
+
+def escudo(nombre, tam=18):
+    """Monograma propio con los colores del club. No es el escudo oficial."""
+    datos = ESCUDOS.get(nombre)
+    if datos:
+        fondo, detalle = datos[0], datos[1]
+        letras = datos[2] if len(datos) > 2 else iniciales(nombre)
+    else:
+        # sin color cargado: tono estable derivado del nombre, para que no cambie
+        tono = sum(ord(c) for c in nombre) % 360
+        fondo, detalle, letras = "hsl(" + str(tono) + ",42%,38%)", "#ffffff", iniciales(nombre)
+    claro = detalle.lower() in ("#ffffff", "#fff")
+    texto = detalle if claro else "#ffffff"
+    return ('<svg class="escudo" viewBox="0 0 24 24" width="' + str(tam) + '" height="' + str(tam) +
+            '" role="img" aria-label="' + esc(nombre) + '"><path d="M12 1.5 21 4v8.4c0 4.7-3.5 8.3-9 10.1'
+            '-5.5-1.8-9-5.4-9-10.1V4z" fill="' + esc(fondo) + '"/><path d="M12 1.5 21 4v3H3V4z" fill="' +
+            esc(detalle) + '" opacity=".92"/><text x="12" y="16.5" text-anchor="middle" font-family="Archivo,'
+            'sans-serif" font-size="8.5" font-weight="800" fill="' + esc(texto) + '">' +
+            esc(letras[:3]) + "</text></svg>")
+
+
+def id_video(url):
+    hallado = re.search(r"[?&]v=([A-Za-z0-9_-]{11})", url or "")
+    return hallado.group(1) if hallado else ""
+
+
+def miniatura(url):
+    ident = id_video(url)
+    return "https://i.ytimg.com/vi/" + ident + "/hqdefault.jpg" if ident else ""
+
+
+def video_fuente(fuente):
+    """Reproductor de YouTube: es el mecanismo oficial para citar el audio."""
+    ident = id_video(fuente.get("video", ""))
+    if not ident:
+        return ""
+    return ('<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/' + esc(ident) +
+            '" title="' + esc(fuente.get("programa", "")[:90]) + '" loading="lazy" allowfullscreen '
+            'referrerpolicy="strict-origin-when-cross-origin"></iframe><span class="pie">Fuente: ' +
+            esc(fuente.get("nombre", "")) + "</span></div>")
 
 
 def pie_fuente(liga, por_defecto):
@@ -300,7 +367,8 @@ def html_tabla(tabla, limite=None, completa=True):
     cuerpo = []
     for puesto, fila in enumerate(filas, 1):
         clase = ' class="lider"' if puesto == 1 else ""
-        celdas = ['<td class="pos">' + str(puesto) + "</td>", '<td class="eq">' + esc(fila["equipo"]) + "</td>",
+        celdas = ['<td class="pos">' + str(puesto) + "</td>",
+                  '<td class="eq">' + escudo(fila["equipo"]) + "<span>" + esc(fila["equipo"]) + "</span></td>",
                   "<td>" + str(fila["pj"]) + "</td>"]
         if completa:
             celdas += ["<td>" + str(fila["g"]) + "</td>", "<td>" + str(fila["e"]) + "</td>",
@@ -316,10 +384,11 @@ def html_tabla(tabla, limite=None, completa=True):
 
 
 def html_marcadores(partidos):
-    return "".join('<div class="mk"><div><span>' + esc(p["local"]) + '</span><span class="r">' +
-                   str(p["goles_local"]) + "-" + str(p["goles_visita"]) + "</span></div><div><span>" +
-                   esc(p["visita"]) + '</span><span class="h">' + dia_mes(p["fecha"]) +
-                   "</span></div></div>" for p in partidos)
+    return "".join('<div class="mk"><div><span>' + escudo(p["local"], 16) + esc(p["local"]) +
+                   '</span><span class="r">' + str(p["goles_local"]) + "-" + str(p["goles_visita"]) +
+                   "</span></div><div><span>" + escudo(p["visita"], 16) + esc(p["visita"]) +
+                   '</span><span class="h">' + dia_mes(p["fecha"]) + "</span></div></div>"
+                   for p in partidos)
 
 
 def html_partidos(partidos, jugados):
@@ -329,12 +398,14 @@ def html_partidos(partidos, jugados):
     for p in partidos:
         centro = ('<span class="marcador">' + str(p["goles_local"]) + " - " + str(p["goles_visita"]) + "</span>"
                   if jugados else '<span class="hora">' + dia_mes(p["fecha"]) + " " + hora(p["fecha"]) + "</span>")
-        filas.append('<div class="partido"><span>' + esc(p["local"]) + "</span>" + centro +
-                     '<span class="v">' + esc(p["visita"]) + "</span></div>")
+        filas.append('<div class="partido"><span>' + escudo(p["local"], 16) + "<span>" +
+                     esc(p["local"]) + "</span></span>" + centro + '<span class="v"><span>' +
+                     esc(p["visita"]) + "</span>" + escudo(p["visita"], 16) + "</span></div>")
     return "".join(filas)
 
 
 def main():
+    cargar_escudos()
     notas = sorted((leer_json(p, None) for p in NOTAS.glob("*.json")),
                    key=lambda n: (n or {}).get("publicado_utc", ""), reverse=True)
     notas = [n for n in notas if n and n.get("slug")]
@@ -363,7 +434,10 @@ def main():
     # ---------------- portada ----------------
     if notas:
         principal, resto = notas[0], notas[1:5]
-        apertura = ('<div class="apertura"><span class="sello">Lo último</span><h1><a href="/nota/' +
+        foto = miniatura(principal.get("fuente", {}).get("video", ""))
+        tapa = ('<a href="/nota/' + esc(principal["slug"]) + '/"><img class="tapa-foto" src="' +
+                esc(foto) + '" alt="" loading="eager" width="1120" height="630"></a>') if foto else ""
+        apertura = ('<div class="apertura">' + tapa + '<span class="sello">Lo último</span><h1><a href="/nota/' +
                     esc(principal["slug"]) + '/">' + esc(principal.get("titulo", "")) + "</a></h1><p>" +
                     esc(principal.get("bajada", "")) + "</p></div>")
     elif destacada:
@@ -380,10 +454,16 @@ def main():
 
     columna = apertura
     if resto:
-        columna += '<div class="secundarias">' + "".join(
-            "<article><small>" + esc(n.get("fuente", {}).get("nombre", "")) + '</small><h3><a href="/nota/' +
-            esc(n["slug"]) + '/">' + esc(n.get("titulo", "")) + "</a></h3><p>" +
-            esc(n.get("bajada", ""))[:110] + "</p></article>" for n in resto) + "</div>"
+        tarjetas = []
+        for posicion, n in enumerate(resto):
+            thumb = miniatura(n.get("fuente", {}).get("video", ""))
+            imagen = ('<a href="/nota/' + esc(n["slug"]) + '/"><img class="nota-foto" src="' + esc(thumb) +
+                      '" alt="" loading="lazy" width="264" height="148"></a>') if thumb and posicion < 2 else ""
+            tarjetas.append("<article><small>" + esc(n.get("fuente", {}).get("nombre", "")) + "</small>" +
+                            imagen + '<h3><a href="/nota/' + esc(n["slug"]) + '/">' +
+                            esc(n.get("titulo", "")) + "</a></h3><p>" +
+                            esc(n.get("bajada", ""))[:110] + "</p></article>")
+        columna += '<div class="secundarias">' + "".join(tarjetas) + "</div>"
     elif notas:
         pass
     else:
@@ -426,7 +506,8 @@ def main():
                   esc(nota.get("categoria", "fútbol")) + '</span><h1 class="titulo">' +
                   esc(nota.get("titulo", "")) + '</h1><p class="bajada">' + esc(nota.get("bajada", "")) +
                   '</p><span class="firma">' + fecha_larga(nota.get("fecha", "")) + " · vía " +
-                  esc(fuente.get("nombre", "")) + "</span>" + parrafos + pie + "</article></div><aside>" +
+                  esc(fuente.get("nombre", "")) + "</span>" + video_fuente(fuente) + parrafos + pie +
+                  "</article></div><aside>" +
                   "".join(html_anuncio(a) for a in anuncios) + "</aside></div>")
         # Schema NewsArticle: le dice a Google que esto es una noticia, de cuando
         # es y en que se basa (el video). Es lo que habilita Noticias y Discover.

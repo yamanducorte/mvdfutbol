@@ -87,6 +87,11 @@ td{padding:7px 4px;border-bottom:1px solid var(--linea)}
 tbody tr:last-child td{border-bottom:0}
 td.pos{color:var(--gris);width:1.5rem}
 td.eq{font-family:var(--lectura);font-size:.93rem}
+.escudo{vertical-align:-4px;margin-right:7px;flex:0 0 auto}
+.partido .v .escudo{margin:0 0 0 7px}
+.mk .escudo{margin-right:6px;vertical-align:-3px}
+.partido>span{display:flex;align-items:center;gap:0}
+.partido .v{justify-content:flex-end}
 td.pts{font-weight:600}
 tr.lider td.pos,tr.lider td.pts{color:var(--celeste)}
 
@@ -117,6 +122,12 @@ tr.lider td.pos,tr.lider td.pts{color:var(--celeste)}
 article.nota{max-width:38rem}
 article.nota .bajada{font-size:1.13rem;color:var(--gris);margin:13px 0 22px}
 article.nota p{margin-bottom:1.05em;font-size:1.06rem}
+.video{position:relative;aspect-ratio:16/9;margin:4px 0 22px;background:var(--crema);border:1px solid var(--linea)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video .pie{position:absolute;bottom:0;left:0;right:0;background:rgba(18,22,28,.85);color:#fff;font-family:var(--dato);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px}
+.tapa-foto{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;margin-bottom:13px;background:var(--crema)}
+.nota-foto{float:right;width:132px;aspect-ratio:16/9;object-fit:cover;margin:3px 0 8px 14px;background:var(--crema)}
+@media (max-width:520px){.nota-foto{width:104px;margin-left:10px}}
 .fuente{border-top:1px solid var(--linea);margin-top:26px;padding-top:14px;font-size:.9rem;color:var(--gris)}
 .fuente a{color:var(--celeste)}
 .vacio{border:1px dashed var(--linea);padding:20px;color:var(--gris);font-size:.95rem}
@@ -132,7 +143,7 @@ footer a{color:var(--celeste)}
 <header>
   <div class="ancho cab">
     <a class="logo" href="/">MVD<i>Fútbol</i></a>
-    <small>Montevideo · 2 de noviembre de 2026 · actualizado 06:56 UTC</small>
+    <small>Montevideo · 2 de noviembre de 2026 · actualizado 07:06 UTC</small>
   </div>
 </header>
 <div class="menu"><div class="ancho"><a href="/">Portada</a><a href="/primera/" aria-current="page">Primera División</a><a href="/juveniles/">Juveniles</a><a href="/ascenso/">Segunda</a><a href="/femenino/">Fútbol femenino</a><a href="/juveniles/2026-juveniles-a-sub19-torneo-clausura/">Sub 19</a><a href="/juveniles/2026-juveniles-a-sub17-torneo-clausura/">Sub 17</a><a href="/juveniles/2026-juveniles-a-sub15-torneo-clausura/">Sub 15</a></div></div>

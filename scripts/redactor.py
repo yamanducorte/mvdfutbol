@@ -195,6 +195,13 @@ def main():
         return
 
     import anthropic
+    # En la nube la key viene del secret; en local, de .env (que no entra al repo).
+    archivo_env = RAIZ / ".env"
+    if archivo_env.exists():
+        for linea in archivo_env.read_text(encoding="utf-8").splitlines():
+            if "=" in linea and not linea.strip().startswith("#"):
+                nombre, valor = linea.split("=", 1)
+                os.environ.setdefault(nombre.strip(), valor.strip())
     if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
         print("falta ANTHROPIC_API_KEY en el entorno")
         return
