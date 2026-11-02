@@ -24,7 +24,7 @@ permissions:
 jobs:
   escribir:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 80
     environment:
       name: github-pages
       url: ${{ steps.despliegue.outputs.page_url }}
@@ -34,12 +34,20 @@ jobs:
         with:
           python-version: "3.12"
       - name: Instalar dependencias
-        run: pip install --quiet --upgrade yt-dlp anthropic
+        run: pip install --quiet --upgrade yt-dlp anthropic faster-whisper
+      # El modelo de Whisper pesa unos 250 MB. Guardado, no se vuelve a bajar.
+      - name: Guardar el modelo de Whisper entre corridas
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-small-int8
       - name: Escuchar los canales
         run: python scripts/monitor.py
       - name: Filtrar y redactar
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Linea editorial. No va en el repo porque el repo es publico.
+          CLUBES_DE_LA_CASA: ${{ secrets.CLUBES_DE_LA_CASA }}
         run: python scripts/redactor.py --limite ${{ github.event.inputs.limite || '8' }}
       - name: Generar el sitio
         run: python scripts/sitio.py

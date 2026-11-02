@@ -1,0 +1,9 @@
+{
+  "_nota": "Linea editorial del medio. La lee scripts/redactor.py y se le pega al filtro y al redactor.",
+  "clubes_de_la_casa": {
+    "_nota": "De estos clubes no se publica nada que los perjudique. Lo bueno y lo neutro sale normal. Lo que no se puede publicar se OMITE: nunca se maquilla ni se inventa a favor.",
+    "_donde_esta_la_lista": "Este repo es publico, asi que la lista no va aca. Va en la variable de entorno CLUBES_DE_LA_CASA, separada por comas: secret del mismo nombre en GitHub, y en el archivo .env para correrlo en la maquina. Si la variable esta vacia, no hay linea editorial y se publica todo.",
+    "clubes": [],
+    "activo": true
+  }
+}

@@ -110,6 +110,15 @@ def limpiar_vtt(ruta):
         acumulado = (acumulado + " " + nuevo).strip()
         partes.append((marca, nuevo))
 
+    return agrupar(partes)
+
+
+def agrupar(partes):
+    """[(marca, texto)] -> parrafos de unas 45 palabras, cada uno con su minuto.
+
+    Las marcas son lo que despues el sitio convierte en links al segundo exacto,
+    asi que tienen que quedar pegadas al texto que corresponde.
+    """
     parrafos = []
     buffer = []
     marca_inicio = None
@@ -148,10 +157,95 @@ def bajar_transcripto(video_id, idiomas, destino_tmp):
     return next(iter(destino_tmp.glob(video_id + ".*.vtt")), None), fecha
 
 
+# Vocabulario del fútbol uruguayo: Whisper escucha mejor los nombres propios si
+# se le adelanta de que va a hablar el audio. Sin esto, "Ruglio" sale "Rulio".
+PISTA = ("Futbol uruguayo. Penarol, Nacional, Danubio, Defensor Sporting, Liverpool, "
+         "Montevideo Wanderers, Racing, Cerro, Rampla Juniors, Progreso, Boston River, "
+         "Deportivo Maldonado, Cerro Largo, Juventud de Las Piedras, River Plate, "
+         "Plaza Colonia, Miramar Misiones, Bella Vista, Albion, Oriental, Torque. "
+         "AUF, Tenfield, Campeon del Siglo, Gran Parque Central, Estadio Centenario, "
+         "Torneo Apertura, Torneo Clausura, Copa Uruguay, tabla anual. "
+         "Diego Aguirre, Ignacio Ruglio, Maxi Gomez, Luciano Rodriguez, Sebastian Coates.")
+
+_MODELO_WHISPER = [None]
+
+
+def modelo_whisper(nombre):
+    """Se carga una sola vez por corrida: arrancarlo cuesta mas que usarlo."""
+    if _MODELO_WHISPER[0] is None:
+        from faster_whisper import WhisperModel
+        print("        cargando el modelo " + nombre + " (la primera vez lo baja)")
+        # int8 en procesador: es lo que hace que esto sea viable sin tarjeta de video.
+        _MODELO_WHISPER[0] = WhisperModel(nombre, device="cpu", compute_type="int8")
+    return _MODELO_WHISPER[0]
+
+
+def bajar_audio(video_id, tmp):
+    """Baja el audio tal como viene, sin reconvertir: asi no necesita ffmpeg."""
+    subprocess.run(
+        ["yt-dlp", "-f", "bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio",
+         "--no-playlist", "--extractor-args", "youtube:lang=es",
+         "-o", str(tmp / (video_id + ".audio.%(ext)s")),
+         "https://www.youtube.com/watch?v=" + video_id],
+        capture_output=True, text=True, timeout=900, encoding="utf-8", errors="replace")
+    return next(iter(tmp.glob(video_id + ".audio.*")), None)
+
+
+def whisper_disponible():
+    try:
+        import faster_whisper  # noqa: F401
+        return True
+    except ImportError:
+        return False
+
+
+def transcribir_audio(video_id, tmp, ajustes):
+    """Pasa el audio a texto con marcas de tiempo. Devuelve None si no se pudo.
+
+    Esto corre en el procesador y no cuesta plata: no es la API de Claude. Lo que
+    si cuesta es el transcripto que sale de aca, porque despues lo lee el filtro.
+    """
+    audio = None
+    try:
+        audio = bajar_audio(video_id, tmp)
+        if not audio:
+            print("        !! no se pudo bajar el audio")
+            return None
+        modelo = modelo_whisper(ajustes.get("modelo", "small"))
+        segmentos, _ = modelo.transcribe(
+            str(audio), language="es", vad_filter=True, initial_prompt=PISTA)
+        partes = []
+        for seg in segmentos:
+            frase = (seg.text or "").strip()
+            if not frase:
+                continue
+            total = int(seg.start)
+            marca = "%02d:%02d:%02d" % (total // 3600, total % 3600 // 60, total % 60)
+            partes.append((marca, frase))
+        if not partes:
+            print("        !! el audio no dio texto")
+            return None
+        return agrupar(partes)
+    except Exception as error:
+        print("        !! Whisper fallo: " + str(error))
+        return None
+    finally:
+        if audio and audio.exists():
+            audio.unlink()
+
+
 def main():
     fuentes = leer_json(FUENTES, {})
     parametros = fuentes.get("parametros", {})
     idiomas = parametros.get("idiomas_subtitulos", ["es"])
+    whisper = fuentes.get("whisper", {})
+    transcritos_whisper = 0
+    if whisper.get("activo") and not whisper_disponible():
+        # Pasa en la maquina de casa, donde no hace falta instalarlo: el que
+        # transcribe es GitHub. Se apaga y los videos sin subtitulos se saltean,
+        # igual que antes, en vez de quedar marcados como procesados.
+        print("  (faster-whisper no esta instalado aca: los videos sin subtitulos se saltean)")
+        whisper = dict(whisper, activo=False)
     estado = leer_json(ESTADO, {"vistos": {}})
     cache_canales = leer_json(CANALES, {})
     solo_listar = "--listar" in sys.argv
@@ -199,22 +293,50 @@ def main():
                 continue
             vtt, fecha = bajar_transcripto(video["id"], idiomas, tmp)
             estado["vistos"].setdefault(handle, []).append(video["id"])
-            if not vtt:
-                print("     - sin subtitulos: " + video["titulo"][:60])
-                continue
             # Un video de hace un mes no es noticia: se marca visto y se sigue.
+            # Va antes que Whisper para no gastar minutos de maquina al aire.
             dias = parametros.get("dias_maximos", 7)
             limite = (datetime.now(timezone.utc) - timedelta(days=dias)).strftime("%Y-%m-%d")
             if fecha < limite:
                 print("     - viejo (" + fecha + "): " + video["titulo"][:50])
                 continue
-            texto = limpiar_vtt(vtt)
+            por_whisper = False
+            if vtt:
+                texto = limpiar_vtt(vtt)
+            else:
+                # No todos los canales dejan subtitulos automaticos, y justo ahi
+                # suele estar la nota. Se escucha el audio y se escribe solo.
+                tope = whisper.get("maximo_por_corrida", 2)
+                if not whisper.get("activo"):
+                    print("     - sin subtitulos: " + video["titulo"][:60])
+                    continue
+                if transcritos_whisper >= tope:
+                    print("     - sin subtitulos, queda para la proxima corrida (ya van " +
+                          str(tope) + "): " + video["titulo"][:50])
+                    # Se lo saca de los vistos para que la proxima corrida lo agarre.
+                    ya_vistos = estado["vistos"].setdefault(handle, [])
+                    if ya_vistos and ya_vistos[-1] == video["id"]:
+                        ya_vistos.pop()
+                    continue
+                if video["duracion"] > whisper.get("duracion_maxima_seg", 3600):
+                    print("     - sin subtitulos y muy largo para transcribir (" +
+                          str(video["duracion"] // 60) + " min): " + video["titulo"][:50])
+                    continue
+                print("     ~ sin subtitulos, escuchando el audio (" +
+                      str(video["duracion"] // 60) + " min): " + video["titulo"][:50])
+                texto = transcribir_audio(video["id"], tmp, whisper)
+                if not texto:
+                    continue
+                transcritos_whisper += 1
+                por_whisper = True
             archivo = TRANSCRIPCIONES / (fecha + "_" + handle.lstrip("@") + "_" + video["id"] + ".txt")
             archivo.write_text(
                 "FUENTE: " + nombre + " (" + handle + ")\n"
                 "VIDEO: https://www.youtube.com/watch?v=" + video["id"] + "\n"
                 "TITULO: " + video["titulo"] + "\n"
                 "PUBLICADO: " + fecha + "\n"
+                "ORIGEN: " + ("audio transcripto por Whisper (puede errar nombres propios)"
+                              if por_whisper else "subtitulos automaticos de YouTube") + "\n"
                 "PALABRAS: " + str(len(texto.split())) + "\n\n" + texto + "\n",
                 encoding="utf-8")
             for sobrante in tmp.glob(video["id"] + ".*"):
@@ -237,7 +359,10 @@ def main():
         escribir_json(ESTADO, estado)
         escribir_json(PENDIENTES, pendientes)
         sin_revisar = sum(1 for p in pendientes if p["estado"] == "sin_revisar")
-        print("\n" + str(nuevos_total) + " transcripto(s) nuevo(s). Pendientes de redaccion: " + str(sin_revisar))
+        extra = (" (" + str(transcritos_whisper) + " por audio con Whisper)"
+                 if transcritos_whisper else "")
+        print("\n" + str(nuevos_total) + " transcripto(s) nuevo(s)" + extra +
+              ". Pendientes de redaccion: " + str(sin_revisar))
 
 
 if __name__ == "__main__":

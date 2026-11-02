@@ -151,5 +151,12 @@
     ],
     "videos_por_canal": 6,
     "dias_maximos": 7
+  },
+  "whisper": {
+    "_nota": "Para los videos que no traen subtitulos automaticos. Escucha el audio y lo escribe. Corre en el procesador de GitHub y no cuesta plata, pero cada transcripto que sale de aca despues paga filtro de Claude como cualquier otro.",
+    "activo": true,
+    "modelo": "small",
+    "maximo_por_corrida": 2,
+    "duracion_maxima_seg": 3600
   }
 }

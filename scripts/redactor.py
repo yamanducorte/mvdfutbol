@@ -22,6 +22,7 @@ FUENTES = RAIZ / "fuentes.json"
 PENDIENTES = RAIZ / "datos" / "hallazgos" / "pendientes.json"
 NOTAS = RAIZ / "contenido" / "notas"
 COSTOS = RAIZ / "datos" / "costos.json"
+EDITORIAL = RAIZ / "editorial.json"
 
 MODELO_FILTRO = "claude-haiku-5-5"
 MODELO_REDACTOR = "claude-opus-5-5"
@@ -82,6 +83,52 @@ ESQUEMA_NOTA = """Devolve SOLO un objeto JSON con esta forma, sin texto alrededo
   "etiquetas": ["club o tema", "..."],
   "categoria": "la misma que trajo el filtro"
 }"""
+
+
+# La linea editorial se arma una vez al arrancar y se le pega a los dos prompts.
+REGLA_EDITORIAL = ""
+
+
+def regla_editorial(editorial):
+    """Traduce editorial.json a una instruccion para los modelos.
+
+    Esto es una decision del dueno del medio, no un error: hay medios de club y
+    medios independientes. Lo que si no se negocia es que lo que no se puede
+    publicar se omite y no se reemplaza por elogios inventados.
+    """
+    casa = editorial.get("clubes_de_la_casa", {})
+    # El repo es publico: la lista de verdad viaja por variable de entorno
+    # (secret CLUBES_DE_LA_CASA en GitHub, .env en local). El archivo queda como
+    # respaldo y como documentacion de la forma.
+    del_entorno = os.environ.get("CLUBES_DE_LA_CASA", "")
+    clubes = [c.strip() for c in (del_entorno.split(",") if del_entorno
+                                  else casa.get("clubes", [])) if c and c.strip()]
+    if not casa.get("activo", True) or not clubes:
+        return ""
+    lista = " y ".join([", ".join(clubes[:-1]), clubes[-1]]) if len(clubes) > 1 else clubes[0]
+    return ("\n\nLINEA EDITORIAL DE LA CASA (manda sobre cualquier otro criterio):\n"
+            "- " + lista + " son los clubes de la casa. De ellos no se publica NADA que los "
+            "perjudique: ni criticas, ni denuncias, ni internas o peleas de vestuario, ni "
+            "rumores de conflicto, ni cargadas, ni datos que los dejen mal parados.\n"
+            "- Si el unico material del video es de ese tipo sobre " + lista + ", devolve "
+            "es_noticia en false y deja el motivo escrito.\n"
+            "- Si el video trae otras noticias ademas, descarta los hechos que perjudican a " +
+            lista + " y quedate con el resto, que se publica normal.\n"
+            "- Lo bueno y lo neutro sobre " + lista + " se publica como cualquier otra noticia: "
+            "un resultado, un gol, una lesion o un fichaje son informacion, no un ataque.\n"
+            "- Esto NO habilita a inventar, exagerar ni elogiar de mas. Lo que no se puede "
+            "publicar se omite y listo: no se maquilla, no se da vuelta y no se compensa.")
+
+
+def cargar_env():
+    """En la nube las claves vienen de los secrets; en local, de .env (gitignored)."""
+    archivo = RAIZ / ".env"
+    if not archivo.exists():
+        return
+    for linea in archivo.read_text(encoding="utf-8").splitlines():
+        if "=" in linea and not linea.strip().startswith("#"):
+            nombre, valor = linea.split("=", 1)
+            os.environ.setdefault(nombre.strip(), valor.strip())
 
 
 def leer_json(ruta, por_defecto):
@@ -151,7 +198,8 @@ def filtrar(cliente, transcripto, canal, registro):
     if canal.get("solo_futbol"):
         extra = ("\nEste canal no es solo de futbol. Si el video no trae a gente del futbol "
                  "hablando de futbol, devolve es_de_futbol en false y es_noticia en false.")
-    texto, uso = pedir(cliente, MODELO_FILTRO, REGLAS + extra + "\n\n" + ESQUEMA_FILTRO,
+    texto, uso = pedir(cliente, MODELO_FILTRO,
+                       REGLAS + extra + REGLA_EDITORIAL + "\n\n" + ESQUEMA_FILTRO,
                        transcripto, 6000, "low", pensar=False)
     anotar_costo(registro, MODELO_FILTRO, uso)
     return solo_json(texto), uso
@@ -193,6 +241,7 @@ Escribis la nota para publicar. Como se escribe:
   "minuto 5:52", porque el sitio lo convierte en un link al segundo exacto del video.
 - Si hay algo en "dudas", no lo afirmes: omitilo o escribilo con la reserva correspondiente.
 - Nada de titulos carnada, nada de preguntas en el titulo, nada de emojis.
+""" + REGLA_EDITORIAL + """
 
 """ + ESQUEMA_NOTA)
     texto, uso = pedir(cliente, MODELO_REDACTOR, system,
@@ -206,6 +255,21 @@ def main():
     if "--limite" in sys.argv:
         limite = int(sys.argv[sys.argv.index("--limite") + 1])
     simular = "--simular" in sys.argv
+
+    global REGLA_EDITORIAL
+    cargar_env()
+    REGLA_EDITORIAL = regla_editorial(leer_json(EDITORIAL, {}))
+    # No se imprimen los nombres: el log de la corrida es publico.
+    print("linea editorial: " + ("activa" if REGLA_EDITORIAL else "SIN CONFIGURAR"))
+    # Si la linea editorial esta prendida pero la lista no llego, se para todo.
+    # Mejor quedarse sin notas que publicar una que no se tenia que publicar.
+    if not REGLA_EDITORIAL and leer_json(EDITORIAL, {}).get(
+            "clubes_de_la_casa", {}).get("activo", False):
+        print("!! editorial.json tiene la linea editorial activa pero la variable "
+              "CLUBES_DE_LA_CASA esta vacia. No se escribe ninguna nota hasta que "
+              "este cargada (secret en GitHub, .env en local). Si de verdad no "
+              "queres linea editorial, pone activo en false.")
+        return
 
     fuentes = leer_json(FUENTES, {})
     por_handle = {}
@@ -246,13 +310,6 @@ def main():
         return
 
     import anthropic
-    # En la nube la key viene del secret; en local, de .env (que no entra al repo).
-    archivo_env = RAIZ / ".env"
-    if archivo_env.exists():
-        for linea in archivo_env.read_text(encoding="utf-8").splitlines():
-            if "=" in linea and not linea.strip().startswith("#"):
-                nombre, valor = linea.split("=", 1)
-                os.environ.setdefault(nombre.strip(), valor.strip())
     if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
         print("falta ANTHROPIC_API_KEY en el entorno")
         return
