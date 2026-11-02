@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MVD Fútbol · propuesta C</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@700;800;900&display=swap">
+<style>
+.cinta{background:#111;color:#fff;font:500 .76rem/1.5 'IBM Plex Mono',monospace;padding:7px 16px;text-align:center}
+.cinta a{color:#8fd3f4}
+
+:root{--papel:#fbfaf7;--tinta:#1a1a1a;--gris:#6d6a63;--linea:#e2ded4;--vino:#8a2e3b;--oro:#b08a3e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--papel);color:var(--tinta);font-family:'Source Serif 4',Georgia,serif;line-height:1.65}
+.ancho{max-width:1060px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+header{text-align:center;padding-block:30px 18px;border-bottom:1px solid var(--linea)}
+.logo{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:clamp(2rem,6vw,3.1rem);letter-spacing:-.02em;line-height:1}
+.logo i{font-style:italic;color:var(--vino)}
+header p{font-family:'IBM Plex Mono',monospace;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gris);margin-top:9px}
+nav{display:flex;justify-content:center;gap:26px;padding-block:13px;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--linea);overflow-x:auto}
+nav span{white-space:nowrap;color:var(--gris)}
+nav span:first-child{color:var(--vino)}
+.tapa{padding-block:38px 30px;border-bottom:1px solid var(--linea);display:grid;gap:14px;max-width:44rem}
+.tapa .et{font-family:'IBM Plex Mono',monospace;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--oro)}
+.tapa h1{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(2rem,5.2vw,3.3rem);line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+.tapa p{font-size:1.16rem;color:var(--gris)}
+.tapa .firma{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris)}
+.dos{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:46px;padding-block:30px}
+.rot{font-family:'IBM Plex Mono',monospace;font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gris);padding-bottom:9px;border-bottom:2px solid var(--tinta);margin-bottom:18px}
+.lista article{padding-block:17px;border-bottom:1px solid var(--linea);display:grid;gap:5px}
+.lista h3{font-family:'Playfair Display',serif;font-weight:700;font-size:1.3rem;line-height:1.22}
+.lista small{font-family:'IBM Plex Mono',monospace;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--vino)}
+.lista p{color:var(--gris);font-size:.98rem}
+aside{min-width:0;display:flex;flex-direction:column;gap:30px}
+table{width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:.76rem;font-variant-numeric:tabular-nums}
+th{font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);text-align:right;padding:5px 3px;border-bottom:1px solid var(--tinta)}
+th:nth-child(-n+2),td:nth-child(-n+2){text-align:left}
+td{padding:6px 3px;border-bottom:1px solid var(--linea)}
+td.eq{font-family:'Source Serif 4',serif;font-size:.9rem}
+.res{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--linea);font-size:.92rem}
+.res b{font-family:'IBM Plex Mono',monospace;font-weight:600}
+.aviso{border:1px solid var(--linea);background:#fff;padding:18px}
+.aviso small{font-family:'IBM Plex Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--oro)}
+.aviso h3{font-family:'Playfair Display',serif;font-size:1.15rem;margin:7px 0}
+.aviso p{font-size:.92rem;color:var(--gris);margin-bottom:12px}
+.aviso a{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--vino);text-decoration:none;border-bottom:1px solid var(--vino);padding-bottom:3px}
+@media(max-width:860px){.dos{grid-template-columns:1fr;gap:34px}}
+</style></head><body>
+<div class="cinta">Propuesta C · Revista — datos reales, portada de ejemplo. <a href="/disenos/">ver las tres</a></div>
+
+<header><div class="ancho"><div class="logo">MVD <i>Fútbol</i></div><p>Montevideo · 2 de noviembre de 2026</p></div></header>
+<nav><span>Portada</span><span>Juveniles</span><span>Primera</span><span>Selección</span><span>Análisis</span></nav>
+<div class="ancho">
+  <div class="tapa"><span class="et">Lo que se dijo</span>
+    <h1>No es rival ruglio; es muy difícil que se presente, los números son un desastre, está 3.º...</h1>
+    <p>El audio de los programas deportivos, convertido en texto que se puede buscar, citar y verificar.</p>
+    <span class="firma">Sport 890 · hoy</span>
+  </div>
+  <div class="dos">
+    <div><div class="rot">Más notas</div><div class="lista"><article><small>Sport 890</small><h3>Si voy de vice, no es para jugar a bob el constructor; mi empresa no participará en obras...</h3><p>Con la cita textual y el minuto del programa.</p></article><article><small>Sport 890</small><h3>Viendo que las cosas se hacían demasiado mal, dije que sí, con todo gusto me gustaría part...</h3><p>Con la cita textual y el minuto del programa.</p></article><article><small>Sport 890</small><h3>No es solo volver a la AUF, como dicen; tenemos que elegir a la gente correcta y capacitar...</h3><p>Con la cita textual y el minuto del programa.</p></article></div></div>
+    <aside>
+      <div><div class="rot">2026 Juveniles A Sub15 Torneo Clausura</div><table><thead><tr><th></th><th>Equipo</th><th>PJ</th><th>DG</th><th>Pts</th></tr></thead><tbody><tr><td>1</td><td class="eq">M.C.Torque</td><td>12</td><td>+27</td><td class="p">34</td></tr><tr><td>2</td><td class="eq">Boston River</td><td>12</td><td>+10</td><td class="p">26</td></tr><tr><td>3</td><td class="eq">Defensor Sp</td><td>12</td><td>+14</td><td class="p">25</td></tr><tr><td>4</td><td class="eq">Nacional</td><td>12</td><td>+10</td><td class="p">22</td></tr><tr><td>5</td><td class="eq">Liverpool</td><td>12</td><td>+7</td><td class="p">22</td></tr><tr><td>6</td><td class="eq">Paysandú</td><td>12</td><td>+7</td><td class="p">21</td></tr><tr><td>7</td><td class="eq">River Plate</td><td>12</td><td>+4</td><td class="p">21</td></tr><tr><td>8</td><td class="eq">Peñarol</td><td>12</td><td>+11</td><td class="p">20</td></tr></tbody></table></div>
+      <div><div class="rot">Resultados</div><div class="res"><span>Liverpool N vs Fénix</span><b>3-0</b></div><div class="res"><span>Estudiantes del Plata vs Plaza Colonia</span><b>1-3</b></div><div class="res"><span>Terremoto vs Salto</span><b>1-2</b></div><div class="res"><span>La Luz vs Atenas</span><b>1-1</b></div><div class="res"><span>Danubio vs Liverpool</span><b>0-8</b></div><div class="res"><span>River Plate vs Liverpool B</span><b>0-3</b></div></div>
+      <div class="aviso"><small>Curso</small><h3>Videoanálisis de fútbol con IA</h3><p>De cero a tu primer informe de rival en un fin de semana, con herramientas gratis. Lo dicta un entrenador con licencia A CONMEBOL.</p><a href="https://elvideoanalista.netlify.app/cursos/">Ver el curso →</a></div><div class="aviso"><small>Gratis</small><h3>Plantilla de informe de rival</h3><p>La planilla de seis bloques que usan los analistas, en PDF. Te la llevás dejando tu mail.</p><a href="https://elvideoanalista.netlify.app/#lanzamiento">Descargar gratis →</a></div>
+    </aside>
+  </div>
+</div>
+
+</body></html>

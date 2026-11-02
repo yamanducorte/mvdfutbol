@@ -3,9 +3,10 @@
 
 Uso:  python scripts/sitio.py
 
-Arma la portada, las notas y una pagina por campeonato juvenil (tabla, ultimos
-resultados y fixture) a partir de contenido/notas/*.json y datos/juveniles.json.
-Los anuncios salen de anuncios.json.
+Diseno: diario deportivo (titular grande, notas secundarias en columnas, franja
+de resultados, columna derecha con tabla y anuncios) en celeste uruguayo.
+Arma portada, notas, indice de juveniles y una pagina por campeonato a partir de
+contenido/notas/*.json, datos/juveniles.json y anuncios.json.
 """
 import html
 import json
@@ -27,94 +28,118 @@ MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
          "agosto", "setiembre", "octubre", "noviembre", "diciembre"]
 
 FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'"
-           "%3E%3Crect width='32' height='32' rx='6' fill='%230f1419'/%3E%3Cpath d='M6 24V8h4l4 7"
-           " 4-7h4v16h-4v-9l-4 7-4-7v9z' fill='%235ec3f0'/%3E%3Crect x='6' y='26' width='20'"
-           " height='2' fill='%23f2a93b'/%3E%3C/svg%3E")
+           "%3E%3Crect width='32' height='32' fill='%23ffffff'/%3E%3Crect y='23' width='32'"
+           " height='9' fill='%231173b8'/%3E%3Cpath d='M4 20V5h4l4 7 4-7h4v15h-4v-8l-4 7-4-7v8z'"
+           " fill='%2312161c'/%3E%3C/svg%3E")
 
 CSS = """
 :root{
-  --papel:#f6f5f1; --papel-2:#ecebe4; --tinta:#15181d; --tinta-2:#555d69;
-  --linea:#d9d7cd; --celeste:#1b7fb8; --celeste-osc:#0f1419; --ambar:#c87a12;
-  --borde-radio:3px;
-  --titulo:'Archivo',system-ui,sans-serif;
+  --celeste:#1173b8;        /* celeste uruguayo, bajado para que lea bien sobre blanco */
+  --celeste-vivo:#56b4e9;   /* el de la bandera, para fondos oscuros */
+  --tinta:#12161c; --gris:#666e78; --linea:#dcdcd7; --papel:#fff; --crema:#f3f2ec;
+  --titular:'Archivo',system-ui,sans-serif;
   --lectura:'Source Serif 4',Georgia,serif;
   --dato:'IBM Plex Mono',ui-monospace,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--papel);color:var(--tinta);font-family:var(--lectura);line-height:1.6}
 a{color:inherit}
-.faja{background:var(--celeste-osc);color:#f6f7f8}
-.ancho{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-header .ancho{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
-.marca{display:flex;align-items:center;gap:10px;text-decoration:none}
-.marca .iso{width:30px;height:30px;border-radius:5px;background:#5ec3f0;color:#0f1419;font-family:var(--titulo);font-weight:800;font-size:.95rem;display:grid;place-items:center;letter-spacing:-.04em}
-.marca b{font-family:var(--titulo);font-weight:800;font-size:1.22rem;letter-spacing:-.02em;line-height:1}
-.marca span{display:block;font-family:var(--dato);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:#8fa0ae;margin-top:3px}
-nav{display:flex;gap:18px;font-family:var(--titulo);font-size:.84rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
-nav a{color:#c9d4dc;text-decoration:none;padding-bottom:2px;border-bottom:2px solid transparent}
-nav a:hover,nav a[aria-current]{color:#fff;border-color:#f2a93b}
-.fecha-faja{border-top:1px solid #222a33;font-family:var(--dato);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#7f8d99}
-.fecha-faja .ancho{padding-block:7px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-main{padding-block:28px 48px}
-.columnas{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(0,1fr);gap:40px;align-items:start}
-h1{font-family:var(--titulo);font-weight:800;letter-spacing:-.025em;line-height:1.08;font-size:clamp(1.7rem,4vw,2.5rem);text-wrap:balance}
-h2{font-family:var(--titulo);font-weight:700;letter-spacing:-.015em;font-size:1.18rem;text-wrap:balance}
-h3{font-family:var(--titulo);font-weight:700;font-size:1rem}
-.rotulo{font-family:var(--dato);font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-2);display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.rotulo::after{content:"";flex:1;height:1px;background:var(--linea)}
-.notas{display:flex;flex-direction:column;gap:22px}
-.nota-item{display:grid;gap:7px;padding-bottom:20px;border-bottom:1px solid var(--linea)}
-.nota-item:last-child{border-bottom:0}
-.nota-item a{text-decoration:none}
-.nota-item h2 a:hover{color:var(--celeste)}
-.nota-item p{color:var(--tinta-2);font-size:.97rem}
-.meta{font-family:var(--dato);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-2);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.pastilla{background:var(--papel-2);border:1px solid var(--linea);border-radius:999px;padding:2px 9px;font-family:var(--dato);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase}
-.vacio{border:1px dashed var(--linea);border-radius:var(--borde-radio);padding:22px;color:var(--tinta-2);font-size:.95rem}
-aside{display:flex;flex-direction:column;gap:26px;min-width:0}
-.bloque{border:1px solid var(--linea);background:#fff;border-radius:var(--borde-radio)}
-.bloque>h3{padding:11px 14px;border-bottom:1px solid var(--linea);font-size:.82rem;text-transform:uppercase;letter-spacing:.09em}
-.bloque .cuerpo{padding:12px 14px}
-table{width:100%;border-collapse:collapse;font-family:var(--dato);font-size:.8rem;font-variant-numeric:tabular-nums}
-th{text-align:right;font-weight:500;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-2);padding:8px 5px;border-bottom:1px solid var(--linea)}
-th:nth-child(-n+2),td:nth-child(-n+2){text-align:left}
-td{padding:7px 5px;border-bottom:1px solid var(--papel-2)}
-tbody tr:last-child td{border-bottom:0}
-td.pos{color:var(--tinta-2);width:1.6rem}
-td.eq{font-family:var(--lectura);font-size:.94rem}
-td.pts{font-weight:600}
-tr.lider td.pos{color:var(--celeste);font-weight:600}
+img{max-width:100%}
+.ancho{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* cabecera */
+header{border-bottom:3px solid var(--tinta)}
+.cab{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding-block:13px;flex-wrap:wrap}
+.logo{font-family:var(--titular);font-weight:900;font-size:clamp(1.6rem,4.5vw,2.1rem);letter-spacing:-.045em;text-transform:uppercase;text-decoration:none;line-height:1}
+.logo i{font-style:normal;color:var(--celeste)}
+.cab small{font-family:var(--dato);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gris)}
+.menu{background:var(--tinta)}
+.menu .ancho{display:flex;gap:19px;overflow-x:auto;padding-block:10px}
+.menu a{color:#cfd6dd;font-family:var(--titular);font-weight:700;font-size:.79rem;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;white-space:nowrap}
+.menu a:hover{color:#fff}
+.menu a[aria-current]{color:var(--celeste-vivo)}
+
+/* estructura */
+.grilla{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(0,1fr);gap:32px;padding-block:24px 40px}
+.grilla>div{min-width:0}
+aside{display:flex;flex-direction:column;gap:22px;min-width:0}
+
+/* apertura */
+.apertura{border-bottom:1px solid var(--linea);padding-bottom:20px;margin-bottom:20px}
+.sello{display:inline-block;background:var(--celeste);color:#fff;font-family:var(--dato);font-size:.63rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:3px 9px;margin-bottom:10px}
+.sello.dato{background:var(--tinta)}
+.apertura h1,h1.titulo{font-family:var(--titular);font-weight:900;font-size:clamp(1.85rem,4.3vw,3rem);line-height:1.03;letter-spacing:-.035em;text-wrap:balance}
+.apertura h1 a{text-decoration:none}
+.apertura h1 a:hover{color:var(--celeste)}
+.apertura p{color:var(--gris);font-size:1.07rem;margin-top:11px;max-width:40rem}
+
+/* notas secundarias */
+.secundarias{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:20px}
+.secundarias article{border-top:2px solid var(--tinta);padding-top:10px}
+.secundarias h3{font-family:var(--titular);font-weight:700;font-size:1.02rem;line-height:1.19;letter-spacing:-.015em}
+.secundarias h3 a{text-decoration:none}
+.secundarias h3 a:hover{color:var(--celeste)}
+.secundarias small,.firma{display:block;font-family:var(--dato);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--celeste);margin-bottom:4px}
+.secundarias p{color:var(--gris);font-size:.93rem;margin-top:5px}
+
+/* franja de resultados */
+.franja{background:var(--crema);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);margin-top:26px;padding-block:18px}
+h2.rotulo,aside h2{font-family:var(--titular);font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:13px}
+.marcadores{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:10px}
+.mk{background:#fff;border:1px solid var(--linea);padding:9px 11px;font-size:.9rem;min-width:0}
+.mk div{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.mk span:first-child{min-width:0;overflow-wrap:anywhere}
+.mk .r{font-family:var(--dato);font-weight:600;color:var(--celeste);white-space:nowrap}
+.mk .h{font-family:var(--dato);font-size:.74rem;color:var(--gris);white-space:nowrap}
+
+/* tablas */
 .scroll-x{overflow-x:auto}
-.partido{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--papel-2);font-size:.92rem}
+table{width:100%;border-collapse:collapse;font-family:var(--dato);font-size:.79rem;font-variant-numeric:tabular-nums}
+th{font-size:.6rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);text-align:right;padding:7px 4px;border-bottom:2px solid var(--tinta)}
+th:nth-child(-n+2),td:nth-child(-n+2){text-align:left}
+td{padding:7px 4px;border-bottom:1px solid var(--linea)}
+tbody tr:last-child td{border-bottom:0}
+td.pos{color:var(--gris);width:1.5rem}
+td.eq{font-family:var(--lectura);font-size:.93rem}
+td.pts{font-weight:600}
+tr.lider td.pos,tr.lider td.pts{color:var(--celeste)}
+
+/* listas de partidos */
+.partido{display:grid;grid-template-columns:1fr auto 1fr;gap:9px;align-items:center;padding:8px 0;border-bottom:1px solid var(--linea);font-size:.91rem}
 .partido:last-child{border-bottom:0}
+.partido>span{min-width:0;overflow-wrap:anywhere}
 .partido .v{text-align:right}
-.partido .marcador{font-family:var(--dato);font-weight:600;font-size:.88rem;background:var(--papel-2);border-radius:var(--borde-radio);padding:2px 8px;white-space:nowrap}
-.partido .hora{font-family:var(--dato);font-size:.78rem;color:var(--tinta-2);white-space:nowrap}
-.aviso{border:1px solid var(--linea);border-left:3px solid var(--ambar);background:#fff;border-radius:var(--borde-radio);padding:14px}
-.aviso .et{font-family:var(--dato);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ambar)}
-.aviso h3{margin:6px 0 5px;font-size:1rem}
-.aviso p{font-size:.9rem;color:var(--tinta-2);margin-bottom:10px}
-.aviso a{display:inline-block;font-family:var(--titulo);font-weight:700;font-size:.82rem;text-decoration:none;background:var(--celeste-osc);color:#fff;padding:8px 14px;border-radius:var(--borde-radio)}
-.aviso a:hover{background:var(--celeste)}
-.grilla-ligas{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
-.ficha{border:1px solid var(--linea);background:#fff;border-radius:var(--borde-radio);padding:13px 14px;text-decoration:none;display:grid;gap:5px}
+.partido .marcador{font-family:var(--dato);font-weight:600;color:var(--celeste);white-space:nowrap}
+.partido .hora{font-family:var(--dato);font-size:.76rem;color:var(--gris);white-space:nowrap}
+
+/* fichas de campeonato */
+.grilla-ligas{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:14px}
+.ficha{border:1px solid var(--linea);border-top:3px solid var(--celeste);padding:13px 14px;text-decoration:none;display:grid;gap:5px;background:#fff}
 .ficha:hover{border-color:var(--celeste)}
-.ficha b{font-family:var(--titulo);font-size:.95rem}
-.ficha small{font-family:var(--dato);font-size:.7rem;color:var(--tinta-2)}
-article.cuerpo-nota{max-width:38rem}
-article.cuerpo-nota .bajada{font-size:1.1rem;color:var(--tinta-2);margin:12px 0 20px}
-article.cuerpo-nota p{margin-bottom:1.05em;font-size:1.05rem}
-.fuente{border-top:1px solid var(--linea);margin-top:26px;padding-top:14px;font-size:.9rem;color:var(--tinta-2)}
+.ficha b{font-family:var(--titular);font-size:.97rem;line-height:1.2}
+.ficha small{font-family:var(--dato);font-size:.69rem;color:var(--gris)}
+
+/* anuncios */
+.aviso{border:1px solid var(--linea);border-top:3px solid var(--celeste);padding:14px}
+.aviso .et{font-family:var(--dato);font-size:.61rem;letter-spacing:.15em;text-transform:uppercase;color:var(--celeste)}
+.aviso h3{font-family:var(--titular);font-size:1.02rem;margin:6px 0 5px}
+.aviso p{font-size:.89rem;color:var(--gris);margin-bottom:11px}
+.aviso a{display:inline-block;font-family:var(--titular);font-weight:700;font-size:.81rem;text-decoration:none;background:var(--tinta);color:#fff;padding:8px 14px}
+.aviso a:hover{background:var(--celeste)}
+
+/* nota */
+article.nota{max-width:38rem}
+article.nota .bajada{font-size:1.13rem;color:var(--gris);margin:13px 0 22px}
+article.nota p{margin-bottom:1.05em;font-size:1.06rem}
+.fuente{border-top:1px solid var(--linea);margin-top:26px;padding-top:14px;font-size:.9rem;color:var(--gris)}
 .fuente a{color:var(--celeste)}
-footer{border-top:1px solid var(--linea);margin-top:40px;background:var(--papel-2)}
-footer .ancho{padding-block:24px;display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;font-size:.84rem;color:var(--tinta-2)}
+.vacio{border:1px dashed var(--linea);padding:20px;color:var(--gris);font-size:.95rem}
+.intro{color:var(--gris);font-size:1.05rem;margin:11px 0 24px;max-width:40rem}
+
+footer{border-top:3px solid var(--tinta);margin-top:36px;background:var(--crema)}
+footer .ancho{padding-block:22px;display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;font-size:.85rem;color:var(--gris)}
 footer a{color:var(--celeste)}
-@media (max-width:820px){ .columnas{grid-template-columns:1fr;gap:34px} }
-@media (prefers-color-scheme:dark){
-  :root{--papel:#121519;--papel-2:#1b2027;--tinta:#e9ecef;--tinta-2:#9aa5b1;--linea:#2a313a;--celeste:#5ec3f0;--ambar:#f2a93b}
-  .bloque,.aviso,.ficha{background:#171c22}
-  .marca .iso{background:#5ec3f0}
-}
+@media (max-width:860px){ .grilla{grid-template-columns:1fr;gap:30px} }
 """
 
 
@@ -142,7 +167,7 @@ def fecha_larga(iso):
     return str(f.day) + " de " + MESES[f.month - 1] + " de " + str(f.year)
 
 
-def fecha_corta(iso):
+def dia_mes(iso):
     try:
         f = datetime.fromisoformat(iso[:19])
     except (ValueError, TypeError):
@@ -160,16 +185,25 @@ def hora(iso):
 def con_utm(url, origen):
     if not url:
         return ""
-    union = "&" if "?" in url else "?"
-    return url + union + "utm_source=mvdfutbol&utm_medium=anuncio&utm_campaign=" + origen
+    return url + ("&" if "?" in url else "?") + "utm_source=mvdfutbol&utm_medium=anuncio&utm_campaign=" + origen
 
 
-def pagina(titulo, descripcion, contenido, ruta_canonica, seccion=""):
-    hoy = datetime.now(timezone.utc)
-    nav = []
-    for texto_nav, destino in (("Últimas", "/"), ("Juveniles", "/juveniles/")):
-        actual = ' aria-current="page"' if seccion == destino else ""
-        nav.append('<a href="' + destino + '"' + actual + ">" + texto_nav + "</a>")
+def categorias_menu(ligas):
+    """Atajos a las categorias que hoy tienen campeonato en curso."""
+    atajos = []
+    for numero in ("19", "17", "16", "15", "14", "13"):
+        for liga in ligas:
+            if re.search(r"sub\s?-?" + numero + r"\b|s" + numero + r"\b", liga["nombre"], re.I):
+                atajos.append(("Sub " + numero, "/juveniles/" + slug(liga["nombre"]) + "/"))
+                break
+    return atajos
+
+
+def pagina(titulo, descripcion, contenido, ruta, ligas, seccion=""):
+    ahora = datetime.now(timezone.utc)
+    enlaces = [("Portada", "/"), ("Juveniles", "/juveniles/")] + categorias_menu(ligas)
+    menu = "".join('<a href="' + destino + '"' + (' aria-current="page"' if seccion == destino else "") +
+                   ">" + texto + "</a>" for texto, destino in enlaces)
     return """<!doctype html>
 <html lang="es">
 <head>
@@ -177,35 +211,34 @@ def pagina(titulo, descripcion, contenido, ruta_canonica, seccion=""):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>""" + esc(titulo) + """</title>
 <meta name="description" content=\"""" + esc(descripcion) + """\">
-<link rel="canonical" href=\"""" + DOMINIO + esc(ruta_canonica) + """\">
+<link rel="canonical" href=\"""" + DOMINIO + esc(ruta) + """\">
 <meta property="og:title" content=\"""" + esc(titulo) + """\">
 <meta property="og:description" content=\"""" + esc(descripcion) + """\">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_UY">
+<meta property="og:site_name" content=\"""" + SITIO + """\">
+<meta name="theme-color" content="#12161c">
 <link rel="icon" href=\"""" + FAVICON + """\">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>""" + CSS + """</style>
 </head>
 <body>
-<header class="faja">
-  <div class="ancho">
-    <a class="marca" href="/">
-      <span class="iso" aria-hidden="true">M</span>
-      <span><b>MVD Fútbol</b><span>""" + esc(LEMA) + """</span></span>
-    </a>
-    <nav>""" + "".join(nav) + """</nav>
+<header>
+  <div class="ancho cab">
+    <a class="logo" href="/">MVD<i>Fútbol</i></a>
+    <small>Montevideo · """ + fecha_larga(ahora.isoformat()) + " · actualizado " + hora(ahora.isoformat()) + """ UTC</small>
   </div>
-  <div class="fecha-faja"><div class="ancho"><span>Montevideo · """ + fecha_larga(hoy.isoformat()) + """</span><span>Actualizado """ + hora(hoy.isoformat()) + """ UTC</span></div></div>
 </header>
-<main class="ancho">
+<div class="menu"><div class="ancho">""" + menu + """</div></div>
+<div class="ancho">
 """ + contenido + """
-</main>
+</div>
 <footer>
   <div class="ancho">
-    <span>© """ + str(hoy.year) + """ MVD Fútbol · Montevideo, Uruguay</span>
-    <span>Resultados y posiciones de juveniles con datos de <a href="https://lamovidaonline.net" rel="noopener">La Movida Online</a></span>
+    <span>© """ + str(ahora.year) + " " + SITIO + """ · Montevideo, Uruguay</span>
+    <span>Posiciones y resultados de juveniles con datos de <a href="https://lamovidaonline.net" rel="noopener">La Movida Online</a></span>
   </div>
 </footer>
 </body>
@@ -214,52 +247,51 @@ def pagina(titulo, descripcion, contenido, ruta_canonica, seccion=""):
 
 
 def html_anuncio(anuncio):
-    url = con_utm(anuncio["url"], anuncio["id"])
     return ('<div class="aviso"><div class="et">' + esc(anuncio["etiqueta"]) + "</div><h3>" +
             esc(anuncio["titulo"]) + "</h3><p>" + esc(anuncio["texto"]) + '</p><a href="' +
-            esc(url) + '" rel="noopener sponsored">' + esc(anuncio["cta"]) + " →</a></div>")
+            esc(con_utm(anuncio["url"], anuncio["id"])) + '" rel="noopener sponsored">' +
+            esc(anuncio["cta"]) + " →</a></div>")
 
 
-def html_tabla(tabla, limite=None):
+def html_tabla(tabla, limite=None, completa=True):
     filas = tabla[:limite] if limite else tabla
     if not filas:
         return '<div class="vacio">Todavía no se jugaron partidos en este campeonato.</div>'
     cuerpo = []
     for puesto, fila in enumerate(filas, 1):
         clase = ' class="lider"' if puesto == 1 else ""
-        cuerpo.append("<tr" + clase + '><td class="pos">' + str(puesto) + '</td><td class="eq">' +
-                      esc(fila["equipo"]) + "</td><td>" + str(fila["pj"]) + "</td><td>" +
-                      str(fila["g"]) + "</td><td>" + str(fila["e"]) + "</td><td>" + str(fila["p"]) +
-                      "</td><td>" + str(fila["gf"]) + ":" + str(fila["gc"]) + "</td><td>" +
-                      ("+" if fila["dg"] > 0 else "") + str(fila["dg"]) + '</td><td class="pts">' +
-                      str(fila["pts"]) + "</td></tr>")
-    return ('<div class="scroll-x"><table><thead><tr><th></th><th>Equipo</th><th>PJ</th><th>G</th>'
-            "<th>E</th><th>P</th><th>Goles</th><th>DG</th><th>Pts</th></tr></thead><tbody>" +
+        celdas = ['<td class="pos">' + str(puesto) + "</td>", '<td class="eq">' + esc(fila["equipo"]) + "</td>",
+                  "<td>" + str(fila["pj"]) + "</td>"]
+        if completa:
+            celdas += ["<td>" + str(fila["g"]) + "</td>", "<td>" + str(fila["e"]) + "</td>",
+                       "<td>" + str(fila["p"]) + "</td>",
+                       "<td>" + str(fila["gf"]) + ":" + str(fila["gc"]) + "</td>"]
+        celdas += ["<td>" + ("+" if fila["dg"] > 0 else "") + str(fila["dg"]) + "</td>",
+                   '<td class="pts">' + str(fila["pts"]) + "</td>"]
+        cuerpo.append("<tr" + clase + ">" + "".join(celdas) + "</tr>")
+    encabezados = ["", "Equipo", "PJ"] + (["G", "E", "P", "Goles"] if completa else []) + ["DG", "Pts"]
+    return ('<div class="scroll-x"><table><thead><tr>' +
+            "".join("<th>" + e + "</th>" for e in encabezados) + "</tr></thead><tbody>" +
             "".join(cuerpo) + "</tbody></table></div>")
+
+
+def html_marcadores(partidos):
+    return "".join('<div class="mk"><div><span>' + esc(p["local"]) + '</span><span class="r">' +
+                   str(p["goles_local"]) + "-" + str(p["goles_visita"]) + "</span></div><div><span>" +
+                   esc(p["visita"]) + '</span><span class="h">' + dia_mes(p["fecha"]) +
+                   "</span></div></div>" for p in partidos)
 
 
 def html_partidos(partidos, jugados):
     if not partidos:
         return '<div class="vacio">Sin partidos para mostrar.</div>'
     filas = []
-    for partido in partidos:
-        if jugados:
-            centro = ('<span class="marcador">' + str(partido["goles_local"]) + " - " +
-                      str(partido["goles_visita"]) + "</span>")
-        else:
-            centro = '<span class="hora">' + fecha_corta(partido["fecha"]) + " " + hora(partido["fecha"]) + "</span>"
-        filas.append('<div class="partido"><span>' + esc(partido["local"]) + "</span>" + centro +
-                     '<span class="v">' + esc(partido["visita"]) + "</span></div>")
+    for p in partidos:
+        centro = ('<span class="marcador">' + str(p["goles_local"]) + " - " + str(p["goles_visita"]) + "</span>"
+                  if jugados else '<span class="hora">' + dia_mes(p["fecha"]) + " " + hora(p["fecha"]) + "</span>")
+        filas.append('<div class="partido"><span>' + esc(p["local"]) + "</span>" + centro +
+                     '<span class="v">' + esc(p["visita"]) + "</span></div>")
     return "".join(filas)
-
-
-def html_nota_item(nota):
-    fuente = nota.get("fuente", {})
-    return ('<article class="nota-item"><div class="meta"><span class="pastilla">' +
-            esc(nota.get("categoria", "futbol")) + "</span><span>" + fecha_larga(nota.get("fecha", "")) +
-            "</span><span>vía " + esc(fuente.get("nombre", "")) + "</span></div><h2><a href=\"/nota/" +
-            esc(nota["slug"]) + '/">' + esc(nota.get("titulo", "")) + "</a></h2><p>" +
-            esc(nota.get("bajada", "")) + "</p></article>")
 
 
 def main():
@@ -267,8 +299,9 @@ def main():
                    key=lambda n: (n or {}).get("publicado_utc", ""), reverse=True)
     notas = [n for n in notas if n and n.get("slug")]
     juveniles = leer_json(JUVENILES, {"ligas": [], "credito": ""})
-    anuncios = [a for a in leer_json(ANUNCIOS, {}).get("anuncios", []) if a.get("activo") and a.get("url")]
     ligas = [l for l in juveniles.get("ligas", []) if l.get("tabla")]
+    credito = juveniles.get("credito", "")
+    anuncios = [a for a in leer_json(ANUNCIOS, {}).get("anuncios", []) if a.get("activo") and a.get("url")]
     PUBLICO.mkdir(parents=True, exist_ok=True)
 
     def escribir(ruta_relativa, texto):
@@ -276,108 +309,128 @@ def main():
         destino.parent.mkdir(parents=True, exist_ok=True)
         destino.write_text(texto, encoding="utf-8")
 
-    # ---------- portada ----------
-    if notas:
-        columna = '<div class="rotulo">Lo último</div><div class="notas">' + \
-                  "".join(html_nota_item(n) for n in notas[:12]) + "</div>"
-    else:
-        columna = ('<div class="rotulo">Lo último</div><div class="vacio">Todavía no hay notas '
-                   "publicadas. El vigilante ya está escuchando los programas; la primera nota "
-                   "aparece acá en cuanto alguien diga algo que valga.</div>")
+    resultados = sorted((p for l in ligas for p in l.get("ultimos_resultados", [])),
+                        key=lambda p: p["fecha"], reverse=True)
+    proximos = sorted((p for l in ligas for p in l.get("proximos_partidos", [])), key=lambda p: p["fecha"])
+    # Primero los campeonatos del ano en curso: una tabla de 2025 no va en la portada.
+    anio = str(datetime.now(timezone.utc).year)
+    ligas.sort(key=lambda l: (anio not in l["nombre"], l["nombre"]))
+    vigentes = [l for l in ligas if anio in l["nombre"]] or ligas
+    destacada = max(vigentes, key=lambda l: sum(f["pj"] for f in l["tabla"])) if vigentes else None
 
-    destacadas = []
-    for liga in ligas[:4 if notas else 10]:
-        puntero = liga["tabla"][0]
-        destacadas.append('<a class="ficha" href="/juveniles/' + slug(liga["nombre"]) + '/"><b>' +
-                          esc(liga["nombre"]) + "</b><small>Lidera " + esc(puntero["equipo"]) +
-                          " · " + str(puntero["pts"]) + " pts · " + str(puntero["pj"]) +
-                          " jugados</small></a>")
-    columna += ('<div style="margin-top:34px"><div class="rotulo">Juveniles · posiciones</div>'
-                '<div class="grilla-ligas">' + "".join(destacadas) + "</div></div>" if destacadas else "")
+    # ---------------- portada ----------------
+    if notas:
+        principal, resto = notas[0], notas[1:5]
+        apertura = ('<div class="apertura"><span class="sello">Lo último</span><h1><a href="/nota/' +
+                    esc(principal["slug"]) + '/">' + esc(principal.get("titulo", "")) + "</a></h1><p>" +
+                    esc(principal.get("bajada", "")) + "</p></div>")
+    elif destacada:
+        puntero = destacada["tabla"][0]
+        resto = []
+        apertura = ('<div class="apertura"><span class="sello dato">Juveniles</span><h1><a href="/juveniles/' +
+                    slug(destacada["nombre"]) + '/">' + esc(puntero["equipo"]) + " lidera el " +
+                    esc(destacada["nombre"]) + " con " + str(puntero["pts"]) + " puntos</a></h1><p>" +
+                    "Ganó " + str(puntero["g"]) + " de " + str(puntero["pj"]) + " partidos y tiene " +
+                    str(puntero["gf"]) + " goles a favor. La tabla completa, los resultados de la fecha y "
+                    "el fixture se actualizan solos.</p></div>")
+    else:
+        resto = []
+        apertura = '<div class="vacio">Todavía no hay contenido publicado.</div>'
+
+    columna = apertura
+    if resto:
+        columna += '<div class="secundarias">' + "".join(
+            "<article><small>" + esc(n.get("fuente", {}).get("nombre", "")) + '</small><h3><a href="/nota/' +
+            esc(n["slug"]) + '/">' + esc(n.get("titulo", "")) + "</a></h3><p>" +
+            esc(n.get("bajada", ""))[:110] + "</p></article>" for n in resto) + "</div>"
+    elif notas:
+        pass
+    else:
+        columna += ('<div class="secundarias">' + "".join(
+            '<article><small>Campeonato</small><h3><a href="/juveniles/' + slug(l["nombre"]) + '/">' +
+            esc(l["nombre"]) + "</a></h3><p>Lidera " + esc(l["tabla"][0]["equipo"]) + " con " +
+            str(l["tabla"][0]["pts"]) + " puntos.</p></article>" for l in ligas[1:5]) + "</div>")
+
+    if resultados:
+        columna += ('<div class="franja"><h2 class="rotulo">Juveniles · resultados de la fecha</h2>'
+                    '<div class="marcadores">' + html_marcadores(resultados[:9]) + "</div></div>")
 
     lateral = []
-    proximos = [p for liga in ligas for p in liga.get("proximos_partidos", [])]
-    proximos.sort(key=lambda p: p["fecha"])
+    if destacada:
+        lateral.append("<div><h2>" + esc(destacada["nombre"]) + "</h2>" +
+                       html_tabla(destacada["tabla"], 10, completa=False) +
+                       '<p style="margin-top:9px"><a style="font-family:var(--dato);font-size:.72rem;'
+                       'letter-spacing:.1em;text-transform:uppercase;color:var(--celeste)" href="/juveniles/' +
+                       slug(destacada["nombre"]) + '/">Tabla completa →</a></p></div>')
     if proximos:
-        lateral.append('<div class="bloque"><h3>Próximos partidos</h3><div class="cuerpo">' +
-                       html_partidos(proximos[:7], False) + "</div></div>")
-    recientes = [p for liga in ligas for p in liga.get("ultimos_resultados", [])]
-    recientes.sort(key=lambda p: p["fecha"], reverse=True)
-    if recientes:
-        lateral.append('<div class="bloque"><h3>Últimos resultados</h3><div class="cuerpo">' +
-                       html_partidos(recientes[:7], True) + "</div></div>")
-    for anuncio in anuncios:
-        lateral.append(html_anuncio(anuncio))
+        lateral.append("<div><h2>Próxima fecha</h2>" + html_partidos(proximos[:6], False) + "</div>")
+    lateral += [html_anuncio(a) for a in anuncios]
 
     escribir("index.html", pagina(
         SITIO + " — juveniles, primera y lo que se dice en la radio",
         "Resultados, posiciones y fixture de las juveniles del fútbol uruguayo, y lo que dicen los "
         "protagonistas en los programas deportivos, con la cita y el minuto.",
-        '<div class="columnas"><div>' + columna + "</div><aside>" + "".join(lateral) + "</aside></div>",
-        "/", "/"))
+        '<div class="grilla"><div>' + columna + "</div><aside>" + "".join(lateral) + "</aside></div>",
+        "/", ligas, "/"))
 
-    # ---------- notas ----------
+    # ---------------- notas ----------------
     for nota in notas:
         fuente = nota.get("fuente", {})
         parrafos = "".join("<p>" + esc(p) + "</p>" for p in nota.get("cuerpo", []))
-        pie = ('<div class="fuente">Lo dijo en <strong>' + esc(fuente.get("programa", "")) +
-               "</strong>, de " + esc(fuente.get("nombre", "")) + '. <a href="' +
-               esc(fuente.get("video", "")) + '" rel="noopener">Ver el video</a>')
         hechos = [h for h in nota.get("hechos", []) if h.get("minuto")]
-        if hechos:
-            pie += " (minuto " + esc(hechos[0]["minuto"]) + ")"
-        pie += ".</div>"
-        cuerpo = ('<div class="columnas"><article class="cuerpo-nota"><div class="meta">'
-                  '<span class="pastilla">' + esc(nota.get("categoria", "futbol")) + "</span><span>" +
-                  fecha_larga(nota.get("fecha", "")) + "</span></div><h1>" + esc(nota.get("titulo", "")) +
-                  '</h1><p class="bajada">' + esc(nota.get("bajada", "")) + "</p>" + parrafos + pie +
-                  "</article><aside>" + "".join(html_anuncio(a) for a in anuncios) + "</aside></div>")
+        pie = ('<div class="fuente">Lo dijo en <strong>' + esc(fuente.get("programa", "")) + "</strong>, de " +
+               esc(fuente.get("nombre", "")) + '. <a href="' + esc(fuente.get("video", "")) +
+               '" rel="noopener">Ver el video</a>' +
+               (" (minuto " + esc(hechos[0]["minuto"]) + ")" if hechos else "") + ".</div>")
+        cuerpo = ('<div class="grilla"><div><article class="nota"><span class="sello">' +
+                  esc(nota.get("categoria", "fútbol")) + '</span><h1 class="titulo">' +
+                  esc(nota.get("titulo", "")) + '</h1><p class="bajada">' + esc(nota.get("bajada", "")) +
+                  '</p><span class="firma">' + fecha_larga(nota.get("fecha", "")) + " · vía " +
+                  esc(fuente.get("nombre", "")) + "</span>" + parrafos + pie + "</article></div><aside>" +
+                  "".join(html_anuncio(a) for a in anuncios) + "</aside></div>")
         escribir("nota/" + nota["slug"] + "/index.html", pagina(
             nota.get("titulo", SITIO), nota.get("bajada", ""), cuerpo,
-            "/nota/" + nota["slug"] + "/"))
+            "/nota/" + nota["slug"] + "/", ligas))
 
-    # ---------- juveniles ----------
-    fichas = []
-    for liga in ligas:
-        puntero = liga["tabla"][0]
-        fichas.append('<a class="ficha" href="/juveniles/' + slug(liga["nombre"]) + '/"><b>' +
-                      esc(liga["nombre"]) + "</b><small>" + str(len(liga["tabla"])) + " equipos · lidera " +
-                      esc(puntero["equipo"]) + "</small></a>")
-    indice = ('<h1>Juveniles del fútbol uruguayo</h1><p class="bajada" style="color:var(--tinta-2);'
-              'margin:10px 0 24px;max-width:38rem">Tablas de posiciones, resultados y fixture de '
-              'cada categoría, de Sub 11 a Sub 19. Las posiciones se calculan partido por partido '
-              'y se actualizan solas.</p><div class="grilla-ligas">' + "".join(fichas) + "</div>")
-    if juveniles.get("credito"):
-        indice += '<p class="fuente">' + esc(juveniles["credito"]) + "</p>"
+    # ---------------- juveniles ----------------
+    fichas = "".join('<a class="ficha" href="/juveniles/' + slug(l["nombre"]) + '/"><b>' + esc(l["nombre"]) +
+                     "</b><small>" + str(len(l["tabla"])) + " equipos · lidera " + esc(l["tabla"][0]["equipo"]) +
+                     " (" + str(l["tabla"][0]["pts"]) + " pts)</small></a>" for l in ligas)
+    indice = ('<div class="grilla" style="grid-template-columns:1fr"><div>'
+              '<span class="sello dato">Posiciones</span><h1 class="titulo">Juveniles del fútbol uruguayo</h1>'
+              '<p class="intro">Tablas, resultados y fixture de cada categoría, de Sub 11 a Sub 19. Las '
+              'posiciones se calculan partido por partido y se actualizan solas cada veinte minutos.</p>'
+              '<div class="grilla-ligas">' + fichas + "</div>" +
+              ('<p class="fuente">' + esc(credito) + "</p>" if credito else "") + "</div></div>")
     escribir("juveniles/index.html", pagina(
         "Juveniles del fútbol uruguayo: tablas y resultados · " + SITIO,
         "Posiciones, resultados y fixture de las juveniles del fútbol uruguayo por categoría: "
         "Sub 11, Sub 13, Sub 14, Sub 15, Sub 16, Sub 17 y Sub 19.",
-        indice, "/juveniles/", "/juveniles/"))
+        indice, "/juveniles/", ligas, "/juveniles/"))
 
     for liga in ligas:
         ruta = "/juveniles/" + slug(liga["nombre"]) + "/"
-        lateral_liga = ['<div class="bloque"><h3>Últimos resultados</h3><div class="cuerpo">' +
-                        html_partidos(liga.get("ultimos_resultados", [])[:8], True) + "</div></div>"]
-        if liga.get("proximos_partidos"):
-            lateral_liga.append('<div class="bloque"><h3>Próxima fecha</h3><div class="cuerpo">' +
-                                html_partidos(liga["proximos_partidos"][:8], False) + "</div></div>")
-        lateral_liga += [html_anuncio(a) for a in anuncios]
         puntero = liga["tabla"][0]
-        cuerpo = ('<div class="columnas"><div><div class="meta" style="margin-bottom:10px">'
-                  '<span class="pastilla">Juveniles</span><span>' + str(len(liga["tabla"])) +
-                  " equipos</span></div><h1>" + esc(liga["nombre"]) + "</h1>"
-                  '<p class="bajada" style="color:var(--tinta-2);margin:10px 0 22px">Lidera ' +
-                  esc(puntero["equipo"]) + " con " + str(puntero["pts"]) + " puntos en " +
-                  str(puntero["pj"]) + " partidos.</p>" + html_tabla(liga["tabla"]) +
-                  '<p class="fuente">' + esc(juveniles.get("credito", "")) + "</p></div><aside>" +
+        lateral_liga = []
+        if liga.get("ultimos_resultados"):
+            lateral_liga.append("<div><h2>Últimos resultados</h2>" +
+                                html_partidos(liga["ultimos_resultados"][:8], True) + "</div>")
+        if liga.get("proximos_partidos"):
+            lateral_liga.append("<div><h2>Próxima fecha</h2>" +
+                                html_partidos(liga["proximos_partidos"][:8], False) + "</div>")
+        lateral_liga += [html_anuncio(a) for a in anuncios]
+        cuerpo = ('<div class="grilla"><div><span class="sello dato">Juveniles · ' +
+                  str(len(liga["tabla"])) + ' equipos</span><h1 class="titulo">' + esc(liga["nombre"]) +
+                  '</h1><p class="intro">Lidera ' + esc(puntero["equipo"]) + " con " + str(puntero["pts"]) +
+                  " puntos en " + str(puntero["pj"]) + " partidos.</p>" + html_tabla(liga["tabla"]) +
+                  ('<p class="fuente">' + esc(credito) + "</p>" if credito else "") + "</div><aside>" +
                   "".join(lateral_liga) + "</aside></div>")
         escribir(ruta.strip("/") + "/index.html", pagina(
             liga["nombre"] + ": tabla de posiciones y resultados · " + SITIO,
             "Tabla de posiciones, últimos resultados y próxima fecha de " + liga["nombre"] + ".",
-            cuerpo, ruta, "/juveniles/"))
+            cuerpo, ruta, ligas, "/juveniles/"))
 
-    # ---------- archivos de servicio ----------
+    # ---------------- archivos de servicio ----------------
     urls = ["/", "/juveniles/"] + ["/juveniles/" + slug(l["nombre"]) + "/" for l in ligas] + \
            ["/nota/" + n["slug"] + "/" for n in notas]
     hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -391,16 +444,14 @@ def main():
              "## Qué hay acá\n"
              "- Tablas de posiciones, resultados y fixture de las juveniles del fútbol uruguayo "
              "(Sub 11 a Sub 19), calculadas partido por partido. Datos: La Movida Online.\n"
-             "- Notas sobre lo que dicen los protagonistas del fútbol en los programas deportivos "
-             "de radio y YouTube, siempre con la fuente, el programa y el minuto del video.\n\n"
+             "- Notas sobre lo que dicen los protagonistas del fútbol en los programas deportivos de "
+             "radio y YouTube, siempre con la fuente, el programa y el minuto del video.\n\n"
              "## Campeonatos con tabla publicada\n" +
              "".join("- " + l["nombre"] + ": " + DOMINIO + "/juveniles/" + slug(l["nombre"]) + "/\n" for l in ligas))
     escribir("_headers", "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n")
 
-    print("sitio generado en " + str(PUBLICO.relative_to(RAIZ)) + ": " + str(len(notas)) +
-          " nota(s), " + str(len(ligas)) + " campeonato(s), " + str(len(anuncios)) + " anuncio(s) activo(s)")
-    if not anuncios:
-        print("  (ojo: no hay ningun anuncio activo con link en anuncios.json)")
+    print("sitio generado: " + str(len(notas)) + " nota(s), " + str(len(ligas)) + " campeonato(s), " +
+          str(len(anuncios)) + " anuncio(s) activo(s)")
 
 
 if __name__ == "__main__":
