@@ -482,7 +482,8 @@ def main():
             lateral_liga.append("<div><h2>Próxima fecha</h2>" +
                                 html_partidos(liga["proximos_partidos"][:8], False) + "</div>")
         lateral_liga += [html_anuncio(a) for a in anuncios]
-        cuerpo = ('<div class="grilla"><div><span class="sello dato">Juveniles · ' +
+        cuerpo = ('<div class="grilla"><div><span class="sello dato">' +
+                  esc(TITULOS_GRUPO.get(liga.get("grupo", "juveniles"), "").split(",")[0]) + " · " +
                   str(len(liga["tabla"])) + ' equipos</span><h1 class="titulo">' + esc(liga["nombre"]) +
                   '</h1><p class="intro">Lidera ' + esc(puntero["equipo"]) + " con " + str(puntero["pts"]) +
                   " puntos en " + str(puntero["pj"]) + " partidos.</p>" + html_tabla(liga["tabla"]) +
@@ -491,7 +492,7 @@ def main():
         escribir(ruta.strip("/") + "/index.html", pagina(
             liga["nombre"] + ": tabla de posiciones y resultados · " + SITIO,
             "Tabla de posiciones, últimos resultados y próxima fecha de " + liga["nombre"] + ".",
-            cuerpo, ruta, ligas, "/juveniles/"))
+            cuerpo, ruta, ligas, "/" + liga.get("grupo", "juveniles") + "/"))
 
     # ---------------- archivos de servicio ----------------
     secciones = ["/" + c + "/" for c in TITULOS_GRUPO
