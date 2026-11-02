@@ -4,7 +4,9 @@ name: Datos y tablas
 # No usa la API de Claude: no cuesta nada.
 on:
   schedule:
-    - cron: "*/20 * * * *"
+    # Minutos corridos a proposito: GitHub retrasa y hasta descarta las
+    # corridas programadas en la hora pico, que es el arranque de cada hora.
+    - cron: "7,27,47 * * * *"
   push:
     branches: [main]        # cualquier cambio a mano republica el sitio
   workflow_dispatch:

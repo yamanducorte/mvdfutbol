@@ -4,7 +4,7 @@ name: Noticias
 # Esta es la unica parte que gasta API de Claude.
 on:
   schedule:
-    - cron: "15 * * * *"
+    - cron: "38 * * * *"   # fuera de la hora pico y sin pisar a datos.yml
   workflow_dispatch:
     inputs:
       limite:
