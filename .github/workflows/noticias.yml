@@ -1,0 +1,47 @@
+name: Noticias
+
+# Escucha los canales, filtra y escribe. Esta es la unica parte que gasta API.
+on:
+  schedule:
+    - cron: "15 * * * *"
+  workflow_dispatch:
+    inputs:
+      limite:
+        description: "Cuantos transcriptos procesar como maximo"
+        required: false
+        default: "6"
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  escribir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias
+        run: pip install --quiet --upgrade yt-dlp anthropic
+      - name: Escuchar los canales
+        run: python scripts/monitor.py
+      - name: Filtrar y redactar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/redactor.py --limite ${{ github.event.inputs.limite || '8' }}
+      - name: Generar el sitio
+        run: python scripts/sitio.py
+      - name: Publicar si cambio algo
+        run: |
+          git config user.name "mvdfutbol-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add contenido datos publico
+          git diff --staged --quiet && echo "sin novedades" && exit 0
+          git commit -m "Notas nuevas al $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

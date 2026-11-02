@@ -1,0 +1,35 @@
+name: Datos y tablas
+
+# Refresca resultados y posiciones. No usa la API de Claude: no cuesta nada.
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Traer resultados y recalcular tablas
+        run: python scripts/datos.py
+      - name: Generar el sitio
+        run: python scripts/sitio.py
+      - name: Publicar si cambio algo
+        run: |
+          git config user.name "mvdfutbol-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add datos publico
+          git diff --staged --quiet && echo "sin cambios" && exit 0
+          git commit -m "Tablas y resultados al $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

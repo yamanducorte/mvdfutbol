@@ -1,0 +1,46 @@
+{
+  "_nota": "Anuncios propios que el sitio muestra. activo=false no se publica. publico: futbol | general. Los links llevan utm para saber desde donde llego la venta.",
+  "anuncios": [
+    {
+      "id": "curso-videoanalisis",
+      "etiqueta": "Curso",
+      "titulo": "Videoanálisis de fútbol con IA",
+      "texto": "De cero a tu primer informe de rival en un fin de semana, con herramientas gratis. Lo dicta un entrenador con licencia A CONMEBOL.",
+      "cta": "Ver el curso",
+      "url": "https://elvideoanalista.netlify.app/cursos/",
+      "publico": "futbol",
+      "activo": true
+    },
+    {
+      "id": "plantilla-rival",
+      "etiqueta": "Gratis",
+      "titulo": "Plantilla de informe de rival",
+      "texto": "La planilla de seis bloques que usan los analistas, en PDF. Te la llevás dejando tu mail.",
+      "cta": "Descargar gratis",
+      "url": "https://elvideoanalista.netlify.app/#lanzamiento",
+      "publico": "futbol",
+      "activo": true
+    },
+    {
+      "id": "perfumes-arabes",
+      "etiqueta": "Tienda",
+      "titulo": "Perfumes árabes",
+      "texto": "PENDIENTE: falta el link de la tienda o del catálogo. En cuanto llegue, se activa y sale publicado.",
+      "cta": "Ver catálogo",
+      "url": "",
+      "publico": "general",
+      "activo": false
+    },
+    {
+      "id": "vaposvaper",
+      "etiqueta": "Tienda",
+      "titulo": "VaposVaper.uy",
+      "texto": "Vapes, líquidos y pouches con envío a todo el país.",
+      "cta": "Ir a la tienda",
+      "url": "https://vaposvaper.uy",
+      "publico": "general",
+      "activo": false,
+      "_motivo_desactivado": "Hay que chequear la ley antitabaco uruguaya antes de publicitar vapes en un medio. No activar sin eso."
+    }
+  ]
+}
