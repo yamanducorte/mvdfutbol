@@ -435,21 +435,26 @@ def main():
             "/nota/" + nota["slug"] + "/", ligas,
             esquema=esquema, publicado=nota.get("publicado_utc", "")))
 
-    # ---------------- juveniles ----------------
-    fichas = "".join('<a class="ficha" href="' + ruta_liga(l) + '"><b>' + esc(l["nombre"]) +
-                     "</b><small>" + str(len(l["tabla"])) + " equipos · lidera " + esc(l["tabla"][0]["equipo"]) +
-                     " (" + str(l["tabla"][0]["pts"]) + " pts)</small></a>" for l in ligas)
-    indice = ('<div class="grilla" style="grid-template-columns:1fr"><div>'
-              '<span class="sello dato">Posiciones</span><h1 class="titulo">Juveniles del fútbol uruguayo</h1>'
-              '<p class="intro">Tablas, resultados y fixture de cada categoría, de Sub 11 a Sub 19. Las '
-              'posiciones se calculan partido por partido y se actualizan solas cada veinte minutos.</p>'
-              '<div class="grilla-ligas">' + fichas + "</div>" +
-              ('<p class="fuente">' + esc(credito) + "</p>" if credito else "") + "</div></div>")
-    escribir("juveniles/index.html", pagina(
-        "Juveniles del fútbol uruguayo: tablas y resultados · " + SITIO,
-        "Posiciones, resultados y fixture de las juveniles del fútbol uruguayo por categoría: "
-        "Sub 11, Sub 13, Sub 14, Sub 15, Sub 16, Sub 17 y Sub 19.",
-        indice, "/juveniles/", ligas, "/juveniles/"))
+    # ---------------- una seccion por division ----------------
+    for clave, titulo in TITULOS_GRUPO.items():
+        del_grupo = [l for l in ligas if l.get("grupo", "juveniles") == clave]
+        if not del_grupo:
+            continue
+        fichas = "".join('<a class="ficha" href="' + ruta_liga(l) + '"><b>' + esc(l["nombre"]) +
+                         "</b><small>" + str(len(l["tabla"])) + " equipos · lidera " +
+                         esc(l["tabla"][0]["equipo"]) + " (" + str(l["tabla"][0]["pts"]) +
+                         " pts)</small></a>" for l in del_grupo)
+        indice = ('<div class="grilla" style="grid-template-columns:1fr"><div>'
+                  '<span class="sello dato">Posiciones</span><h1 class="titulo">' + esc(titulo) +
+                  ' del fútbol uruguayo</h1><p class="intro">' + esc(INTRO_GRUPO[clave]) +
+                  ' Las posiciones se calculan partido por partido y se actualizan solas cada '
+                  'veinte minutos.</p><div class="grilla-ligas">' + fichas + "</div>" +
+                  ('<p class="fuente">' + esc(credito) + "</p>" if credito else "") + "</div></div>")
+        escribir(clave + "/index.html", pagina(
+            titulo + " del fútbol uruguayo: tablas y resultados · " + SITIO,
+            "Posiciones, resultados y fixture de " + titulo.lower() + " del fútbol uruguayo, "
+            "campeonato por campeonato.",
+            indice, "/" + clave + "/", ligas, "/" + clave + "/"))
 
     for liga in ligas:
         ruta = ruta_liga(liga)
