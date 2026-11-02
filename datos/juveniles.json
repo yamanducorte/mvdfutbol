@@ -1,9 +1,310 @@
 {
- "generado": "2026-11-02T05:27:39+00:00",
+ "generado": "2026-11-02T06:42:06+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
+   "id": 727,
+   "grupo": "femenino",
+   "nombre": "1era Div Serie Campeonato 2026 Fem",
+   "tabla": [
+    {
+     "equipo": "Nacional",
+     "pj": 1,
+     "g": 1,
+     "e": 0,
+     "p": 0,
+     "gf": 2,
+     "gc": 0,
+     "dg": 2,
+     "pts": 3
+    },
+    {
+     "equipo": "Liverpool",
+     "pj": 1,
+     "g": 0,
+     "e": 1,
+     "p": 0,
+     "gf": 1,
+     "gc": 1,
+     "dg": 0,
+     "pts": 1
+    },
+    {
+     "equipo": "M.C.Torque",
+     "pj": 1,
+     "g": 0,
+     "e": 1,
+     "p": 0,
+     "gf": 1,
+     "gc": 1,
+     "dg": 0,
+     "pts": 1
+    },
+    {
+     "equipo": "Defensor Sp",
+     "pj": 1,
+     "g": 0,
+     "e": 0,
+     "p": 1,
+     "gf": 0,
+     "gc": 2,
+     "dg": -2,
+     "pts": 0
+    }
+   ],
+   "ultimos_resultados": [
+    {
+     "fecha": "2026-11-01T14:30:00",
+     "local": "Liverpool",
+     "visita": "M.C.Torque",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91002/"
+    },
+    {
+     "fecha": "2026-11-01T09:00:00",
+     "local": "Nacional",
+     "visita": "Defensor Sp",
+     "goles_local": 2,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/90999/"
+    }
+   ],
+   "proximos_partidos": [
+    {
+     "fecha": "2026-11-07T14:00:00",
+     "local": "M.C.Torque",
+     "visita": "Nacional",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91005/"
+    },
+    {
+     "fecha": "2026-11-07T14:00:00",
+     "local": "Peñarol",
+     "visita": "Liverpool",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91008/"
+    },
+    {
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Peñarol",
+     "visita": "M.C.Torque",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91011/"
+    },
+    {
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Defensor Sp",
+     "visita": "Liverpool",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91014/"
+    },
+    {
+     "fecha": "2026-11-21T14:00:00",
+     "local": "Nacional",
+     "visita": "Peñarol",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91017/"
+    },
+    {
+     "fecha": "2026-11-21T14:00:00",
+     "local": "Defensor Sp",
+     "visita": "M.C.Torque",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91020/"
+    },
+    {
+     "fecha": "2026-11-28T14:00:00",
+     "local": "Liverpool",
+     "visita": "Nacional",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91023/"
+    },
+    {
+     "fecha": "2026-11-28T14:00:00",
+     "local": "Peñarol",
+     "visita": "Defensor Sp",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91026/"
+    }
+   ]
+  },
+  {
+   "id": 729,
+   "grupo": "femenino",
+   "nombre": "1era Div Serie Permanencia 2026 Fem",
+   "tabla": [
+    {
+     "equipo": "Canadian",
+     "pj": 4,
+     "g": 3,
+     "e": 1,
+     "p": 0,
+     "gf": 12,
+     "gc": 5,
+     "dg": 7,
+     "pts": 10
+    },
+    {
+     "equipo": "Danubio",
+     "pj": 4,
+     "g": 3,
+     "e": 0,
+     "p": 1,
+     "gf": 8,
+     "gc": 4,
+     "dg": 4,
+     "pts": 9
+    },
+    {
+     "equipo": "San Jacinto",
+     "pj": 4,
+     "g": 2,
+     "e": 1,
+     "p": 1,
+     "gf": 11,
+     "gc": 6,
+     "dg": 5,
+     "pts": 7
+    },
+    {
+     "equipo": "Wanderers",
+     "pj": 4,
+     "g": 1,
+     "e": 0,
+     "p": 3,
+     "gf": 4,
+     "gc": 10,
+     "dg": -6,
+     "pts": 3
+    },
+    {
+     "equipo": "Juventud",
+     "pj": 4,
+     "g": 0,
+     "e": 0,
+     "p": 4,
+     "gf": 5,
+     "gc": 15,
+     "dg": -10,
+     "pts": 0
+    }
+   ],
+   "ultimos_resultados": [
+    {
+     "fecha": "2026-11-01T17:00:00",
+     "local": "Juventud",
+     "visita": "Canadian",
+     "goles_local": 1,
+     "goles_visita": 4,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91085/"
+    },
+    {
+     "fecha": "2026-11-01T15:00:00",
+     "local": "Danubio",
+     "visita": "San Jacinto",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91088/"
+    },
+    {
+     "fecha": "2026-10-25T16:00:00",
+     "local": "Canadian",
+     "visita": "Danubio",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91079/"
+    },
+    {
+     "fecha": "2026-10-24T15:30:00",
+     "local": "San Jacinto",
+     "visita": "Wanderers",
+     "goles_local": 3,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91082/"
+    },
+    {
+     "fecha": "2026-10-18T18:00:00",
+     "local": "Danubio",
+     "visita": "Wanderers",
+     "goles_local": 2,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91073/"
+    },
+    {
+     "fecha": "2026-10-18T09:00:00",
+     "local": "San Jacinto",
+     "visita": "Juventud",
+     "goles_local": 4,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91076/"
+    },
+    {
+     "fecha": "2026-10-11T16:00:00",
+     "local": "Danubio",
+     "visita": "Juventud",
+     "goles_local": 3,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91070/"
+    },
+    {
+     "fecha": "2026-10-11T15:30:00",
+     "local": "Wanderers",
+     "visita": "Canadian",
+     "goles_local": 0,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91067/"
+    },
+    {
+     "fecha": "2026-10-04T15:00:00",
+     "local": "Juventud",
+     "visita": "Wanderers",
+     "goles_local": 2,
+     "goles_visita": 4,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91064/"
+    },
+    {
+     "fecha": "2026-10-03T11:30:00",
+     "local": "Canadian",
+     "visita": "San Jacinto",
+     "goles_local": 3,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91061/"
+    }
+   ],
+   "proximos_partidos": []
+  },
+  {
    "id": 559,
+   "grupo": "juveniles",
    "nombre": "2025 Juv A S17 Torneo Clausura",
    "tabla": [
     {
@@ -427,7 +728,280 @@
    ]
   },
   {
+   "id": 606,
+   "grupo": "ascenso",
+   "nombre": "2026 2da Div. Profesional Fase Regular",
+   "tabla": [
+    {
+     "equipo": "Atenas",
+     "pj": 25,
+     "g": 13,
+     "e": 5,
+     "p": 7,
+     "gf": 35,
+     "gc": 23,
+     "dg": 12,
+     "pts": 44
+    },
+    {
+     "equipo": "Rentistas",
+     "pj": 25,
+     "g": 11,
+     "e": 7,
+     "p": 7,
+     "gf": 34,
+     "gc": 27,
+     "dg": 7,
+     "pts": 40
+    },
+    {
+     "equipo": "Plaza Colonia",
+     "pj": 25,
+     "g": 10,
+     "e": 8,
+     "p": 7,
+     "gf": 31,
+     "gc": 25,
+     "dg": 6,
+     "pts": 38
+    },
+    {
+     "equipo": "Colon",
+     "pj": 24,
+     "g": 10,
+     "e": 6,
+     "p": 8,
+     "gf": 27,
+     "gc": 27,
+     "dg": 0,
+     "pts": 36
+    },
+    {
+     "equipo": "Paysandú",
+     "pj": 25,
+     "g": 10,
+     "e": 5,
+     "p": 10,
+     "gf": 33,
+     "gc": 32,
+     "dg": 1,
+     "pts": 35
+    },
+    {
+     "equipo": "River Plate",
+     "pj": 25,
+     "g": 9,
+     "e": 7,
+     "p": 9,
+     "gf": 37,
+     "gc": 32,
+     "dg": 5,
+     "pts": 34
+    },
+    {
+     "equipo": "Oriental",
+     "pj": 25,
+     "g": 8,
+     "e": 10,
+     "p": 7,
+     "gf": 34,
+     "gc": 30,
+     "dg": 4,
+     "pts": 34
+    },
+    {
+     "equipo": "Cerrito",
+     "pj": 25,
+     "g": 8,
+     "e": 10,
+     "p": 7,
+     "gf": 32,
+     "gc": 29,
+     "dg": 3,
+     "pts": 34
+    },
+    {
+     "equipo": "La Luz",
+     "pj": 25,
+     "g": 9,
+     "e": 7,
+     "p": 9,
+     "gf": 24,
+     "gc": 27,
+     "dg": -3,
+     "pts": 34
+    },
+    {
+     "equipo": "Fénix",
+     "pj": 25,
+     "g": 7,
+     "e": 10,
+     "p": 8,
+     "gf": 28,
+     "gc": 30,
+     "dg": -2,
+     "pts": 31
+    },
+    {
+     "equipo": "Huracán FC",
+     "pj": 24,
+     "g": 8,
+     "e": 7,
+     "p": 9,
+     "gf": 25,
+     "gc": 31,
+     "dg": -6,
+     "pts": 31
+    },
+    {
+     "equipo": "Miramar Misiones",
+     "pj": 25,
+     "g": 7,
+     "e": 9,
+     "p": 9,
+     "gf": 26,
+     "gc": 31,
+     "dg": -5,
+     "pts": 30
+    },
+    {
+     "equipo": "Tacuarembó",
+     "pj": 25,
+     "g": 6,
+     "e": 8,
+     "p": 11,
+     "gf": 19,
+     "gc": 28,
+     "dg": -9,
+     "pts": 26
+    },
+    {
+     "equipo": "Uruguay Montevideo",
+     "pj": 25,
+     "g": 5,
+     "e": 7,
+     "p": 13,
+     "gf": 23,
+     "gc": 36,
+     "dg": -13,
+     "pts": 22
+    }
+   ],
+   "ultimos_resultados": [
+    {
+     "fecha": "2026-11-01T19:00:00",
+     "local": "Miramar Misiones",
+     "visita": "Plaza Colonia",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/65017/"
+    },
+    {
+     "fecha": "2026-11-01T16:00:00",
+     "local": "Colon",
+     "visita": "Atenas",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/65026/"
+    },
+    {
+     "fecha": "2026-11-01T13:00:00",
+     "local": "River Plate",
+     "visita": "Tacuarembó",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/65011/"
+    },
+    {
+     "fecha": "2026-11-01T10:00:00",
+     "local": "Oriental",
+     "visita": "Paysandú",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/65008/"
+    },
+    {
+     "fecha": "2026-10-31T19:00:00",
+     "local": "Rentistas",
+     "visita": "La Luz",
+     "goles_local": 2,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/65020/"
+    },
+    {
+     "fecha": "2026-10-31T16:00:00",
+     "local": "Fénix",
+     "visita": "Cerrito",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/65023/"
+    },
+    {
+     "fecha": "2026-10-31T13:00:00",
+     "local": "Uruguay Montevideo",
+     "visita": "Huracán FC",
+     "goles_local": 0,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/65014/"
+    },
+    {
+     "fecha": "2026-10-26T20:30:00",
+     "local": "Paysandú",
+     "visita": "Colon",
+     "goles_local": 3,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/64990/"
+    },
+    {
+     "fecha": "2026-10-25T19:00:00",
+     "local": "La Luz",
+     "visita": "Miramar Misiones",
+     "goles_local": 3,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/64996/"
+    },
+    {
+     "fecha": "2026-10-25T16:00:00",
+     "local": "Cerrito",
+     "visita": "Rentistas",
+     "goles_local": 2,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/65005/"
+    },
+    {
+     "fecha": "2026-10-25T13:00:00",
+     "local": "Atenas",
+     "visita": "Fénix",
+     "goles_local": 4,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/64993/"
+    },
+    {
+     "fecha": "2026-10-25T10:00:00",
+     "local": "Huracán FC",
+     "visita": "Oriental",
+     "goles_local": 3,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/65002/"
+    }
+   ],
+   "proximos_partidos": []
+  },
+  {
    "id": 735,
+   "grupo": "juveniles",
    "nombre": "2026 AUFI Sub13 Torneo Final Serie A",
    "tabla": [],
    "ultimos_resultados": [],
@@ -526,6 +1100,7 @@
   },
   {
    "id": 736,
+   "grupo": "juveniles",
    "nombre": "2026 AUFI Sub13 Torneo Final Serie B",
    "tabla": [],
    "ultimos_resultados": [],
@@ -624,6 +1199,7 @@
   },
   {
    "id": 670,
+   "grupo": "juveniles",
    "nombre": "2026 AUFI Torneo Apertura Sub13",
    "tabla": [
     {
@@ -872,6 +1448,7 @@
   },
   {
    "id": 734,
+   "grupo": "juveniles",
    "nombre": "2026 AUFI Torneo Clausura Sub11",
    "tabla": [
     {
@@ -1083,6 +1660,7 @@
   },
   {
    "id": 678,
+   "grupo": "juveniles",
    "nombre": "2026 Juveniles A Sub14 Torneo Clausura",
    "tabla": [
     {
@@ -1485,6 +2063,7 @@
   },
   {
    "id": 679,
+   "grupo": "juveniles",
    "nombre": "2026 Juveniles A Sub15 Torneo Clausura",
    "tabla": [
     {
@@ -1887,6 +2466,7 @@
   },
   {
    "id": 680,
+   "grupo": "juveniles",
    "nombre": "2026 Juveniles A Sub16 Torneo Clausura",
    "tabla": [
     {
@@ -2289,6 +2869,7 @@
   },
   {
    "id": 681,
+   "grupo": "juveniles",
    "nombre": "2026 Juveniles A Sub17 Torneo Clausura",
    "tabla": [
     {
@@ -2691,6 +3272,7 @@
   },
   {
    "id": 682,
+   "grupo": "juveniles",
    "nombre": "2026 Juveniles A Sub19 Torneo Clausura",
    "tabla": [
     {
@@ -3092,7 +3674,433 @@
    ]
   },
   {
+   "id": 671,
+   "grupo": "ascenso",
+   "nombre": "2026 Torneo Clausura Tercera División",
+   "tabla": [
+    {
+     "equipo": "M.C.Torque",
+     "pj": 14,
+     "g": 9,
+     "e": 3,
+     "p": 2,
+     "gf": 27,
+     "gc": 11,
+     "dg": 16,
+     "pts": 30
+    },
+    {
+     "equipo": "Peñarol",
+     "pj": 15,
+     "g": 8,
+     "e": 5,
+     "p": 2,
+     "gf": 26,
+     "gc": 15,
+     "dg": 11,
+     "pts": 29
+    },
+    {
+     "equipo": "Nacional",
+     "pj": 15,
+     "g": 8,
+     "e": 4,
+     "p": 3,
+     "gf": 34,
+     "gc": 12,
+     "dg": 22,
+     "pts": 28
+    },
+    {
+     "equipo": "Juventud",
+     "pj": 15,
+     "g": 8,
+     "e": 3,
+     "p": 4,
+     "gf": 30,
+     "gc": 17,
+     "dg": 13,
+     "pts": 27
+    },
+    {
+     "equipo": "Defensor Sp",
+     "pj": 15,
+     "g": 7,
+     "e": 5,
+     "p": 3,
+     "gf": 30,
+     "gc": 18,
+     "dg": 12,
+     "pts": 26
+    },
+    {
+     "equipo": "Central Español",
+     "pj": 15,
+     "g": 8,
+     "e": 2,
+     "p": 5,
+     "gf": 30,
+     "gc": 19,
+     "dg": 11,
+     "pts": 26
+    },
+    {
+     "equipo": "Colon",
+     "pj": 15,
+     "g": 7,
+     "e": 2,
+     "p": 6,
+     "gf": 29,
+     "gc": 32,
+     "dg": -3,
+     "pts": 23
+    },
+    {
+     "equipo": "Racing",
+     "pj": 14,
+     "g": 6,
+     "e": 3,
+     "p": 5,
+     "gf": 24,
+     "gc": 27,
+     "dg": -3,
+     "pts": 21
+    },
+    {
+     "equipo": "Liverpool",
+     "pj": 15,
+     "g": 6,
+     "e": 2,
+     "p": 7,
+     "gf": 18,
+     "gc": 27,
+     "dg": -9,
+     "pts": 20
+    },
+    {
+     "equipo": "La Luz",
+     "pj": 15,
+     "g": 6,
+     "e": 1,
+     "p": 8,
+     "gf": 25,
+     "gc": 26,
+     "dg": -1,
+     "pts": 19
+    },
+    {
+     "equipo": "River Plate",
+     "pj": 14,
+     "g": 5,
+     "e": 3,
+     "p": 6,
+     "gf": 29,
+     "gc": 36,
+     "dg": -7,
+     "pts": 18
+    },
+    {
+     "equipo": "Wanderers",
+     "pj": 15,
+     "g": 4,
+     "e": 5,
+     "p": 6,
+     "gf": 22,
+     "gc": 32,
+     "dg": -10,
+     "pts": 17
+    },
+    {
+     "equipo": "Albion",
+     "pj": 15,
+     "g": 5,
+     "e": 1,
+     "p": 9,
+     "gf": 23,
+     "gc": 26,
+     "dg": -3,
+     "pts": 16
+    },
+    {
+     "equipo": "Dep. Maldonado",
+     "pj": 14,
+     "g": 5,
+     "e": 1,
+     "p": 8,
+     "gf": 18,
+     "gc": 23,
+     "dg": -5,
+     "pts": 16
+    },
+    {
+     "equipo": "Progreso",
+     "pj": 14,
+     "g": 5,
+     "e": 1,
+     "p": 8,
+     "gf": 14,
+     "gc": 27,
+     "dg": -13,
+     "pts": 16
+    },
+    {
+     "equipo": "Boston River",
+     "pj": 15,
+     "g": 4,
+     "e": 2,
+     "p": 9,
+     "gf": 19,
+     "gc": 24,
+     "dg": -5,
+     "pts": 14
+    },
+    {
+     "equipo": "Oriental",
+     "pj": 15,
+     "g": 3,
+     "e": 5,
+     "p": 7,
+     "gf": 16,
+     "gc": 26,
+     "dg": -10,
+     "pts": 14
+    },
+    {
+     "equipo": "Cerro Largo",
+     "pj": 14,
+     "g": 3,
+     "e": 2,
+     "p": 9,
+     "gf": 18,
+     "gc": 34,
+     "dg": -16,
+     "pts": 11
+    }
+   ],
+   "ultimos_resultados": [
+    {
+     "fecha": "2026-10-27T15:00:00",
+     "local": "Cerro Largo",
+     "visita": "La Luz",
+     "goles_local": 3,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81106/"
+    },
+    {
+     "fecha": "2026-10-27T10:00:00",
+     "local": "M.C.Torque",
+     "visita": "Albion",
+     "goles_local": 4,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81103/"
+    },
+    {
+     "fecha": "2026-10-26T15:30:00",
+     "local": "Nacional",
+     "visita": "Progreso",
+     "goles_local": 2,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81085/"
+    },
+    {
+     "fecha": "2026-10-26T15:00:00",
+     "local": "Dep. Maldonado",
+     "visita": "Defensor Sp",
+     "goles_local": 1,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81097/"
+    },
+    {
+     "fecha": "2026-10-26T15:00:00",
+     "local": "River Plate",
+     "visita": "Liverpool",
+     "goles_local": 4,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81094/"
+    },
+    {
+     "fecha": "2026-10-26T14:00:00",
+     "local": "Colon",
+     "visita": "Central Español",
+     "goles_local": 0,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81109/"
+    },
+    {
+     "fecha": "2026-10-26T14:00:00",
+     "local": "Racing",
+     "visita": "Juventud",
+     "goles_local": 0,
+     "goles_visita": 5,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81088/"
+    },
+    {
+     "fecha": "2026-10-26T11:00:00",
+     "local": "Peñarol",
+     "visita": "Wanderers",
+     "goles_local": 4,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81100/"
+    },
+    {
+     "fecha": "2026-10-26T11:00:00",
+     "local": "Oriental",
+     "visita": "Boston River",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81091/"
+    },
+    {
+     "fecha": "2026-10-20T14:00:00",
+     "local": "Central Español",
+     "visita": "M.C.Torque",
+     "goles_local": 1,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81079/"
+    },
+    {
+     "fecha": "2026-10-20T11:00:00",
+     "local": "Boston River",
+     "visita": "Nacional",
+     "goles_local": 0,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81061/"
+    },
+    {
+     "fecha": "2026-10-19T15:00:00",
+     "local": "La Luz",
+     "visita": "Peñarol",
+     "goles_local": 0,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81076/"
+    }
+   ],
+   "proximos_partidos": [
+    {
+     "fecha": "2026-11-02T09:30:00",
+     "local": "Juventud",
+     "visita": "River Plate",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81118/"
+    },
+    {
+     "fecha": "2026-11-02T11:00:00",
+     "local": "Nacional",
+     "visita": "Oriental",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81115/"
+    },
+    {
+     "fecha": "2026-11-02T13:30:00",
+     "local": "Dep. Maldonado",
+     "visita": "Boston River",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81121/"
+    },
+    {
+     "fecha": "2026-11-02T14:00:00",
+     "local": "Progreso",
+     "visita": "Racing",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81112/"
+    },
+    {
+     "fecha": "2026-11-02T14:00:00",
+     "local": "Wanderers",
+     "visita": "Cerro Largo",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81130/"
+    },
+    {
+     "fecha": "2026-11-02T16:00:00",
+     "local": "Liverpool",
+     "visita": "Peñarol",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81124/"
+    },
+    {
+     "fecha": "2026-11-02T16:00:00",
+     "local": "Defensor Sp",
+     "visita": "M.C.Torque",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81127/"
+    },
+    {
+     "fecha": "2026-11-02T16:00:00",
+     "local": "La Luz",
+     "visita": "Central Español",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81136/"
+    },
+    {
+     "fecha": "2026-11-03T09:00:00",
+     "local": "Colon",
+     "visita": "Albion",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81133/"
+    },
+    {
+     "fecha": "2026-11-16T04:30:00",
+     "local": "Oriental",
+     "visita": "Progreso",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81139/"
+    },
+    {
+     "fecha": "2026-11-16T04:30:00",
+     "local": "River Plate",
+     "visita": "Racing",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81142/"
+    },
+    {
+     "fecha": "2026-11-16T04:30:00",
+     "local": "Dep. Maldonado",
+     "visita": "Nacional",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81145/"
+    }
+   ]
+  },
+  {
    "id": 702,
+   "grupo": "juveniles",
    "nombre": "B1 COPA DE ORO Sub14 Segunda Fase",
    "tabla": [
     {
@@ -3462,6 +4470,7 @@
   },
   {
    "id": 703,
+   "grupo": "juveniles",
    "nombre": "B1 COPA DE ORO Sub15 Segunda Fase",
    "tabla": [
     {
@@ -3831,6 +4840,7 @@
   },
   {
    "id": 704,
+   "grupo": "juveniles",
    "nombre": "B1 COPA DE ORO Sub16 Segunda Fase",
    "tabla": [
     {
@@ -4200,6 +5210,7 @@
   },
   {
    "id": 705,
+   "grupo": "juveniles",
    "nombre": "B1 COPA DE ORO Sub17 Segunda Fase",
    "tabla": [
     {
@@ -4569,6 +5580,7 @@
   },
   {
    "id": 706,
+   "grupo": "juveniles",
    "nombre": "B1 COPA DE ORO Sub19 Segunda Fase",
    "tabla": [
     {
@@ -4938,6 +5950,7 @@
   },
   {
    "id": 723,
+   "grupo": "juveniles",
    "nombre": "B2 Copa de Oro Sub14 Clausura 2026",
    "tabla": [
     {
@@ -5216,6 +6229,7 @@
   },
   {
    "id": 722,
+   "grupo": "juveniles",
    "nombre": "B2 Copa de Oro Sub15 Clausura 2026",
    "tabla": [
     {
@@ -5514,6 +6528,7 @@
   },
   {
    "id": 721,
+   "grupo": "juveniles",
    "nombre": "B2 Copa de Oro Sub16 Clausura 2026",
    "tabla": [
     {
@@ -5812,6 +6827,7 @@
   },
   {
    "id": 720,
+   "grupo": "juveniles",
    "nombre": "B2 Copa de Oro Sub17 Clausura 2026",
    "tabla": [
     {
@@ -6074,6 +7090,7 @@
   },
   {
    "id": 719,
+   "grupo": "juveniles",
    "nombre": "B2 Copa de Oro Sub19 Clausura 2026",
    "tabla": [
     {
@@ -6345,6 +7362,7 @@
   },
   {
    "id": 738,
+   "grupo": "juveniles",
    "nombre": "Copa Plata Nexora Clausura Sub 17 2026",
    "tabla": [],
    "ultimos_resultados": [],
@@ -6461,6 +7479,7 @@
   },
   {
    "id": 739,
+   "grupo": "juveniles",
    "nombre": "Copa Plata Nexora Clausura Sub 19 2026",
    "tabla": [],
    "ultimos_resultados": [],
@@ -6572,6 +7591,311 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91592/"
+    }
+   ]
+  },
+  {
+   "id": 677,
+   "grupo": "ascenso",
+   "nombre": "Divisional D Fase Regular 2026",
+   "tabla": [
+    {
+     "equipo": "Rincón F.C.",
+     "pj": 10,
+     "g": 8,
+     "e": 2,
+     "p": 0,
+     "gf": 41,
+     "gc": 7,
+     "dg": 34,
+     "pts": 26
+    },
+    {
+     "equipo": "Keguay",
+     "pj": 10,
+     "g": 8,
+     "e": 2,
+     "p": 0,
+     "gf": 27,
+     "gc": 4,
+     "dg": 23,
+     "pts": 26
+    },
+    {
+     "equipo": "Paso de la Arena",
+     "pj": 10,
+     "g": 7,
+     "e": 2,
+     "p": 1,
+     "gf": 31,
+     "gc": 5,
+     "dg": 26,
+     "pts": 23
+    },
+    {
+     "equipo": "Dilio Sport",
+     "pj": 10,
+     "g": 6,
+     "e": 1,
+     "p": 3,
+     "gf": 22,
+     "gc": 10,
+     "dg": 12,
+     "pts": 19
+    },
+    {
+     "equipo": "Real Montevideo",
+     "pj": 10,
+     "g": 5,
+     "e": 2,
+     "p": 3,
+     "gf": 18,
+     "gc": 11,
+     "dg": 7,
+     "pts": 17
+    },
+    {
+     "equipo": "Deportivo Melilla",
+     "pj": 10,
+     "g": 5,
+     "e": 1,
+     "p": 4,
+     "gf": 11,
+     "gc": 12,
+     "dg": -1,
+     "pts": 16
+    },
+    {
+     "equipo": "Estudiantes del Plata",
+     "pj": 10,
+     "g": 4,
+     "e": 3,
+     "p": 3,
+     "gf": 21,
+     "gc": 16,
+     "dg": 5,
+     "pts": 15
+    },
+    {
+     "equipo": "Liffa",
+     "pj": 10,
+     "g": 2,
+     "e": 3,
+     "p": 5,
+     "gf": 10,
+     "gc": 16,
+     "dg": -6,
+     "pts": 9
+    },
+    {
+     "equipo": "Academia",
+     "pj": 10,
+     "g": 1,
+     "e": 3,
+     "p": 6,
+     "gf": 9,
+     "gc": 17,
+     "dg": -8,
+     "pts": 6
+    },
+    {
+     "equipo": "Nuevo Casabó",
+     "pj": 10,
+     "g": 1,
+     "e": 2,
+     "p": 7,
+     "gf": 9,
+     "gc": 30,
+     "dg": -21,
+     "pts": 5
+    },
+    {
+     "equipo": "Montevideo Boca Jrs.",
+     "pj": 10,
+     "g": 1,
+     "e": 1,
+     "p": 8,
+     "gf": 5,
+     "gc": 42,
+     "dg": -37,
+     "pts": 4
+    },
+    {
+     "equipo": "Deportivo C.E.M.",
+     "pj": 10,
+     "g": 0,
+     "e": 2,
+     "p": 8,
+     "gf": 10,
+     "gc": 44,
+     "dg": -34,
+     "pts": 2
+    }
+   ],
+   "ultimos_resultados": [
+    {
+     "fecha": "2026-11-01T10:00:00",
+     "local": "Paso de la Arena",
+     "visita": "Liffa",
+     "goles_local": 3,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83483/"
+    },
+    {
+     "fecha": "2026-10-31T15:00:00",
+     "local": "Deportivo C.E.M.",
+     "visita": "Rincón F.C.",
+     "goles_local": 1,
+     "goles_visita": 9,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83471/"
+    },
+    {
+     "fecha": "2026-10-31T10:00:00",
+     "local": "Deportivo Melilla",
+     "visita": "Keguay",
+     "goles_local": 0,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83468/"
+    },
+    {
+     "fecha": "2026-10-30T21:00:00",
+     "local": "Montevideo Boca Jrs.",
+     "visita": "Real Montevideo",
+     "goles_local": 0,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83477/"
+    },
+    {
+     "fecha": "2026-10-30T20:00:00",
+     "local": "Nuevo Casabó",
+     "visita": "Dilio Sport",
+     "goles_local": 0,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83474/"
+    },
+    {
+     "fecha": "2026-10-29T20:00:00",
+     "local": "Academia",
+     "visita": "Estudiantes del Plata",
+     "goles_local": 1,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83480/"
+    },
+    {
+     "fecha": "2026-10-26T20:00:00",
+     "local": "Keguay",
+     "visita": "Montevideo Boca Jrs.",
+     "goles_local": 8,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83456/"
+    },
+    {
+     "fecha": "2026-10-25T20:00:00",
+     "local": "Rincón F.C.",
+     "visita": "Deportivo Melilla",
+     "goles_local": 2,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83465/"
+    },
+    {
+     "fecha": "2026-10-24T20:00:00",
+     "local": "Dilio Sport",
+     "visita": "Paso de la Arena",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83462/"
+    },
+    {
+     "fecha": "2026-10-23T21:00:00",
+     "local": "Real Montevideo",
+     "visita": "Academia",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83450/"
+    },
+    {
+     "fecha": "2026-10-23T20:00:00",
+     "local": "Estudiantes del Plata",
+     "visita": "Nuevo Casabó",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83459/"
+    },
+    {
+     "fecha": "2026-10-22T20:00:00",
+     "local": "Liffa",
+     "visita": "Deportivo C.E.M.",
+     "goles_local": 3,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83453/"
+    }
+   ],
+   "proximos_partidos": [
+    {
+     "fecha": "2026-11-05T05:00:00",
+     "local": "Montevideo Boca Jrs.",
+     "visita": "Deportivo Melilla",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83486/"
+    },
+    {
+     "fecha": "2026-11-05T05:00:00",
+     "local": "Keguay",
+     "visita": "Deportivo C.E.M.",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83489/"
+    },
+    {
+     "fecha": "2026-11-05T05:00:00",
+     "local": "Rincón F.C.",
+     "visita": "Paso de la Arena",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83492/"
+    },
+    {
+     "fecha": "2026-11-05T05:00:00",
+     "local": "Real Montevideo",
+     "visita": "Estudiantes del Plata",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83495/"
+    },
+    {
+     "fecha": "2026-11-05T05:00:00",
+     "local": "Liffa",
+     "visita": "Nuevo Casabó",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83498/"
+    },
+    {
+     "fecha": "2026-11-05T05:00:00",
+     "local": "Dilio Sport",
+     "visita": "Academia",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83501/"
     }
    ]
   }

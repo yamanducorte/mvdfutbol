@@ -27,6 +27,9 @@ LEMA = "Juveniles, primera y lo que se dice en la radio"
 # Clave de IndexNow: avisa a Bing, Yandex y DuckDuckGo apenas se publica algo.
 # Google no usa IndexNow; para Google valen el sitemap de noticias y el RSS.
 INDEXNOW = "7f3c1a9d4b5e4c82a1d6e0f93b2c7a58"
+# Archivo de verificacion de Google Search Console. No borrarlo: si desaparece,
+# Google quita la verificacion y se pierde el acceso a los datos.
+VERIFICACION_GOOGLE = "google7352264a901f3c24.html"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
          "agosto", "setiembre", "octubre", "noviembre", "diciembre"]
 
@@ -191,20 +194,36 @@ def con_utm(url, origen):
     return url + ("&" if "?" in url else "?") + "utm_source=mvdfutbol&utm_medium=anuncio&utm_campaign=" + origen
 
 
+def ruta_liga(liga):
+    """Cada campeonato vive bajo su seccion: /juveniles/, /ascenso/, /femenino/."""
+    return "/" + liga.get("grupo", "juveniles") + "/" + slug(liga["nombre"]) + "/"
+
+
+TITULOS_GRUPO = {"juveniles": "Juveniles", "ascenso": "Segunda, Tercera y D", "femenino": "Fútbol femenino"}
+INTRO_GRUPO = {
+    "juveniles": "Tablas, resultados y fixture de cada categoría, de Sub 11 a Sub 19.",
+    "ascenso": "Segunda División Profesional, Tercera División y Divisional D: posiciones y resultados fecha a fecha.",
+    "femenino": "Primera y Segunda del fútbol femenino uruguayo: tablas, resultados y próxima fecha.",
+}
+
+
 def categorias_menu(ligas):
     """Atajos a las categorias que hoy tienen campeonato en curso."""
     atajos = []
-    for numero in ("19", "17", "16", "15", "14", "13"):
+    for clave in ("juveniles", "ascenso", "femenino"):
+        if any(l.get("grupo", "juveniles") == clave for l in ligas):
+            atajos.append((TITULOS_GRUPO[clave].split(",")[0], "/" + clave + "/"))
+    for numero in ("19", "17", "15"):
         for liga in ligas:
             if re.search(r"sub\s?-?" + numero + r"\b|s" + numero + r"\b", liga["nombre"], re.I):
-                atajos.append(("Sub " + numero, "/juveniles/" + slug(liga["nombre"]) + "/"))
+                atajos.append(("Sub " + numero, ruta_liga(liga)))
                 break
     return atajos
 
 
 def pagina(titulo, descripcion, contenido, ruta, ligas, seccion="", esquema=None, publicado=""):
     ahora = datetime.now(timezone.utc)
-    enlaces = [("Portada", "/"), ("Juveniles", "/juveniles/")] + categorias_menu(ligas)
+    enlaces = [("Portada", "/")] + categorias_menu(ligas)
     menu = "".join('<a href="' + destino + '"' + (' aria-current="page"' if seccion == destino else "") +
                    ">" + texto + "</a>" for texto, destino in enlaces)
     extra = ('<meta property="article:published_time" content="' + esc(publicado) + '">' if publicado else "")
@@ -335,8 +354,7 @@ def main():
     elif destacada:
         puntero = destacada["tabla"][0]
         resto = []
-        apertura = ('<div class="apertura"><span class="sello dato">Juveniles</span><h1><a href="/juveniles/' +
-                    slug(destacada["nombre"]) + '/">' + esc(puntero["equipo"]) + " lidera el " +
+        apertura = ('<div class="apertura"><span class="sello dato">Juveniles</span><h1><a href="' + ruta_liga(destacada) + '">' + esc(puntero["equipo"]) + " lidera el " +
                     esc(destacada["nombre"]) + " con " + str(puntero["pts"]) + " puntos</a></h1><p>" +
                     "Ganó " + str(puntero["g"]) + " de " + str(puntero["pj"]) + " partidos y tiene " +
                     str(puntero["gf"]) + " goles a favor. La tabla completa, los resultados de la fecha y "
@@ -355,7 +373,7 @@ def main():
         pass
     else:
         columna += ('<div class="secundarias">' + "".join(
-            '<article><small>Campeonato</small><h3><a href="/juveniles/' + slug(l["nombre"]) + '/">' +
+            '<article><small>Campeonato</small><h3><a href="' + ruta_liga(l) + '">' +
             esc(l["nombre"]) + "</a></h3><p>Lidera " + esc(l["tabla"][0]["equipo"]) + " con " +
             str(l["tabla"][0]["pts"]) + " puntos.</p></article>" for l in ligas[1:5]) + "</div>")
 
@@ -368,8 +386,7 @@ def main():
         lateral.append("<div><h2>" + esc(destacada["nombre"]) + "</h2>" +
                        html_tabla(destacada["tabla"], 10, completa=False) +
                        '<p style="margin-top:9px"><a style="font-family:var(--dato);font-size:.72rem;'
-                       'letter-spacing:.1em;text-transform:uppercase;color:var(--celeste)" href="/juveniles/' +
-                       slug(destacada["nombre"]) + '/">Tabla completa →</a></p></div>')
+                       'letter-spacing:.1em;text-transform:uppercase;color:var(--celeste)" href="' + ruta_liga(destacada) + '">Tabla completa →</a></p></div>')
     if proximos:
         lateral.append("<div><h2>Próxima fecha</h2>" + html_partidos(proximos[:6], False) + "</div>")
     lateral += [html_anuncio(a) for a in anuncios]
@@ -419,7 +436,7 @@ def main():
             esquema=esquema, publicado=nota.get("publicado_utc", "")))
 
     # ---------------- juveniles ----------------
-    fichas = "".join('<a class="ficha" href="/juveniles/' + slug(l["nombre"]) + '/"><b>' + esc(l["nombre"]) +
+    fichas = "".join('<a class="ficha" href="' + ruta_liga(l) + '"><b>' + esc(l["nombre"]) +
                      "</b><small>" + str(len(l["tabla"])) + " equipos · lidera " + esc(l["tabla"][0]["equipo"]) +
                      " (" + str(l["tabla"][0]["pts"]) + " pts)</small></a>" for l in ligas)
     indice = ('<div class="grilla" style="grid-template-columns:1fr"><div>'
@@ -435,7 +452,7 @@ def main():
         indice, "/juveniles/", ligas, "/juveniles/"))
 
     for liga in ligas:
-        ruta = "/juveniles/" + slug(liga["nombre"]) + "/"
+        ruta = ruta_liga(liga)
         puntero = liga["tabla"][0]
         lateral_liga = []
         if liga.get("ultimos_resultados"):
@@ -457,7 +474,9 @@ def main():
             cuerpo, ruta, ligas, "/juveniles/"))
 
     # ---------------- archivos de servicio ----------------
-    urls = ["/", "/juveniles/"] + ["/juveniles/" + slug(l["nombre"]) + "/" for l in ligas] + \
+    secciones = ["/" + c + "/" for c in TITULOS_GRUPO
+                 if any(l.get("grupo", "juveniles") == c for l in ligas)]
+    urls = ["/"] + secciones + [ruta_liga(l) for l in ligas] + \
            ["/nota/" + n["slug"] + "/" for n in notas]
     hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     escribir("sitemap.xml",
@@ -496,6 +515,7 @@ def main():
              "</channel></rss>\n")
 
     escribir(INDEXNOW + ".txt", INDEXNOW + "\n")
+    escribir(VERIFICACION_GOOGLE, "google-site-verification: " + VERIFICACION_GOOGLE + "\n")
     escribir("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: " + DOMINIO + "/sitemap.xml\n"
                            "Sitemap: " + DOMINIO + "/sitemap-noticias.xml\n")
     escribir("llms.txt",

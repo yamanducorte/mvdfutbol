@@ -21,8 +21,20 @@ DATOS = RAIZ / "datos"
 SALIDA = DATOS / "juveniles.json"
 CACHE_EQUIPOS = DATOS / "equipos.json"
 AGENTE = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36"
-# Ligas que nos interesan: juveniles de cualquier categoria (S11 a S19), por nombre.
-PATRON_JUVENIL = re.compile(r"\b(juv|sub\s?-?\d{2}|s1[1-9])\b", re.I)
+# Clasificacion de campeonatos por nombre. El orden importa: gana el primero que
+# machea, por eso femenino va antes que juveniles (hay juveniles femeninas).
+GRUPOS = [
+    ("femenino", "Fútbol femenino", re.compile(r"\bfem\b|femenino", re.I)),
+    ("juveniles", "Juveniles", re.compile(r"\b(juv|sub\s?-?\d{2}|s1[1-9])\b", re.I)),
+    ("ascenso", "Segunda, Tercera y D", re.compile(r"2da|segunda|3ra|tercera|divisional\s*d|intermedio", re.I)),
+]
+
+
+def clasificar(nombre):
+    for clave, _, patron in GRUPOS:
+        if patron.search(nombre):
+            return clave
+    return None
 
 
 def api(base, ruta, **parametros):
@@ -121,8 +133,9 @@ def main():
                 ligas[liga["id"]] = texto(liga.get("name") or liga.get("title"))
         except Exception:
             break
-    juveniles = {ident: nombre for ident, nombre in ligas.items() if PATRON_JUVENIL.search(nombre)}
-    print(str(len(ligas)) + " ligas, " + str(len(juveniles)) + " de juveniles")
+    clasificadas = {ident: (clasificar(nombre), nombre) for ident, nombre in ligas.items()}
+    clasificadas = {i: v for i, v in clasificadas.items() if v[0]}
+    print(str(len(ligas)) + " ligas, " + str(len(clasificadas)) + " clasificadas")
 
     eventos = []
     for filtro in ({"before": corte, "after": desde, "order": "desc"},
@@ -141,8 +154,8 @@ def main():
     # Las ligas con partidos en la ventana son las que estan en curso; de esas se
     # trae el torneo completo, porque la tabla necesita todas las fechas jugadas.
     en_curso = {id_liga for evento in eventos for id_liga in (evento.get("leagues") or [])
-                if id_liga in juveniles}
-    print(str(len(en_curso)) + " ligas juveniles con movimiento; trayendo torneos completos")
+                if id_liga in clasificadas}
+    print(str(len(en_curso)) + " campeonatos con movimiento; trayendo torneos completos")
     completos = []
     for id_liga in sorted(en_curso):
         completos.extend(partidos_de_liga(base, id_liga))
@@ -183,12 +196,13 @@ def main():
         "credito": config.get("credito_obligatorio", ""),
         "ligas": [],
     }
-    for id_liga, partidos in sorted(por_liga.items(), key=lambda par: juveniles[par[0]]):
+    for id_liga, partidos in sorted(por_liga.items(), key=lambda par: clasificadas[par[0]][1]):
         partidos.sort(key=lambda p: p["fecha"])
         jugados = [p for p in partidos if p["jugado"]]
         salida["ligas"].append({
             "id": id_liga,
-            "nombre": juveniles[id_liga],
+            "grupo": clasificadas[id_liga][0],
+            "nombre": clasificadas[id_liga][1],
             "tabla": tabla_de_posiciones(jugados),
             "ultimos_resultados": list(reversed(jugados))[:12],
             # Solo los que todavia no se jugaron: un partido viejo sin resultado cargado
@@ -202,9 +216,10 @@ def main():
     total = sum(len(l["ultimos_resultados"]) for l in salida["ligas"])
     print(str(len(salida["ligas"])) + " ligas con movimiento, " + str(total) +
           " resultados recientes -> " + str(SALIDA.relative_to(RAIZ)))
+    salida["grupos"] = [{"clave": c, "titulo": tit} for c, tit, _ in GRUPOS]
     for liga in salida["ligas"][:8]:
         puntero = liga["tabla"][0] if liga["tabla"] else None
-        print("  " + liga["nombre"][:44].ljust(46) +
+        print("  " + liga["grupo"][:9].ljust(11) + liga["nombre"][:40].ljust(42) +
               ("lidera " + puntero["equipo"] + " (" + str(puntero["pts"]) + " pts)" if puntero else "sin partidos jugados"))
 
 
