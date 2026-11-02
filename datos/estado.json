@@ -22,7 +22,8 @@
       "Q0dEKEVEwEI",
       "BviM4fHMIp4",
       "wxaUswFVnL4",
-      "SIuXrGEYbQI"
+      "SIuXrGEYbQI",
+      "yzSNLveQPtc"
     ],
     "@fipo-tv": [
       "SobTZSBoXpo",
@@ -225,5 +226,17 @@
       "QtKUqryZtJc"
     ]
   },
-  "ultima_corrida": "2026-11-02T23:01:58+00:00"
+  "ultima_corrida": "2026-11-02T23:11:38+00:00",
+  "reintentos": {
+    "2Kbm-EMtEgE": 1,
+    "vQ8iU2mYAgk": 1,
+    "0bNtBratOi0": 1,
+    "OhBRTfQKYKA": 1,
+    "T6Nxg8tso9Y": 1,
+    "XnUjv19z3mU": 1,
+    "qOFni-7ph2M": 1,
+    "7Nc_E-OxXbk": 1,
+    "dWQrEq9hGIQ": 1,
+    "NXSy_2alz_c": 1
+  }
 }
