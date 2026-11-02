@@ -170,6 +170,12 @@ footer a{color:var(--celeste)}
 """
 
 
+def recortar(texto, largo=112):
+    if len(texto) <= largo:
+        return texto
+    return texto[:largo].rsplit(" ", 1)[0].rstrip(" ,;.") + "…"
+
+
 def esc(valor):
     return html.escape(str(valor), quote=True)
 
@@ -417,7 +423,8 @@ def html_partidos(partidos, jugados):
 def main():
     cargar_escudos()
     notas = sorted((leer_json(p, None) for p in NOTAS.glob("*.json")),
-                   key=lambda n: (n or {}).get("publicado_utc", ""), reverse=True)
+                   key=lambda n: ((n or {}).get("fecha", ""), (n or {}).get("importancia", 0),
+                                  (n or {}).get("publicado_utc", "")), reverse=True)
     notas = [n for n in notas if n and n.get("slug")]
     juveniles = leer_json(JUVENILES, {"ligas": [], "credito": ""})
     primera = leer_json(RAIZ / "datos" / "primera.json", {"ligas": []})
@@ -472,7 +479,7 @@ def main():
             tarjetas.append("<article><small>" + esc(n.get("fuente", {}).get("nombre", "")) + "</small>" +
                             imagen + '<h3><a href="/nota/' + esc(n["slug"]) + '/">' +
                             esc(n.get("titulo", "")) + "</a></h3><p>" +
-                            esc(n.get("bajada", ""))[:110] + "</p></article>")
+                            esc(recortar(n.get("bajada", ""))) + "</p></article>")
         columna += '<div class="secundarias">' + "".join(tarjetas) + "</div>"
     elif notas:
         pass
