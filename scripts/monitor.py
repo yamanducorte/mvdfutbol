@@ -188,7 +188,7 @@ def bajar_audio(video_id, tmp):
     """
     proceso = subprocess.run(
         ["yt-dlp", "-f", "bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio",
-         "--no-playlist", "--no-warnings", "--retries", "3",
+         "--no-playlist", "--retries", "3",
          "-o", str(tmp / (video_id + ".audio.%(ext)s")),
          "https://www.youtube.com/watch?v=" + video_id],
         capture_output=True, text=True, timeout=900, encoding="utf-8", errors="replace")
@@ -199,9 +199,13 @@ def bajar_audio(video_id, tmp):
         return completos[0], ""
     for basura in tmp.glob(video_id + ".audio.*"):
         basura.unlink()
-    salida = (proceso.stderr or "") + (proceso.stdout or "")
+    salida = (proceso.stderr or "") + "\n" + (proceso.stdout or "")
     lineas = [l.strip() for l in salida.splitlines() if l.strip()]
-    return None, (" | ".join(lineas[-3:]) if lineas else "yt-dlp no dijo nada")
+    # Lo que explica la falla son las lineas de ERROR o WARNING; el resto es el
+    # relato de lo que fue intentando, que no sirve para nada.
+    utiles = [l for l in lineas if "ERROR" in l or "WARNING" in l or "Sign in" in l]
+    return None, (" | ".join(utiles[:3]) if utiles
+                  else (" | ".join(lineas[-3:]) if lineas else "yt-dlp no dijo nada"))
 
 
 def whisper_disponible():
