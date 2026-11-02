@@ -1,0 +1,63 @@
+{
+  "titulo": "Peñarol: Damiani anunció que Barrera irá con él a la elección",
+  "bajada": "Según se informó en Dale Que Va Deportes, Juan Pedro Damiani confirmó que Jorge Barrera lo acompañará en la elección de Peñarol. El programa adelantó además otros movimientos en su lista, aún sin confirmar.",
+  "cuerpo": [
+    "Juan Pedro Damiani anunció que Jorge Barrera irá con él en la próxima elección de Peñarol. Así lo informó el canal de YouTube Dale Que Va Deportes en el video titulado \"Damiani y Barrera juntos a la elección en Peñarol\", publicado el 31 de octubre.",
+    "La noticia se dio al comienzo de la emisión, donde se señaló que \"Juan Pedro Damiani anunció que Jorge Barrera va a ir con él en la elección\".",
+    "Según el periodista del programa, la incorporación de Barrera no fue una sorpresa. Afirmó que Barrera irá incluido en la lista de Damiani \"sin ningún tipo de dudas\", porque era algo que, de acuerdo con su versión, \"ya estaba prácticamente arreglado de antes\".",
+    "En el programa también se describió cómo se repartirían las funciones. Según esa versión, Damiani sería quien se encargue de la relación con la AUF. En el mismo pasaje se mencionó otro organismo, pero el nombre no se entiende con claridad en la grabación.",
+    "El análisis incluyó una referencia a Ruglio. De acuerdo con lo que se dijo en la emisión, Ruglio \"había manifestado en su momento\" que no iría como presidente. El dato se planteó como un antecedente y no como un anuncio nuevo.",
+    "El periodista adelantó además que habrá más novedades en la lista de Damiani. Según dijo, \"hay otros movimientos que se van a venir\" en las próximas horas, aunque no dio nombres ni detalles sobre quiénes podrían sumarse.",
+    "La fecha exacta de la elección y los plazos del proceso no quedaron claros en la emisión. En distintos momentos se hicieron referencias imprecisas al tiempo que falta para la votación.",
+    "Por lo tanto, lo único que se presentó como confirmado es el anuncio de Damiani sobre la presencia de Barrera a su lado. La conformación del resto de la lista, el reparto de funciones y los próximos movimientos son, por ahora, versiones del programa que tendrán que confirmarse en los próximos días."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Elecciones en Peñarol",
+    "Juan Pedro Damiani",
+    "Jorge Barrera",
+    "Dirigencia"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-10-31-penarol-damiani-anuncio-que-barrera-ira-con-el-a-la-eleccion",
+  "fecha": "2026-10-31",
+  "publicado_utc": "2026-11-02T07:19:41+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "Dale Que Va Deportes",
+    "programa": "🔴 DAMIANI Y BARRERA JUNTOS A LA ELECCIÓN EN PEÑAROL",
+    "video": "https://www.youtube.com/watch?v=cPKdTgt0g5U"
+  },
+  "hechos": [
+    {
+      "hecho": "Juan Pedro Damiani anunció que Jorge Barrera va a ir con él en la elección de Peñarol.",
+      "cita": "Juan Pedro Damiani anunció que Jorge Barrera va a ir con él en la elección",
+      "minuto": "00:00:01",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Según el programa, Barrera va a ser parte de la lista de Damiani, que también incluiría a Ruglio en el relato.",
+      "cita": "Barrera va a ir eh incluido con Damiani sin ningún tipo de dudas porque era algo que ya estaba prácticamente que arreglado de antes",
+      "minuto": "00:01:31",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Según el programa, Damiani se encargaría de relacionarse con la AUF y con la Comisión de Básquetbol... (Colmebol)",
+      "cita": "va a ser obviamente el que se encargue de relacionarse con la AUF, va a ser el que se encarga de relacionarse con la Colmebol",
+      "minuto": "00:01:16",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Según el programa, Ruglio no se presentaría a la reelección, versión que el propio Ruglio habría manifestado previamente.",
+      "cita": "Ruglio había manifestado en su momento de que no iba a ir como presidente",
+      "minuto": "00:02:06",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Según el programa, habría otros movimientos en la lista de Damiani que se anunciarían en las próximas horas.",
+      "cita": "hay otros movimientos que se van a venir también y en la lista de Juan Pedro Bamiani en las próximas horas",
+      "minuto": "00:01:31",
+      "tipo": "version"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "titulo": "Perchman habló de Lozano, la localía y su ruptura con Lasarte",
+  "bajada": "El dirigente de Nacional Flavio Perchman dijo que ganó cerca de medio millón de dólares con el pase de Brian Lozano, cuestionó la compra de localías y se refirió a su amistad rota con Lasarte.",
+  "cuerpo": [
+    "Flavio Perchman, dirigente de Nacional, afirmó que obtuvo una ganancia cercana al medio millón de dólares por su participación en el pase de Brian Lozano. También dijo que no está de acuerdo con la compra de localías y habló de su relación con Lasarte. Las declaraciones aparecen en el video \"Perchman se cree más grande que Nacional?\", publicado por el youtuber Fabro el 26 de octubre de 2026.",
+    "El video es mayormente de reacción. Las palabras de Perchman se intercalan con comentarios de Fabro, y esta nota recoge solo lo que dice el dirigente.",
+    "Sobre su actividad en el mercado de pases, Perchman contó que en un caso tuvo una ganancia \"en el entorno de medio millón de dólares\" porque tenía participación en un jugador puntual. Lo identificó como Brian Lozano: \"Lindo, gracias Brian, ¿no? Buen número\". En lo que se escucha no aparece el club que compró al jugador.",
+    "El dirigente también se refirió a la práctica de comprar la localía. Según dijo, Nacional lo hizo en algunos partidos, por ejemplo ante Juventud en el Centenario. Marcó su postura personal: \"Cosa que yo el tema de la localía no estoy de acuerdo, para mí eso se tiene que erradicar\".",
+    "Sobre Lasarte, Perchman dijo que tenían una amistad de 25 años y que se rompió por decisión del entrenador. Agregó que desde entonces no hubo señales de retomarla. Admitió también errores mutuos: \"él también se había equivocado más de una vez conmigo\".",
+    "En otro tramo, el dirigente pareció darle la razón a Lasarte en una decisión vinculada a la campaña electoral del club: \"Si te utilizan de esa manera, está perfecto lo que hizo Lasarte\". El contexto de esa frase no queda del todo claro en la grabación. Por eso debe tomarse como una interpretación de sus dichos y no como una postura confirmada.",
+    "Al repasar su gestión como vicepresidente, Perchman eligió como su mayor acierto la contratación de Maxi Gómez. Como peor error mencionó la salida de un jugador que el audio registra como \"Eber\". Sobre ese caso dijo que el club tendría que haber \"hecho otro esfuerzo\" para retenerlo. La transcripción no permite confirmar con certeza de qué futbolista se trata.",
+    "Además, contó que impulsó la llegada de un delantero cuyo apellido se registra como Silvera. Explicó que lo considera \"un gran goleador\" y vinculó la operación con un intercambio con Peñarol. El nombre del jugador y el resto de los detalles de esa negociación no pueden verificarse con claridad en el registro del video."
+  ],
+  "etiquetas": [
+    "Nacional",
+    "Flavio Perchman",
+    "Brian Lozano",
+    "Lasarte",
+    "localía",
+    "mercado de pases",
+    "dirigencia"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-10-26-perchman-hablo-de-lozano-la-localia-y-su-ruptura-con-lasarte",
+  "fecha": "2026-10-26",
+  "publicado_utc": "2026-11-02T07:25:04+00:00",
+  "importancia": 3,
+  "fuente": {
+    "nombre": "Fabro",
+    "programa": "PERCHMAN SE CREE MÁS GRANDE QUE NACIONAL?",
+    "video": "https://www.youtube.com/watch?v=TveVDpniPp8"
+  },
+  "hechos": [
+    {
+      "hecho": "Perchman afirma que alguna vez cerró una ganancia de alrededor de medio millón de dólares en el pase de un jugador, y lo identifica como Brian Lozano, con una participación propia.",
+      "cita": "en el entorno de medio millón de dólares en en algún caso, yo tenía una participación con un jugador puntual",
+      "minuto": "00:06:49",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Perchman dice que se vendió a Brian Lozano, en el caso de Lozano, a un valor elevado, aunque el transcripto no especifica el club comprador.",
+      "cita": "En el caso de Brian Lozano. Lindo, gracias Brian, ¿no? Buen número.",
+      "minuto": "00:06:49",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Perchman afirma que trajo a Silvera porque le parece un buen jugador y goleador, y porque 'empatábamos la de Coelo' (en referencia a un intercambio con Peñarol).",
+      "cita": "Lo traje a Silvera porque me parece un un muy buen jugador, un gran goleador",
+      "minuto": "00:16:31",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Perchman dice que tenía una amistad de 25 años con Lasarte, que se rompió por decisión de Lasarte, y que no hubo señal de retomarla.",
+      "cita": "teníamos una amistad de 25 años y él también se había equivocado más de una vez conmigo",
+      "minuto": "00:17:11",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Perchman afirma que nunca fue tan mediático ni tuvo tanta prensa como ahora, que el video fue grabado antes o después de su licencia y que no se sabe si está de licencia.",
+      "cita": "no sabemos si realmente se tomó la licencia de los medios de comunicación",
+      "minuto": "00:00:29",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Perchman dice que Nacional compra la localía en algunos casos (por ejemplo con Juventud en el Centenario) y que él no está de acuerdo con esa práctica, pensando que debería erradicarse.",
+      "cita": "Cosa que yo el tema de la localía no estoy de acuerdo, para mí eso se tiene que erradicar",
+      "minuto": "00:15:01",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Perchman admite que, siendo vicepresidente, Nacional perdió a Ebere y que hubo que haber hecho otro esfuerzo para mantenerlo; cita como mayor acierto la contratación de Maxi Gómez.",
+      "cita": "El bueno, el peor error, yo creo que teníamos que haber hecho otro esfuerzo para mantener a Eber",
+      "minuto": "00:18:12",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Perchman dice que en el caso de Lasarte, la decisión de desvincularlo fue correcta porque no daba resultados ni con el fútbol, y que se sintió manoseado en la campaña electoral.",
+      "cita": "Si si te te utilizan de esa manera, está perfecto lo que hizo Lasarte.",
+      "minuto": "00:17:42",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Fabro afirma que Perchman es contratista y que hizo negocios con paquetes de jugadores, pero el transcripto no contiene prueba de estas acusaciones (son opinión del youtuber).",
+      "cita": "está para el negociado de hacer paquetes como contratista, porque yo no creo que se haya deslindado del todo de ser contratista",
+      "minuto": "00:23:13",
+      "tipo": "version"
+    }
+  ]
+}

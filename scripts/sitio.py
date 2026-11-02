@@ -653,6 +653,18 @@ def main():
              "".join("- " + l["nombre"] + ": " + DOMINIO + "/juveniles/" + slug(l["nombre"]) + "/\n" for l in ligas))
     escribir("_headers", "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n")
 
+    # Borrar paginas de notas que ya no existen: si se elimino una nota repetida,
+    # su pagina no puede quedar viva (Google la tiene indexada).
+    vigentes = {n["slug"] for n in notas}
+    carpeta_notas = PUBLICO / "nota"
+    if carpeta_notas.exists():
+        for vieja in carpeta_notas.iterdir():
+            if vieja.is_dir() and vieja.name not in vigentes:
+                for hijo in vieja.rglob("*"):
+                    hijo.unlink()
+                vieja.rmdir()
+                print("  baja: /nota/" + vieja.name + "/")
+
     print("sitio generado: " + str(len(notas)) + " nota(s), " + str(len(ligas)) + " campeonato(s), " +
           str(len(anuncios)) + " anuncio(s) activo(s)")
 

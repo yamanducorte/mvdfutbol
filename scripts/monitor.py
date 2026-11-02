@@ -176,7 +176,10 @@ def main():
         except Exception as error:
             print("  !! " + nombre + ": no se pudo listar el canal (" + str(error) + ")")
             continue
+        # Hay videos que aparecen en dos canales (colaboraciones): si ya se bajo
+        # por otro canal, no se vuelve a bajar ni se duplica la nota.
         vistos = set(estado["vistos"].get(handle, []))
+        vistos |= {v for ids in estado["vistos"].values() for v in ids}
         minimo = parametros.get("duracion_minima_seg", 0)
         maximo = parametros.get("duracion_maxima_seg", 99999)
         nuevos = [v for v in videos if v["id"] not in vistos]

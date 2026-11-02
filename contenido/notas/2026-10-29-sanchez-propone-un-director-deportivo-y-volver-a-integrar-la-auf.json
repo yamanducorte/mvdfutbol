@@ -1,0 +1,112 @@
+{
+  "titulo": "Sánchez propone un director deportivo y volver a integrar la AUF",
+  "bajada": "El candidato a la presidencia de Peñarol planteó en Sport 890 reordenar el área de fútbol, auditar la gestión actual y volver a ocupar lugares en la AUF con gente capacitada.",
+  "cuerpo": [
+    "Santiago Sánchez, candidato a la presidencia de Peñarol, propuso reorganizar el área de fútbol en torno a un director deportivo con atribuciones reales, auditar la gestión actual y volver a integrar los ámbitos de trabajo de la AUF. Lo dijo en una entrevista emitida por Sport 890 y publicada en el canal de YouTube de la radio.",
+    "Sobre el fútbol, Sánchez afirmó que el club debe tener claro su organigrama y \"delimitar un director deportivo con potestades de director deportivo\". Según su planteo, esa figura trabajaría junto a un secretario técnico y un gerente deportivo.",
+    "También propuso una auditoría de la gestión económica reciente para mostrarla a los socios. Aclaró que no la plantea como una \"cacería de brujas\". Según sus números, Peñarol genera hoy unos 28 a 29 millones de dólares al año sin contar la venta de jugadores.",
+    "En cuanto a la AUF, sostuvo que no alcanza con volver. Su propuesta es ocupar lugares en el Consejo Juvenil y en tribunales como el de apelaciones y el de contiendas con \"las personas correctas\", de cara a las elecciones de marzo en la AUF.",
+    "Sánchez cuestionó además el sistema que sanciona a los clubes por hechos de sus hinchas y planteó buscar acuerdos con la AUF y el Ministerio del Interior. Como ejemplo del problema mencionó incidentes con bengalas y que, en el último partido, \"se cortó el camino Siete Cerros por parte de la barra\".",
+    "Consultado sobre Diego Aguirre, dijo que en el Consejo Directivo hay una mayoría que respalda la continuidad del entrenador, aunque reconoció que el cuerpo estuvo dividido.",
+    "Sánchez preside el básquetbol del club desde 2025. Contó que asumió tras la renuncia del anterior presidente de la sección, con un acuerdo previo en el consejo que, según su versión, no se cumplió. Afirmó que el básquetbol representa entre el 3 y el 4% del presupuesto y que aspira a llevarlo al 5%.",
+    "Destacó que las finales de la Liga Uruguaya ante Aguada se jugaron con parcialidad visitante y sin sanciones, y que Peñarol fue campeón después de 44 años. Dijo además que el club hará gestiones ante la Federación para recibir en abril la Final Four de la BCL en el Antel Arena, en caso de clasificar. También mencionó la llegada de Flamengo para jugar en Uruguay el 28 de septiembre.",
+    "Por último, Sánchez adelantó que trabajan en un proyecto de club social con gimnasio y disciplinas deportivas para los socios. Aclaró que la iniciativa todavía no está definida."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Elecciones en Peñarol",
+    "AUF",
+    "Diego Aguirre",
+    "Básquetbol"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-10-29-sanchez-propone-un-director-deportivo-y-volver-a-integrar-la-auf",
+  "fecha": "2026-10-29",
+  "publicado_utc": "2026-11-02T07:23:20+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "Sport 890",
+    "programa": "“NO ES SOLO VOLVER A LA AUF, COMO DICEN; TENEMOS QUE ELEGIR A LA GENTE CORRECTA Y CAPACITARLA”",
+    "video": "https://www.youtube.com/watch?v=YmmrwLskmBw"
+  },
+  "hechos": [
+    {
+      "hecho": "Sánchez propone que el área deportiva tenga un director deportivo con potestades reales, junto a un secretario técnico y un gerente deportivo.",
+      "cita": "Nosotros tenemos que tener claro cuál es el organigrama del área fútbol, delimitar un director deportivo con potestades de director deportivo",
+      "minuto": "00:09:49",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sánchez plantea una auditoría de la gestión económica actual, sin 'cacería de brujas', para mostrarla a los socios.",
+      "cita": "siempre una pequeña reconocimiento, auditoría de lo que se ha hecho en el último tiempo me parece importante",
+      "minuto": "00:11:04",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sánchez propone volver a integrar la AUF, incluyendo el Consejo Juvenil y tribunales como el de apelaciones y el de contiendas, con personas capacitadas, de cara a las elecciones de marzo en la AUF.",
+      "cita": "tenemos que integrar a las personas correctas para las diferentes comisiones de trabajo como hay también hay ciertos tribunales",
+      "minuto": "00:12:17",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sánchez afirma que Peñarol genera genuinamente unos 28 a 29 millones de dólares al año sin venta de jugadores.",
+      "cita": "genuinamente hoy, naturalmente, genera unos 28, 29 millones de dólares sin venta de juve- sin venta de jugadores",
+      "minuto": "00:29:34",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Sánchez dice que el básquetbol representa aproximadamente el 3 o 4% del presupuesto del club y que aspira a llevarlo al 5%.",
+      "cita": "hoy somos el 3, el 4% del presupuesto y yo espero poder seguirlo haciendo crecer",
+      "minuto": "00:15:01",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Peñarol organizó con Aguada las finales de la Liga Uruguaya de básquetbol con parcialidad visitante, y el club fue campeón tras 44 años sin sanciones.",
+      "cita": "Peñarol salió campeón después de 44 años y arrancamos este libro uruguayo sin ninguna sanción ni pérdida de puntos",
+      "minuto": "00:16:29",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Sánchez dice que Peñarol gestionará trámites con la Federación de básquetbol para albergar en abril la Final Four de la BCL en el Antel Arena, si clasifica.",
+      "cita": "en abril nosotros llegamos a tener la instancia de jugar ese Final Four, no pegar un grito en el cielo en en marzo que queremos organizar la ventana",
+      "minuto": "00:17:17",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sánchez cuestiona el sistema sancionatorio que castiga a las instituciones por hechos de hinchas, y propone buscar acuerdos con AUF y Ministerio del Interior.",
+      "cita": "Acá se sanciona a las instituciones. Sí. Y las mismas instituciones son culpables",
+      "minuto": "00:25:14",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sánchez menciona que el club sufrió sanción en el torneo local y que hubo incidentes con bengalas y el corte del camino Siete Cerros en el último partido, como parte del problema de seguridad planteado.",
+      "cita": "se cortó el camino Siete Cerros por parte de la barra",
+      "minuto": "00:19:45",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sánchez afirma que hay una mayoría en el Consejo Directivo que respalda la continuidad de Diego Aguirre, aunque el consejo estaba dividido.",
+      "cita": "hay una mayoría la cual respalda la la continuidad de Diego",
+      "minuto": "00:34:48",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sánchez explica que aceptó presidir el básquetbol en 2025 tras la renuncia de Gastón Díaz, con un acuerdo previo en el consejo que quedó sin cumplirse.",
+      "cita": "Todo se precipita cuando Gastón Dis no se va, sino que renuncia",
+      "minuto": "00:38:54",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sánchez afirma que Peñarol trajo a Flamengo a Uruguay para un partido el 28 de septiembre, con la intervención de José Guerrero (tesorero de Biguá).",
+      "cita": "pudimos pudimos traer a a Flamengo a jugar a a Uruguay el el 28 de septiembre",
+      "minuto": "00:16:59",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Sánchez habla de un proyecto de club social con gimnasio y disciplinas deportivas para socios, que aún no está definido.",
+      "cita": "estamos trabajando en un proyecto de un club social que te dé la posibilidad del socio de ser parte de Peñarol",
+      "minuto": "00:47:02",
+      "tipo": "version"
+    }
+  ]
+}

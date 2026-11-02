@@ -1,0 +1,100 @@
+{
+  "titulo": "Freddy García presentó su equipo y anunció que ya tiene entrenador",
+  "bajada": "En conferencia de prensa, el candidato a la presidencia de Peñarol presentó a parte de su equipo, propuso una auditoría externa de las finanzas del club y aseguró tener cerrado al próximo técnico, cuyo nombre revelará cerca de las elecciones.",
+  "cuerpo": [
+    "Freddy García oficializó su candidatura a la presidencia de Peñarol en una conferencia de prensa difundida por el canal de YouTube 1414 con Freddy. Allí presentó a parte de su equipo, propuso una auditoría externa de la gestión económica del club y afirmó que ya tiene cerrado al próximo entrenador, aunque no dio su nombre.",
+    "García dijo que deja atrás su perfil de comunicador en YouTube: \"hoy la responsabilidad me lleva a ser el candidato y el futuro presidente del Club Atlético Peñarol\", expresó.",
+    "Sobre el entrenador, el candidato afirmó: \"tenemos cerrado al próximo entrenador\". Agregó que la identidad del técnico se conocerá más adelante, en la cercanía de las elecciones.",
+    "En el área económica, anunció que Juan Carlos Herrera estará a cargo de lo que definió como \"revisionismo económico\". Según lo presentó el propio García, Herrera fue vicepresidente de Ancap entre 2016 y 2020.",
+    "La propuesta incluye una auditoría realizada por una firma externa, contratada mediante un \"concurso de precios\", que revise compras, gastos, ingresos, deudas y contratos. También plantea que los balances se informen a la asamblea de socios de forma semestral, con un plazo mínimo de 90 días después de su aprobación por el Consejo Directivo.",
+    "El candidato sostuvo que el Campeón del Siglo cerró 2025 con resultado negativo y que los asambleístas no conocen el detalle: \"no sabemos por qué\", dijo. Además mostró una lista que, según su versión, reúne a 91 jugadores incorporados durante la gestión anterior, con millones de dólares invertidos.",
+    "En lo deportivo, José Pedro Herrera fue presentado como gerente deportivo del proyecto. García también afirmó que Fabián Coito \"está dentro del proyecto\", aunque no quedó claro qué cargo ocuparía; el entrenador hoy cumple funciones en otra institución.",
+    "El candidato anunció además la incorporación de un consultor institucional para mediar el vínculo con la AUF y la Conmebol, y la creación de un comité de seguridad que incluiría el uso de drones. La transcripción automática del video no permite confirmar con certeza los nombres de las personas designadas en esas áreas.",
+    "La conferencia completa está disponible en el canal 1414 con Freddy."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Freddy García",
+    "Elecciones en Peñarol",
+    "Dirigencia",
+    "Fabián Coito"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-10-16-freddy-garcia-presento-su-equipo-y-anuncio-que-ya-tiene-entrenador",
+  "fecha": "2026-10-16",
+  "publicado_utc": "2026-11-02T07:26:05+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "1414 con Freddy",
+    "programa": "PEÑAROL: FREDDY GARCÍA - CONFERENCIA DE PRENSA COMPLETA",
+    "video": "https://www.youtube.com/watch?v=x3U7y-ezdgA"
+  },
+  "hechos": [
+    {
+      "hecho": "Freddy García anunció que Juan Carlos Herrera estará a cargo del revisionismo económico del club.",
+      "cita": "Bajo el lema que hemos tenido, el revisionismo económico, estará a cargo Juan Carlos Herrera.",
+      "minuto": "00:08:28",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "José Pedro Herrera fue presentado como gerente deportivo del proyecto.",
+      "cita": "Bueno, básicamente, como todo gerente deportivo, se le puede colocar distintos nombres.",
+      "minuto": "00:24:03",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Se propone una auditoría interna, realizada por una externa, contratada mediante concurso de precios, que revise compras, gastos, ingresos, deudas y contratos.",
+      "cita": "vamos a proponer que sea un proceso de contratación transparente, este que haya un concurso de precios",
+      "minuto": "00:19:43",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Se propone informar balances a la asamblea de socios con un mínimo de 90 días después de aprobados por el Consejo Directivo, y de forma semestral.",
+      "cita": "Los balances serán informados a la asamblea de socios con un mínimo de 90 días después de aprobado por el consejo directivo.",
+      "minuto": "00:22:02",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Según el candidato, Campeón del Siglo cerró 2025 con resultado negativo y los asambleístas no conocen el detalle de ese balance.",
+      "cita": "Que en el 2025 el resultado de Campeón del Siglo fue negativo y los asambleístas no sabemos por qué.",
+      "minuto": "00:22:19",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Edgar Welker fue presentado como consultor institucional para mediar el vínculo con Conmebol y la AUF.",
+      "cita": "Hoy está con nosotros el señor Edgar Welker, que será el consultor institucional para poder mediar el nexo",
+      "minuto": "00:12:21",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Fabián Coito estaría dentro del proyecto con un cargo en formativas, aunque hoy ocupa otro cargo en otra institución.",
+      "cita": "el señor Fabián Coito está dentro del proyecto. No quiero meterme en el trabajo de José Herrera",
+      "minuto": "00:13:46",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Se anunció que el entrenador para el próximo ciclo ya está cerrado, pero su nombre se dará a conocer más adelante, cerca de las elecciones.",
+      "cita": "tenemos cerrado al próximo entrenador",
+      "minuto": "00:27:30",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Se anunció un comité de seguridad a cargo de Javier Gitano Forraro, con Rilo Márquez (drones), Álvaro Costa y otros.",
+      "cita": "Él encargará un comité de seguridad donde estará formado también por Rilo Márquez",
+      "minuto": "00:14:38",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Freddy García dijo que a partir de ahora será candidato a presidente del club y que deja atrás el personaje de YouTube.",
+      "cita": "hoy la responsabilidad me lleva a ser el candidato y el futuro presidente del Club Atlético Peñarol",
+      "minuto": "00:28:40",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Según el candidato, Peñarol tiene 91 jugadores incluidos en una lista de la gestión anterior con millones de dólares invertidos.",
+      "cita": "Esto es una lista de los 91 jugadores que vinieron en esta acción. 91 jugadores.",
+      "minuto": "00:07:21",
+      "tipo": "confirmado"
+    }
+  ]
+}

@@ -5,7 +5,8 @@
     "titulo": "“NO ES RIVAL RUGLIO; ES MUY DIFÍCIL QUE SE PRESENTE, LOS NÚMEROS SON UN DESASTRE, ESTÁ 3.º O 4.º”",
     "video": "https://www.youtube.com/watch?v=-VLM9TIoyPo",
     "publicado": "2026-10-31",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-31-evaristo-gonzalez-descarta-a-ruglio-y-apunta-a-las-finanzas-de-penarol"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-31_Sport890ok_F8mzK_J3Y6M.txt",
@@ -13,7 +14,8 @@
     "titulo": "“SI VOY DE VICE, NO ES PARA JUGAR A BOB EL CONSTRUCTOR; MI EMPRESA NO PARTICIPARÁ EN OBRAS DEL CLUB”",
     "video": "https://www.youtube.com/watch?v=F8mzK_J3Y6M",
     "publicado": "2026-10-31",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-31-ruival-aseguro-que-su-empresa-no-hara-obras-en-penarol"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-30_Sport890ok__7V9qu2aJ6o.txt",
@@ -21,7 +23,8 @@
     "titulo": "\"VIENDO QUE LAS COSAS SE HACÍAN DEMASIADO MAL, DIJE QUE SÍ, CON TODO GUSTO ME GUSTARÍA PARTICIPAR\"",
     "video": "https://www.youtube.com/watch?v=_7V9qu2aJ6o",
     "publicado": "2026-10-30",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-30-herrera-si-gana-la-lista-141-aguirre-no-seguiria-en-penarol"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-29_Sport890ok_YmmrwLskmBw.txt",
@@ -29,7 +32,8 @@
     "titulo": "“NO ES SOLO VOLVER A LA AUF, COMO DICEN; TENEMOS QUE ELEGIR A LA GENTE CORRECTA Y CAPACITARLA”",
     "video": "https://www.youtube.com/watch?v=YmmrwLskmBw",
     "publicado": "2026-10-29",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-29-sanchez-propone-un-director-deportivo-y-volver-a-integrar-la-auf"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-29_Sport890ok_v3appnCd5dw.txt",
@@ -37,7 +41,8 @@
     "titulo": "“ENTENDEMOS QUE PUEDE CABER EL DELITO DE ESTAFA” POR EL MANEJO DE LA VENTA DE MATURRO A UCRANIA",
     "video": "https://www.youtube.com/watch?v=v3appnCd5dw",
     "publicado": "2026-10-29",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-29-denuncia-penal-contra-dirigentes-de-defensor-por-la-venta-de-maturro"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-28_Sport890ok_2KQbM39Q4XA.txt",
@@ -45,7 +50,8 @@
     "titulo": "SERGIO \"MARAVILLA\" MARTÍNEZ EN ÚLTIMO AL ARCO",
     "video": "https://www.youtube.com/watch?v=2KQbM39Q4XA",
     "publicado": "2026-10-28",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Es una entrevista biografica y de promocion de una charla personal de Sergio Martinez sobre su carrera de boxeo, sin informacion nueva de futbol ni declaraciones sobre pases, lesiones o decisiones de clubes."
   },
   {
     "transcripto": "datos/transcripciones/2026-11-02_elespectador810_ZdzuDeK1kTQ.txt",
@@ -62,7 +68,8 @@
     "titulo": "ASCENSO DIRECTO | PROGRAMA COMPLETO | 1/11/2026",
     "video": "https://www.youtube.com/watch?v=TQJWfyhWFOk",
     "publicado": "2026-11-01",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-11-01-progreso-descendio-y-cerrito-ya-no-depende-de-si-mismo"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-31_elespectador810_SKt7YRQid6k.txt",
@@ -70,7 +77,8 @@
     "titulo": "HIPICOS | PROGRAMA COMPLETO | 31/10/2026",
     "video": "https://www.youtube.com/watch?v=SKt7YRQid6k",
     "publicado": "2026-10-31",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-31-frati-anuncio-que-caballos-uruguayos-ya-pueden-ingresar-a-europa"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-29_fipo-tv_uwvCfTYqN9U.txt",
@@ -78,7 +86,8 @@
     "titulo": "LA EDAD ES UN NÚMERO | EL CAMINO PODCAST",
     "video": "https://www.youtube.com/watch?v=uwvCfTYqN9U",
     "publicado": "2026-10-29",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El video es un podcast de entretenimiento y promoción de un evento de hamburguesas; no contiene informacion futbolistica confirmada ni declaraciones de gente del futbol sobre el futbol."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-31_dalequevadeportes_cPKdTgt0g5U.txt",
@@ -86,7 +95,8 @@
     "titulo": "🔴 DAMIANI Y BARRERA JUNTOS A LA ELECCIÓN EN PEÑAROL",
     "video": "https://www.youtube.com/watch?v=cPKdTgt0g5U",
     "publicado": "2026-10-31",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-31-penarol-damiani-anuncio-que-barrera-ira-con-el-a-la-eleccion"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-30_CarveDeportiva1010_JRORtbBj7pY.txt",
@@ -94,7 +104,8 @@
     "titulo": "PABLO SCHIAVI: \"ESTA GESTIÓN TIENE EL RÉCORD DE PARTIDOS SIN PÚBLICO Y A PUERTAS CERRADAS\"",
     "video": "https://www.youtube.com/watch?v=JRORtbBj7pY",
     "publicado": "2026-10-30",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-30-schiavi-oficializo-a-pandiani-como-referente-del-area-deportiva"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-29_CarveDeportiva1010_2GTZYu0hpT4.txt",
@@ -102,7 +113,8 @@
     "titulo": "EDGARDO LASALVIA: \"HOY NOS JUNTAMOS CON LOS SOCIOS, CON LOS HINCHAS, HOY NO HAY DISCURSOS\"",
     "video": "https://www.youtube.com/watch?v=2GTZYu0hpT4",
     "publicado": "2026-10-29",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-29-lasalvia-conto-que-se-reunio-con-lideres-de-la-hinchada-de-penarol"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-30_Teledocecom_EXMlsjQmh5E.txt",
@@ -110,7 +122,8 @@
     "titulo": "Lu Brocal: 11 años de historias, risas y emociones en Desayunos Informales",
     "video": "https://www.youtube.com/watch?v=EXMlsjQmh5E",
     "publicado": "2026-10-30",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Es un resumen de 11 años de un programa de entretenimiento con anécdotas, risas y homenajes personales; no hay información de futbol."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-30_Teledocecom_ZdYAwnFgHSY.txt",
@@ -118,7 +131,8 @@
     "titulo": "¡Despedimos a Lu Brocal de Desayunos Informales!",
     "video": "https://www.youtube.com/watch?v=ZdYAwnFgHSY",
     "publicado": "2026-10-30",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Es el anuncio de la salida de Lucía Brocal de Desayunos Informales, un programa de entretenimiento de televisión; no hay personas del futbol hablando de futbol ni información deportiva."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-31_ObservaUY_RFqjvjRVJlk.txt",
@@ -126,7 +140,8 @@
     "titulo": "¿Por qué CHINA estalló contra MBAPPÉ por un MEME VIRAL?👀",
     "video": "https://www.youtube.com/watch?v=RFqjvjRVJlk",
     "publicado": "2026-10-31",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-31-mbappe-en-el-centro-de-una-polemica-en-china-por-un-meme"
   },
   {
     "transcripto": "datos/transcripciones/2026-11-01_SomosFIX_tXj-HfGTcTg.txt",
@@ -134,7 +149,8 @@
     "titulo": "ENTRE ABEJAS Y CIGUEÑAS | \"Que el dolor se convierta en amor\" Reflexiones sobre el duelo gestacional",
     "video": "https://www.youtube.com/watch?v=tXj-HfGTcTg",
     "publicado": "2026-11-01",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Es una conversacion reflexiva sobre duelo perinatal entre profesionales de la salud; no contiene informacion periodistica sobre futbol ni novedades de clubes o jugadores."
   },
   {
     "transcripto": "datos/transcripciones/2026-11-01_SomosFIX_zD8fN1i1Tto.txt",
@@ -142,7 +158,8 @@
     "titulo": "CHARLAS FIX | ESTANISLAO BACHRACH: “Cuanto más PLACER buscás, más INFELIZ sos”",
     "video": "https://www.youtube.com/watch?v=zD8fN1i1Tto",
     "publicado": "2026-11-01",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Es una entrevista de divulgacion sobre coaching mental, meditacion y autoconocimiento; el contenido es personal y filosofico, sin informacion de pases, lesiones, decisiones de clubes ni declaraciones noticiosas del futbol."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-31_SomosFIX_hw30Fs3jkdA.txt",
@@ -150,7 +167,8 @@
     "titulo": "FIX SALUD | CAMILA SUÁREZ: los desafíos emocionales de la ADULTEZ y la RESISTENCIA al CAMBIO",
     "video": "https://www.youtube.com/watch?v=hw30Fs3jkdA",
     "publicado": "2026-10-31",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Es una entrevista de salud mental y autoayuda con la psicóloga Camila Suárez sobre su libro; no hay hechos de futbol que informar."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-31_SomosFIX_0yAdCpHJt1M.txt",
@@ -158,7 +176,8 @@
     "titulo": "FIX TURF | JOSÉ AMORÍN BATLLE: \"Si la CRIANZA es un 50%, la GENÉTICA es otro\"",
     "video": "https://www.youtube.com/watch?v=0yAdCpHJt1M",
     "publicado": "2026-10-31",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-31-criadores-amorin-propone-recuperar-incentivos-para-la-cria-nacional"
   },
   {
     "transcripto": "datos/transcripciones/2026-11-02_PUNTOPENALURUGUAY_OaL-wrwSUv0.txt",
@@ -166,7 +185,8 @@
     "titulo": "\"Diego Aguirre cumplió un ciclo\" Edgardo \"Chino\" Lasalvia. 1ªparte.",
     "video": "https://www.youtube.com/watch?v=OaL-wrwSUv0",
     "publicado": "2026-11-02",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-11-02-lasalvia-aguirre-cumplio-un-ciclo-y-cuestiono-la-gestion-de-penarol"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-31_lasvocesdelfutboluy_hn1TRXG7WHM.txt",
@@ -174,7 +194,8 @@
     "titulo": "\"EL CICLO DE DIEGO AGUIRRE ESTÁ CUMPLIDO\" ¡EVARISTO GONZALEZ DURISIMO CON EL MAL MOMENTO DE PEÑAROL!",
     "video": "https://www.youtube.com/watch?v=hn1TRXG7WHM",
     "publicado": "2026-10-31",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-31-evaristo-gonzalez-el-ciclo-de-diego-aguirre-esta-cumplido"
   },
   {
     "transcripto": "datos/transcripciones/2026-11-01_Fabro6_wtptAMM6q-g.txt",
@@ -182,7 +203,8 @@
     "titulo": "NACIONAL GANÓ Y SIGUE EN LA PELEA -DANUBIO A LA B",
     "video": "https://www.youtube.com/watch?v=wtptAMM6q-g",
     "publicado": "2026-11-01",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-11-01-danubio-descendio-a-la-segunda-division-segun-informo-fabro"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-30_Fabro6__9Pk9Fr0WGg.txt",
@@ -190,7 +212,8 @@
     "titulo": "EL PERIODISMO ES DE NACIONAL O DE PEÑAROL?",
     "video": "https://www.youtube.com/watch?v=_9Pk9Fr0WGg",
     "publicado": "2026-10-30",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El transcripto es una charla de opinion sobre el sesgo de la prensa uruguaya entre hinchas de Nacional y Peñarol; no contiene hechos nuevos sobre pases, lesiones, decisiones ni declaraciones oficiales verificables."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-29_Fabro6_csPd-N9jx38.txt",
@@ -198,7 +221,8 @@
     "titulo": "PREDICCIÓN DEL CAMPEÓN DEL CLAUSURA Y LA ANUAL - CAMPEONATO URUGUAYO",
     "video": "https://www.youtube.com/watch?v=csPd-N9jx38",
     "publicado": "2026-10-29",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Es una predicción personal del youtuber sobre los campeones del Clausura y la tabla anual, con opinión propia (declara ser hincha de Nacional) y análisis de tablas. No contiene declaraciones de periodistas, dirigentes, técnicos, jugadores ni representantes, ni anuncios de pases, lesiones o decisiones."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-26_Fabro6_TveVDpniPp8.txt",
@@ -206,7 +230,8 @@
     "titulo": "PERCHMAN SE CREE MÁS GRANDE QUE NACIONAL?",
     "video": "https://www.youtube.com/watch?v=TveVDpniPp8",
     "publicado": "2026-10-26",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-26-perchman-hablo-de-lozano-la-localia-y-su-ruptura-con-lasarte"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-26_Fabro6_JAiL8Ii2H38.txt",
@@ -214,7 +239,8 @@
     "titulo": "NACIONAL perdió ante Liverpool 0-1 y se alejó de la Punta",
     "video": "https://www.youtube.com/watch?v=JAiL8Ii2H38",
     "publicado": "2026-10-26",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El transcripto es en su mayoria relato del partido y analisis tactico de Fabro; la unica informacion de fuente con potencial es la lesion de Luciano Rodriguez, pero en el transcripto aparece como un hecho parcial que no esta confirmado por fuente oficial ni tiene gravedad informada, y el resto es opinion y chicana sobre el vicepresidente."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-20_Fabro6_TuVf0k8ydsA.txt",
@@ -222,7 +248,8 @@
     "titulo": "NACIONAL GANÓ EN OTRO PARTIDAZO 3-2 ANTE DEPORTIVO MALDONADO",
     "video": "https://www.youtube.com/watch?v=TuVf0k8ydsA",
     "publicado": "2026-10-20",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El transcripto es un análisis del partido Nacional 3-2 Deportivo Maldonado: valoraciones de rendimiento, táctica y opinión del presentador. No contiene declaraciones de dirigentes, técnicos, jugadores ni representantes, ni información sobre pases, lesiones o decisiones institucionales. La única mención a una lesión (Alejandro Martínez) es un hecho de partido, sin dato de gravedad ni diagnóstico."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-06_laabdonTV_E3dHX6kYIMo.txt",
@@ -230,7 +257,8 @@
     "titulo": "NACIONAL MARCÓ EL RITMO DEL PARTIDO |  intensidad, agresividad y disciplina eso tuvo Nacional",
     "video": "https://www.youtube.com/watch?v=E3dHX6kYIMo",
     "publicado": "2026-10-06",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-06-nacional-le-gano-a-torque-con-gol-de-tomas-viera-en-el-parque-central"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-16_aurinegroworld_x3U7y-ezdgA.txt",
@@ -238,7 +266,8 @@
     "titulo": "PEÑAROL: FREDDY GARCÍA - CONFERENCIA DE PRENSA COMPLETA",
     "video": "https://www.youtube.com/watch?v=x3U7y-ezdgA",
     "publicado": "2026-10-16",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-16-freddy-garcia-presento-su-equipo-para-presidir-penarol"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-03_aurinegroworld_V_KmbCkNQ3k.txt",
@@ -254,7 +283,8 @@
     "titulo": "La Noche del Búho - 970 Universal - Domingo 01 11 2026",
     "video": "https://www.youtube.com/watch?v=Kl2JWpDS2RU",
     "publicado": "2026-11-02",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Hay una entrevista con Jaime Rosquier sobre el aumento de sífilis en Uruguay y el tratamiento, pero el contenido es mayormente de salud pública, no de futbol; el resto del programa es cultura, cartelera y recomendaciones comerciales."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-30_970universal_pKgLlpDHh6k.txt",
@@ -262,7 +292,8 @@
     "titulo": "JUAN FAGÚNDEZ EN PUNTO DE ENCUENTRO - 970 UNIVERSAL",
     "video": "https://www.youtube.com/watch?v=pKgLlpDHh6k",
     "publicado": "2026-10-30",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Entrevista de radio con el abogado penalista Juan Fagúndez sobre criminalidad, legislación penal, Bukele y sociedad; no hay personas del futbol hablando de futbol."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-30_970universal_qMLC9A5gWW0.txt",
@@ -270,7 +301,8 @@
     "titulo": "QUE ALGUIEN LO EXPLIQUE CON FABIAN TISCORNIA - PUNTO DE ENCUENTRO 970 UNIVERSAL",
     "video": "https://www.youtube.com/watch?v=qMLC9A5gWW0",
     "publicado": "2026-10-30",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El programa es de economía y finanzas (Brasil, mercados, tasas, dólar), no de futbol. Aunque hay una parte de juego de preguntas y cambios físicos, no hay gente del futbol hablando de futbol."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-29_970universal_3wP8-apbrc0.txt",
@@ -278,7 +310,8 @@
     "titulo": "Virginia Moreira y Rezo Stagnari en Punto de ENCUENTRO - 970 UNIVERSAL",
     "video": "https://www.youtube.com/watch?v=3wP8-apbrc0",
     "publicado": "2026-10-29",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El video es un segmento sobre vinos y la bodega familiar; no hay gente del futbol hablando de futbol ni informacion deportiva."
   },
   {
     "transcripto": "datos/transcripciones/2026-10-16_1414conFREDDY_x3U7y-ezdgA.txt",
@@ -286,7 +319,8 @@
     "titulo": "PEÑAROL: FREDDY GARCÍA - CONFERENCIA DE PRENSA COMPLETA",
     "video": "https://www.youtube.com/watch?v=x3U7y-ezdgA",
     "publicado": "2026-10-16",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-10-16-freddy-garcia-presento-su-equipo-y-anuncio-que-ya-tiene-entrenador"
   },
   {
     "transcripto": "datos/transcripciones/2026-10-03_1414conFREDDY_V_KmbCkNQ3k.txt",

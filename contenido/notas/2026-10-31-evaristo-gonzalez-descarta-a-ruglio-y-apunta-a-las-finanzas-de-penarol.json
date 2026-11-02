@@ -1,0 +1,124 @@
+{
+  "titulo": "Evaristo González descarta a Ruglio y apunta a las finanzas de Peñarol",
+  "bajada": "El candidato a la presidencia aurinegra dijo en Sport 890 que Ruglio y Juan Pedro Damiani no tienen chances en la elección. Cuestionó el manejo económico del club y presentó propuestas deportivas y de seguridad.",
+  "cuerpo": [
+    "Evaristo González, candidato a presidente de Peñarol y actual consejero, sostuvo en Sport 890 que ni Ruglio ni Juan Pedro Damiani tienen posibilidades de ganar las elecciones del club. Sobre Ruglio afirmó que \"los números son un desastre\" y que figura tercero o cuarto en las encuestas, según sus propias mediciones.",
+    "En la misma línea, el candidato dijo que entre el 22 y el 25 por ciento de los socios están indecisos a unos 40 días de la votación. Ese dato también surge de mediciones de su propio sector.",
+    "Buena parte de la entrevista se centró en la economía del club. González señaló que la AUF puso a disposición de todos los clubes un crédito sin intereses y a largo plazo que Peñarol no utilizó, y que el club pidió en cambio una línea de crédito en el Banco República.",
+    "En el programa se mencionó además la versión de que Peñarol estaría debiendo sueldos y dependería de ese crédito para ponerse al día. No quedó confirmada.",
+    "El candidato se refirió también a una deuda vinculada a Tenfield que está en proceso judicial. Habló de una cifra cercana a los 5 millones de dólares, aunque el monto no quedó precisado. Agregó que el club sigue sin acceso a los ingresos por venta de alimentos, publicidad y naming del estadio, que están comprometidos en un contrato con una empresa.",
+    "En lo deportivo, González propuso sumar un director deportivo a la gerencia, crear un departamento de prevención de lesiones y priorizar a los juveniles en el plantel principal. Dijo que maneja tres opciones para dirigir al equipo en el próximo ciclo: dos cuerpos técnicos uruguayos y uno extranjero. Recordó además que el Consejo Directivo ratificó al actual entrenador con el voto de seis de sus integrantes.",
+    "En materia de seguridad planteó instalar cámaras con reconocimiento facial y monitoreo las 24 horas, y prohibir el ingreso a las personas identificadas como violentas.",
+    "Sobre el presente del equipo, el candidato reconoció una caída en los últimos cinco o seis partidos que, a su juicio, pone en riesgo el Campeonato Uruguayo, con dos puntos de diferencia y tres fechas por jugar. Llamó a respaldar al plantel. También criticó la idea, planteada ante la AUF, de modificar el reglamento con el torneo en curso. Entre esos cambios mencionó una posible suspensión del ascenso.",
+    "En el plano político, González celebró el apoyo del contador Amaro y de otro dirigente cuyo nombre no quedó claro en la transmisión. También invitó a Carlos Lazarino a sumarse, por las similitudes entre los proyectos de ambos. En el programa se recogió una declaración de Damiani: dijo que nunca trabajó con González y que tiene buen concepto de él como persona y como empresario."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "elecciones en Peñarol",
+    "Evaristo González",
+    "AUF",
+    "Campeonato Uruguayo"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-10-31-evaristo-gonzalez-descarta-a-ruglio-y-apunta-a-las-finanzas-de-penarol",
+  "fecha": "2026-10-31",
+  "publicado_utc": "2026-11-02T07:18:11+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "Sport 890",
+    "programa": "“NO ES RIVAL RUGLIO; ES MUY DIFÍCIL QUE SE PRESENTE, LOS NÚMEROS SON UN DESASTRE, ESTÁ 3.º O 4.º”",
+    "video": "https://www.youtube.com/watch?v=-VLM9TIoyPo"
+  },
+  "hechos": [
+    {
+      "hecho": "Peñarol tuvo una caída en los últimos cinco o seis partidos y el campeonato uruguayo está en riesgo, a dos puntos y tres partidos de distancia.",
+      "cita": "tenemos que estar todos en ese apoyo... ponen en riesgo el campeonato uruguayo",
+      "minuto": "00:01:12",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Propuesta de instalar cámaras con reconocimiento facial, monitoreo 24 horas y prohibición de ingreso a personas identificadas como violentas.",
+      "cita": "la instalación de cámaras de primer nivel con reconocimiento facial, monitoreo las 24 horas",
+      "minuto": "00:04:31",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Peñarol tiene un crédito de la AUF disponible para clubes, sin intereses y de largo plazo, que no fue utilizado; el club pidió una línea de crédito en el Banco República.",
+      "cita": "hubo un crédito a disponibilidad de todos los clubes, entre ellos Peñarol",
+      "minuto": "00:33:07",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Versión de que Peñarol estaría debiendo sueldos y dependiendo de la línea de crédito para ponerse al día.",
+      "cita": "Es verdad todo esto que salió de que estamos debiendo los sueldos",
+      "minuto": "00:48:55",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Peñarol tiene una deuda pendiente por el pago de Tenfield, en proceso judicial, de aproximadamente 5 millones de dólares, según el candidato.",
+      "cita": "eh si un amigo mío, como le pasa al presidente, me debe 5 millones de dólares",
+      "minuto": "00:43:02",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Peñarol no tiene acceso a los ingresos por venta de alimentos, publicidad y naming del estadio, que están en un contrato con una empresa.",
+      "cita": "seguimos sin tener el acceso a poder utilizar la venta de los alimentos del club",
+      "minuto": "00:44:07",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Amaro y Sebastián (Sebayer) apoyan la candidatura de Evaristo González.",
+      "cita": "una alegría enorme... gente muy valiosa como es el contador Amaro y el Sebayer",
+      "minuto": "00:38:34",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Carlos Lazarino tiene un plan con similitudes con el proyecto de Evaristo González; se le invita a sumarse.",
+      "cita": "Ojalá también se sume Lazarino, que es una persona profesional en ese tema",
+      "minuto": "01:07:56",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Propuesta de crear un director deportivo, un departamento de prevención de lesiones y priorizar juveniles en primera.",
+      "cita": "complementar la gerencia deportiva con un director deportivo",
+      "minuto": "00:17:07",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Hay tres posibles entrenadores para el próximo ciclo: dos equipos de técnicos uruguayos y uno extranjero.",
+      "cita": "Hay dos, hay dos, hay dos entrenadores, hay dos equipos de entrenadores que son uruguayos... y hay un tercero que es extranjero",
+      "minuto": "00:26:44",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "El Consejo Directivo ratificó al técnico Aguirre por mayoría.",
+      "cita": "la mayoría del club, seis personas votaron la rectificación del técnico",
+      "minuto": "00:15:05",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Se planteó a la AUF la posibilidad de cambiar el reglamento del campeonato en pleno torneo, incluyendo la suspensión del ascenso.",
+      "cita": "cambiar los reglamentos... faltando el final del campeonato no es serio",
+      "minuto": "00:35:55",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Según el candidato, Juan Pedro Damiani y Ruglio no tienen chances de ganar la elección; Ruglio está tercero o cuarto en las encuestas.",
+      "cita": "Los números son un desastre del hoy está tercero o cuarto",
+      "minuto": "01:00:09",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Damiani afirmó que nunca trabajó con Evaristo González y que le tiene buen concepto como persona y empresario.",
+      "cita": "Nunca trabajé con Evaristo González. Tengo un muy buen concepto de baristo como persona",
+      "minuto": "01:04:13",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Peñarol tiene un 22 a 25% de socios indecisos a 40 días de las elecciones, según mediciones del candidato.",
+      "cita": "Lo que hemos medido, estamos hablando del 22 al 25%",
+      "minuto": "01:18:29",
+      "tipo": "version"
+    }
+  ]
+}

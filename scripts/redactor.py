@@ -38,6 +38,9 @@ Reglas que no se negocian:
 - Interesa lo que dice gente del futbol (periodistas, dirigentes, tecnicos, jugadores,
   representantes): informacion, declaraciones, versiones de pases, lesiones, decisiones.
 - No interesa la opinion suelta, el relato del partido ni la chicana entre hinchas.
+- Esto es un medio de FUTBOL. Si el video habla de otro deporte (hipica, basquetbol,
+  ciclismo), de politica general, de espectaculos o de salud, devolve es_de_futbol
+  en false y es_noticia en false, por mas que el programa sea deportivo.
 - Distingui informacion de rumor. Si el que habla dice "me dicen", "se habla", "parece",
   eso es una version, no un hecho confirmado."""
 
@@ -192,6 +195,21 @@ def main():
                   key=lambda p: p.get("publicado", ""), reverse=True)
     if limite:
         cola = cola[:limite]
+    # Si un video ya tiene nota, no se vuelve a escribir (puede venir repetido
+    # desde dos canales que publicaron lo mismo).
+    ya_escritos = set()
+    for archivo in NOTAS.glob("*.json"):
+        try:
+            ya_escritos.add(json.loads(archivo.read_text(encoding="utf-8"))["fuente"]["video"])
+        except (json.JSONDecodeError, KeyError):
+            continue
+    descartadas_repetidas = [p for p in cola if p["video"] in ya_escritos]
+    for pendiente in descartadas_repetidas:
+        pendiente["estado"] = "repetido"
+    cola = [p for p in cola if p["video"] not in ya_escritos]
+    if descartadas_repetidas:
+        print(str(len(descartadas_repetidas)) + " ya tenian nota (mismo video en dos canales)")
+
     if not cola:
         print("no hay transcriptos pendientes")
         return

@@ -1,0 +1,62 @@
+{
+  "titulo": "Mbappé, en el centro de una polémica en China por un meme",
+  "bajada": "Según se repasó en un video del canal Observa, el futbolista y el Real Madrid pidieron disculpas después de una broma sobre un meme que lo mostraba como dictador. También se habló de contratos cancelados y de una suspensión de transmisiones, sin confirmación.",
+  "cuerpo": [
+    "Kylian Mbappé quedó envuelto en una polémica en China después de bromear sobre un meme que lo presentaba como un dictador. Así lo expuso el canal Observa en un video publicado en YouTube, en el que se afirmó que tanto el futbolista como el Real Madrid pidieron disculpas por lo ocurrido.",
+    "De acuerdo con el relato del programa, todo empezó en un show de televisión, cuyo nombre no se distingue con claridad en la grabación. Allí, Mbappé reaccionó con humor al escuchar un meme que lo mostraba como dictador.",
+    "En otra entrevista, siempre según lo contado en el video, el jugador dijo que su favorito era el de Mao Zedong. En el programa lo resumieron así: el que más gracia le causaba era uno de \"un dictador chino\".",
+    "La repercusión llevó a que Mbappé pidiera disculpas \"dos días después de toda la polémica\", según se afirmó en el espacio. Los presentadores agregaron que el Real Madrid también emitió un pedido de disculpas.",
+    "En el video se mencionaron además otras consecuencias que no fueron respaldadas con datos concretos. Según se dijo, tres marcas chinas que trabajaban con el futbolista le habrían cancelado el contrato. No se dieron los nombres de esas empresas ni detalles de los acuerdos.",
+    "En el mismo programa trascendió también que la televisión estatal de China y un grupo de medios de ese país habrían suspendido la transmisión de la liga española. Tampoco se citó ningún comunicado oficial que lo confirme, por lo que el dato debe tomarse como una versión.",
+    "El video tampoco precisó las fechas en que se habrían producido los hechos. Los nombres de los presentadores no se entienden con claridad en la grabación.",
+    "El material completo puede verse en el canal de YouTube de Observa, bajo el título \"¿Por qué CHINA estalló contra MBAPPÉ por un MEME VIRAL?\". Las referencias a la broma aparecen cerca del minuto 4:50 y las consecuencias, a partir del minuto 6:27."
+  ],
+  "etiquetas": [
+    "Kylian Mbappé",
+    "Real Madrid",
+    "China",
+    "Liga española"
+  ],
+  "categoria": "otro",
+  "slug": "2026-10-31-mbappe-en-el-centro-de-una-polemica-en-china-por-un-meme",
+  "fecha": "2026-10-31",
+  "publicado_utc": "2026-11-02T07:20:09+00:00",
+  "importancia": 3,
+  "fuente": {
+    "nombre": "Observa",
+    "programa": "¿Por qué CHINA estalló contra MBAPPÉ por un MEME VIRAL?👀",
+    "video": "https://www.youtube.com/watch?v=RFqjvjRVJlk"
+  },
+  "hechos": [
+    {
+      "hecho": "Mbappé hizo una broma en el programa Jadel Show al escuchar un meme que lo presentaba como dictador, y en otra entrevista dijo que su favorito era el de Mao Zedong.",
+      "cita": "que el que le más le da gracia es uno que es de un dictador chino",
+      "minuto": "00:04:50",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Mbappé pidió disculpas dos días después de la polémica.",
+      "cita": "Mbappé pidió disculpas dos días después de toda la polémica",
+      "minuto": "00:06:56",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "El Real Madrid también pidió disculpas.",
+      "cita": "El Real Madrid también pidió disculpas",
+      "minuto": "00:07:12",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Tres marcas chinas que tenían contrato con Mbappé se lo cancelaron.",
+      "cita": "hasta tres marcas que trabajaban con Mbappé, marcas chinas, eh, que tenían contrato también en China, eh, le bajaron el contrato",
+      "minuto": "00:06:27",
+      "tipo": "version"
+    },
+    {
+      "hecho": "La televisión estatal china y un grupo de medios suspendieron la transmisión de la liga española.",
+      "cita": "la televisión estatal de China y el grupo de medios de China suspendieron oficialmente la transmisión de la liga española",
+      "minuto": "00:06:41",
+      "tipo": "version"
+    }
+  ]
+}

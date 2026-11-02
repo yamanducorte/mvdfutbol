@@ -1,0 +1,138 @@
+{
+  "titulo": "Lasalvia: \"Aguirre cumplió un ciclo\" y cuestionó la gestión de Peñarol",
+  "bajada": "El candidato a presidente aurinegro habló en Punto Penal. Responsabilizó a los jugadores por el último partido, criticó la economía del club y planteó un esquema de sueldos con tope y objetivos.",
+  "cuerpo": [
+    "Edgardo \"Chino\" Lasalvia, candidato a la presidencia de Peñarol, sostuvo que Diego Aguirre ya cumplió su ciclo como entrenador en esta etapa del club y criticó con dureza a la actual conducción. Lo dijo en una entrevista con el programa Punto Penal, en la primera parte de la charla publicada en YouTube.",
+    "Sobre el último partido del equipo, Lasalvia puso la mayor parte de la responsabilidad en el plantel. A su entender, \"el 90%\" de la culpa es de los propios jugadores.",
+    "Según contó, Ignacio Ruglio informó que el equipo se concentrará cuatro días en Solanas, como novedad, para consolidar el grupo. Lasalvia cuestionó la medida, porque considera que el problema es de preparación mental y no de lugar. También relató que en una cena con el plantel no estuvieron ni Ruglio ni los directivos, y que nadie habló con los jugadores.",
+    "En lo económico, afirmó que el club tiene ingresos anuales de unos 50 millones de dólares y que no necesita que los dirigentes pongan dinero propio. Al mismo tiempo, señaló que hay atrasos salariales de varios meses y funcionarios de las formativas que cobran lo mismo desde hace diez años.",
+    "Cuestionó que se haya invertido en tres o cuatro futbolistas con sueldos altos sin antecedentes que lo justificaran. Su propuesta es fijar un tope salarial y completar los ingresos con objetivos de rendimiento.",
+    "Como ejemplo, recordó que cuando Brian Rodríguez estaba por quedar libre se intentó contratarlo, pero los directivos de entonces lo rechazaron por un costo de 3 millones de dólares.",
+    "También mencionó a Jonathan Rodríguez como una posibilidad bajo ese esquema. Según su planteo, el jugador cobraría 120.000 dólares por seis meses y devolvería todo el salario si no alcanzara el 60% de los minutos. Lasalvia lo presentó como una alternativa y no como una negociación confirmada.",
+    "En el plano electoral, dijo que ya se reunió con todos los candidatos salvo con Ruglio y con otro aspirante cuyo nombre el registro de la entrevista no permite precisar, y que se reunirá con ambos en los próximos días. Agregó que estaría dispuesto a apoyar a otro dirigente como candidato en lugar de encabezar él la fórmula. En la entrevista ese dirigente aparece mencionado como Barrera, sin más datos.",
+    "Además, acusó a dirigentes que, según dijo, llevan décadas en la conducción del club de haber vendido \"promesas vacías\" a socios e hinchas.",
+    "La entrevista completa está disponible en el canal de YouTube de Punto Penal."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Diego Aguirre",
+    "Elecciones en Peñarol",
+    "Edgardo Lasalvia",
+    "Ignacio Ruglio",
+    "Jonathan Rodríguez"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-11-02-lasalvia-aguirre-cumplio-un-ciclo-y-cuestiono-la-gestion-de-penarol",
+  "fecha": "2026-11-02",
+  "publicado_utc": "2026-11-02T07:16:08+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "Punto Penal",
+    "programa": "\"Diego Aguirre cumplió un ciclo\" Edgardo \"Chino\" Lasalvia. 1ªparte.",
+    "video": "https://www.youtube.com/watch?v=OaL-wrwSUv0"
+  },
+  "hechos": [
+    {
+      "hecho": "Lasalvia afirma que Diego Aguirre completó un ciclo en Peñarol y que debería haberse quedado después de la Copa Libertadores.",
+      "cita": "Creo que Diego ya ha completado un ciclo en esta etapa de Peñarol.",
+      "minuto": "00:09:04",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia dice que, si los miembros eligen a Barrera como candidato, él lo apoyaría en lugar de presentarse.",
+      "cita": "Creo que el grandullón debería haber sido el candidato a presidente de Peñarol... y yo lo apoyaría.",
+      "minuto": "00:01:10",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia afirma que se reunió con todos los candidatos excepto con Nacho (Ruglio) y Lazarino, con quienes se reunirá en los próximos días.",
+      "cita": "Me he reunido con todos, excepto con Nacho y Lazarino, con quienes me reuniré en los próximos días.",
+      "minuto": "00:02:00",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia sostiene que Peñarol no debería invertir en tres o cuatro jugadores que cobran mucho sin tener el historial para justificarlo.",
+      "cita": "Creo que es hora de invertir bien y no en tres o cuatro jugadores que han ganado mucho dinero y no tenían los reconocimientos para hacerlo.",
+      "minuto": "00:02:35",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia afirma que en su momento Peñarol no fichó a Brian Rodríguez cuando era agente libre porque los directores de entonces dijeron que no, por un costo de 3 millones de dólares.",
+      "cita": "Cuando Brian Rodriguez estaba a punto de convertirse en agente libre, intentamos ficharlo, pero los directores de entonces dijeron que no. Habría costado 3 millones de dólares.",
+      "minuto": "00:04:37",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia dice que Jonathan Rodríguez podría venir a Peñarol con un contrato con cláusula de devolución del salario si no cumple objetivos de rendimiento.",
+      "cita": "Jonathan Rodríguez podría haber rescindido su contrato ahora y venir por una cantidad que se le devolvería en diciembre si no cumpliera con las expectativas deportivas.",
+      "minuto": "00:04:50",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Lasalvia afirma que Jonathan Rodríguez devolvería todo su salario (120.000 dólares en 6 meses) si no cumple con el objetivo de jugar el 60% de los minutos.",
+      "cita": "Él devuelve todo su salario. Los 120, en 6 meses eso son 120.000.",
+      "minuto": "00:15:19",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia sostiene que el club tiene ingresos anuales de 50 millones de dólares y no necesita que dirigentes pongan dinero propio.",
+      "cita": "Tiene unos ingresos anuales de 50 millones de dólares.",
+      "minuto": "00:13:31",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia afirma que Peñarol tiene salarios atrasados de varios meses y empleados que cobran lo mismo desde hace 10 años.",
+      "cita": "Unos meses de retraso en los salarios, ¿verdad? Y en las divisiones juveniles hay gente... Llevan ganando lo mismo durante 10 años.",
+      "minuto": "00:13:56",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia dice que se dio cuenta de que Ruglio y los directivos no estaban presentes en una cena con jugadores, y que nadie habló con ellos.",
+      "cita": "Nadie, absolutamente nadie, habló con los jugadores en esa cena.",
+      "minuto": "00:10:36",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia cuestiona que Peñarol se concentre cuatro días en Solanas antes de un partido, afirmando que es un tema mental más que de lugar.",
+      "cita": "Concentrándose en Solanas, no. Si estás preparado mentalmente... no tienes que ir a Solanas.",
+      "minuto": "00:10:04",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Lasalvia afirma que Ruglio informó que el equipo se concentrará 4 días en Solanas para construir un grupo más cohesionado.",
+      "cita": "Ruglio informó ayer que el equipo, como novedad, se concentrará durante 4 días en Solanas.",
+      "minuto": "00:10:04",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia afirma que Peñarol es responsable de su propio mal rendimiento en el partido de ayer, atribuyendo el 90% de la culpa a los jugadores.",
+      "cita": "Creo que el 90% de la culpa recae en los propios jugadores.",
+      "minuto": "00:08:30",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia critica a los directivos Nacho y Damián, afirmando que llevan 40 años con la misma gestión y que han vendido promesas vacías a los socios.",
+      "cita": "Creo que durante muchos años han estado mintiendo a los miembros y a los fans, vendiéndoles promesas vacías.",
+      "minuto": "00:12:03",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia propone que los salarios de los jugadores tengan un tope, con objetivos basados en el rendimiento.",
+      "cita": "Los salarios deberían tener un tope, y luego tener objetivos basados en el rendimiento.",
+      "minuto": "00:14:10",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Lasalvia afirma que el Mundial de Clubes y los brasileños dominan la Copa Libertadores por su poder económico y su cantidad de jugadores.",
+      "cita": "Tienen poder económico. Tienen el mejor cuerpo de ojeadores; Hay 240 millones de personas.",
+      "minuto": "00:02:49",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Lasalvia afirma que la camiseta de Peñarol vende 400.000 unidades mientras Flamengo vende 15 millones.",
+      "cita": "Peñarol y nuestro rival tradicional venden 400.000 camisetas, mientras que Flamengo vende 15 millones.",
+      "minuto": "00:03:39",
+      "tipo": "confirmado"
+    }
+  ]
+}

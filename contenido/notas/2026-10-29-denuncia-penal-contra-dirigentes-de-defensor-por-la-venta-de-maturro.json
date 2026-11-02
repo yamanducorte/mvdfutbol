@@ -1,0 +1,100 @@
+{
+  "titulo": "Denuncia penal contra dirigentes de Defensor por la venta de Maturro",
+  "bajada": "Soccer Promotion presentó una denuncia contra cuatro integrantes de Defensor Sporting por el manejo del porcentaje pendiente de la ficha de Maturro. Su abogado, Sebastián Méndez, sostuvo en Sport 890 que entienden que \"puede caber el delito de estafa\".",
+  "cuerpo": [
+    "La empresa Soccer Promotion denunció penalmente al presidente, al secretario, al tesorero y al oficial de cumplimiento de Defensor Sporting por el manejo de la venta de Maturro. Así lo explicó su abogado, Sebastián Méndez, en Sport 890, en diálogo con el periodista Guillermo López. Según dijo, la empresa entiende que \"puede caber el delito de estafa\".",
+    "Méndez recordó que Defensor vendió la ficha del jugador al Génova y se reservó un porcentaje para una eventual segunda venta. Sobre ese porcentaje tenían derechos tres empresas. En el caso de Soccer Promotion, por haber detectado al futbolista: le correspondía una comisión \"por el scouteo del jugador\". El monto de esa comisión no se mencionó en la entrevista.",
+    "Según el relato del abogado, alrededor del 20 de agosto Defensor firmó un documento con el Génova por el cual renunció al 20% pendiente a cambio de 150.000 dólares. Después, el club italiano vendió la totalidad de la ficha al Shakhtar por una suma cercana a los 6 millones de dólares.",
+    "Méndez agregó que Defensor dio a conocer un segundo negocio con el Génova, por el cual le vende la posibilidad de igualar ofertas por tres jugadores del plantel. Los nombres de esos futbolistas no se mencionaron.",
+    "A partir de esos dos acuerdos, la empresa presume que hubo una triangulación. \"Si uno pasa raya, a Defensor Sporting le entra el mismo dinero por estos dos negocios que le hubiera entrado si la venta de Maturro se hubiera hecho de manera directa\", afirmó el abogado. Esa lectura es la posición de la parte denunciante y no una conclusión judicial.",
+    "El abogado aclaró que no acusa a nadie de haberse quedado con el dinero. Consultado sobre ese punto, respondió \"de ninguna manera\". Explicó que lo que la empresa sostiene es que puede haberse visto perjudicada. Sobre la inclusión de los cuatro denunciados, señaló que el presidente y el secretario deben firmar por estatuto todos los documentos del club.",
+    "Méndez indicó que no hubo un intercambio formal previo con Defensor sobre esta denuncia en particular. Sí mantuvieron conversaciones con el club por otros temas, y hay otros litigios pendientes entre las partes. También destacó que el trabajo de la empresa le reportó al club \"más o menos unos 15 millones de dólares en ventas\".",
+    "Además de la vía penal, Soccer Promotion reclamará un resarcimiento económico en la vía civil. Según el abogado, esa demanda \"se va a ingresar en los próximos días\"."
+  ],
+  "etiquetas": [
+    "Defensor Sporting",
+    "Génova",
+    "Shakhtar",
+    "Maturro",
+    "Soccer Promotion",
+    "denuncia penal"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-10-29-denuncia-penal-contra-dirigentes-de-defensor-por-la-venta-de-maturro",
+  "fecha": "2026-10-29",
+  "publicado_utc": "2026-11-02T07:23:50+00:00",
+  "importancia": 5,
+  "fuente": {
+    "nombre": "Sport 890",
+    "programa": "“ENTENDEMOS QUE PUEDE CABER EL DELITO DE ESTAFA” POR EL MANEJO DE LA VENTA DE MATURRO A UCRANIA",
+    "video": "https://www.youtube.com/watch?v=v3appnCd5dw"
+  },
+  "hechos": [
+    {
+      "hecho": "Defensor Sporting vendió la ficha de Maturro al Génova reservándose un porcentaje pendiente de venta.",
+      "cita": "Defensor Sporting vende los, la ficha del jugador al club Génova, se reservó en esa operación un porcentaje que quedó pendiente para una segunda venta.",
+      "minuto": "00:00:56",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Soccer Promotion tenía derecho a una comisión por el scouteo del jugador.",
+      "cita": "Sobre ese porcentaje había tres empresas... en el caso de la empresa que yo represento es por el scouteo del jugador.",
+      "minuto": "00:00:56",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Alrededor del 20 de agosto Defensor Sporting firmó con Génova la renuncia al 20% pendiente por 150.000 dólares.",
+      "cita": "Defensor Sporting firma un documento con Génova por el cual renuncia a ese 20% que estaba pendiente por la suma de 150,000 dólares.",
+      "minuto": "00:02:03",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Génova vendió la totalidad de la ficha de Maturro al Shakhtar por una suma cercana a 6 millones de dólares.",
+      "cita": "Génova vende la totalidad de la ficha de Alan Matturro al Shakhtar por una suma cercana a los 6 millones de dólares.",
+      "minuto": "00:02:25",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Defensor Sporting hizo público un segundo negocio con Génova que le vende la posibilidad de igualar ofertas por tres jugadores del plantel.",
+      "cita": "Defensor se encarga de poner en conocimiento público que hay un segundo negocio que hace con el Génova por el cual le vende la posibilidad de igualar ofertas por tres jugadores.",
+      "minuto": "00:03:06",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "La empresa presume una triangulación: los dos negocios sumarían el mismo dinero que la venta directa de Maturro habría generado a Defensor.",
+      "cita": "Si uno pasa raya, a defensor Sporting le entra el mismo dinero por estos dos negocios que le hubiera entrado si la venta de Maturro se hubiera hecho de manera directa.",
+      "minuto": "00:04:07",
+      "tipo": "version"
+    },
+    {
+      "hecho": "La denuncia penal incluye al presidente, al secretario, al tesorero y al oficial de cumplimiento.",
+      "cita": "Estatutariamente el presidente y el secretario eh necesariamente tienen que firmar todos los documentos... El tesorero... y el oficial de cumplimiento, que es la cuarta persona que nosotros incluimos en la denuncia.",
+      "minuto": "00:05:41",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "La empresa entiende que puede caber el delito de estafa, sin afirmar que alguno se haya quedado con el dinero.",
+      "cita": "Entendemos que puede caber el delito de estafa... de ninguna manera. Lo que sí entendemos es que puede haberse visto perjudicado.",
+      "minuto": "00:06:54",
+      "tipo": "version"
+    },
+    {
+      "hecho": "No hubo un intercambio formal previo con Defensor Sporting sobre esta denuncia puntual; sí hay otros litigios pendientes entre las partes.",
+      "cita": "Sobre este tema puntualmente no... hemos tenido conversaciones con Defensor Sporting por otros temas.",
+      "minuto": "00:08:36",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Soccer Promotion ha llevado jugadores al club y le reportó unos 15 millones de dólares en ventas.",
+      "cita": "la tarea de esta empresa le ha reportado más o menos unos 15 millones de dólares en ventas.",
+      "minuto": "00:10:47",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "La empresa irá también por la vía civil para reclamar el resarcimiento económico, y se presentará en los próximos días.",
+      "cita": "Es seguro que se va a hacer... se va a ingresar en los próximos días.",
+      "minuto": "00:15:04",
+      "tipo": "confirmado"
+    }
+  ]
+}

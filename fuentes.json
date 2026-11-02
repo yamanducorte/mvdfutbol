@@ -1,31 +1,138 @@
 {
   "_nota": "Fuentes que vigila el agente. Lista del dueno (escritorio, 2026-11-02). solo_futbol = canal generalista: la nota se escribe unicamente si habla gente del futbol.",
   "youtube": [
-    { "handle": "@elespectador810", "nombre": "El Espectador 810", "activo": true },
-    { "handle": "@fipo-tv", "nombre": "Fipo TV", "activo": true, "solo_futbol": true },
-    { "handle": "@dalequevadeportes", "nombre": "Dale Que Va Deportes", "activo": true },
-    { "handle": "@CarveDeportiva1010", "nombre": "Carve Deportiva 1010", "activo": true },
-    { "handle": "@Teledocecom", "nombre": "Teledoce", "activo": true, "solo_futbol": true },
-    { "handle": "@PasionTricolorPlay", "nombre": "Pasion Tricolor Play", "activo": true },
-    { "handle": "@ObservaUY", "nombre": "Observa", "activo": true, "solo_futbol": true },
-    { "handle": "@Sport890ok", "nombre": "Sport 890", "activo": true },
-    { "handle": "@SomosFIX", "nombre": "Somos FIX", "activo": true },
-    { "handle": "@PUNTOPENALURUGUAY", "nombre": "Punto Penal", "activo": true },
-    { "handle": "@lasvocesdelfutboluy", "nombre": "Las Voces del Futbol", "activo": true },
-    { "handle": "@Fabro6", "nombre": "Fabro", "activo": true },
-    { "handle": "@LocuraDeBielsa", "nombre": "Locura de Bielsa", "activo": true },
-    { "handle": "@laabdonTV", "nombre": "La Abdon TV", "activo": true },
-    { "handle": "@aurinegroworld", "nombre": "Aurinegro World", "activo": true },
-    { "handle": "@AUFoficial", "nombre": "AUF Oficial", "activo": true },
-    { "handle": "@Tenfieldoficial", "nombre": "Tenfield", "activo": true },
-    { "handle": "@970universal", "nombre": "Radio Universal 970", "activo": true, "solo_futbol": true },
-    { "handle": "@cuestionstream", "nombre": "Cuestion Stream", "activo": true },
-    { "handle": "@PanoramaF%C3%BAtbol", "nombre": "Panorama Futbol", "activo": true },
-    { "handle": "channel/UCcj2bO6OSvlBRtfkP4hURAw", "nombre": "Fabriuruguayo", "activo": true },
-    { "handle": "channel/UCUrOC1DK2ZBQKAyPrJMbhPQ", "nombre": "Fabriuruguayo Extra", "activo": true },
-    { "handle": "@elparedontv", "nombre": "El Paredon TV", "activo": true },
-    { "handle": "@1414conFREDDY", "nombre": "1414 con Freddy", "activo": true },
-    { "handle": "@damianylapelota", "nombre": "Damian y la Pelota", "activo": true }
+    {
+      "handle": "@elespectador810",
+      "nombre": "El Espectador 810",
+      "activo": true,
+      "solo_futbol": true
+    },
+    {
+      "handle": "@fipo-tv",
+      "nombre": "Fipo TV",
+      "activo": true,
+      "solo_futbol": true
+    },
+    {
+      "handle": "@dalequevadeportes",
+      "nombre": "Dale Que Va Deportes",
+      "activo": true
+    },
+    {
+      "handle": "@CarveDeportiva1010",
+      "nombre": "Carve Deportiva 1010",
+      "activo": true
+    },
+    {
+      "handle": "@Teledocecom",
+      "nombre": "Teledoce",
+      "activo": true,
+      "solo_futbol": true
+    },
+    {
+      "handle": "@PasionTricolorPlay",
+      "nombre": "Pasion Tricolor Play",
+      "activo": true
+    },
+    {
+      "handle": "@ObservaUY",
+      "nombre": "Observa",
+      "activo": true,
+      "solo_futbol": true
+    },
+    {
+      "handle": "@Sport890ok",
+      "nombre": "Sport 890",
+      "activo": true
+    },
+    {
+      "handle": "@SomosFIX",
+      "nombre": "Somos FIX",
+      "activo": true,
+      "solo_futbol": true
+    },
+    {
+      "handle": "@PUNTOPENALURUGUAY",
+      "nombre": "Punto Penal",
+      "activo": true
+    },
+    {
+      "handle": "@lasvocesdelfutboluy",
+      "nombre": "Las Voces del Futbol",
+      "activo": true
+    },
+    {
+      "handle": "@Fabro6",
+      "nombre": "Fabro",
+      "activo": true
+    },
+    {
+      "handle": "@LocuraDeBielsa",
+      "nombre": "Locura de Bielsa",
+      "activo": true
+    },
+    {
+      "handle": "@laabdonTV",
+      "nombre": "La Abdon TV",
+      "activo": true
+    },
+    {
+      "handle": "@aurinegroworld",
+      "nombre": "Aurinegro World",
+      "activo": true
+    },
+    {
+      "handle": "@AUFoficial",
+      "nombre": "AUF Oficial",
+      "activo": true
+    },
+    {
+      "handle": "@Tenfieldoficial",
+      "nombre": "Tenfield",
+      "activo": true
+    },
+    {
+      "handle": "@970universal",
+      "nombre": "Radio Universal 970",
+      "activo": true,
+      "solo_futbol": true
+    },
+    {
+      "handle": "@cuestionstream",
+      "nombre": "Cuestion Stream",
+      "activo": true,
+      "solo_futbol": true
+    },
+    {
+      "handle": "@PanoramaF%C3%BAtbol",
+      "nombre": "Panorama Futbol",
+      "activo": true
+    },
+    {
+      "handle": "channel/UCcj2bO6OSvlBRtfkP4hURAw",
+      "nombre": "Fabriuruguayo",
+      "activo": true
+    },
+    {
+      "handle": "channel/UCUrOC1DK2ZBQKAyPrJMbhPQ",
+      "nombre": "Fabriuruguayo Extra",
+      "activo": true
+    },
+    {
+      "handle": "@elparedontv",
+      "nombre": "El Paredon TV",
+      "activo": true
+    },
+    {
+      "handle": "@1414conFREDDY",
+      "nombre": "1414 con Freddy",
+      "activo": true
+    },
+    {
+      "handle": "@damianylapelota",
+      "nombre": "Damian y la Pelota",
+      "activo": true
+    }
   ],
   "datos": {
     "juveniles": {
@@ -38,7 +145,10 @@
   "parametros": {
     "duracion_minima_seg": 120,
     "duracion_maxima_seg": 14400,
-    "idiomas_subtitulos": ["es", "es-orig"],
+    "idiomas_subtitulos": [
+      "es",
+      "es-orig"
+    ],
     "videos_por_canal": 6
   }
 }

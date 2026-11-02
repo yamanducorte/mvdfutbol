@@ -1,0 +1,70 @@
+{
+  "titulo": "Lasalvia contó que se reunió con líderes de la hinchada de Peñarol",
+  "bajada": "En Carve Deportiva 1010, Edgardo Lasalvia dijo que se reunió con referentes de la barra antes del partido ante Cerro Largo y que llamó al presidente para informarle. También habló de seguridad, de representantes y de su rol tras las elecciones.",
+  "cuerpo": [
+    "Edgardo Lasalvia, dirigente vinculado a la Lista 14 de Peñarol, afirmó que se reunió con líderes de la hinchada antes del partido ante Cerro Largo en el Campeón del Siglo y que después llamó al presidente del club para ponerlo al tanto. Lo dijo en una entrevista con Carve Deportiva 1010, publicada en el canal de YouTube de la radio.",
+    "\"Llamé al presidente para informarle\", señaló Lasalvia sobre ese encuentro. En la entrevista no dio más detalles sobre lo que se habló en la reunión.",
+    "El dirigente también se refirió a la seguridad en los partidos. Según dijo, su grupo de trabajo tiene un programa estructurado en la materia, que incluye capacitar al personal de seguridad del club y al del Ministerio del Interior. \"Ya tenemos un proyecto\", afirmó. Se trata de una propuesta de su sector y no de una medida en marcha.",
+    "Otro de los temas fue la representación de futbolistas. Lasalvia aseguró que la agencia TMA está cerrada y que ahora funciona con el nombre De Gol. \"Está cerrado, está cerrado\", repitió.",
+    "En la misma línea habló de comisiones vinculadas al club. Mencionó una cifra de \"4 millones en comisiones\" en Peñarol y aseguró que tiene documentación para presentar. No especificó la moneda, y en el pasaje de la entrevista no queda claro a quién atribuye esas comisiones. Hasta el momento es una afirmación suya, sin respaldo público.",
+    "Sobre el regreso de Jonathan Rodríguez, Lasalvia planteó que la junta directiva debería devolver el dinero si el jugador no cumple con las expectativas deportivas. La frase llega confusa en la grabación, por lo que el alcance exacto de ese planteo debe tomarse con reserva.",
+    "Por último, el dirigente dijo que no se ubicará como oposición y que está dispuesto a trabajar con quien resulte elegido por los socios. Así se puso a disposición de la próxima conducción del club, sea cual sea el resultado electoral.",
+    "La entrevista completa está disponible en el canal de YouTube de Carve Deportiva 1010."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Cerro Largo",
+    "Edgardo Lasalvia",
+    "elecciones en Peñarol",
+    "seguridad en el fútbol",
+    "Jonathan Rodríguez"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-10-29-lasalvia-conto-que-se-reunio-con-lideres-de-la-hinchada-de-penarol",
+  "fecha": "2026-10-29",
+  "publicado_utc": "2026-11-02T07:24:24+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "Carve Deportiva 1010",
+    "programa": "EDGARDO LASALVIA: \"HOY NOS JUNTAMOS CON LOS SOCIOS, CON LOS HINCHAS, HOY NO HAY DISCURSOS\"",
+    "video": "https://www.youtube.com/watch?v=2GTZYu0hpT4"
+  },
+  "hechos": [
+    {
+      "hecho": "Lasalvia dice que se reunió con líderes de la hinchada antes del partido ante Cerro Largo en el Campeón del Siglo y que llamó al presidente para informarle.",
+      "cita": "Llamé al presidente para informarle.",
+      "minuto": "00:02:44",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia afirma que su equipo tiene un proyecto estructurado de seguridad que incluye capacitar al personal de seguridad del club y del Ministerio del Interior.",
+      "cita": "Tenemos Nuestro equipo de trabajo, Lista 14 Ya tenemos un proyecto, un programa estructurado en términos de seguridad",
+      "minuto": "00:04:19",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Lasalvia sostiene que la junta debe devolver el dinero del salario de Jonathan Rodríguez si no cumple expectativas deportivas en su regreso.",
+      "cita": "me comprometí a la junta debe devolver el dinero si Jonathan no cumplió con las expectativas.",
+      "minuto": "00:10:16",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Lasalvia dice que la agencia de representación TMA está cerrada y que ahora funciona bajo el nombre De Gol, liderada por González y Sebastián de María.",
+      "cita": "Está cerrado, está cerrado. Ahora está De Gol",
+      "minuto": "00:07:00",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Lasalvia afirma que dejó 4 millones de dólares en comisiones en Peñarol y que tiene documentos para presentar.",
+      "cita": "dejó 4 millones en comisiones en Peñarol y tengo todas las documentos para presentar hoy",
+      "minuto": "00:11:02",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Lasalvia dice que no se presentará como oposición y que trabajaría con quien gane las elecciones.",
+      "cita": "Dispuesto a trabajar con y para Peñarol, con quien su pareja elija.",
+      "minuto": "00:08:11",
+      "tipo": "confirmado"
+    }
+  ]
+}
