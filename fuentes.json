@@ -151,13 +151,16 @@
     ],
     "videos_por_canal": 6,
     "dias_maximos": 7,
-    "reintentos_sin_subtitulos": 6
+    "reintentos_sin_subtitulos": 6,
+    "transcriptos_por_corrida": 8
   },
   "whisper": {
     "_nota": "Para los videos que no traen subtitulos automaticos. Escucha el audio y lo escribe. Corre en el procesador de GitHub y no cuesta plata, pero cada transcripto que sale de aca despues paga filtro de Claude como cualquier otro.",
     "activo": true,
     "modelo": "small",
     "maximo_por_corrida": 2,
-    "duracion_maxima_seg": 3600
+    "duracion_maxima_seg": 3600,
+    "saltear_en_la_nube": true,
+    "_nota_nube": "YouTube rechaza las bajadas de audio desde las IPs de GitHub (pide confirmar que no sos un robot), asi que en la nube Whisper se saltea. En la maquina de casa funciona: correr 'pip install faster-whisper' una vez y despues 'python scripts/monitor.py' para levantar los videos que de verdad no tienen subtitulos."
   }
 }

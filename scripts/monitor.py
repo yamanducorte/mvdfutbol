@@ -7,6 +7,7 @@ Uso:  python scripts/monitor.py            (una pasada)
 No usa API key ni cuenta: lee el RSS publico de cada canal. Solo necesita yt-dlp.
 """
 import json
+import os
 import re
 import subprocess
 import sys
@@ -69,6 +70,9 @@ def videos_del_canal(id_canal, cuantos=8):
     salida = subprocess.run(
         ["yt-dlp", "--flat-playlist", "--playlist-end", str(cuantos),
          "--extractor-args", "youtube:lang=es",
+         # YouTube corta por abuso si se le pide todo de golpe. Un segundo de
+         # pausa por pedido es barato y evita el 429.
+         "--sleep-requests", "1", "--extractor-retries", "3",
          "--print", "%(id)s\t%(duration)s\t%(title)s",
          "https://www.youtube.com/channel/" + id_canal + "/videos"],
         capture_output=True, text=True, timeout=240, encoding="utf-8", errors="replace")
@@ -137,15 +141,24 @@ def agrupar(partes):
 
 
 def bajar_transcripto(video_id, idiomas, destino_tmp):
-    """Devuelve (archivo_vtt, fecha_de_subida). El archivo es None si no hay subtitulos."""
+    """Devuelve (archivo_vtt, fecha_de_subida, fallo).
+
+    `fallo` distingue dos cosas que antes se confundian y costaban notas: que el
+    video no tenga subtitulos (no hay nada que hacer) y que YouTube no nos los
+    haya querido dar en este momento, por ejemplo con un 429 por pedir demasiado
+    rapido. En el segundo caso el video se reintenta mas tarde.
+    """
     proceso = subprocess.run(
         ["yt-dlp", "--skip-download", "--write-auto-subs", "--write-subs",
          "--sub-langs", ",".join(idiomas), "--sub-format", "vtt",
          "--extractor-args", "youtube:lang=es",
+         # Las mismas pausas y reintentos que al listar: el 429 aparece aca.
+         "--sleep-requests", "1", "--sleep-subtitles", "3",
+         "--retries", "5", "--extractor-retries", "3", "--retry-sleep", "5",
          "--print", "%(upload_date)s", "--no-simulate",
          "-o", str(destino_tmp / "%(id)s"),
          "https://www.youtube.com/watch?v=" + video_id],
-        capture_output=True, text=True, timeout=300, encoding="utf-8", errors="replace")
+        capture_output=True, text=True, timeout=600, encoding="utf-8", errors="replace")
     crudo = next((l.strip() for l in proceso.stdout.splitlines()
                   if len(l.strip()) == 8 and l.strip().isdigit()), "")
     fecha = (crudo[:4] + "-" + crudo[4:6] + "-" + crudo[6:]) if crudo \
@@ -153,8 +166,15 @@ def bajar_transcripto(video_id, idiomas, destino_tmp):
     for idioma in idiomas:
         candidato = destino_tmp / (video_id + "." + idioma + ".vtt")
         if candidato.exists():
-            return candidato, fecha
-    return next(iter(destino_tmp.glob(video_id + ".*.vtt")), None), fecha
+            return candidato, fecha, False
+    hallado = next(iter(destino_tmp.glob(video_id + ".*.vtt")), None)
+    if hallado:
+        return hallado, fecha, False
+    salida = (proceso.stderr or "") + "\n" + (proceso.stdout or "")
+    errores = [l.strip() for l in salida.splitlines() if "ERROR" in l]
+    if errores:
+        print("        (YouTube no dio los subtitulos: " + errores[0][:160] + ")")
+    return None, fecha, bool(errores)
 
 
 # Vocabulario del fútbol uruguayo: Whisper escucha mejor los nombres propios si
@@ -251,20 +271,24 @@ def transcribir_audio(video_id, tmp, ajustes):
             audio.unlink()
 
 
-def reintentar(estado, handle, video, parametros):
+def reintentar(estado, handle, video, parametros, contar=True):
     """Desmarca el video para que la proxima corrida lo intente de nuevo.
 
-    YouTube tarda en generar los subtitulos automaticos: un video de hace veinte
-    minutos puede no tenerlos y tenerlos mas tarde. Tirarlo en el primer intento
-    es perder la nota. Despues de unos cuantos intentos se da por perdido, asi no
-    queda reintentando para siempre y tapando a los demas.
+    YouTube tarda en generar los subtitulos automaticos, y ademas corta por
+    abuso: un video que hoy no los da puede darlos en la corrida siguiente.
+    Tirarlo en el primer intento es perder la nota. Despues de unos cuantos
+    intentos se da por perdido, asi no queda reintentando para siempre.
+
+    `contar=False` es para cuando el video se posterga por decision nuestra
+    (se lleno el cupo de la corrida): eso no es un intento fallido.
     """
-    tope = parametros.get("reintentos_sin_subtitulos", 6)
-    cuenta = estado["reintentos"].get(video["id"], 0) + 1
-    if cuenta > tope:
-        estado["reintentos"].pop(video["id"], None)
-        return False
-    estado["reintentos"][video["id"]] = cuenta
+    if contar:
+        tope = parametros.get("reintentos_sin_subtitulos", 6)
+        cuenta = estado["reintentos"].get(video["id"], 0) + 1
+        if cuenta > tope:
+            estado["reintentos"].pop(video["id"], None)
+            return False
+        estado["reintentos"][video["id"]] = cuenta
     ya_vistos = estado["vistos"].setdefault(handle, [])
     if ya_vistos and ya_vistos[-1] == video["id"]:
         ya_vistos.pop()
@@ -276,8 +300,16 @@ def main():
     parametros = fuentes.get("parametros", {})
     idiomas = parametros.get("idiomas_subtitulos", ["es"])
     whisper = fuentes.get("whisper", {})
+    cupo = parametros.get("transcriptos_por_corrida", 8)
+    bajados = 0
     transcritos_whisper = 0   # intentos de esta corrida (es lo que topea)
     hechos_whisper = 0        # los que efectivamente salieron
+    if whisper.get("activo") and whisper.get("saltear_en_la_nube", True) and os.environ.get("CI"):
+        # YouTube rechaza las bajadas de audio desde las IPs de los centros de
+        # datos ("Sign in to confirm you're not a bot"), asi que en la nube
+        # intentarlo es perder minutos. En la maquina de casa funciona.
+        print("  (Whisper apagado en la nube: YouTube no deja bajar audio desde ahi)")
+        whisper = dict(whisper, activo=False)
     if whisper.get("activo") and not whisper_disponible():
         # Pasa en la maquina de casa, donde no hace falta instalarlo: el que
         # transcribe es GitHub. Se apaga y los videos sin subtitulos se saltean,
@@ -330,7 +362,16 @@ def main():
                 estado["vistos"].setdefault(handle, []).append(video["id"])
                 print("     - fuera de rango (" + str(video["duracion"]) + "s): " + video["titulo"][:50])
                 continue
-            vtt, fecha = bajar_transcripto(video["id"], idiomas, tmp)
+            # Cupo por corrida. Pedirle a YouTube los subtitulos de veinte videos
+            # seguidos termina en 429 y perdemos todos; de a pocos por hora no.
+            if bajados >= cupo:
+                estado["vistos"].setdefault(handle, []).append(video["id"])
+                reintentar(estado, handle, video, parametros, contar=False)
+                print("     - cupo de la corrida lleno, queda para la proxima: " +
+                      video["titulo"][:45])
+                continue
+            bajados += 1
+            vtt, fecha, fallo_subs = bajar_transcripto(video["id"], idiomas, tmp)
             estado["vistos"].setdefault(handle, []).append(video["id"])
             # Un video de hace un mes no es noticia: se marca visto y se sigue.
             # Va antes que Whisper para no gastar minutos de maquina al aire.
@@ -340,6 +381,14 @@ def main():
                 print("     - viejo (" + fecha + "): " + video["titulo"][:50])
                 continue
             por_whisper = False
+            if not vtt and fallo_subs:
+                if reintentar(estado, handle, video, parametros):
+                    print("     - YouTube no dio los subtitulos ahora, se reintenta: " +
+                          video["titulo"][:45])
+                else:
+                    print("     - sin subtitulos despues de varios intentos: " +
+                          video["titulo"][:50])
+                continue
             if vtt:
                 texto = limpiar_vtt(vtt)
             else:
