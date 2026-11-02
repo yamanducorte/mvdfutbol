@@ -16,30 +16,30 @@ En `https://github.com/yamanducorte/mvdfutbol/settings/secrets/actions` →
 No va en un archivo del repo porque el repo es público y cualquiera lo leería.
 En tu máquina ya está, en `.env`, que git ignora.
 
-## 2. El link de los perfumes árabes
+## 3. El link de los perfumes árabes
 
 El anuncio ya está cargado en `anuncios.json` pero apagado (`activo: false`),
 esperando la URL de la tienda o del catálogo. En cuanto me lo pases, se enciende.
 
-## 3. Decidir qué hacemos con VaposVaper
+## 4. Decidir qué hacemos con VaposVaper
 
 Está apagado a propósito: hay que chequear si la ley antitabaco uruguaya permite
 publicitar vapes en un medio. Si querés lo averiguo y te lo paso por escrito.
 
-## 4. Revisar los colores de los escudos
+## 5. Revisar los colores de los escudos
 
 Están en `escudos.json`. Los puse de memoria y seguro hay alguno mal. Corregís el
 color en ese archivo y se arregla en todo el sitio. No son los escudos oficiales:
 son monogramas propios, porque los escudos de los clubes son marcas registradas.
 
-## 5. Escribirle a Julio Greño (La Movida Online)
+## 6. Escribirle a Julio Greño (La Movida Online)
 
 Las tablas de juveniles, ascenso y femenino salen de su sitio, con crédito y link
 visible. Es un tipo que lo lleva a pulmón. Proponerle intercambio —vos le mandás
 tráfico, él te deja usar los datos tranquilo— es lo correcto y además te cubre.
 Te escribo el mensaje cuando quieras, pero lo mandás vos.
 
-## 6. Cuando quieras: dominio propio
+## 7. Cuando quieras: dominio propio
 
 Hoy la dirección es `yamanducorte.github.io/mvdfutbol`, que depende de GitHub y
 tiene tu nombre en vez del de la marca. Un `.com` sale unos US$ 12 al año y lo
@@ -47,6 +47,33 @@ apuntás a GitHub Pages sin costo extra. El día que lo tengas, en `scripts/siti
 se cambia `DOMINIO` y se deja `BASE = ""`: el sitio queda igual pero en la raíz.
 Conviene hacerlo antes de que Google indexe mucho, porque cada mudanza de
 dirección cuesta posicionamiento.
+
+## 2. Decidir cómo se bajan los transcriptos de YouTube
+
+**Hay que elegir, y es tu decisión.** YouTube bloquea a las máquinas de GitHub:
+probado el 2026-11-02 con un video nuestro y con uno famoso que nunca habíamos
+pedido. Al primero no lo deja ni consultar (*"Iniciá sesión para confirmar que no
+sos un robot"*), y del segundo no deja bajar los subtítulos (*429 Too Many
+Requests*). Desde tu PC los mismos videos bajan en dos segundos.
+
+Esto afecta **solo a las noticias**. Las tablas salen de La Movida Online y de
+Wikipedia, que no bloquean nada, y siguen actualizándose solas en la nube.
+
+Las opciones, con lo malo de cada una:
+
+1. **Bajar los transcriptos desde tu PC** (tarea programada), y que la nube siga
+   haciendo todo lo demás: filtrar, escribir, publicar y las tablas. Gratis y
+   funciona seguro. Lo malo: con la máquina apagada no entran noticias nuevas,
+   aunque al prender se pone al día hasta 7 días para atrás.
+2. **Pagar un proxy** con IP de casa, unos US$ 5 a 15 por mes. La nube vuelve a
+   poder leer YouTube y no dependés de tu PC. Lo malo: un gasto fijo y una pieza
+   más que se puede romper.
+3. **No hacer nada**: puede que en horarios tranquilos alguna bajada pase. Lo
+   malo es lo peor de todo: funciona a veces y no sabés cuándo.
+
+Descartada: pasarle las cookies de tu cuenta de YouTube. Es tu cuenta de Google
+expuesta a un repositorio público, caduca cada pocas semanas y te la pueden
+bloquear.
 
 ---
 
@@ -59,10 +86,12 @@ dirección cuesta posicionamiento.
 - Secrets cargados en GitHub (`ANTHROPIC_API_KEY`, `API_FOOTBALL_KEY`)
 - 26 campeonatos con tabla: Primera, juveniles, ascenso y femenino
 - Los 25 canales de YouTube cargados y escuchándose
-- **Videos sin subtítulos**: antes se perdían. Ahora el robot les baja el audio y
-  lo transcribe solo, gratis, en la máquina de GitHub. Tope: 2 por corrida y nada
-  de más de una hora, para que una corrida no se eternice. Se cambia en
-  `fuentes.json`, en la sección `whisper`.
+- **Videos sin subtítulos**: el robot les puede bajar el audio y transcribirlo
+  solo con Whisper, gratis. En la nube queda apagado porque YouTube no deja bajar
+  audio desde ahí; en tu PC funciona (`pip install faster-whisper` una vez).
+- **Arreglado un error que costaba notas**: cuando YouTube frenaba el pedido por
+  abuso, el código lo leía como "este video no tiene subtítulos" y lo tiraba para
+  siempre. Ahora distingue las dos cosas y reintenta.
 - **Línea editorial**: de los clubes de la casa no se publica nada que los
   perjudique. El filtro no extrae esos hechos, así que el redactor nunca los ve.
   Lo bueno y lo neutro sale normal, y no se maquilla ni se inventa a favor: lo que
