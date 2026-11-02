@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-02T07:34:25+00:00",
+ "generado": "2026-11-02T17:15:28+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -3989,78 +3989,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-02T09:30:00",
-     "local": "Juventud",
-     "visita": "River Plate",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81118/"
-    },
-    {
-     "fecha": "2026-11-02T11:00:00",
-     "local": "Nacional",
-     "visita": "Oriental",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81115/"
-    },
-    {
-     "fecha": "2026-11-02T13:30:00",
-     "local": "Dep. Maldonado",
-     "visita": "Boston River",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81121/"
-    },
-    {
-     "fecha": "2026-11-02T14:00:00",
-     "local": "Progreso",
-     "visita": "Racing",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81112/"
-    },
-    {
-     "fecha": "2026-11-02T14:00:00",
-     "local": "Wanderers",
-     "visita": "Cerro Largo",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81130/"
-    },
-    {
-     "fecha": "2026-11-02T16:00:00",
-     "local": "Liverpool",
-     "visita": "Peñarol",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81124/"
-    },
-    {
-     "fecha": "2026-11-02T16:00:00",
-     "local": "Defensor Sp",
-     "visita": "M.C.Torque",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81127/"
-    },
-    {
-     "fecha": "2026-11-02T16:00:00",
-     "local": "La Luz",
-     "visita": "Central Español",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81136/"
-    },
-    {
      "fecha": "2026-11-03T09:00:00",
      "local": "Colon",
      "visita": "Albion",
@@ -4095,6 +4023,60 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/81145/"
+    },
+    {
+     "fecha": "2026-11-16T04:30:00",
+     "local": "Peñarol",
+     "visita": "Juventud",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81148/"
+    },
+    {
+     "fecha": "2026-11-16T04:30:00",
+     "local": "M.C.Torque",
+     "visita": "Boston River",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81151/"
+    },
+    {
+     "fecha": "2026-11-16T04:30:00",
+     "local": "Cerro Largo",
+     "visita": "Liverpool",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81154/"
+    },
+    {
+     "fecha": "2026-11-16T04:30:00",
+     "local": "Colon",
+     "visita": "Defensor Sp",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81157/"
+    },
+    {
+     "fecha": "2026-11-16T04:30:00",
+     "local": "Central Español",
+     "visita": "Wanderers",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81160/"
+    },
+    {
+     "fecha": "2026-11-16T04:30:00",
+     "local": "La Luz",
+     "visita": "Albion",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/81163/"
     }
    ]
   },
@@ -5469,15 +5451,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-02T13:00:00",
-     "local": "Cerrito",
-     "visita": "Miramar Misiones",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/88193/"
-    },
-    {
      "fecha": "2026-11-14T12:00:00",
      "local": "Terremoto",
      "visita": "Cerrito",
@@ -5575,6 +5548,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/88229/"
+    },
+    {
+     "fecha": "2026-11-21T12:00:00",
+     "local": "Oriental",
+     "visita": "Rampla Jrs",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/88223/"
     }
    ]
   },
@@ -5839,15 +5821,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-02T11:00:00",
-     "local": "Cerrito",
-     "visita": "Miramar Misiones",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/87919/"
-    },
-    {
      "fecha": "2026-11-14T12:00:00",
      "local": "Miramar Misiones",
      "visita": "Plaza Colonia",
@@ -5945,6 +5918,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/87952/"
+    },
+    {
+     "fecha": "2026-11-21T12:00:00",
+     "local": "Oriental",
+     "visita": "Rampla Jrs",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/87949/"
     }
    ]
   },
