@@ -37,6 +37,8 @@ jobs:
         run: python scripts/redactor.py --limite ${{ github.event.inputs.limite || '8' }}
       - name: Generar el sitio
         run: python scripts/sitio.py
+      - name: Avisar a los buscadores
+        run: python scripts/avisar.py
       - name: Publicar si cambio algo
         run: |
           git config user.name "mvdfutbol-bot"

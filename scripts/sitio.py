@@ -24,6 +24,9 @@ PUBLICO = RAIZ / "publico"
 SITIO = "MVD Fútbol"
 DOMINIO = "https://mvdfutbol.netlify.app"
 LEMA = "Juveniles, primera y lo que se dice en la radio"
+# Clave de IndexNow: avisa a Bing, Yandex y DuckDuckGo apenas se publica algo.
+# Google no usa IndexNow; para Google valen el sitemap de noticias y el RSS.
+INDEXNOW = "7f3c1a9d4b5e4c82a1d6e0f93b2c7a58"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
          "agosto", "setiembre", "octubre", "noviembre", "diciembre"]
 
@@ -199,11 +202,14 @@ def categorias_menu(ligas):
     return atajos
 
 
-def pagina(titulo, descripcion, contenido, ruta, ligas, seccion=""):
+def pagina(titulo, descripcion, contenido, ruta, ligas, seccion="", esquema=None, publicado=""):
     ahora = datetime.now(timezone.utc)
     enlaces = [("Portada", "/"), ("Juveniles", "/juveniles/")] + categorias_menu(ligas)
     menu = "".join('<a href="' + destino + '"' + (' aria-current="page"' if seccion == destino else "") +
                    ">" + texto + "</a>" for texto, destino in enlaces)
+    extra = ('<meta property="article:published_time" content="' + esc(publicado) + '">' if publicado else "")
+    if esquema:
+        extra += '<script type="application/ld+json">' + json.dumps(esquema, ensure_ascii=False) + "</script>"
     return """<!doctype html>
 <html lang="es">
 <head>
@@ -218,6 +224,8 @@ def pagina(titulo, descripcion, contenido, ruta, ligas, seccion=""):
 <meta property="og:locale" content="es_UY">
 <meta property="og:site_name" content=\"""" + SITIO + """\">
 <meta name="theme-color" content="#12161c">
+""" + extra + """
+<link rel="alternate" type="application/rss+xml" title=\"""" + SITIO + """\" href="/rss.xml">
 <link rel="icon" href=\"""" + FAVICON + """\">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -388,9 +396,27 @@ def main():
                   '</p><span class="firma">' + fecha_larga(nota.get("fecha", "")) + " · vía " +
                   esc(fuente.get("nombre", "")) + "</span>" + parrafos + pie + "</article></div><aside>" +
                   "".join(html_anuncio(a) for a in anuncios) + "</aside></div>")
+        # Schema NewsArticle: le dice a Google que esto es una noticia, de cuando
+        # es y en que se basa (el video). Es lo que habilita Noticias y Discover.
+        esquema = {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": nota.get("titulo", "")[:110],
+            "description": nota.get("bajada", ""),
+            "datePublished": nota.get("publicado_utc", nota.get("fecha", "")),
+            "dateModified": nota.get("publicado_utc", nota.get("fecha", "")),
+            "inLanguage": "es-UY",
+            "mainEntityOfPage": DOMINIO + "/nota/" + nota["slug"] + "/",
+            "author": {"@type": "Organization", "name": SITIO},
+            "publisher": {"@type": "Organization", "name": SITIO},
+            "keywords": ", ".join(nota.get("etiquetas", [])),
+            "citation": fuente.get("video", ""),
+            "isBasedOn": fuente.get("video", ""),
+        }
         escribir("nota/" + nota["slug"] + "/index.html", pagina(
             nota.get("titulo", SITIO), nota.get("bajada", ""), cuerpo,
-            "/nota/" + nota["slug"] + "/", ligas))
+            "/nota/" + nota["slug"] + "/", ligas,
+            esquema=esquema, publicado=nota.get("publicado_utc", "")))
 
     # ---------------- juveniles ----------------
     fichas = "".join('<a class="ficha" href="/juveniles/' + slug(l["nombre"]) + '/"><b>' + esc(l["nombre"]) +
@@ -438,7 +464,40 @@ def main():
              '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
              "".join("<url><loc>" + DOMINIO + u + "</loc><lastmod>" + hoy + "</lastmod></url>\n" for u in urls) +
              "</urlset>\n")
-    escribir("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: " + DOMINIO + "/sitemap.xml\n")
+    # Sitemap de noticias: el canal oficial para que Google rastree rapido lo nuevo.
+    # Solo admite articulos de los ultimos dos dias; mas viejos hay que sacarlos.
+    recientes = [n for n in notas
+                 if (datetime.now(timezone.utc) - datetime.fromisoformat(
+                     (n.get("publicado_utc") or n.get("fecha", "1970-01-01") + "T00:00:00+00:00"))).days < 2]
+    escribir("sitemap-noticias.xml",
+             '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+             'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n' +
+             "".join("<url><loc>" + DOMINIO + "/nota/" + n["slug"] + "/</loc><news:news>"
+                     "<news:publication><news:name>" + SITIO + "</news:name>"
+                     "<news:language>es</news:language></news:publication>"
+                     "<news:publication_date>" + esc(n.get("publicado_utc", "")) + "</news:publication_date>"
+                     "<news:title>" + esc(n.get("titulo", "")) + "</news:title></news:news></url>\n"
+                     for n in recientes) + "</urlset>\n")
+
+    # RSS: lo leen agregadores, Google News y varios rastreadores de IA.
+    def rfc822(iso):
+        try:
+            return datetime.fromisoformat(iso).strftime("%a, %d %b %Y %H:%M:%S +0000")
+        except (ValueError, TypeError):
+            return ""
+    escribir("rss.xml",
+             '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n'
+             "<title>" + SITIO + "</title><link>" + DOMINIO + "</link>\n"
+             "<description>" + LEMA + "</description><language>es-uy</language>\n" +
+             "".join("<item><title>" + esc(n.get("titulo", "")) + "</title><link>" + DOMINIO + "/nota/" +
+                     n["slug"] + "/</link><guid>" + DOMINIO + "/nota/" + n["slug"] + "/</guid>"
+                     "<pubDate>" + rfc822(n.get("publicado_utc", "")) + "</pubDate><description>" +
+                     esc(n.get("bajada", "")) + "</description></item>\n" for n in notas[:20]) +
+             "</channel></rss>\n")
+
+    escribir(INDEXNOW + ".txt", INDEXNOW + "\n")
+    escribir("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: " + DOMINIO + "/sitemap.xml\n"
+                           "Sitemap: " + DOMINIO + "/sitemap-noticias.xml\n")
     escribir("llms.txt",
              "# " + SITIO + "\n\n" + LEMA + ". Medio digital uruguayo.\n\n"
              "## Qué hay acá\n"

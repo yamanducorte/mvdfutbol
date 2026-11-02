@@ -1,0 +1,49 @@
+{
+  "titulo": "Denuncia penal contra dirigentes de Defensor por el pase de Matturro",
+  "bajada": "El abogado Sebastián Méndez, que representa a la empresa Soccer Promotion, dijo en Sport 890 que denunciaron a tres dirigentes y al oficial de cumplimiento del club, y que entienden que \"puede caber el delito de estafa\".",
+  "cuerpo": [
+    "La empresa Soccer Promotion denunció penalmente a tres dirigentes de Defensor Sporting y al oficial de cumplimiento del club por el manejo de la venta de Alan Matturro. Lo explicó en Sport 890 Sebastián Méndez, abogado que integra la representación de la empresa: \"Entendemos que puede caber el delito de estafa\".",
+    "Según el relato del abogado, la operación arranca un par de años atrás, cuando Defensor le vendió la ficha del jugador al Génova y se reservó un 20% de una futura venta. Sobre ese porcentaje, tres empresas tenían derecho a comisión por servicios prestados; la que él representa, por el scouting del jugador. El 20 de agosto, dijo, Defensor firmó un documento por el que renunció a ese 20% a cambio de 150.000 dólares. En los días siguientes se hizo público que el Génova le vendió el pase completo al Shakhtar por una cifra cercana a los 6 millones de dólares.",
+    "La clave del planteo es lo que vino después. Defensor informó públicamente un segundo negocio con el Génova, por el cual le vendió la posibilidad de igualar ofertas por tres jugadores del plantel durante una sola ventana de pases. Méndez sostuvo que, sumadas las dos operaciones, al club le entra el mismo dinero que si la venta de Matturro se hubiera hecho de forma directa, y marcó que el más caro de esos tres jugadores figura en 800.000 dólares en Transfermarkt, mientras otro ni siquiera tiene precio publicado. \"Con una sola operación puede ser un mal negocio\", dijo. \"Justo coinciden los montos para que a Defensor le termine ingresando el mismo número.\"",
+    "El abogado fue explícito en marcar un límite: no está acusando a nadie de quedarse con dinero. \"Yo no puedo ponerme a decir que alguna de estas personas que nosotros denunciamos se llevó el dinero para su casa, de ninguna manera\", aclaró. Lo que plantea es que las empresas con derecho a comisión se habrían visto perjudicadas para generar un provecho para el club. La denuncia alcanza al presidente y al secretario, que por estatuto firman la documentación, al tesorero, que controla los ingresos, y al oficial de cumplimiento, encargado de reportar movimientos de dinero sospechosos.",
+    "A partir de acá la pelota queda en la fiscalía, que puede pedir la documentación bancaria y el contrato del segundo negocio, al que la empresa denunciante dijo no haber accedido. Méndez admitió que la fiscalía también puede concluir que no hay responsabilidad, o encontrar otras personas involucradas. En paralelo, anunció una acción civil que se presentará en los próximos días para reclamar la comisión.",
+    "Méndez contó además que Soccer Promotion trabaja con el club desde hace años en scouting —mencionó los casos de Amaro y Agustín Soria— y que esa tarea le reportó a Defensor unos 15 millones de dólares en ventas. Dijo que hay otros litigios pendientes entre la empresa y el club, de menor entidad, y que en este caso no hubo instancia previa de conciliación. En el programa anunciaron que buscarán la palabra de la directiva de Defensor."
+  ],
+  "etiquetas": ["Defensor Sporting", "Alan Matturro", "pases", "justicia"],
+  "categoria": "dirigencia",
+  "slug": "2026-10-29-denuncia-penal-dirigentes-defensor-pase-matturro",
+  "fecha": "2026-10-29",
+  "publicado_utc": "2026-11-02T06:20:00+00:00",
+  "importancia": 5,
+  "fuente": {
+    "nombre": "Sport 890",
+    "programa": "“ENTENDEMOS QUE PUEDE CABER EL DELITO DE ESTAFA” POR EL MANEJO DE LA VENTA DE MATURRO A UCRANIA",
+    "video": "https://www.youtube.com/watch?v=v3appnCd5dw"
+  },
+  "hechos": [
+    {
+      "hecho": "Soccer Promotion denunció penalmente a tres dirigentes de Defensor Sporting y al oficial de cumplimiento por el manejo de la venta de Alan Matturro.",
+      "cita": "Entendemos que puede caber el delito de estafa",
+      "minuto": "00:07:12",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "El 20 de agosto Defensor habría renunciado al 20% de una futura venta por 150.000 dólares; días después el Génova vendió el pase al Shakhtar por unos 6 millones.",
+      "cita": "Defensor Sporting firma un documento con Génova por el cual renuncia a ese 20% por la suma de 150.000 dólares",
+      "minuto": "00:02:03",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "El abogado aclaró que no acusa a ningún dirigente de haberse apropiado de dinero.",
+      "cita": "Yo no puedo ponerme a decir que alguna de estas personas se llevó el dinero para su casa",
+      "minuto": "00:07:28",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "La empresa presentará además una acción civil en los próximos días.",
+      "cita": "se va a hacer y se va a ingresar en los próximos días",
+      "minuto": "00:14:48",
+      "tipo": "confirmado"
+    }
+  ]
+}

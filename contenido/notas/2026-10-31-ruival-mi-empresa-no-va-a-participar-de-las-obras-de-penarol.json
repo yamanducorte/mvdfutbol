@@ -1,0 +1,50 @@
+{
+  "titulo": "Ruival: \"Mi empresa no va a participar\" de las obras de Peñarol",
+  "bajada": "El candidato a vicepresidente en la fórmula de Juan Pedro Damiani salió a despejar las versiones sobre su constructora y anunció que en los próximos días presentarán el plan del Campeón del Siglo por etapas.",
+  "cuerpo": [
+    "Alejandro Ruival, candidato a vicepresidente de Peñarol en la fórmula que integra con Juan Pedro Damiani, descartó que su empresa constructora vaya a tomar las obras del club si llegan a la directiva. \"Si estoy en esto y si voy de vicepresidente, obviamente no es para jugar a Bob el Constructor\", dijo en Sport 890. \"Yo no voy a hacer ninguna de estas obras de las que estoy hablando. Mi empresa no va a participar de esto porque no corresponde.\"",
+    "La aclaración llegó por las versiones que circulan sobre su interés en el negocio de la obra del club. \"Como si fuera un gran negocio para mí meterme, pero no es así\", respondió. Más adelante insistió: \"Yo no preciso hacerle obras a Peñarol para vivir, por suerte\", y dijo que el plan de infraestructura va a tener \"la transparencia necesaria\".",
+    "Ruival contó que se acercó al club por la construcción del Campeón del Siglo, que después fue dirigente durante dos años en la presidencia de Jorge Barrera y que ejecutó la compra de los terrenos de la Villa Deportiva. \"El de la visión fue Jorge Barrera\", aclaró.",
+    "Sobre el estadio, adelantó que en los próximos días darán una conferencia de prensa para mostrar el plan del Campeón del Siglo por etapas. Dijo que el plan no se agota ahí: la idea es cubrir también la Villa Deportiva, Los Aromos, el CAR y el Palacio Peñarol. Entre las propuestas mencionó llevar el museo del fútbol al estadio, usarlo todo el año con eventos, mejorar la experiencia previa al partido y resolver la accesibilidad para hinchas con discapacidad, un tema que, admitió, \"ha quedado relegado\". También habló de una conexión vial de unos 9 kilómetros hasta Camino Carrasco que, dijo, las autoridades estarían poniendo en carpeta y que serviría a todo el distrito que creció alrededor del estadio.",
+    "En lo futbolístico, marcó que Peñarol sigue primero en la tabla anual y mantiene intactas las chances de salir campeón uruguayo, pero que perdió su línea de juego. Rechazó que el problema sea de actitud: \"No hay un tema de poner más huevo o menos huevo. El jugador mete huevo siempre\". Lo atribuyó a la seguidilla de lesiones, al golpe de la eliminación internacional y a la pérdida de confianza del grupo.",
+    "Consultado sobre jugar sin público el fin de semana, dijo que él preferiría jugar con gente y haría una campaña para llenar el estadio, aunque reconoció que, después de los incidentes, el equipo podría sentirse más liberado. Pidió un plan de seguridad \"radical\" y volver a aplicar el derecho de admisión: \"Peñarol tiene que hacer una limpieza importante\".",
+    "El panorama electoral sigue abierto: todavía no se sabe si el actual presidente se presentará a la reelección. Ruival mencionó que Damiani ya dijo públicamente que habló con dos entrenadores y prometió novedades sobre la integración de la lista en los próximos días."
+  ],
+  "etiquetas": ["Peñarol", "elecciones", "Campeón del Siglo", "dirigencia"],
+  "categoria": "dirigencia",
+  "slug": "2026-10-31-ruival-mi-empresa-no-va-a-participar-de-las-obras-de-penarol",
+  "fecha": "2026-10-31",
+  "publicado_utc": "2026-11-02T06:25:00+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "Sport 890",
+    "programa": "“SI VOY DE VICE, NO ES PARA JUGAR A BOB EL CONSTRUCTOR; MI EMPRESA NO PARTICIPARÁ EN OBRAS DEL CLUB”",
+    "video": "https://www.youtube.com/watch?v=F8mzK_J3Y6M"
+  },
+  "hechos": [
+    {
+      "hecho": "Ruival se comprometió a que su empresa constructora no participe de las obras del club si asume como vicepresidente.",
+      "cita": "Mi empresa no va a participar de esto porque no corresponde",
+      "minuto": "00:33:02",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Anunció una conferencia de prensa en los próximos días para presentar el plan del Campeón del Siglo por etapas.",
+      "cita": "una conferencia de prensa donde vamos a mostrar el plan de campeón del siglo por etapas",
+      "minuto": "00:29:40",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Dijo que el plan de infraestructura incluirá la Villa Deportiva, Los Aromos, el CAR y el Palacio Peñarol.",
+      "cita": "Nosotros tenemos que tener un plan de infraestructura para todo eso",
+      "minuto": "00:32:25",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Damiani habría hablado con dos entrenadores, uno de ellos en el exterior.",
+      "cita": "Juan Pedro dijo ya públicamente que había hablado con dos entrenadores",
+      "minuto": "00:31:41",
+      "tipo": "version"
+    }
+  ]
+}
