@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-02T23:29:23+00:00",
+ "generado": "2026-11-03T01:41:50+00:00",
  "fuente": "https://es.wikipedia.org/wiki/Campeonato_Uruguayo_de_Primera_Divisi%C3%B3n_2026",
  "credito": "Tabla: Wikipedia, «Campeonato Uruguayo de Primera División 2026» (CC BY-SA 4.0)",
  "ligas": [
@@ -20,6 +20,17 @@
      "pts": 65
     },
     {
+     "equipo": "Deportivo Maldonado",
+     "pj": 35,
+     "g": 18,
+     "e": 9,
+     "p": 8,
+     "gf": 54,
+     "gc": 32,
+     "dg": 22,
+     "pts": 63
+    },
+    {
      "equipo": "Montevideo City",
      "pj": 35,
      "g": 19,
@@ -29,17 +40,6 @@
      "gc": 41,
      "dg": 18,
      "pts": 63
-    },
-    {
-     "equipo": "Deportivo Maldonado",
-     "pj": 34,
-     "g": 18,
-     "e": 8,
-     "p": 8,
-     "gf": 54,
-     "gc": 32,
-     "dg": 22,
-     "pts": 62
     },
     {
      "equipo": "Nacional",
@@ -87,14 +87,14 @@
     },
     {
      "equipo": "Albion",
-     "pj": 34,
+     "pj": 35,
      "g": 13,
-     "e": 7,
+     "e": 8,
      "p": 14,
      "gf": 47,
      "gc": 44,
      "dg": 3,
-     "pts": 46
+     "pts": 47
     },
     {
      "equipo": "Juventud",
@@ -142,14 +142,14 @@
     },
     {
      "equipo": "Boston River",
-     "pj": 35,
+     "pj": 36,
      "g": 10,
-     "e": 7,
+     "e": 8,
      "p": 18,
      "gf": 34,
      "gc": 47,
      "dg": -13,
-     "pts": 37
+     "pts": 38
     },
     {
      "equipo": "Cerro",
@@ -229,6 +229,17 @@
      "pts": 26
     },
     {
+     "equipo": "Deportivo Maldonado",
+     "pj": 13,
+     "g": 6,
+     "e": 4,
+     "p": 3,
+     "gf": 18,
+     "gc": 10,
+     "dg": 8,
+     "pts": 22
+    },
+    {
      "equipo": "Peñarol",
      "pj": 13,
      "g": 6,
@@ -238,17 +249,6 @@
      "gc": 9,
      "dg": 8,
      "pts": 22
-    },
-    {
-     "equipo": "Deportivo Maldonado",
-     "pj": 12,
-     "g": 6,
-     "e": 3,
-     "p": 3,
-     "gf": 18,
-     "gc": 10,
-     "dg": 8,
-     "pts": 21
     },
     {
      "equipo": "Racing",
@@ -318,14 +318,14 @@
     },
     {
      "equipo": "Albion",
-     "pj": 12,
+     "pj": 13,
      "g": 4,
-     "e": 0,
+     "e": 1,
      "p": 8,
      "gf": 15,
      "gc": 20,
      "dg": -5,
-     "pts": 12
+     "pts": 13
     },
     {
      "equipo": "Defensor Sporting",
