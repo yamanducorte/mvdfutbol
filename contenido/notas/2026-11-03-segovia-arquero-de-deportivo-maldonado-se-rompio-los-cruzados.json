@@ -1,0 +1,61 @@
+{
+  "titulo": "Segovia, arquero de Deportivo Maldonado, se rompió los cruzados",
+  "bajada": "El arquero del club fernandino habló en Carve Deportiva 1010 sobre su lesión, los plazos de recuperación y la posibilidad de formarse como entrenador de arqueros.",
+  "cuerpo": [
+    "Diego Segovia, arquero de Deportivo Maldonado, sufrió hace algunas semanas la rotura de los ligamentos cruzados. El futbolista se refirió a la lesión y a su futuro en una entrevista con Carve Deportiva 1010, conducida por Óscar Velo.",
+    "Sobre los tiempos de recuperación, Segovia explicó que el alta médica demanda \"un mínimo de 6 meses\", siempre que la rehabilitación evolucione bien (minuto 1:37). El plazo final dependerá de cómo responda en ese proceso.",
+    "En lo deportivo, Deportivo Maldonado empató su último partido y le quedan dos fechas por disputar. \"Tenemos dos fechas, una en casa y otra fuera, y vamos a intentar aprovecharlas al máximo\", señaló el arquero (minuto 13:38).",
+    "Segovia también habló de lo que viene más allá de la cancha. Contó que le gustaría integrar un cuerpo técnico, posiblemente como entrenador de arqueros. \"Es probable que me inscriba en el curso de entrenador de porteros\", adelantó (minuto 19:38).",
+    "Consultado sobre sus colegas, el arquero de Deportivo Maldonado dio su opinión sobre el presente del puesto en el medio local: \"Hoy Bernatene es el mejor portero del fútbol uruguayo\", afirmó (minuto 23:10).",
+    "En la charla, Segovia mencionó además a Hugo Quevedo, entrenador de arqueros, y repasó actuaciones recientes de otros arqueros del campeonato."
+  ],
+  "etiquetas": [
+    "Deportivo Maldonado",
+    "Diego Segovia",
+    "Lesiones",
+    "Arqueros",
+    "Primera División"
+  ],
+  "categoria": "primera",
+  "slug": "2026-11-03-segovia-arquero-de-deportivo-maldonado-se-rompio-los-cruzados",
+  "fecha": "2026-11-03",
+  "publicado_utc": "2026-11-03T23:37:50+00:00",
+  "importancia": 3,
+  "fuente": {
+    "nombre": "Carve Deportiva 1010",
+    "programa": "DIEGO SEGOVIA: \"SIENTO QUE PERSONALMENTE TUVE UN GRAN A�O\"",
+    "video": "https://www.youtube.com/watch?v=3k8WZ2ylXvk"
+  },
+  "hechos": [
+    {
+      "hecho": "Segovia sufrio la rotura de ligamentos cruzados y fue operado",
+      "cita": "Tenemos el portero del Deportivo Maldonado que se rompió los ligamentos cruzados hace unas semanas",
+      "minuto": "00:00:00",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "El tiempo minimo de recuperacion y para el alta medica es de seis a ocho meses",
+      "cita": "Y para el alta médica, es un mínimo de 6 meses, si te recuperas bien",
+      "minuto": "00:01:37",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Segovia dice que le gustaria formar parte de un cuerpo tecnico, posiblemente como entrenador de porteros, y que podria inscribirse en el curso",
+      "cita": "Es probable que me inscriba en el curso de entrenador de porteros",
+      "minuto": "00:19:38",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Segovia considera a Bernatene el mejor portero del futbol uruguayo en la actualidad",
+      "cita": "hoy Bernatene es el mejor portero del fútbol uruguayo",
+      "minuto": "00:23:10",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Deportivo Maldonado empato el ultimo partido y sigue con posibilidades de cara a las dos fechas que restan",
+      "cita": "tenemos dos fechas, una en casa y otra fuera, y vamos a intentar aprovecharlas al máximo",
+      "minuto": "00:13:38",
+      "tipo": "confirmado"
+    }
+  ]
+}

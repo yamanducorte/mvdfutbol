@@ -428,7 +428,8 @@
     "titulo": "LOS MISMOS LOCOS | PROGRAMA COMPLETO | 3/11/2026",
     "video": "https://www.youtube.com/watch?v=69t56QqKKuc",
     "publicado": "2026-11-03",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El programa es de entretenimiento y anécdotas personales sobre bancos, herencias y un velorio; el único tema de futbol es el relato de Teca Aglianone sobre su situación en Bellavista, pero el contenido útil es mínimo y mezclado con mucho ruido. Lo principal no es noticia de futbol."
   },
   {
     "transcripto": "datos/transcripciones/2026-11-03_dalequevadeportes_IKkpMmr6fM0.txt",
@@ -436,7 +437,8 @@
     "titulo": "�RUGLIO DEFINE SU FUTURO! EN 48 HORAS SE SABR�A SI SER� CANDIDATO EN PE�AROL",
     "video": "https://www.youtube.com/watch?v=IKkpMmr6fM0",
     "publicado": "2026-11-03",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-11-03-ruglio-definiria-su-candidatura-en-penarol-segun-dale-que-va"
   },
   {
     "transcripto": "datos/transcripciones/2026-11-03_CarveDeportiva1010_3k8WZ2ylXvk.txt",
@@ -444,7 +446,8 @@
     "titulo": "DIEGO SEGOVIA: \"SIENTO QUE PERSONALMENTE TUVE UN GRAN A�O\"",
     "video": "https://www.youtube.com/watch?v=3k8WZ2ylXvk",
     "publicado": "2026-11-03",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-11-03-segovia-arquero-de-deportivo-maldonado-se-rompio-los-cruzados"
   },
   {
     "transcripto": "datos/transcripciones/2026-11-03_CarveDeportiva1010_eY_HTLu_hXo.txt",
@@ -452,6 +455,7 @@
     "titulo": "MARIO SARALEGUI: EL QUE TIENE M�S CHANCES ES PE�AROL",
     "video": "https://www.youtube.com/watch?v=eY_HTLu_hXo",
     "publicado": "2026-11-03",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-11-03-saralegui-fue-invitado-a-concentrar-con-el-plantel-de-penarol"
   }
 ]

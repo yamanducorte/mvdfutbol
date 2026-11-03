@@ -1,0 +1,67 @@
+{
+  "titulo": "Saralegui fue invitado a concentrar con el plantel de Peñarol",
+  "bajada": "El exentrenador aurinegro recibió la invitación del presidente del club para sumarse a la concentración en Solanas, aunque no podrá ir por su trabajo. En Carve Deportiva 1010 habló del momento del grupo, de las elecciones y del próximo técnico.",
+  "cuerpo": [
+    "Mario Saralegui fue invitado por el presidente de Peñarol a acompañar y concentrar con el plantel principal en Solanas, pero no podrá asistir por compromisos laborales. El exentrenador aurinegro habló del tema en Carve Deportiva 1010 (minuto 0:13).",
+    "En la misma entrevista, Saralegui se refirió al momento del plantel. Opinó que en el grupo conviven \"fuerzas negativas y fuerzas positivas\" y que, si los resultados no aparecen, es porque lo negativo está predominando (minuto 7:04). En su opinión, los jugadores deberían sentarse a hablar entre ellos para resolver sus problemas internos.",
+    "También mencionó a Diego Aguirre. Contó que tuvo una charla con él hace un tiempo y lo definió como \"un amigo, un crack\". Según su mirada, el entrenador venía \"mucho tiempo desgastado\" (minuto 12:14).",
+    "Saralegui vinculó además el rendimiento deportivo con las elecciones del club. A su entender, si Peñarol sale campeón el actual presidente ganaría los comicios con una diferencia cercana al 20%, mientras que sin el título la elección se emparejaría (minuto 14:09).",
+    "Sobre el futuro banco aurinegro, fue claro en su preferencia: \"Yo no traería técnico extranjero\", afirmó. Como alternativas mencionó a Fosati y a Marcelo Méndez (minuto 14:44).",
+    "Las declaraciones completas pueden escucharse en el video publicado por Carve Deportiva 1010."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Mario Saralegui",
+    "Diego Aguirre",
+    "Elecciones en Peñarol",
+    "Marcelo Méndez"
+  ],
+  "categoria": "primera",
+  "slug": "2026-11-03-saralegui-fue-invitado-a-concentrar-con-el-plantel-de-penarol",
+  "fecha": "2026-11-03",
+  "publicado_utc": "2026-11-03T23:38:16+00:00",
+  "importancia": 3,
+  "fuente": {
+    "nombre": "Carve Deportiva 1010",
+    "programa": "MARIO SARALEGUI: EL QUE TIENE M�S CHANCES ES PE�AROL",
+    "video": "https://www.youtube.com/watch?v=eY_HTLu_hXo"
+  },
+  "hechos": [
+    {
+      "hecho": "Mario Saralegui fue invitado por el presidente de Peñarol, Ignacio Rubio, a sumarse a la concentración del plantel en Solanas, aunque no podrá asistir por su trabajo.",
+      "cita": "fue una de las figuras invitadas por el presidente de Penarol, por Ignacio Rublio, a acompañar y concentrar con el plantel principal",
+      "minuto": "00:00:13",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Saralegui señaló que en Peñarol hay fuerzas negativas que predominan en el grupo y que los jugadores deberían sentarse a hablar entre ellos para resolver sus problemas internos.",
+      "cita": "hay fuerzas negativas y fuerzas positivas. Si el resultado no se da, evidentemente hay algo de lo negativo que está predominando",
+      "minuto": "00:07:04",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Saralegui afirmó que pasó que Diego Aguirre tuvo una charla con él hace un tiempo y que el entrenador ya estaba desgastado.",
+      "cita": "hace un tiempo tuvimos una charla, pero Diego es un amigo, un crack, la verdad, un tipo que que que decía no y que se ve que no lógico, mucho tiempo desgastado",
+      "minuto": "00:12:14",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Saralegui indicó que si Peñarol no gana el campeonato la elección presidencial se emparejaría entre Rubio y Damián Barrera, y que si gana el campeonato Rubio ganaría por una amplia diferencia.",
+      "cita": "Si Pal sale campeón, gana gana Ruble por 20% de diferencia",
+      "minuto": "00:14:09",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Saralegui se mostró en contra de contratar un entrenador extranjero para Peñarol y mencionó como posibles opciones a Fosati y Marcelo Méndez.",
+      "cita": "Yo no traería técnico extranjero, la verdad. ... Para mí Fosati y Marcelo Méndez.",
+      "minuto": "00:14:44",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Se mencionó que Juan Pedro Damiani se habría reunido con Guillermo Barros Schelotto para proponerlo como técnico de Peñarol, información que según el programa confirmó Nelson Mendiburu.",
+      "cita": "Juan Pedro Damiani supuestamente se reunió con con Guillermo Barros Esqueloto. Lo confirmaba Nelson Mendiburu esta mañana",
+      "minuto": "00:15:39",
+      "tipo": "version"
+    }
+  ]
+}
