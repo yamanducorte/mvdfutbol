@@ -1,0 +1,68 @@
+{
+  "titulo": "Peñarol se va de retiro tras el empate con Wanderers",
+  "bajada": "El plantel aurinegro hará una concentración por decisión conjunta del cuerpo técnico, los jugadores y la directiva. Washington Aguerre está suspendido por acumulación de amarillas y Angulo fue expulsado.",
+  "cuerpo": [
+    "Peñarol se irá de retiro en los próximos días. La decisión la tomaron en conjunto el cuerpo técnico, el plantel y la Junta Directiva. Así se informó en \"¿Qué pasa en Peñarol?\", el programa de Observa que analizó el momento del equipo y su vínculo con el entrenador Diego Aguirre.",
+    "La medida llega después del empate 1-1 frente a Wanderers, un resultado que dejó al equipo aurinegro bajo la lupa. El gol del encuentro llegó en los minutos finales, según se repasó en el minuto 4:04.",
+    "En el programa se definió la concentración como un \"retiro espiritual\". La idea es que el grupo se aísle y trabaje lejos de la presión diaria, en un tramo del campeonato en el que cada punto pesa. El anuncio aparece en el minuto 0:49.",
+    "El partido ante Wanderers dejó además dos bajas. El arquero Washington Aguerre recibió la quinta tarjeta amarilla y quedó suspendido por acumulación. Angulo fue expulsado. Ambos datos se repasaron entre el minuto 8:34 y el minuto 8:43.",
+    "Las dos ausencias obligan al cuerpo técnico a buscar variantes para el próximo compromiso, tanto en el arco como en el sector que ocupaba Angulo.",
+    "El programa abordó también la continuidad de Aguirre. Se mencionó la posibilidad de un cambio de entrenador como una de las salidas que suelen barajarse en estas situaciones, pero en el programa se sostuvo que eso no va a ocurrir: \"No sucederá\", se afirmó en el minuto 1:28. Por ahora es una versión y no hay anuncio oficial de la directiva.",
+    "Con el retiro, Peñarol apuesta a reforzar la relación entre el plantel y el cuerpo técnico, que el propio programa puso en el centro del análisis, antes de volver a la competencia."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Wanderers",
+    "Diego Aguirre",
+    "Washington Aguerre",
+    "Campeonato Uruguayo"
+  ],
+  "categoria": "primera",
+  "slug": "2026-11-03-penarol-se-va-de-retiro-tras-el-empate-con-wanderers",
+  "fecha": "2026-11-03",
+  "publicado_utc": "2026-11-03T03:09:01+00:00",
+  "importancia": 2,
+  "fuente": {
+    "nombre": "Observa",
+    "programa": "�Qu� pasa en PE�AROL? El v�nculo entre el PLANTEL y AGUIRRE en la mira",
+    "video": "https://www.youtube.com/watch?v=igpkyLLYoEQ"
+  },
+  "hechos": [
+    {
+      "hecho": "Peñarol irá a Solanas para un retiro de concentración, decisión tomada por el cuerpo técnico, el plantel y la dirigencia.",
+      "cita": "Mañana se va de retiro espiritual. Retiro espiritual a Peñarol. Ir para Solanas. La decisión fue tomada por el cuerpo técnico, el equipo, el Junta Directiva.",
+      "minuto": "00:00:49",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Peñarol empató 1-1 con Wanderers en Saroldi, con un gol en el que participó Abel Hernández en los minutos finales.",
+      "cita": "Un gol de Abel Hernández minutos finales",
+      "minuto": "00:04:04",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "El arquero Washington Aguerre quedó suspendido por acumulación de cinco tarjetas amarillas.",
+      "cita": "tiene recibió la quinta tarjeta amarilla",
+      "minuto": "00:08:34",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "El jugador de Peñarol Angulo fue expulsado tras celebrar un gol frente a la hinchada de Wanderers.",
+      "cita": "Angulo, que también acaba siendo expulsado",
+      "minuto": "00:08:43",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Peñarol tiene un portero de baja por duda, según el programa.",
+      "cita": "El portero sigue de baja por duda",
+      "minuto": "00:08:05",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Se dice que Peñarol podría cambiar de entrenador, pero el programa sostiene que el cambio no sucederá.",
+      "cita": "Cambiar de entrenador es la única decisión. Es posible cambiar algo de lo que es. ... No sucederá.",
+      "minuto": "00:01:28",
+      "tipo": "version"
+    }
+  ]
+}

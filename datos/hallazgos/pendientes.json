@@ -401,7 +401,8 @@
     "titulo": "�Qu� pasa en PE�AROL? El v�nculo entre el PLANTEL y AGUIRRE en la mira",
     "video": "https://www.youtube.com/watch?v=igpkyLLYoEQ",
     "publicado": "2026-11-03",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-11-03-penarol-se-va-de-retiro-tras-el-empate-con-wanderers"
   },
   {
     "transcripto": "datos/transcripciones/2026-11-02_ObservaUY_2Kbm-EMtEgE.txt",
@@ -409,6 +410,7 @@
     "titulo": "INSEGURIDAD y TAXIS: �tiene SENTIDO mantener la MAMPARA hoy?",
     "video": "https://www.youtube.com/watch?v=2Kbm-EMtEgE",
     "publicado": "2026-11-02",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El video trata sobre la mampara en taxis y declaraciones de un dirigente de taxistas; no hay hechos de futbol. Es un tema de transporte y seguridad, fuera de la linea del medio."
   }
 ]
