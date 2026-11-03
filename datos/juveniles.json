@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-03T04:33:24+00:00",
+ "generado": "2026-11-03T12:43:00+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -6086,15 +6086,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-03T09:00:00",
-     "local": "Colon",
-     "visita": "Albion",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81133/"
-    },
-    {
      "fecha": "2026-11-16T04:30:00",
      "local": "Oriental",
      "visita": "Progreso",
@@ -7085,15 +7076,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-03T09:00:00",
-     "local": "Colon",
-     "visita": "Albion",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81133/"
-    },
     {
      "fecha": "2026-11-16T04:30:00",
      "local": "Oriental",
