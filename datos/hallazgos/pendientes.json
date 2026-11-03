@@ -394,5 +394,21 @@
     "publicado": "2026-11-02",
     "estado": "descartado",
     "motivo": "El video es mayormente una critica y opinion del presentador (Leo Jaime) sobre la gestion del presidente de Penarol, Ignacio Rulio, con relato de resultados ya conocidos y chicanas; no aporta informacion nueva de fichajes, lesiones o decisiones verificables, y las pocas afirmaciones concretas son opinion o comparacion."
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-03_ObservaUY_igpkyLLYoEQ.txt",
+    "fuente": "Observa",
+    "titulo": "�Qu� pasa en PE�AROL? El v�nculo entre el PLANTEL y AGUIRRE en la mira",
+    "video": "https://www.youtube.com/watch?v=igpkyLLYoEQ",
+    "publicado": "2026-11-03",
+    "estado": "sin_revisar"
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-02_ObservaUY_2Kbm-EMtEgE.txt",
+    "fuente": "Observa",
+    "titulo": "INSEGURIDAD y TAXIS: �tiene SENTIDO mantener la MAMPARA hoy?",
+    "video": "https://www.youtube.com/watch?v=2Kbm-EMtEgE",
+    "publicado": "2026-11-02",
+    "estado": "sin_revisar"
   }
 ]
