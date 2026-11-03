@@ -412,5 +412,13 @@
     "publicado": "2026-11-02",
     "estado": "descartado",
     "motivo": "El video trata sobre la mampara en taxis y declaraciones de un dirigente de taxistas; no hay hechos de futbol. Es un tema de transporte y seguridad, fuera de la linea del medio."
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-03_elespectador810_9WFlSdykyDs.txt",
+    "fuente": "El Espectador 810",
+    "titulo": "VAMOS QUE VAMOS | PROGRAMA COMPLETO | 2/11/2026",
+    "video": "https://www.youtube.com/watch?v=9WFlSdykyDs",
+    "publicado": "2026-11-03",
+    "estado": "sin_revisar"
   }
 ]
