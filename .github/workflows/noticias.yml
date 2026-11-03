@@ -24,7 +24,7 @@ permissions:
 jobs:
   escribir:
     runs-on: ubuntu-latest
-    timeout-minutes: 80
+    timeout-minutes: 30
     environment:
       name: github-pages
       url: ${{ steps.despliegue.outputs.page_url }}
@@ -33,22 +33,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      # yt-dlp necesita un motor de JavaScript para sacar algunos formatos de
-      # YouTube; sin esto avisa que la extraccion esta deprecada y puede no
-      # encontrar el audio.
-      - uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
       - name: Instalar dependencias
-        run: pip install --quiet --upgrade yt-dlp anthropic faster-whisper
-      # El modelo de Whisper pesa unos 250 MB. Guardado, no se vuelve a bajar.
-      - name: Guardar el modelo de Whisper entre corridas
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/huggingface
-          key: whisper-small-int8
-      - name: Escuchar los canales
-        run: python scripts/monitor.py
+        run: pip install --quiet --upgrade anthropic
+      # Aca NO se escuchan los canales: YouTube bloquea a las maquinas de GitHub.
+      # Los transcriptos los baja la maquina de casa cada hora al minuto 20, con
+      # scripts/subir_transcriptos.py, y los deja en el repo. Este workflow
+      # levanta lo que encuentre pendiente.
       - name: Filtrar y redactar
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

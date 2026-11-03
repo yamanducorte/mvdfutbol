@@ -4,10 +4,14 @@
 Uso:  python scripts/monitor.py            (una pasada)
       python scripts/monitor.py --listar   (muestra que hay nuevo, sin bajar nada)
 
-No usa API key ni cuenta: lee el RSS publico de cada canal. Solo necesita yt-dlp.
+No usa API key ni cuenta de YouTube: solo necesita yt-dlp. (El RSS de los
+canales murio, por eso la deteccion va por yt-dlp.)
+
+YouTube bloquea a las maquinas de GitHub, asi que esto corre en la maquina de
+casa, disparado por scripts/subir_transcriptos.py. El resto del circuito
+-filtrar, escribir, publicar- sigue en la nube.
 """
 import json
-import os
 import re
 import subprocess
 import sys
@@ -184,114 +188,19 @@ def bajar_transcripto(video_id, idiomas, destino_tmp):
     return None, fecha, bool(errores)
 
 
-# Vocabulario del fútbol uruguayo: Whisper escucha mejor los nombres propios si
-# se le adelanta de que va a hablar el audio. Sin esto, "Ruglio" sale "Rulio".
-PISTA = ("Futbol uruguayo. Penarol, Nacional, Danubio, Defensor Sporting, Liverpool, "
-         "Montevideo Wanderers, Racing, Cerro, Rampla Juniors, Progreso, Boston River, "
-         "Deportivo Maldonado, Cerro Largo, Juventud de Las Piedras, River Plate, "
-         "Plaza Colonia, Miramar Misiones, Bella Vista, Albion, Oriental, Torque. "
-         "AUF, Tenfield, Campeon del Siglo, Gran Parque Central, Estadio Centenario, "
-         "Torneo Apertura, Torneo Clausura, Copa Uruguay, tabla anual. "
-         "Diego Aguirre, Ignacio Ruglio, Maxi Gomez, Luciano Rodriguez, Sebastian Coates.")
-
-_MODELO_WHISPER = [None]
-
-
-def modelo_whisper(nombre):
-    """Se carga una sola vez por corrida: arrancarlo cuesta mas que usarlo."""
-    if _MODELO_WHISPER[0] is None:
-        from faster_whisper import WhisperModel
-        print("        cargando el modelo " + nombre + " (la primera vez lo baja)")
-        # int8 en procesador: es lo que hace que esto sea viable sin tarjeta de video.
-        _MODELO_WHISPER[0] = WhisperModel(nombre, device="cpu", compute_type="int8")
-    return _MODELO_WHISPER[0]
-
-
-def bajar_audio(video_id, tmp):
-    """Baja el audio tal como viene, sin reconvertir: asi no necesita ffmpeg.
-
-    Devuelve (archivo, motivo). Si el archivo es None, el motivo trae lo ultimo
-    que dijo yt-dlp, que es lo unico que sirve para entender por que fallo.
-    """
-    proceso = subprocess.run(
-        ["yt-dlp", "-f", "bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio",
-         "--no-playlist", "--retries", "3",
-         "-o", str(tmp / (video_id + ".audio.%(ext)s")),
-         "https://www.youtube.com/watch?v=" + video_id],
-        capture_output=True, text=True, timeout=900, encoding="utf-8", errors="replace",
-                             creationflags=SIN_VENTANA)
-    # Un .part es una bajada cortada: pasarselo a Whisper daria texto trunco.
-    completos = [a for a in tmp.glob(video_id + ".audio.*")
-                 if a.suffix not in (".part", ".ytdl") and a.stat().st_size > 0]
-    if completos:
-        return completos[0], ""
-    for basura in tmp.glob(video_id + ".audio.*"):
-        basura.unlink()
-    salida = (proceso.stderr or "") + "\n" + (proceso.stdout or "")
-    lineas = [l.strip() for l in salida.splitlines() if l.strip()]
-    # Lo que explica la falla son las lineas de ERROR o WARNING; el resto es el
-    # relato de lo que fue intentando, que no sirve para nada.
-    utiles = [l for l in lineas if "ERROR" in l or "WARNING" in l or "Sign in" in l]
-    return None, (" | ".join(utiles[:3]) if utiles
-                  else (" | ".join(lineas[-3:]) if lineas else "yt-dlp no dijo nada"))
-
-
-def whisper_disponible():
-    try:
-        import faster_whisper  # noqa: F401
-        return True
-    except ImportError:
-        return False
-
-
-def transcribir_audio(video_id, tmp, ajustes):
-    """Pasa el audio a texto con marcas de tiempo. Devuelve None si no se pudo.
-
-    Esto corre en el procesador y no cuesta plata: no es la API de Claude. Lo que
-    si cuesta es el transcripto que sale de aca, porque despues lo lee el filtro.
-    """
-    audio = None
-    try:
-        audio, motivo = bajar_audio(video_id, tmp)
-        if not audio:
-            print("        !! no se pudo bajar el audio: " + motivo[:300])
-            return None
-        modelo = modelo_whisper(ajustes.get("modelo", "small"))
-        segmentos, _ = modelo.transcribe(
-            str(audio), language="es", vad_filter=True, initial_prompt=PISTA)
-        partes = []
-        for seg in segmentos:
-            frase = (seg.text or "").strip()
-            if not frase:
-                continue
-            total = int(seg.start)
-            marca = "%02d:%02d:%02d" % (total // 3600, total % 3600 // 60, total % 60)
-            partes.append((marca, frase))
-        if not partes:
-            print("        !! el audio no dio texto")
-            return None
-        return agrupar(partes)
-    except Exception as error:
-        print("        !! Whisper fallo: " + str(error))
-        return None
-    finally:
-        if audio and audio.exists():
-            audio.unlink()
-
-
 def reintentar(estado, handle, video, parametros, contar=True):
     """Desmarca el video para que la proxima corrida lo intente de nuevo.
 
-    YouTube tarda en generar los subtitulos automaticos, y ademas corta por
-    abuso: un video que hoy no los da puede darlos en la corrida siguiente.
-    Tirarlo en el primer intento es perder la nota. Despues de unos cuantos
-    intentos se da por perdido, asi no queda reintentando para siempre.
+YouTube corta por abuso: un video cuyos subtitulos hoy no nos quiso dar
+    puede darlos en la corrida siguiente. Tirarlo en el primer intento es perder
+    la nota. Despues de unos cuantos intentos se da por perdido, asi no queda
+    reintentando para siempre.
 
     `contar=False` es para cuando el video se posterga por decision nuestra
     (se lleno el cupo de la corrida): eso no es un intento fallido.
     """
     if contar:
-        tope = parametros.get("reintentos_sin_subtitulos", 6)
+        tope = parametros.get("reintentos_si_youtube_frena", 6)
         cuenta = estado["reintentos"].get(video["id"], 0) + 1
         if cuenta > tope:
             estado["reintentos"].pop(video["id"], None)
@@ -307,28 +216,8 @@ def main():
     fuentes = leer_json(FUENTES, {})
     parametros = fuentes.get("parametros", {})
     idiomas = parametros.get("idiomas_subtitulos", ["es"])
-    whisper = fuentes.get("whisper", {})
     cupo = parametros.get("transcriptos_por_corrida", 8)
     bajados = 0
-    transcritos_whisper = 0   # intentos de esta corrida (es lo que topea)
-    hechos_whisper = 0        # los que efectivamente salieron
-    if whisper.get("activo") and whisper.get("saltear_en_la_nube", True) and os.environ.get("CI"):
-        # YouTube rechaza las bajadas de audio desde las IPs de los centros de
-        # datos ("Sign in to confirm you're not a bot"), asi que en la nube
-        # intentarlo es perder minutos. En la maquina de casa funciona.
-        print("  (Whisper apagado en la nube: YouTube no deja bajar audio desde ahi)")
-        whisper = dict(whisper, activo=False)
-    if whisper.get("activo") and not whisper_disponible():
-        # Pasa en la maquina de casa, donde no hace falta instalarlo: el que
-        # transcribe es GitHub. Se apaga y los videos sin subtitulos se saltean,
-        # igual que antes, en vez de quedar marcados como procesados.
-        print("  (faster-whisper no esta instalado aca: los videos sin subtitulos se saltean)")
-        whisper = dict(whisper, activo=False)
-    estado = leer_json(ESTADO, {"vistos": {}})
-    estado.setdefault("reintentos", {})
-    cache_canales = leer_json(CANALES, {})
-    solo_listar = "--listar" in sys.argv
-
     tmp = DATOS / "tmp"
     tmp.mkdir(parents=True, exist_ok=True)
     TRANSCRIPCIONES.mkdir(parents=True, exist_ok=True)
@@ -382,64 +271,31 @@ def main():
             vtt, fecha, fallo_subs = bajar_transcripto(video["id"], idiomas, tmp)
             estado["vistos"].setdefault(handle, []).append(video["id"])
             # Un video de hace un mes no es noticia: se marca visto y se sigue.
-            # Va antes que Whisper para no gastar minutos de maquina al aire.
             dias = parametros.get("dias_maximos", 7)
             limite = (datetime.now(timezone.utc) - timedelta(days=dias)).strftime("%Y-%m-%d")
             if fecha < limite:
                 print("     - viejo (" + fecha + "): " + video["titulo"][:50])
                 continue
-            por_whisper = False
-            if not vtt and fallo_subs:
-                if reintentar(estado, handle, video, parametros):
+            if not vtt:
+                # Dos casos distintos. Si YouTube nos frena (429, pedido de
+                # confirmar que no somos un robot), el video SI tiene
+                # subtitulos y se reintenta en la corrida siguiente. Si
+                # directamente no tiene, se saltea: decision del dueno, no
+                # transcribimos audio.
+                if fallo_subs and reintentar(estado, handle, video, parametros):
                     print("     - YouTube no dio los subtitulos ahora, se reintenta: " +
                           video["titulo"][:45])
                 else:
-                    print("     - sin subtitulos despues de varios intentos: " +
-                          video["titulo"][:50])
+                    print("     - sin subtitulos, se saltea: " + video["titulo"][:55])
                 continue
-            if vtt:
-                texto = limpiar_vtt(vtt)
-            else:
-                # No todos los canales dejan subtitulos automaticos, y justo ahi
-                # suele estar la nota. Se escucha el audio y se escribe solo.
-                tope = whisper.get("maximo_por_corrida", 2)
-                if not whisper.get("activo"):
-                    if reintentar(estado, handle, video, parametros):
-                        print("     - sin subtitulos todavia, se reintenta: " + video["titulo"][:48])
-                    else:
-                        print("     - sin subtitulos: " + video["titulo"][:60])
-                    continue
-                if transcritos_whisper >= tope:
-                    print("     - sin subtitulos, queda para la proxima corrida (ya van " +
-                          str(tope) + "): " + video["titulo"][:50])
-                    # Se lo saca de los vistos para que la proxima corrida lo agarre.
-                    ya_vistos = estado["vistos"].setdefault(handle, [])
-                    if ya_vistos and ya_vistos[-1] == video["id"]:
-                        ya_vistos.pop()
-                    continue
-                if video["duracion"] > whisper.get("duracion_maxima_seg", 3600):
-                    print("     - sin subtitulos y muy largo para transcribir (" +
-                          str(video["duracion"] // 60) + " min): " + video["titulo"][:50])
-                    continue
-                print("     ~ sin subtitulos, escuchando el audio (" +
-                      str(video["duracion"] // 60) + " min): " + video["titulo"][:50])
-                # El tope cuenta intentos, no exitos: bajar el audio y transcribir
-                # lleva minutos, y una corrida tiene que terminar aunque falle todo.
-                transcritos_whisper += 1
-                texto = transcribir_audio(video["id"], tmp, whisper)
-                if not texto:
-                    reintentar(estado, handle, video, parametros)
-                    continue
-                hechos_whisper += 1
-                por_whisper = True
+            texto = limpiar_vtt(vtt)
             archivo = TRANSCRIPCIONES / (fecha + "_" + handle.lstrip("@") + "_" + video["id"] + ".txt")
             archivo.write_text(
                 "FUENTE: " + nombre + " (" + handle + ")\n"
                 "VIDEO: https://www.youtube.com/watch?v=" + video["id"] + "\n"
                 "TITULO: " + video["titulo"] + "\n"
                 "PUBLICADO: " + fecha + "\n"
-                "ORIGEN: " + ("audio transcripto por Whisper (puede errar nombres propios)"
-                              if por_whisper else "subtitulos automaticos de YouTube") + "\n"
+                "ORIGEN: subtitulos automaticos de YouTube\n"
                 "PALABRAS: " + str(len(texto.split())) + "\n\n" + texto + "\n",
                 encoding="utf-8")
             for sobrante in tmp.glob(video["id"] + ".*"):
@@ -463,10 +319,8 @@ def main():
         escribir_json(ESTADO, estado)
         escribir_json(PENDIENTES, pendientes)
         sin_revisar = sum(1 for p in pendientes if p["estado"] == "sin_revisar")
-        extra = (" (" + str(hechos_whisper) + " por audio con Whisper, " +
-                 str(transcritos_whisper) + " intento(s))" if transcritos_whisper else "")
-        print("\n" + str(nuevos_total) + " transcripto(s) nuevo(s)" + extra +
-              ". Pendientes de redaccion: " + str(sin_revisar))
+        print("\n" + str(nuevos_total) + " transcripto(s) nuevo(s). " +
+              "Pendientes de redaccion: " + str(sin_revisar))
 
 
 if __name__ == "__main__":

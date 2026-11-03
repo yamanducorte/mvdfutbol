@@ -4,7 +4,7 @@ Medio digital de futbol uruguayo. Se actualiza solo.
 
 ## Que hace
 
-- `scripts/monitor.py` — escucha los canales de YouTube de `fuentes.json` y baja el transcripto de cada video nuevo (yt-dlp, sin API key). Si el video no trae subtitulos automaticos, le baja el audio y lo transcribe con faster-whisper en el procesador: gratis, con tope de videos por corrida en `fuentes.json`.
+- `scripts/monitor.py` — escucha los canales de YouTube de `fuentes.json` y baja el transcripto de cada video nuevo (yt-dlp, sin API key). Si el video no trae subtitulos, se saltea. Corre en la maquina de casa, no en la nube: YouTube bloquea a las IPs de GitHub. Lo dispara `scripts/subir_transcriptos.py`, que lo llama una tarea programada de Windows cada hora y sube lo que bajo.
 - `scripts/redactor.py` — dos etapas: un modelo barato (Haiku 5.5) lee el transcripto entero y decide si hay noticia; un modelo bueno (Opus 5.5) escribe la nota solo con los hechos extraidos, citando programa, fuente y minuto. Respeta la linea editorial de `editorial.json`, cuya lista de clubes llega por la variable `CLUBES_DE_LA_CASA` y no esta en el repo.
 - `scripts/datos.py` — trae los partidos de juveniles de la API publica de La Movida Online y **calcula** las tablas de posiciones. No cuesta nada.
 - `scripts/sitio.py` — genera el sitio estatico en `publico/`.

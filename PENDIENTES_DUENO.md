@@ -85,9 +85,8 @@ caduca cada pocas semanas y te la pueden bloquear.
 - Secrets cargados en GitHub (`ANTHROPIC_API_KEY`, `API_FOOTBALL_KEY`)
 - 26 campeonatos con tabla: Primera, juveniles, ascenso y femenino
 - Los 25 canales de YouTube cargados y escuchándose
-- **Videos sin subtítulos**: el robot les puede bajar el audio y transcribirlo
-  solo con Whisper, gratis. En la nube queda apagado porque YouTube no deja bajar
-  audio desde ahí; en tu PC funciona (`pip install faster-whisper` una vez).
+- **Videos sin subtítulos**: se saltean. Son pocos y casi siempre YouTube les
+  genera los subtítulos un rato más tarde, y ahí entran solos.
 - **Arreglado un error que costaba notas**: cuando YouTube frenaba el pedido por
   abuso, el código lo leía como "este video no tiene subtítulos" y lo tiraba para
   siempre. Ahora distingue las dos cosas y reintenta.
