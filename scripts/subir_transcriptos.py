@@ -27,6 +27,11 @@ REGISTRO = TMP / "bajar.log"
 CANDADO = TMP / "bajar.lock"
 ESTADO = "datos/estado.json"
 MINUTOS_DE_CANDADO = 110
+# Cuando la tarea programada corre esto con pythonw (sin ventana), cada programa
+# de consola que se llame -yt-dlp, git- se abre su PROPIA ventana y le llenan la
+# pantalla al dueno. Esta bandera se lo impide. En Linux (la nube) no existe y
+# vale 0, que es "sin banderas".
+SIN_VENTANA = getattr(subprocess, "CREATE_NO_WINDOW", 0)
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="replace")
@@ -46,7 +51,8 @@ def git(*argumentos, mostrar=False):
     """Corre git y devuelve (codigo, salida)."""
     proceso = subprocess.run(["git"] + list(argumentos), cwd=str(RAIZ),
                              capture_output=True, text=True,
-                             encoding="utf-8", errors="replace")
+                             encoding="utf-8", errors="replace",
+                             creationflags=SIN_VENTANA)
     salida = ((proceso.stdout or "") + (proceso.stderr or "")).strip()
     if mostrar and salida:
         anotar("  git " + argumentos[0] + ": " + salida.splitlines()[-1][:160])
@@ -77,7 +83,8 @@ def unir_estado_en_conflicto():
     proceso = subprocess.run([sys.executable, "scripts/unir_estado.py",
                               str(una), str(otra), ESTADO],
                              cwd=str(RAIZ), capture_output=True, text=True,
-                             encoding="utf-8", errors="replace")
+                             encoding="utf-8", errors="replace",
+                             creationflags=SIN_VENTANA)
     if proceso.returncode != 0:
         anotar("  !! no pude unir el estado: " + (proceso.stderr or "")[:200])
         return False
@@ -98,7 +105,8 @@ def ponerse_al_dia():
     entorno = dict(os.environ, GIT_EDITOR="true")
     proceso = subprocess.run(["git", "rebase", "--continue"], cwd=str(RAIZ),
                              capture_output=True, text=True, env=entorno,
-                             encoding="utf-8", errors="replace")
+                             encoding="utf-8", errors="replace",
+                             creationflags=SIN_VENTANA)
     if proceso.returncode != 0:
         anotar("  !! el rebase no pudo seguir, lo aborto")
         git("rebase", "--abort")
@@ -153,7 +161,8 @@ def main():
             return 1
         proceso = subprocess.run([sys.executable, "scripts/monitor.py"], cwd=str(RAIZ),
                                  capture_output=True, text=True,
-                                 encoding="utf-8", errors="replace")
+                                 encoding="utf-8", errors="replace",
+                             creationflags=SIN_VENTANA)
         for linea in (proceso.stdout or "").splitlines():
             if linea.strip() and ("+" in linea or "!!" in linea or "transcripto(s)" in linea):
                 anotar("  " + linea.strip()[:200])

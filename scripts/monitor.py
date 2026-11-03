@@ -24,6 +24,11 @@ CANALES = DATOS / "canales.json"
 PENDIENTES = DATOS / "hallazgos" / "pendientes.json"
 AGENTE = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36"
 ENTIDADES = {"amp": "&", "quot": '"', "apos": "'", "#39": "'", "lt": "<", "gt": ">"}
+# Cuando la tarea programada corre esto con pythonw (sin ventana), cada programa
+# de consola que se llame -yt-dlp, git- se abre su PROPIA ventana y le llenan la
+# pantalla al dueno. Esta bandera se lo impide. En Linux (la nube) no existe y
+# vale 0, que es "sin banderas".
+SIN_VENTANA = getattr(subprocess, "CREATE_NO_WINDOW", 0)
 # La consola de Windows no es UTF-8: imprimir un titulo con un caracter raro
 # tiraba todo el script abajo. Que reemplace el caracter y siga de largo.
 if hasattr(sys.stdout, "reconfigure"):
@@ -75,7 +80,8 @@ def videos_del_canal(id_canal, cuantos=8):
          "--sleep-requests", "1", "--extractor-retries", "3",
          "--print", "%(id)s\t%(duration)s\t%(title)s",
          "https://www.youtube.com/channel/" + id_canal + "/videos"],
-        capture_output=True, text=True, timeout=240, encoding="utf-8", errors="replace")
+        capture_output=True, text=True, timeout=240, encoding="utf-8", errors="replace",
+                             creationflags=SIN_VENTANA)
     videos = []
     for linea in salida.stdout.splitlines():
         partes = linea.split("\t")
@@ -158,7 +164,8 @@ def bajar_transcripto(video_id, idiomas, destino_tmp):
          "--print", "%(upload_date)s", "--no-simulate",
          "-o", str(destino_tmp / "%(id)s"),
          "https://www.youtube.com/watch?v=" + video_id],
-        capture_output=True, text=True, timeout=600, encoding="utf-8", errors="replace")
+        capture_output=True, text=True, timeout=600, encoding="utf-8", errors="replace",
+                             creationflags=SIN_VENTANA)
     crudo = next((l.strip() for l in proceso.stdout.splitlines()
                   if len(l.strip()) == 8 and l.strip().isdigit()), "")
     fecha = (crudo[:4] + "-" + crudo[4:6] + "-" + crudo[6:]) if crudo \
@@ -211,7 +218,8 @@ def bajar_audio(video_id, tmp):
          "--no-playlist", "--retries", "3",
          "-o", str(tmp / (video_id + ".audio.%(ext)s")),
          "https://www.youtube.com/watch?v=" + video_id],
-        capture_output=True, text=True, timeout=900, encoding="utf-8", errors="replace")
+        capture_output=True, text=True, timeout=900, encoding="utf-8", errors="replace",
+                             creationflags=SIN_VENTANA)
     # Un .part es una bajada cortada: pasarselo a Whisper daria texto trunco.
     completos = [a for a in tmp.glob(video_id + ".audio.*")
                  if a.suffix not in (".part", ".ytdl") and a.stat().st_size > 0]
