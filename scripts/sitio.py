@@ -473,7 +473,8 @@ ESTADOS = {
 # que es la que ordena el ano, y despues el que se esta jugando.
 ORDEN_TORNEO = {"anual": 0, "clausura": 1, "intermedio": 2, "apertura": 3,
                 "copa_oro": 4, "copa_plata": 5, "copa": 6, "final": 7,
-                "regular": 8, "competencia": 9}
+                "serie_honor": 8, "serie_campeonato": 9, "serie_permanencia": 10,
+                "regular": 11, "competencia": 12}
 
 
 def sello_estado(liga):
@@ -939,20 +940,24 @@ def main():
         columna += "</div>"
 
     lateral = []
-    # La tabla de Primera ya esta entera en la columna principal: repetirla al
-    # costado era mostrar dos veces lo mismo.
-    resultados_recientes = [p for l in ligas if l.get("torneo") != "anual"
-                            for p in l.get("ultimos_resultados", [])]
-    if resultados_recientes:
-        lateral.append('<div><h2>Resultados de la fecha</h2><div class="marcadores">' +
-                       html_marcadores(sorted(resultados_recientes,
-                                              key=lambda p: p["fecha"], reverse=True)[:6]) +
+    # La portada es de Primera: antes mezclaba en una sola franja los resultados de
+    # Primera, de Segunda y de los juveniles, sin decir de que torneo era cada
+    # uno. Asi Juventud aparecia perdiendo 1-4 con Canadian (un juvenil) y dos
+    # lineas mas abajo perdiendo 2-0 con Liverpool (Primera), como si fuera el
+    # mismo equipo jugando dos veces. Los juveniles tienen su propia seccion.
+    resultados_primera = [p for l in de_primera if l.get("torneo") != "anual"
+                          for p in l.get("ultimos_resultados", [])]
+    if resultados_primera:
+        vistos, limpios = set(), []
+        for partido in sorted(resultados_primera, key=lambda p: p["fecha"], reverse=True):
+            clave = (partido["fecha"][:16], partido["local"], partido["visita"])
+            if clave in vistos:
+                continue
+            vistos.add(clave)
+            limpios.append(partido)
+        lateral.append('<div><h2>Primera · resultados de la fecha</h2>'
+                       '<div class="marcadores">' + html_marcadores(limpios[:8]) +
                        "</div></div>")
-    fixture_juveniles = proximos_sin_repetir(
-        [l for l in ligas if l.get("grupo") == "juveniles"])
-    if fixture_juveniles:
-        lateral.append("<div><h2>Próxima fecha de juveniles</h2>" +
-                       html_fixture(fixture_juveniles, 3) + "</div>")
     lateral += [html_anuncio(a) for a in anuncios]
 
     escribir("index.html", pagina(
@@ -1022,6 +1027,13 @@ def main():
                and l.get("categoria") in ("sub11", "sub13")]
     if de_aufi:
         fila_divisiones.append(("AUFI", "/juveniles/aufi/"))
+    # Torneos juveniles que la fuente no ubica en A ni en B. Van aparte y se dice
+    # que no sabemos a que divisional pertenecen, en vez de meterlos en una.
+    sin_divisional = [l for l in ligas if l.get("grupo") == "juveniles"
+                      and not l.get("division")
+                      and l.get("categoria") not in ("sub11", "sub13", "tercera")]
+    if sin_divisional:
+        fila_divisiones.append(("Otros torneos", "/juveniles/otros/"))
     if hay_tercera:
         fila_divisiones.append(("Tercera División", ruta_categoria("tercera")))
     generales = [l for l in ligas if l.get("general")]
@@ -1054,6 +1066,10 @@ def main():
                 tarjetas.append('<a class="ficha" href="' + u("/juveniles/aufi/") +
                                 '"><b>AUFI</b><small>Sub 11 y Sub 13, el fútbol '
                                 'infantil de la AUF</small></a>')
+            if sin_divisional:
+                tarjetas.append('<a class="ficha" href="' + u("/juveniles/otros/") +
+                                '"><b>Otros torneos</b><small>' + str(len(sin_divisional)) +
+                                ' campeonatos juveniles que no son A ni B</small></a>')
             if hay_tercera:
                 tarjetas.append('<a class="ficha" href="' + u(ruta_categoria("tercera")) +
                                 '"><b>Tercera División</b><small>La Sub 23, la última '
@@ -1205,6 +1221,24 @@ def main():
             "".join(lateral_de(de_aufi, "AUFI")) + "</aside></div>",
             "/juveniles/aufi/", ligas, "/juveniles/", submenu=submenu_de()))
 
+    # ------------------ Juveniles que la fuente no ubica en A ni en B ----------
+    if sin_divisional:
+        cuerpo_o = ('<span class="sello dato">Juveniles</span><h1 class="titulo">Otros '
+                    'torneos juveniles</h1>'
+                    '<p class="intro">Estos campeonatos existen y las tablas están bien, '
+                    'pero La Movida no dice a qué divisional pertenecen, y no son Juveniles A: '
+                    'juegan clubes que no están en el Apertura de A, como Durazno FC, Plaza '
+                    'Colonia, San Jacinto, Udelar o Canadian. Preferimos mostrarlos acá antes '
+                    'que ponerlos en una divisional que no les corresponde.</p>' +
+                    html_campeonatos(sin_divisional, credito))
+        escribir("juveniles/otros/index.html", pagina(
+            "Otros torneos juveniles del fútbol uruguayo · " + SITIO,
+            "Tablas y resultados de campeonatos juveniles uruguayos que no pertenecen a "
+            "Juveniles A ni a Juveniles B.",
+            '<div class="grilla"><div>' + cuerpo_o + "</div><aside>" +
+            "".join(lateral_de(sin_divisional, "estos torneos")) + "</aside></div>",
+            "/juveniles/otros/", ligas, "/juveniles/", submenu=submenu_de()))
+
     # ------------------------------- Tercera Division, que no es A ni B ---------
     de_tercera = [l for l in ligas if l.get("grupo") == "juveniles"
                   and l.get("categoria") == "tercera"]
@@ -1268,6 +1302,9 @@ def main():
     if any(l.get("grupo") == "juveniles" and l.get("categoria") in ("sub11", "sub13")
            for l in ligas):
         rutas_juveniles.append("/juveniles/aufi/")
+    if any(l.get("grupo") == "juveniles" and not l.get("division")
+           and l.get("categoria") not in ("sub11", "sub13", "tercera") for l in ligas):
+        rutas_juveniles.append("/juveniles/otros/")
     if any(l.get("grupo") == "juveniles" and l.get("categoria") == "tercera" for l in ligas):
         rutas_juveniles.append(ruta_categoria("tercera"))
     urls = ["/"] + secciones + rutas_juveniles + \

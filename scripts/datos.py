@@ -63,7 +63,12 @@ TORNEOS = [
     ("copa_plata", "Copa de Plata", re.compile(r"copa\s*(de\s*)?plata", re.I)),
     ("copa", "Copa", re.compile(r"\bcopa\b", re.I)),
     ("final", "Torneo Final", re.compile(r"\bfinal\b", re.I)),
-    ("regular", "Fase regular", re.compile(r"fase\s*regular|serie\s*(campeonato|permanencia|de\s*honor)", re.I)),
+    # Las series tienen nombre propio en la fuente y hay que respetarlo: si todas
+    # caen en "Fase regular", dos campeonatos distintos quedan con el mismo titulo.
+    ("serie_honor", "Serie de Honor", re.compile(r"serie\s*de\s*honor", re.I)),
+    ("serie_campeonato", "Serie Campeonato", re.compile(r"serie\s*campeonato", re.I)),
+    ("serie_permanencia", "Serie Permanencia", re.compile(r"serie\s*permanencia", re.I)),
+    ("regular", "Fase regular", re.compile(r"fase\s*regular", re.I)),
 ]
 TITULO_TORNEO = {t: tit for t, tit, _ in TORNEOS}
 TITULO_TORNEO["anual"] = "Tabla anual"
@@ -104,10 +109,12 @@ def clasificar(nombre):
     else:
         return None
     torneo = next((t for t, _, p in TORNEOS if p.search(nombre)), "otro")
+    # Solo se pone A o B cuando el nombre lo dice. Antes se asumia "si no dice B,
+    # es A", y eso metia en Juveniles A torneos que no son: la Serie Campeonato y
+    # la Serie de Honor juegan con clubes que no estan en el Apertura de A
+    # (Durazno FC, Plaza Colonia, San Jacinto, Udelar, Canadian). Si la fuente no
+    # lo aclara, queda sin divisional y el sitio lo muestra aparte.
     division = "B" if ES_JUV_B.search(nombre) else ("A" if ES_JUV_A.search(nombre) else None)
-    if grupo == "juveniles" and division is None and categoria not in ("sub11", "sub13", "tercera"):
-        # Los juveniles A no siempre se nombran "A": si no dice B, es A.
-        division = "A"
     serie = SERIE.search(nombre)
     subdivision = SUBDIVISION.search(nombre)
     fase = next((f for f, p in FASES if p.search(nombre)), None)
