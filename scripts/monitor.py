@@ -218,6 +218,11 @@ def main():
     idiomas = parametros.get("idiomas_subtitulos", ["es"])
     cupo = parametros.get("transcriptos_por_corrida", 8)
     bajados = 0
+    estado = leer_json(ESTADO, {"vistos": {}})
+    estado.setdefault("reintentos", {})
+    cache_canales = leer_json(CANALES, {})
+    solo_listar = "--listar" in sys.argv
+
     tmp = DATOS / "tmp"
     tmp.mkdir(parents=True, exist_ok=True)
     TRANSCRIPCIONES.mkdir(parents=True, exist_ok=True)
