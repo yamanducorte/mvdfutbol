@@ -173,6 +173,25 @@ article.nota p a.min{font-family:var(--dato);font-weight:600;font-size:.95em;col
 .fuente{border-top:1px solid var(--linea);margin-top:26px;padding-top:14px;font-size:.9rem;color:var(--gris)}
 .fuente a{color:var(--celeste)}
 .vacio{border:1px dashed var(--linea);padding:20px;color:var(--gris);font-size:.95rem}
+
+/* campeonatos: cada tabla dice que es y si se esta jugando */
+.estado{display:inline-block;font-family:var(--dato);font-size:.58rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:2px 7px;margin-left:9px;vertical-align:middle;border:1px solid var(--linea);white-space:nowrap}
+.estado.vivo{background:#0a7d32;color:#fff;border-color:#0a7d32}
+.estado.fin{background:var(--crema);color:var(--gris)}
+.estado.espera{background:#fff;color:var(--gris)}
+.campeonato{margin:0 0 30px}
+.campeonato h3{font-family:var(--titular);font-size:1.12rem;margin:0 0 4px}
+.campeonato .aclaracion{font-size:.86rem;color:var(--gris);margin:0 0 10px;max-width:40rem}
+.submenu{border-bottom:1px solid var(--linea);background:var(--crema)}
+.submenu .ancho{display:flex;gap:4px;flex-wrap:wrap;padding-block:7px}
+.submenu a{font-family:var(--dato);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--gris);padding:5px 10px;border:1px solid transparent}
+.submenu a:hover{color:var(--tinta);border-color:var(--linea);background:#fff}
+.submenu a[aria-current]{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.cruces{width:100%;border-collapse:collapse;margin:4px 0 8px;font-size:.94rem}
+.cruces td{padding:7px 8px;border-bottom:1px solid var(--linea)}
+.cruces .res{font-family:var(--dato);font-weight:700;text-align:center;white-space:nowrap}
+.cruces .por-jugar{font-family:var(--dato);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);text-align:center}
+.cruces .visita{text-align:right}
 .intro{color:var(--gris);font-size:1.05rem;margin:11px 0 24px;max-width:40rem}
 
 footer{border-top:3px solid var(--tinta);margin-top:36px;background:var(--crema)}
@@ -400,6 +419,46 @@ def ruta_liga(liga):
     return "/" + liga.get("grupo", "juveniles") + "/" + slug(liga["nombre"]) + "/"
 
 
+def ruta_categoria(categoria):
+    """La pagina de una categoria juvenil: /juveniles/sub17/, /juveniles/tercera/."""
+    return "/juveniles/" + categoria + "/"
+
+
+ESTADOS = {
+    "en_curso": ("Se está jugando", "vivo"),
+    "terminado": ("Terminado", "fin"),
+    "sin_empezar": ("Todavía no arrancó", "espera"),
+}
+# En que orden se muestran los torneos de una misma categoria: primero la anual,
+# que es la que ordena el ano, y despues el que se esta jugando.
+ORDEN_TORNEO = {"anual": 0, "clausura": 1, "intermedio": 2, "apertura": 3,
+                "copa_oro": 4, "copa_plata": 5, "copa": 6, "final": 7,
+                "regular": 8, "competencia": 9}
+
+
+def sello_estado(liga):
+    texto, clase = ESTADOS.get(liga.get("estado") or "", ("", ""))
+    return '<span class="estado ' + clase + '">' + texto + "</span>" if texto else ""
+
+
+def categorias_de(ligas):
+    """Las categorias juveniles que hoy tienen tabla, en orden de mayor a menor."""
+    vistas = {}
+    for liga in ligas:
+        if liga.get("grupo") != "juveniles" or not liga.get("categoria"):
+            continue
+        vistas.setdefault(liga["categoria"], (liga.get("orden_categoria", 999),
+                                              liga.get("titulo_categoria") or liga["categoria"]))
+    return [(clave, nombre) for clave, (_, nombre) in
+            sorted(vistas.items(), key=lambda par: par[1][0])]
+
+
+def ordenar_campeonatos(ligas):
+    return sorted(ligas, key=lambda l: (ORDEN_TORNEO.get(l.get("torneo"), 99),
+                                        l.get("serie") or "",
+                                        l.get("titulo") or l.get("nombre", "")))
+
+
 TITULOS_GRUPO = {"primera": "Primera División", "juveniles": "Juveniles",
                  "ascenso": "Segunda, Tercera y D", "femenino": "Fútbol femenino"}
 INTRO_GRUPO = {
@@ -411,24 +470,30 @@ INTRO_GRUPO = {
 
 
 def categorias_menu(ligas):
-    """Atajos a las categorias que hoy tienen campeonato en curso."""
+    """El menu de arriba: una entrada por division y nada mas.
+
+    Antes colgaban del menu tres juveniles sueltos (Sub 19, 17 y 15) y las otras
+    no aparecian en ningun lado. Las categorias ahora viven en el submenu de
+    Juveniles, que es donde el lector las busca.
+    """
     atajos = []
     for clave in ("primera", "juveniles", "ascenso", "femenino"):
         if any(l.get("grupo", "juveniles") == clave for l in ligas):
             atajos.append((TITULOS_GRUPO[clave].split(",")[0], "/" + clave + "/"))
-    for numero in ("19", "17", "15"):
-        for liga in ligas:
-            if re.search(r"sub\s?-?" + numero + r"\b|s" + numero + r"\b", liga["nombre"], re.I):
-                atajos.append(("Sub " + numero, ruta_liga(liga)))
-                break
     return atajos
 
 
-def pagina(titulo, descripcion, contenido, ruta, ligas, seccion="", esquema=None, publicado=""):
+def pagina(titulo, descripcion, contenido, ruta, ligas, seccion="", esquema=None, publicado="",
+           submenu=None):
     ahora = datetime.now(timezone.utc)
     enlaces = [("Portada", "/")] + categorias_menu(ligas)
     menu = "".join('<a href="' + u(destino) + '"' + (' aria-current="page"' if seccion == destino else "") +
                    ">" + texto + "</a>" for texto, destino in enlaces)
+    barra = ""
+    if submenu:
+        barra = ('<nav class="submenu" aria-label="Categorías"><div class="ancho">' + "".join(
+            '<a href="' + u(destino) + '"' + (' aria-current="page"' if ruta == destino else "") +
+            ">" + esc(etiqueta) + "</a>" for etiqueta, destino in submenu) + "</div></nav>")
     extra = ('<meta property="article:published_time" content="' + esc(publicado) + '">' if publicado else "")
     if esquema:
         extra += '<script type="application/ld+json">' + json.dumps(esquema, ensure_ascii=False) + "</script>"
@@ -462,6 +527,7 @@ def pagina(titulo, descripcion, contenido, ruta, ligas, seccion="", esquema=None
   </div>
 </header>
 <div class="menu"><div class="ancho">""" + menu + """</div></div>
+""" + barra + """
 <div class="ancho">
 """ + contenido + """
 </div>
@@ -514,6 +580,71 @@ def html_marcadores(partidos):
                    for p in partidos)
 
 
+def bloque_campeonato(liga, credito, limite=None, con_enlace=True):
+    """Una tabla con su nombre, que torneo es, si se esta jugando y de donde sale.
+
+    El dueno pidio que cada cosa diga que es: una tabla sola, sin decir si es la
+    anual o el Clausura y sin decir si el torneo termino, no se entiende.
+    """
+    titulo = liga.get("titulo") or liga.get("nombre", "")
+    partes = ['<section class="campeonato" id="' + esc(slug(titulo)) + '">',
+              "<h3>" + esc(titulo) + sello_estado(liga) + "</h3>"]
+    if liga.get("explicacion"):
+        partes.append('<p class="aclaracion">' + esc(liga["explicacion"]) + "</p>")
+    if liga.get("calculada"):
+        partes.append('<p class="aclaracion">Tabla calculada por ' + SITIO + ' sumando los '
+                      'partidos uno por uno: la fuente no la publica armada.</p>')
+    partes.append(html_tabla(liga["tabla"], limite))
+    if con_enlace and limite and len(liga["tabla"]) > limite:
+        partes.append('<p style="margin-top:8px"><a style="font-family:var(--dato);font-size:.72rem;'
+                      'letter-spacing:.1em;text-transform:uppercase;color:var(--celeste)" href="' +
+                      u(ruta_liga(liga)) + '">Tabla completa →</a></p>')
+    partes.append(pie_fuente(liga, credito))
+    partes.append("</section>")
+    return "".join(partes)
+
+
+def html_campeonatos(ligas, credito, limite=None):
+    """Los campeonatos de una division: primero lo que se juega, despues lo que termino."""
+    en_juego = [l for l in ligas if l.get("estado") != "terminado"]
+    terminados = [l for l in ligas if l.get("estado") == "terminado"]
+    partes = []
+    if en_juego:
+        partes.append('<h2 class="rotulo">Lo que se está jugando</h2>')
+        partes += [bloque_campeonato(l, credito, limite) for l in ordenar_campeonatos(en_juego)]
+    if terminados:
+        partes.append('<h2 class="rotulo">Ya terminados</h2>')
+        partes += [bloque_campeonato(l, credito, limite) for l in ordenar_campeonatos(terminados)]
+    return "".join(partes)
+
+
+def html_copa(copa):
+    """Los cruces de la Copa AUF Uruguay, ronda por ronda."""
+    rondas = (copa or {}).get("rondas") or []
+    if not rondas:
+        return ""
+    partes = ['<section class="campeonato" id="copa-uruguay"><h3>' +
+              esc(copa.get("nombre", "Copa AUF Uruguay")) +
+              '<span class="estado vivo">Eliminación directa</span></h3>'
+              '<p class="aclaracion">Se juega a un partido: el que gana sigue y el que pierde '
+              'queda afuera. Los equipos del interior y del amateur juegan de local.</p>']
+    for ronda in rondas:
+        partes.append('<h4 style="font-family:var(--dato);font-size:.68rem;letter-spacing:.14em;'
+                      'text-transform:uppercase;color:var(--gris);margin:14px 0 2px">' +
+                      esc(ronda["ronda"]) + "</h4><table class=\"cruces\"><tbody>")
+        for cruce in ronda["cruces"]:
+            resultado = ('<td class="res">' + esc(cruce["resultado"]) + "</td>") if cruce["jugado"] \
+                else '<td class="por-jugar">por jugar</td>'
+            partes.append("<tr><td>" + esc(cruce["uno"]) + "</td>" + resultado +
+                          '<td class="visita">' + esc(cruce["dos"]) + "</td></tr>")
+        partes.append("</tbody></table>")
+    if copa.get("credito"):
+        partes.append('<p class="fuente"><a href="' + esc(copa.get("fuente", "")) +
+                      '" rel="noopener">' + esc(copa["credito"]) + "</a></p>")
+    partes.append("</section>")
+    return "".join(partes)
+
+
 def html_partidos(partidos, jugados):
     if not partidos:
         return '<div class="vacio">Sin partidos para mostrar.</div>'
@@ -535,6 +666,28 @@ def main():
     notas = [n for n in notas if n and n.get("slug")]
     juveniles = leer_json(JUVENILES, {"ligas": [], "credito": ""})
     primera = leer_json(RAIZ / "datos" / "primera.json", {"ligas": []})
+    copa = primera.get("copa", {})
+
+    # Primera sale de dos fuentes a proposito: la TABLA es la oficial de Wikipedia
+    # (la calculada daba un punto de diferencia en tres equipos), y el FIXTURE y el
+    # estado del torneo salen de La Movida, que Wikipedia no tiene. Se cruzan por
+    # torneo y serie.
+    de_la_movida = {}
+    for l in juveniles.get("ligas", []):
+        if l.get("categoria") == "primera":
+            de_la_movida[(l.get("torneo"), l.get("serie"))] = l
+    for l in primera.get("ligas", []):
+        par = de_la_movida.get((l.get("torneo"), l.get("serie")))
+        if not par:
+            continue
+        l["proximos_partidos"] = par.get("proximos_partidos", [])
+        l["ultimos_resultados"] = par.get("ultimos_resultados", [])
+        l["estado"] = par.get("estado", "")
+        l["titulo_categoria"] = "Primera División"
+        l["orden_categoria"] = 10
+    # La de Primera calculada por nosotros no se publica: vale la oficial.
+    juveniles["ligas"] = [l for l in juveniles.get("ligas", [])
+                          if l.get("categoria") != "primera"]
     ligas = [l for l in (primera.get("ligas", []) + juveniles.get("ligas", [])) if l.get("tabla")]
     credito = juveniles.get("credito", "")
     anuncios = [a for a in leer_json(ANUNCIOS, {}).get("anuncios", []) if a.get("activo") and a.get("url")]
@@ -612,8 +765,43 @@ def main():
         columna += ('<div class="franja"><h2 class="rotulo">Juveniles · resultados de la fecha</h2>'
                     '<div class="marcadores">' + html_marcadores(resultados[:9]) + "</div></div>")
 
+    # ---- Primera Division, completa y abajo: la anual, lo que se juega, la Copa
+    # y lo que ya termino. Cada tabla dice que es y en que estado esta.
+    de_primera = [l for l in ligas if l.get("categoria") == "primera"]
+    if de_primera or (copa or {}).get("rondas"):
+        columna += '<div style="margin-top:34px"><h2 class="rotulo">Primera División</h2>'
+        en_juego = [l for l in de_primera if l.get("estado") != "terminado"]
+        terminados = [l for l in de_primera if l.get("estado") == "terminado"]
+        columna += "".join(bloque_campeonato(l, credito, 10)
+                           for l in ordenar_campeonatos(en_juego))
+        columna += html_copa(copa)
+        prox_primera = [p for l in de_primera for p in l.get("proximos_partidos", [])]
+        if prox_primera:
+            vistos, limpios = set(), []
+            for partido in sorted(prox_primera, key=lambda p: p["fecha"]):
+                clave = (partido["fecha"], partido["local"], partido["visita"])
+                if clave in vistos:
+                    continue
+                vistos.add(clave)
+                limpios.append(partido)
+            columna += ('<section class="campeonato"><h3>Próximos partidos de Primera'
+                        '<span class="estado vivo">Fixture</span></h3>' +
+                        html_partidos(limpios[:10], False) + "</section>")
+        if terminados:
+            columna += '<h2 class="rotulo">Primera · ya terminados</h2>'
+            columna += "".join(bloque_campeonato(l, credito, 10)
+                               for l in ordenar_campeonatos(terminados))
+        columna += "</div>"
+
     lateral = []
-    if destacada:
+    anual_primera = next((l for l in de_primera if l.get("torneo") == "anual"), None)
+    if anual_primera:
+        lateral.append("<div><h2>" + esc(anual_primera.get("titulo") or anual_primera["nombre"]) +
+                       "</h2>" + html_tabla(anual_primera["tabla"], 10, completa=False) +
+                       '<p style="margin-top:9px"><a style="font-family:var(--dato);font-size:.72rem;'
+                       'letter-spacing:.1em;text-transform:uppercase;color:var(--celeste)" href="' +
+                       u(ruta_liga(anual_primera)) + '">Tabla completa →</a></p></div>')
+    elif destacada:
         lateral.append("<div><h2>" + esc(destacada["nombre"]) + "</h2>" +
                        html_tabla(destacada["tabla"], 10, completa=False) +
                        '<p style="margin-top:9px"><a style="font-family:var(--dato);font-size:.72rem;'
@@ -675,25 +863,116 @@ def main():
             esquema=esquema, publicado=nota.get("publicado_utc", "")))
 
     # ---------------- una seccion por division ----------------
+    # El submenu de Juveniles: una entrada por categoria, Tercera incluida, que
+    # es la Sub 23. Antes del menu colgaban tres categorias sueltas y el resto no
+    # aparecia en ningun lado.
+    categorias = categorias_de(ligas)
+    submenu_juveniles = ([("Todas", "/juveniles/")] +
+                         [(nombre, ruta_categoria(clave)) for clave, nombre in categorias])
+
     for clave, titulo in TITULOS_GRUPO.items():
         del_grupo = [l for l in ligas if l.get("grupo", "juveniles") == clave]
         if not del_grupo:
             continue
-        fichas = "".join('<a class="ficha" href="' + u(ruta_liga(l)) + '"><b>' + esc(l["nombre"]) +
-                         "</b><small>" + str(len(l["tabla"])) + " equipos · lidera " +
-                         esc(l["tabla"][0]["equipo"]) + " (" + str(l["tabla"][0]["pts"]) +
-                         " pts)</small></a>" for l in del_grupo)
-        indice = ('<div class="grilla" style="grid-template-columns:1fr"><div>'
-                  '<span class="sello dato">Posiciones</span><h1 class="titulo">' + esc(titulo) +
-                  ' del fútbol uruguayo</h1><p class="intro">' + esc(INTRO_GRUPO[clave]) +
-                  ' Las posiciones se calculan partido por partido y se actualizan solas cada '
-                  'veinte minutos.</p><div class="grilla-ligas">' + fichas + "</div>" +
-                  pie_fuente(del_grupo[0], credito) + "</div></div>")
+        submenu = submenu_juveniles if clave == "juveniles" else None
+        if clave in ("primera", "juveniles"):
+            # Las divisiones grandes muestran las tablas directo, no una lista de
+            # links: el lector entra para ver posiciones.
+            if clave == "juveniles":
+                generales = [l for l in del_grupo if l.get("general")]
+                cuerpo_tablas = ("".join(bloque_campeonato(l, credito) for l in generales) +
+                                 '<h2 class="rotulo">Categoría por categoría</h2>' +
+                                 '<div class="grilla-ligas">' + "".join(
+                                     '<a class="ficha" href="' + u(ruta_categoria(c)) + '"><b>' +
+                                     esc(nombre) + "</b><small>" + str(sum(
+                                         1 for l in del_grupo if l.get("categoria") == c)) +
+                                     " campeonatos</small></a>" for c, nombre in categorias) +
+                                 "</div>")
+            else:
+                # La Copa va en el medio, no abajo de "ya terminados": se esta
+                # jugando, y colgada al final parecia parte de lo que termino.
+                juego = [l for l in del_grupo if l.get("estado") != "terminado"]
+                fin = [l for l in del_grupo if l.get("estado") == "terminado"]
+                cuerpo_tablas = ""
+                if juego:
+                    cuerpo_tablas += ('<h2 class="rotulo">Lo que se está jugando</h2>' +
+                                      "".join(bloque_campeonato(l, credito)
+                                              for l in ordenar_campeonatos(juego)))
+                cuerpo_tablas += html_copa(copa)
+                if fin:
+                    cuerpo_tablas += ('<h2 class="rotulo">Ya terminados</h2>' +
+                                      "".join(bloque_campeonato(l, credito)
+                                              for l in ordenar_campeonatos(fin)))
+            indice = ('<div class="grilla" style="grid-template-columns:1fr"><div>'
+                      '<span class="sello dato">Posiciones</span><h1 class="titulo">' + esc(titulo) +
+                      ' del fútbol uruguayo</h1><p class="intro">' + esc(INTRO_GRUPO[clave]) +
+                      ' Las posiciones se actualizan solas cada veinte minutos.</p>' +
+                      cuerpo_tablas + "</div></div>")
+        else:
+            fichas = "".join('<a class="ficha" href="' + u(ruta_liga(l)) + '"><b>' +
+                             esc(l.get("titulo") or l["nombre"]) + "</b><small>" +
+                             str(len(l["tabla"])) + " equipos · lidera " +
+                             esc(l["tabla"][0]["equipo"]) + " (" + str(l["tabla"][0]["pts"]) +
+                             " pts)</small></a>" for l in ordenar_campeonatos(del_grupo))
+            indice = ('<div class="grilla" style="grid-template-columns:1fr"><div>'
+                      '<span class="sello dato">Posiciones</span><h1 class="titulo">' + esc(titulo) +
+                      ' del fútbol uruguayo</h1><p class="intro">' + esc(INTRO_GRUPO[clave]) +
+                      ' Las posiciones se calculan partido por partido y se actualizan solas cada '
+                      'veinte minutos.</p><div class="grilla-ligas">' + fichas + "</div>" +
+                      pie_fuente(del_grupo[0], credito) + "</div></div>")
         escribir(clave + "/index.html", pagina(
             titulo + " del fútbol uruguayo: tablas y resultados · " + SITIO,
             "Posiciones, resultados y fixture de " + titulo.lower() + " del fútbol uruguayo, "
             "campeonato por campeonato.",
-            indice, "/" + clave + "/", ligas, "/" + clave + "/"))
+            indice, "/" + clave + "/", ligas, "/" + clave + "/", submenu=submenu))
+
+    # ---------------- una pagina por categoria juvenil ----------------
+    # Entrar a una categoria lleva directo a sus tablas: la anual primero, despues
+    # lo que se esta jugando, la general de todas las categorias, y mas abajo lo
+    # que ya termino. Al costado, su proxima fecha.
+    generales = [l for l in ligas if l.get("general")]
+    for cat, nombre_cat in categorias:
+        de_la_cat = [l for l in ligas
+                     if l.get("grupo") == "juveniles" and l.get("categoria") == cat]
+        if not de_la_cat:
+            continue
+        lateral_cat = []
+        proximos_cat = sorted((p for l in de_la_cat for p in l.get("proximos_partidos", [])),
+                              key=lambda p: p["fecha"])
+        if proximos_cat:
+            lateral_cat.append("<div><h2>Próxima fecha de " + esc(nombre_cat) + "</h2>" +
+                               html_partidos(proximos_cat[:8], False) + "</div>")
+        resultados_cat = sorted((p for l in de_la_cat for p in l.get("ultimos_resultados", [])),
+                                key=lambda p: p["fecha"], reverse=True)
+        if resultados_cat:
+            lateral_cat.append("<div><h2>Últimos resultados</h2>" +
+                               html_partidos(resultados_cat[:8], True) + "</div>")
+        lateral_cat += [html_anuncio(a) for a in anuncios]
+
+        cuerpo_cat = ('<span class="sello dato">Juveniles</span><h1 class="titulo">' +
+                      esc(nombre_cat) + "</h1>")
+        if cat == "tercera":
+            cuerpo_cat += ('<p class="intro">La Tercera División es la Sub 23: la última '
+                           'categoría antes de Primera. Va con los juveniles porque ahí '
+                           'juegan los que están a un paso del plantel principal.</p>')
+        else:
+            cuerpo_cat += ('<p class="intro">Tablas, resultados y próxima fecha de ' +
+                           esc(nombre_cat) + ' del fútbol uruguayo. Juveniles A es la '
+                           'divisional de arriba y Juveniles B la de abajo.</p>')
+        cuerpo_cat += html_campeonatos(de_la_cat, credito)
+        if generales and cat != "tercera":
+            cuerpo_cat += ('<h2 class="rotulo">Todas las categorías juntas</h2>'
+                           '<p class="aclaracion">Cada club suma los puntos de todos sus '
+                           'equipos juveniles. Es la tabla que mide el trabajo de la cantera '
+                           'completa, no de una sola categoría.</p>' +
+                           "".join(bloque_campeonato(l, credito, 12) for l in generales))
+        escribir("juveniles/" + cat + "/index.html", pagina(
+            nombre_cat + " de juveniles: tabla anual, Clausura y fixture · " + SITIO,
+            "Tabla anual, Torneo Clausura, Apertura y próxima fecha de " + nombre_cat +
+            " del fútbol uruguayo juvenil.",
+            '<div class="grilla"><div>' + cuerpo_cat + "</div><aside>" +
+            "".join(lateral_cat) + "</aside></div>",
+            ruta_categoria(cat), ligas, "/juveniles/", submenu=submenu_juveniles))
 
     for liga in ligas:
         ruta = ruta_liga(liga)
@@ -714,15 +993,17 @@ def main():
                   pie_fuente(liga, credito) + "</div><aside>" +
                   "".join(lateral_liga) + "</aside></div>")
         escribir(ruta.strip("/") + "/index.html", pagina(
-            liga["nombre"] + ": tabla de posiciones y resultados · " + SITIO,
-            "Tabla de posiciones, últimos resultados y próxima fecha de " + liga["nombre"] + ".",
-            cuerpo, ruta, ligas, "/" + liga.get("grupo", "juveniles") + "/"))
+            (liga.get("titulo") or liga["nombre"]) + ": tabla de posiciones y resultados · " + SITIO,
+            "Tabla de posiciones, últimos resultados y próxima fecha de " +
+            (liga.get("titulo") or liga["nombre"]) + ".",
+            cuerpo, ruta, ligas, "/" + liga.get("grupo", "juveniles") + "/",
+            submenu=submenu_juveniles if liga.get("grupo") == "juveniles" else None))
 
     # ---------------- archivos de servicio ----------------
     secciones = ["/" + c + "/" for c in TITULOS_GRUPO
                  if any(l.get("grupo", "juveniles") == c for l in ligas)]
-    urls = ["/"] + secciones + [ruta_liga(l) for l in ligas] + \
-           ["/nota/" + n["slug"] + "/" for n in notas]
+    urls = ["/"] + secciones + [ruta_categoria(c) for c, _ in categorias_de(ligas)] + \
+           [ruta_liga(l) for l in ligas] + ["/nota/" + n["slug"] + "/" for n in notas]
     hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     escribir("sitemap.xml",
              '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
