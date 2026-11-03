@@ -32,12 +32,25 @@ Están en `escudos.json`. Los puse de memoria y seguro hay alguno mal. Corregís
 color en ese archivo y se arregla en todo el sitio. No son los escudos oficiales:
 son monogramas propios, porque los escudos de los clubes son marcas registradas.
 
-## 6. Escribirle a Julio Greño (La Movida Online)
+## 6. Escribirle a La Movida Online
 
-Las tablas de juveniles, ascenso y femenino salen de su sitio, con crédito y link
-visible. Es un tipo que lo lleva a pulmón. Proponerle intercambio —vos le mandás
-tráfico, él te deja usar los datos tranquilo— es lo correcto y además te cubre.
-Te escribo el mensaje cuando quieras, pero lo mandás vos.
+Las tablas de juveniles, tercera, femenino y ascenso salen de su sitio, con
+crédito y link visible en cada tabla. Proponerles un intercambio —vos les mandás
+tráfico, ellos te dejan usar los datos tranquilo— es lo correcto y además te
+cubre. Te escribo el mensaje cuando quieras, pero lo mandás vos.
+
+Lo que dice su propia página de contacto, verificado el 2026-11-03:
+
+> "Somos un grupo de periodistas y fotógrafos independientes amantes del deporte
+> que tratamos de aportar desde hace años nuestro granito de arena para que el
+> deporte Uruguayo siga en constante crecimiento. Esta tarea la llevamos adelante
+> en nuestros tiempos libres y sin recibir ninguna remuneración."
+
+No publican ningún nombre propio. El correo es **gerencia@lamovidaonline.net**.
+
+(En una versión anterior de este archivo yo había puesto un nombre de persona
+como contacto. Era inventado: no figura en ninguna parte del sitio ni en ninguna
+fuente. Queda anotado para que nadie lo vuelva a dar por bueno.)
 
 ## 7. Cuando quieras: dominio propio
 

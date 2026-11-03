@@ -247,6 +247,28 @@ def tabla_de_posiciones(partidos):
     return sorted(acumulado.values(), key=lambda f: (-f["pts"], -f["dg"], -f["gf"], f["equipo"]))
 
 
+def forma_de(partidos, cuantos=5):
+    """Los ultimos resultados de cada equipo: V ganó, E empató, D perdió.
+
+    Del mas viejo al mas nuevo, para que se lea como una linea de tiempo. Cada
+    uno guarda contra quien y cuanto, asi el sitio lo puede mostrar al pasar el
+    mouse en vez de ser cinco cuadraditos de colores sin explicacion.
+    """
+    historial = {}
+    for partido in sorted((p for p in partidos if p["jugado"]), key=lambda p: p["fecha"]):
+        lados = ((partido["local"], partido["goles_local"], partido["goles_visita"], partido["visita"]),
+                 (partido["visita"], partido["goles_visita"], partido["goles_local"], partido["local"]))
+        for equipo, favor, contra, rival in lados:
+            signo = "V" if favor > contra else ("E" if favor == contra else "D")
+            historial.setdefault(equipo, []).append({
+                "r": signo,
+                "rival": rival,
+                "marcador": str(favor) + "-" + str(contra),
+                "fecha": partido["fecha"][:10],
+            })
+    return {equipo: lista[-cuantos:] for equipo, lista in historial.items()}
+
+
 def estado_del_torneo(partidos, corte):
     """'terminado', 'en_curso' o 'sin_empezar', mirando los partidos."""
     if not partidos:
@@ -281,6 +303,7 @@ def ficha(etiquetas, nombre, partidos, corte, extra=None):
     """Arma la entrada de un campeonato tal como la consume el sitio."""
     partidos = sorted(partidos, key=lambda p: p["fecha"])
     jugados = [p for p in partidos if p["jugado"]]
+    forma = forma_de(jugados)
     entrada = dict(etiquetas)
     entrada.update({
         "nombre": nombre,
@@ -288,7 +311,8 @@ def ficha(etiquetas, nombre, partidos, corte, extra=None):
         "titulo_categoria": TITULO_CATEGORIA.get(etiquetas.get("categoria") or ""),
         "estado": estado_del_torneo(partidos, corte),
         "orden_categoria": ORDEN_CATEGORIA.get(etiquetas.get("categoria"), 999),
-        "tabla": tabla_de_posiciones(jugados),
+        "tabla": [dict(f, forma=forma.get(f["equipo"], []))
+                  for f in tabla_de_posiciones(jugados)],
         "ultimos_resultados": list(reversed(jugados))[:12],
         # Solo los que todavia no se jugaron: un partido viejo sin resultado cargado
         # no es "proximo", es un resultado que la fuente no publico.
