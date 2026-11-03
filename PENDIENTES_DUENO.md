@@ -48,9 +48,19 @@ se cambia `DOMINIO` y se deja `BASE = ""`: el sitio queda igual pero en la raíz
 Conviene hacerlo antes de que Google indexe mucho, porque cada mudanza de
 dirección cuesta posicionamiento.
 
-## 2. Decidir cómo se bajan los transcriptos de YouTube
+## 2. (Resuelto) Los transcriptos los baja tu PC
 
-**Hay que elegir, y es tu decisión.** YouTube bloquea a las máquinas de GitHub:
+**Ya está hecho y andando, no requiere nada tuyo.** Hay una tarea programada en
+Windows, *"MVD Fútbol - bajar transcriptos"*, que cada hora al minuto 20 baja los
+transcriptos nuevos de YouTube y los sube al repo. La nube sigue haciendo todo lo
+demás: filtrar, escribir las notas, publicar el sitio y las tablas.
+
+Con la máquina apagada no entran noticias nuevas, pero no se pierde nada: al
+prenderla se pone al día hasta 7 días para atrás. Si querés ver qué hizo:
+
+    python scripts/subir_transcriptos.py --ver
+
+El motivo de todo esto: YouTube bloquea a las máquinas de GitHub:
 probado el 2026-11-02 con un video nuestro y con uno famoso que nunca habíamos
 pedido. Al primero no lo deja ni consultar (*"Iniciá sesión para confirmar que no
 sos un robot"*), y del segundo no deja bajar los subtítulos (*429 Too Many
@@ -59,21 +69,10 @@ Requests*). Desde tu PC los mismos videos bajan en dos segundos.
 Esto afecta **solo a las noticias**. Las tablas salen de La Movida Online y de
 Wikipedia, que no bloquean nada, y siguen actualizándose solas en la nube.
 
-Las opciones, con lo malo de cada una:
-
-1. **Bajar los transcriptos desde tu PC** (tarea programada), y que la nube siga
-   haciendo todo lo demás: filtrar, escribir, publicar y las tablas. Gratis y
-   funciona seguro. Lo malo: con la máquina apagada no entran noticias nuevas,
-   aunque al prender se pone al día hasta 7 días para atrás.
-2. **Pagar un proxy** con IP de casa, unos US$ 5 a 15 por mes. La nube vuelve a
-   poder leer YouTube y no dependés de tu PC. Lo malo: un gasto fijo y una pieza
-   más que se puede romper.
-3. **No hacer nada**: puede que en horarios tranquilos alguna bajada pase. Lo
-   malo es lo peor de todo: funciona a veces y no sabés cuándo.
-
-Descartada: pasarle las cookies de tu cuenta de YouTube. Es tu cuenta de Google
-expuesta a un repositorio público, caduca cada pocas semanas y te la pueden
-bloquear.
+Si algún día querés que no dependa de tu PC, la alternativa es pagar un proxy
+con IP de casa, unos US$ 5 a 15 por mes. Descartada queda pasarle las cookies de
+tu cuenta de YouTube: es tu cuenta de Google expuesta a un repositorio público,
+caduca cada pocas semanas y te la pueden bloquear.
 
 ---
 
