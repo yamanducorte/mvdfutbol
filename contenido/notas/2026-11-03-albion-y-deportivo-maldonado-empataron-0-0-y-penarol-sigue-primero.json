@@ -1,0 +1,69 @@
+{
+  "titulo": "Albion y Deportivo Maldonado empataron 0-0 y Peñarol sigue primero",
+  "bajada": "El empate en el Franzini dejó a Peñarol al frente de la tabla anual con seis puntos por disputar. Además, Nacional ya tiene programado su partido por la Copa Uruguay en Paysandú.",
+  "cuerpo": [
+    "Albion y Deportivo Maldonado empataron 0-0 en el Franzini, un resultado que dejó a Peñarol primero en la tabla anual cuando quedan seis puntos por disputar. Así lo repasó el programa \"Vamos que vamos\", de El Espectador 810, en su emisión del 2 de noviembre.",
+    "En el programa resumieron el efecto del empate en la pelea por el anual con una frase: \"Peñarol recibió oxígeno\" (minuto 1:02:09).",
+    "El líder, de todos modos, tendrá bajas para su próximo partido. Aguerre, Remedi y Angulo están suspendidos (minuto 8:30).",
+    "Nacional, por su parte, enfrentará a Ferro Carril de Salto por la Copa Uruguay. El partido se jugará el miércoles a las 21 en Paysandú (minuto 26:34).",
+    "En el programa también se habló del futuro de Álvaro López, jugador de Albion. Trascendió la posibilidad de que se vaya a Independiente a mitad de año, aunque no hubo confirmación. Federico Macías, de Albion, dijo que esa versión le había llegado por los medios y que el tema no se había tratado en la institución: \"En el club no lo hemos charlado de eso\" (minuto 18:52).",
+    "Por ahora, la eventual salida de López sigue en el terreno de las versiones."
+  ],
+  "etiquetas": [
+    "Albion",
+    "Deportivo Maldonado",
+    "Peñarol",
+    "Nacional",
+    "Copa Uruguay",
+    "Tabla anual",
+    "Independiente"
+  ],
+  "categoria": "primera",
+  "slug": "2026-11-03-albion-y-deportivo-maldonado-empataron-0-0-y-penarol-sigue-primero",
+  "fecha": "2026-11-03",
+  "publicado_utc": "2026-11-03T09:58:37+00:00",
+  "importancia": 3,
+  "fuente": {
+    "nombre": "El Espectador 810",
+    "programa": "VAMOS QUE VAMOS | PROGRAMA COMPLETO | 2/11/2026",
+    "video": "https://www.youtube.com/watch?v=9WFlSdykyDs"
+  },
+  "hechos": [
+    {
+      "hecho": "Gabriel Dinoya fue expulsado durante el partido por protestar al asistente.",
+      "cita": "tu expulsión es por protestarle al asistente de forma exaltada",
+      "minuto": "00:55:45",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Alvion y Deportivo Maldonado empataron 0-0 en el Francini; Penarol sigue primero en la tabla anual con seis puntos por disputar.",
+      "cita": "Empató Albion y Deportivo Maldonado 0 a0. Y en la tabla del anual, Peñarol recibió oxígeno.",
+      "minuto": "01:02:09",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Federico Macias dijo que no sabia nada de una posible salida de Alvaro Lopez a Independiente; en el club no se habia hablado del tema.",
+      "cita": "No, la verdad que en el club no lo hemos charlado de eso.",
+      "minuto": "00:18:52",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Se escucho la version de que Alvaro Lopez podria irse a Independiente a mitad de ano, sin confirmacion.",
+      "cita": "escuché los medios a mitad de año que que había alguna posibilidad de ese tipo",
+      "minuto": "00:18:52",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Peñarol tiene bajas para el proximo partido por suspension (Aguerre, Remedi, Angulo).",
+      "cita": "Aguerre, Remedi, el propio Angulo, todos suspendidos",
+      "minuto": "00:08:30",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Nacional jugara con Ferro Carril de Salto por Copa Uruguay el miercoles en Paysandu, y luego con Cerro el sabado 14 segun lo comentado.",
+      "cita": "miércoles a las 9 de la noche en el estadio Ortigas de Paisandú con Ferro ferrocarril de de salto",
+      "minuto": "00:26:34",
+      "tipo": "confirmado"
+    }
+  ]
+}
