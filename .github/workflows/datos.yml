@@ -6,7 +6,14 @@ on:
   schedule:
     # Minutos corridos a proposito: GitHub retrasa y hasta descarta las
     # corridas programadas en la hora pico, que es el arranque de cada hora.
-    - cron: "7,27,47 * * * *"
+    #
+    # Y las horas tambien estan elegidas: en Uruguay (UTC-3) se juega entre las
+    # 9 y la medianoche, o sea de 12 a 3 UTC. A las 5 de la manana no hay nada
+    # que refrescar, y cada corrida le cuesta pedidos al servidor de La Movida,
+    # que mantienen voluntarios.
+    - cron: "7,27,47 12-23 * * *"   # 9 a 21 en Uruguay: cada 20 minutos
+    - cron: "7,27,47 0-2 * * *"     # 21 a 24 en Uruguay: cada 20 minutos
+    - cron: "7 3-11 * * *"          # de madrugada y a la manana: una por hora
   push:
     branches: [main]        # cualquier cambio a mano republica el sitio
   workflow_dispatch:

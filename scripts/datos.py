@@ -31,9 +31,11 @@ FUENTES = RAIZ / "fuentes.json"
 DATOS = RAIZ / "datos"
 SALIDA = DATOS / "juveniles.json"
 CACHE_EQUIPOS = DATOS / "equipos.json"
-CACHE_PARTIDOS = DATOS / "partidos_terminados.json"
+CACHE_PARTIDOS = DATOS / "partidos.json"
 CACHE_ANIOS = DATOS / "anios_de_campeonato.json"
-AGENTE = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36"
+# Nos presentamos con nombre y contacto en vez de disfrazarnos de navegador:
+# si a La Movida le molesta lo que hacemos, tiene que poder encontrarnos.
+AGENTE = "MVDFutbol/1.0 (+https://yamanducorte.github.io/mvdfutbol; yamanducorte@gmail.com)"
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="replace")
@@ -276,6 +278,27 @@ def forma_de(partidos, cuantos=5):
     return {equipo: lista[-cuantos:] for equipo, lista in historial.items()}
 
 
+def hace_falta_refrescar(guardado, ident, con_movimiento, corte, manana):
+    """Si vale la pena volver a pedirle este campeonato a la fuente.
+
+    Se pregunta solo cuando puede haber algo nuevo: un partido que ya se jugo y
+    todavia no tiene el resultado cargado, o uno que se juega en las proximas
+    horas. Si todo lo jugado ya tiene resultado y lo que viene es para la semana
+    que viene, preguntar de nuevo no cambia nada y le cuesta un pedido a un
+    servidor que mantienen voluntarios.
+    """
+    if guardado.get("estado") == "terminado":
+        return False
+    partidos = guardado.get("partidos") or []
+    falta_resultado = any(not p.get("jugado") and p.get("fecha", "") <= corte
+                          for p in partidos)
+    juega_ya = any(corte <= p.get("fecha", "") <= manana for p in partidos)
+    # Si el campeonato tuvo movimiento y no tenemos ni un partido suyo guardado,
+    # hay que pedirlo igual: puede ser una fecha nueva que no conociamos.
+    sin_futuro = not any(p.get("fecha", "") >= corte for p in partidos)
+    return falta_resultado or juega_ya or (sin_futuro and ident in con_movimiento)
+
+
 def estado_del_torneo(partidos, corte):
     """'terminado', 'en_curso' o 'sin_empezar', mirando los partidos."""
     if not partidos:
@@ -459,21 +482,41 @@ def main():
                 e["division"] or "-"))
         return
 
-    # 3) Los partidos. Los torneos terminados no cambian: salen del cache.
+    # 3) Los partidos.
+    #
+    # La Movida es un grupo de voluntarios y este programa corre cada 20 minutos:
+    # pedirle de nuevo todos los campeonatos en cada corrida eran 3.384 pedidos
+    # por dia a su servidor, por nada. Los partidos quedan guardados y solo se
+    # vuelve a pedir un campeonato cuando tuvo o va a tener partidos en estos
+    # dias. El resto sale del archivo, que es exactamente lo mismo pero gratis.
     cache_equipos = leer_json(CACHE_EQUIPOS, {})
     cache_partidos = leer_json(CACHE_PARTIDOS, {})
-    crudos, desde_cache = {}, 0
+    # "Con movimiento" para decidir si refrescar es una ventana corta: lo que
+    # jugo o juega en estos dias. Con la ventana larga (60 dias) calificaba casi
+    # todo y no se ahorraba nada. No cuesta pedidos: las fechas ya las tenemos.
+    cerca_desde = (ahora - timedelta(days=3)).strftime("%Y-%m-%dT%H:%M:%S")
+    cerca_hasta = (ahora + timedelta(days=3)).strftime("%Y-%m-%dT%H:%M:%S")
+    con_movimiento_cerca = {i for e in eventos_recientes
+                            if cerca_desde <= str(e.get("date", "")) <= cerca_hasta
+                            for i in (e.get("leagues") or [])}
+    manana = (ahora + timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%S")
+    crudos, desde_cache, pedidos = {}, 0, 0
     for ident in sorted(vigentes):
         guardado = cache_partidos.get(str(ident))
-        if guardado and guardado.get("estado") == "terminado":
-            crudos[ident] = guardado["partidos"]
-            desde_cache += 1
-            continue
+        if guardado and guardado.get("partidos"):
+            if hace_falta_refrescar(guardado, ident, con_movimiento_cerca, corte, manana):
+                pass
+            else:
+                crudos[ident] = guardado["partidos"]
+                desde_cache += 1
+                continue
         eventos = eventos_de_liga(base, ident)
         ids = {str(i) for e in eventos for i in (e.get("teams") or [])}
         cache_equipos = nombres_de_equipos(base, ids, cache_equipos)
         crudos[ident] = [p for p in (partido_desde_evento(e, cache_equipos) for e in eventos) if p]
-    print(str(len(crudos)) + " campeonatos con partidos (" + str(desde_cache) + " del cache)")
+        pedidos += 1
+    print(str(len(crudos)) + " campeonatos con partidos: " + str(desde_cache) +
+          " de archivo, " + str(pedidos) + " pedidos a la fuente")
 
     # 4) Las fichas, y el cache de los que quedaron terminados
     fichas = []
@@ -482,8 +525,8 @@ def main():
         f = ficha(etiquetas, nombre, partidos, corte, {"id": ident})
         f["_partidos"] = partidos
         fichas.append(f)
-        if f["estado"] == "terminado" and f["jugados"]:
-            cache_partidos[str(ident)] = {"estado": "terminado", "nombre": nombre,
+        if f["jugados"] or f["programados"]:
+            cache_partidos[str(ident)] = {"estado": f["estado"], "nombre": nombre,
                                           "partidos": partidos}
     CACHE_PARTIDOS.write_text(json.dumps(cache_partidos, ensure_ascii=False, indent=1),
                               encoding="utf-8")
