@@ -1,0 +1,67 @@
+{
+  "titulo": "Unos 200 hinchas de Peñarol protestaron frente al Palacio Peñarol",
+  "bajada": "Socios e hinchas aurinegros se manifestaron contra la gestión de la directiva, mientras la candidatura de Juan Pedro Damiani suma agrupaciones y la incorporación de Jorge Barrera.",
+  "cuerpo": [
+    "Unos 200 hinchas y socios de Peñarol se manifestaron frente al Palacio Peñarol en rechazo a la gestión de la actual directiva del club. Así se informó en Vamos que Vamos, de El Espectador 810, en su emisión del 3 de noviembre (minuto 2:50). \"Hay alrededor de 200 personas\", se describió desde el lugar.",
+    "La protesta se da en medio de un escenario electoral que empieza a moverse en el club. La agrupación Peñarolenses, de Marcos Sacle, y la de Walter Sobrero se sumaron a la candidatura de Juan Pedro Damiani (minuto 12:49).",
+    "A eso se agregó la llegada de Jorge Barrera, que se confirmó en el espacio de Damiani (minuto 13:40). En el programa se definió esa incorporación como \"el golpe fuerte arriba de la mesa\" dentro del armado opositor.",
+    "Del lado del oficialismo, la incógnita sigue siendo si el presidente aurinegro buscará una nueva reelección. Según se dijo en el programa, el propio presidente le adelantó a uno de los periodistas que comunicará su decisión entre el miércoles y el jueves (minuto 17:49).",
+    "En el plano deportivo, Peñarol también recibió críticas. El Canario Olveira cuestionó con dureza al club por el trato que reciben los juveniles y por la situación de Cabrera, tras el partido ante Juventud (minuto 51:58). En ese tramo advirtió que en Peñarol \"te están llevando a cometer muchos errores\".",
+    "En el mismo programa se informó además que Nacional convocó a 20 jugadores para su próximo compromiso (minuto 48:00)."
+  ],
+  "etiquetas": [
+    "Peñarol",
+    "Elecciones en Peñarol",
+    "Juan Pedro Damiani",
+    "Jorge Barrera",
+    "Nacional"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-11-04-unos-200-hinchas-de-penarol-protestaron-frente-al-palacio-penarol",
+  "fecha": "2026-11-04",
+  "publicado_utc": "2026-11-04T03:13:49+00:00",
+  "importancia": 4,
+  "fuente": {
+    "nombre": "El Espectador 810",
+    "programa": "VAMOS QUE VAMOS | PROGRAMA COMPLETO | 3/11/2026",
+    "video": "https://www.youtube.com/watch?v=DNWjMz-g2sQ"
+  },
+  "hechos": [
+    {
+      "hecho": "Se realizo una manifestacion de unos 200 hinchas y socios de Peñarol frente al Palacio Peñarol contra la gestion de Ignacio Rubio",
+      "cita": "hay alrededor de 200 personas",
+      "minuto": "00:02:50",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Agrupaciones Peñarolenses de Marcos Sacle y de Walter Sobrero se sumaron a la candidatura de Juan Pedro Damiani",
+      "cita": "la agrupación Peñarolenses de Marcos Sacle se va a unir definitivamente a la agrupación de Juan Pedro Damián",
+      "minuto": "00:12:49",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Jorge Barrera se confirmo en el espacio de Damiani",
+      "cita": "el golpe fuerte arriba de la mesa fue la confirmación de la presencia de Barrera",
+      "minuto": "00:13:40",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Se afirma que Rubio anunciara su decision sobre una nueva reeleccion en los proximos dias",
+      "cita": "entre miércoles y jueves me decía Ignacio Rulio que va a dar su su decisión",
+      "minuto": "00:17:49",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Nacional convoco 20 jugadores para enfrentar a Ferrocarril, con Clemate como lateral izquierdo",
+      "cita": "Clemate iba a ser el lateral izquierdo",
+      "minuto": "00:48:00",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Canario Olveira critico duramente a Peñarol por el trato a los juveniles y a Cabrera tras el partido con Juventud",
+      "cita": "Peñarol y te están llevando a cometer muchos errores",
+      "minuto": "00:51:58",
+      "tipo": "confirmado"
+    }
+  ]
+}
