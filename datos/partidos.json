@@ -39592,18 +39592,18 @@
     "fecha": "2026-11-01T13:00:00",
     "local": "Colon",
     "visita": "Villa Teresa",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/90873/"
    },
    {
     "fecha": "2026-11-01T14:00:00",
     "local": "Liffa",
     "visita": "Cerro Largo",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/90864/"
    },
    {
