@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-05T00:33:14+00:00",
+ "generado": "2026-11-05T06:26:08+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -49369,7 +49369,7 @@
    "nombre": "Divisional D Fase Regular 2026",
    "titulo": "Ascenso · Fase regular",
    "titulo_categoria": null,
-   "estado": "en_curso",
+   "estado": "terminado",
    "orden_categoria": 999,
    "tabla": [
     {
@@ -49999,62 +49999,7 @@
      "link_fuente": "https://lamovidaonline.net/event/83453/"
     }
    ],
-   "proximos_partidos": [
-    {
-     "fecha": "2026-11-05T05:00:00",
-     "local": "Montevideo Boca Jrs.",
-     "visita": "Deportivo Melilla",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83486/"
-    },
-    {
-     "fecha": "2026-11-05T05:00:00",
-     "local": "Keguay",
-     "visita": "Deportivo C.E.M.",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83489/"
-    },
-    {
-     "fecha": "2026-11-05T05:00:00",
-     "local": "Rincón F.C.",
-     "visita": "Paso de la Arena",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83492/"
-    },
-    {
-     "fecha": "2026-11-05T05:00:00",
-     "local": "Real Montevideo",
-     "visita": "Estudiantes del Plata",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83495/"
-    },
-    {
-     "fecha": "2026-11-05T05:00:00",
-     "local": "Liffa",
-     "visita": "Nuevo Casabó",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83498/"
-    },
-    {
-     "fecha": "2026-11-05T05:00:00",
-     "local": "Dilio Sport",
-     "visita": "Academia",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83501/"
-    }
-   ],
+   "proximos_partidos": [],
    "jugados": 60,
    "programados": 66,
    "id": 677
