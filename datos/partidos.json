@@ -39874,9 +39874,9 @@
     "fecha": "2026-11-04T19:00:00",
     "local": "Liverpool",
     "visita": "M.C.Torque",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91033/"
    },
    {
