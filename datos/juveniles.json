@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-05T06:26:08+00:00",
+ "generado": "2026-11-05T10:42:43+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -6086,15 +6086,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-05T09:30:00",
-     "local": "Juventud",
-     "visita": "River Plate",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81118/"
-    },
-    {
      "fecha": "2026-11-05T14:00:00",
      "local": "Progreso",
      "visita": "Racing",
@@ -7103,15 +7094,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-05T09:30:00",
-     "local": "Juventud",
-     "visita": "River Plate",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81118/"
-    },
     {
      "fecha": "2026-11-05T14:00:00",
      "local": "Progreso",
