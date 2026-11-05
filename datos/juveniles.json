@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-05T10:42:43+00:00",
+ "generado": "2026-11-05T18:39:43+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -6086,24 +6086,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-05T14:00:00",
-     "local": "Progreso",
-     "visita": "Racing",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81112/"
-    },
-    {
-     "fecha": "2026-11-05T16:00:00",
-     "local": "Liverpool",
-     "visita": "Peñarol",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81124/"
-    },
-    {
      "fecha": "2026-11-16T04:30:00",
      "local": "Oriental",
      "visita": "Progreso",
@@ -7094,24 +7076,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-05T14:00:00",
-     "local": "Progreso",
-     "visita": "Racing",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81112/"
-    },
-    {
-     "fecha": "2026-11-05T16:00:00",
-     "local": "Liverpool",
-     "visita": "Peñarol",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/81124/"
-    },
     {
      "fecha": "2026-11-16T04:30:00",
      "local": "Oriental",
