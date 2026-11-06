@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-06T00:57:25+00:00",
+ "generado": "2026-11-06T06:21:20+00:00",
  "fuente": "https://es.wikipedia.org/wiki/Campeonato_Uruguayo_de_Primera_Divisi%C3%B3n_2026",
  "credito": "Tabla: Wikipedia, «Campeonato Uruguayo de Primera División 2026» (CC BY-SA 4.0)",
  "ligas": [
@@ -802,6 +802,12 @@
     "ronda": "Cuartos de final",
     "cruces": [
      {
+      "uno": "Boston River",
+      "dos": "Montevideo City",
+      "resultado": "",
+      "jugado": false
+     },
+     {
       "uno": "Deportivo Maldonado",
       "dos": "Nacional",
       "resultado": "",
@@ -810,6 +816,12 @@
      {
       "uno": "Danubio",
       "dos": "Lito",
+      "resultado": "",
+      "jugado": false
+     },
+     {
+      "uno": "Liverpool",
+      "dos": "Juventud",
       "resultado": "",
       "jugado": false
      }
@@ -827,8 +839,8 @@
      {
       "uno": "Libertad (San Carlos)",
       "dos": "Montevideo City",
-      "resultado": "",
-      "jugado": false
+      "resultado": "0:6",
+      "jugado": true
      },
      {
       "uno": "Porongos (Flores)",
@@ -857,8 +869,8 @@
      {
       "uno": "Gladiador (Salto)",
       "dos": "Liverpool",
-      "resultado": "",
-      "jugado": false
+      "resultado": "0:2",
+      "jugado": true
      },
      {
       "uno": "Nacional (Florida)",
