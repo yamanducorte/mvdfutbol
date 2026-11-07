@@ -1,0 +1,48 @@
+{
+  "titulo": "Eduardo Acevedo recordó la final de la Copa América de 1983",
+  "bajada": "El exjugador de la selección uruguaya repasó en Espectadores, de El Espectador 810, momentos de la definición ante Brasil: un gol anulado a Enzo Francescoli, el cabezazo del Pato Aguilera y una camiseta que no cambió.",
+  "cuerpo": [
+    "Eduardo Acevedo, exjugador de la selección uruguaya, recordó la final de la Copa América de 1983 ante Brasil en una entrevista con Espectadores, el programa de El Espectador 810 conducido por Juan Pablo Taborda, emitido el 7 de noviembre de 2026.",
+    "Acevedo integró aquel plantel celeste y repasó, 43 años después, algunas de las escenas que más lo marcaron de esa definición continental.",
+    "Uno de los momentos que destacó fue el gol del Pato Aguilera en el partido de revancha. Según su relato, llegó de cabeza tras un centro de Ramos, a pocos minutos del final, y el delantero quedó tirado en el área después de un choque de cabezas. Acevedo lo describió como \"el famoso gol\" del Pato (minuto 30:38).",
+    "El exzaguero también se detuvo en una jugada de Enzo Francescoli. Contó que el arbitraje le anuló un gol en la misma acción en la que después cobró un tiro libre a favor de Uruguay: \"Enzo había hecho el gol en la misma jugada y se lo anulan y le hacen tirar el tiro libre\", recordó (minuto 34:29).",
+    "La charla tuvo además un costado personal. Acevedo admitió que le quedó una cuenta pendiente de aquellos partidos con Brasil: no haber intercambiado la camiseta con un rival. \"Fue una de las cosas que más me arrepiento\", dijo (minuto 40:07).",
+    "La entrevista forma parte de la emisión completa de Espectadores, disponible en el canal de YouTube de El Espectador 810, donde Acevedo recorrió otros pasajes de su carrera."
+  ],
+  "etiquetas": [
+    "Selección uruguaya",
+    "Eduardo Acevedo",
+    "Copa América",
+    "Enzo Francescoli"
+  ],
+  "categoria": "otro",
+  "slug": "2026-11-07-eduardo-acevedo-recordo-la-final-de-la-copa-america-de-1983",
+  "fecha": "2026-11-07",
+  "publicado_utc": "2026-11-07T21:04:38+00:00",
+  "importancia": 1,
+  "fuente": {
+    "nombre": "El Espectador 810",
+    "programa": "ESPECTADORES | PROGRAMA COMPLETO | 7/11/2026",
+    "video": "https://www.youtube.com/watch?v=T0LJMK3YUyI"
+  },
+  "hechos": [
+    {
+      "hecho": "Eduardo Acevedo afirma que en la final de la Copa America 1983 contra Brasil, Enzo Francescoli anoto el gol en la misma jugada que luego fue anulado y el arbitro cobro tiro libre",
+      "cita": "Enzo había hecho el gol en la misma jugada y se lo anulan y le hacen tirar el tiro libre",
+      "minuto": "00:34:29",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Eduardo Acevedo relata que el gol de Aguilera en el partido de revancha fue un cabezazo tras centro de Venancio Ramos, que el jugador quedo tirado tras el choque de cabezas",
+      "cita": "el famoso gol de el Pato Aguilera tras centro de Venazo Ramos a pocos minutos del final",
+      "minuto": "00:30:38",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Eduardo Acevedo afirma que se arrepiente de no haber cambiado camiseta con Socrates tras el partido",
+      "cita": "Y fue una de las cosas que más me arrepiento",
+      "minuto": "00:40:07",
+      "tipo": "confirmado"
+    }
+  ]
+}

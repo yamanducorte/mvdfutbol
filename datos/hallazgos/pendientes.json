@@ -500,7 +500,8 @@
     "titulo": "BASQUET TOTAL | PROGRAMA COMPLETO | 07/11/2026",
     "video": "https://www.youtube.com/watch?v=gCDg0nfbA4A",
     "publicado": "2026-11-07",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "Programa de basquetbol (no futbol) con varias notas de basquet; el canal exige futbol. Ademas el contenido es basquetbol, no futbol, por lo que no corresponde publicar."
   },
   {
     "transcripto": "datos/transcripciones/2026-11-07_elespectador810_T0LJMK3YUyI.txt",
@@ -508,7 +509,8 @@
     "titulo": "ESPECTADORES | PROGRAMA COMPLETO | 7/11/2026",
     "video": "https://www.youtube.com/watch?v=T0LJMK3YUyI",
     "publicado": "2026-11-07",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-11-07-eduardo-acevedo-recordo-la-final-de-la-copa-america-de-1983"
   },
   {
     "transcripto": "datos/transcripciones/2026-11-07_elespectador810_QMcFiGVVGDw.txt",
@@ -516,6 +518,7 @@
     "titulo": "JULI�N SCHWEIZER | EL DESPEGUE | 7/11/2026",
     "video": "https://www.youtube.com/watch?v=QMcFiGVVGDw",
     "publicado": "2026-11-07",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El video es una entrevista sobre surf (Julián Schweizer, Inés Beiso), no de futbol; ademas no contiene informacion de futbol ni noticias de fichajes, lesiones o decisiones de clubes."
   }
 ]
