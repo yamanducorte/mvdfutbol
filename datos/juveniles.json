@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-07T17:43:32+00:00",
+ "generado": "2026-11-07T20:15:45+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -1442,15 +1442,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-07T18:00:00",
-     "local": "Liffa",
-     "visita": "Cerro",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91743/"
-    },
-    {
      "fecha": "2026-11-08T09:00:00",
      "local": "Deportivo LSM",
      "visita": "Artigas",
@@ -1548,6 +1539,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91565/"
+    },
+    {
+     "fecha": "2026-11-08T14:00:00",
+     "local": "Liffa",
+     "visita": "Villa Teresa",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90646/"
     }
    ],
    "jugados": 55,
@@ -16721,15 +16721,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-07T18:00:00",
-     "local": "M.C.Torque",
-     "visita": "Nacional",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91036/"
-    },
-    {
      "fecha": "2026-11-08T17:00:00",
      "local": "Peñarol",
      "visita": "Liverpool",
@@ -25105,15 +25096,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-07T18:00:00",
-     "local": "Liffa",
-     "visita": "Cerro",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91743/"
-    },
-    {
      "fecha": "2026-11-08T09:00:00",
      "local": "Deportivo LSM",
      "visita": "Artigas",
@@ -25211,6 +25193,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/90670/"
+    },
+    {
+     "fecha": "2026-11-22T14:00:00",
+     "local": "Colon",
+     "visita": "Deportivo LSM",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90673/"
     }
    ],
    "jugados": 11,
