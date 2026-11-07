@@ -475,5 +475,21 @@
     "publicado": "2026-11-06",
     "estado": "descartado",
     "motivo": "El video es de basquetbol uruguayo, deporte distinto al futbol, y la regla editorial pide que en esos casos se descarte la nota. Por eso no se publica."
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-06_elespectador810_Tc8fHv-tncY.txt",
+    "fuente": "El Espectador 810",
+    "titulo": "RECIBIMOS AL PAPA CON LOS MISMOS LOCOS | PROGRAMA COMPLETO | 6/11/2026",
+    "video": "https://www.youtube.com/watch?v=Tc8fHv-tncY",
+    "publicado": "2026-11-06",
+    "estado": "sin_revisar"
+  },
+  {
+    "transcripto": "datos/transcripciones/2026-11-07_dalequevadeportes_wrS4YrsuP2Q.txt",
+    "fuente": "Dale Que Va Deportes",
+    "titulo": "�FREDDY GARC�A GAN� LA POL�MICA! JULIO R�OS DESMIENTE LA INFORMACI�N DE ALBERTO P�REZ",
+    "video": "https://www.youtube.com/watch?v=wrS4YrsuP2Q",
+    "publicado": "2026-11-07",
+    "estado": "sin_revisar"
   }
 ]
