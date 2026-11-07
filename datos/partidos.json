@@ -39976,7 +39976,7 @@
     "link_fuente": "https://lamovidaonline.net/event/91291/"
    },
    {
-    "fecha": "2026-11-08T09:00:00",
+    "fecha": "2026-11-08T11:00:00",
     "local": "River Plate",
     "visita": "Peñarol",
     "goles_local": null,
@@ -39985,22 +39985,22 @@
     "link_fuente": "https://lamovidaonline.net/event/91300/"
    },
    {
-    "fecha": "2026-11-08T10:15:00",
-    "local": "Liverpool",
-    "visita": "Nacional",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91303/"
-   },
-   {
-    "fecha": "2026-11-08T11:30:00",
+    "fecha": "2026-11-08T12:15:00",
     "local": "Danubio",
     "visita": "Fénix",
     "goles_local": null,
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91306/"
+   },
+   {
+    "fecha": "2026-11-08T13:30:00",
+    "local": "Liverpool",
+    "visita": "Nacional",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91303/"
    },
    {
     "fecha": "2026-11-15T09:00:00",
@@ -40145,15 +40145,6 @@
   "partidos": [
    {
     "fecha": "2026-11-08T09:00:00",
-    "local": "Danubio",
-    "visita": "Nacional Rojo",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91368/"
-   },
-   {
-    "fecha": "2026-11-08T09:00:00",
     "local": "Nacional Rojo",
     "visita": "Boston River",
     "goles_local": null,
@@ -40162,13 +40153,13 @@
     "link_fuente": "https://lamovidaonline.net/event/91374/"
    },
    {
-    "fecha": "2026-11-08T10:15:00",
-    "local": "River Plate",
-    "visita": "Liverpool B",
+    "fecha": "2026-11-08T10:00:00",
+    "local": "Danubio",
+    "visita": "Nacional Rojo",
     "goles_local": null,
     "goles_visita": null,
     "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91371/"
+    "link_fuente": "https://lamovidaonline.net/event/91368/"
    },
    {
     "fecha": "2026-11-08T10:15:00",
@@ -40178,6 +40169,15 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91377/"
+   },
+   {
+    "fecha": "2026-11-08T13:00:00",
+    "local": "River Plate",
+    "visita": "Liverpool B",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91371/"
    },
    {
     "fecha": "2026-11-15T09:00:00",
