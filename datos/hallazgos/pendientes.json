@@ -482,7 +482,8 @@
     "titulo": "RECIBIMOS AL PAPA CON LOS MISMOS LOCOS | PROGRAMA COMPLETO | 6/11/2026",
     "video": "https://www.youtube.com/watch?v=Tc8fHv-tncY",
     "publicado": "2026-11-06",
-    "estado": "sin_revisar"
+    "estado": "descartado",
+    "motivo": "El programa es de entretenimiento general: charla sobre la visita del Papa, cárceles, tango y anécdotas personales. El futbol aparece solo de pasada (anuncio de la Copa Uruguay, un cumpleaños) sin informacion nueva ni declaraciones de gente del futbol sobre el futbol."
   },
   {
     "transcripto": "datos/transcripciones/2026-11-07_dalequevadeportes_wrS4YrsuP2Q.txt",
@@ -490,6 +491,7 @@
     "titulo": "�FREDDY GARC�A GAN� LA POL�MICA! JULIO R�OS DESMIENTE LA INFORMACI�N DE ALBERTO P�REZ",
     "video": "https://www.youtube.com/watch?v=wrS4YrsuP2Q",
     "publicado": "2026-11-07",
-    "estado": "sin_revisar"
+    "estado": "escrita",
+    "nota": "2026-11-07-julio-rios-niega-que-damiani-haya-pagado-la-cura-de-freddy-garcia"
   }
 ]

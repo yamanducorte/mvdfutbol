@@ -1,0 +1,68 @@
+{
+  "titulo": "Julio Ríos niega que Damiani haya pagado la cura de Freddy García",
+  "bajada": "En Dale Que Va Deportes, Julio Ríos desmintió la información de Alberto Pérez y sostuvo que no hubo dinero de Damiani de por medio. También dijo que guarda documentos y no descartó que el tema siga.",
+  "cuerpo": [
+    "Julio Ríos desmintió en Dale Que Va Deportes la información difundida por Alberto Pérez sobre Damiani. Según dijo, no hubo dinero de Damiani para la cura de Freddy García. \"No hay plata de por medio de parte de Damiani para la cura de Freddy\", afirmó en el minuto 12:03.",
+    "Ríos remarcó que Pérez no se retractó ni pidió disculpas por esa información. \"Alberto Pérez no emitió una palabra sobre una disculpa, sobre que se retractaba\", señaló en el minuto 0:44.",
+    "En el programa, Ríos explicó además que Damiani y Freddy García tenían un vínculo y que fue él quien los puso en contacto. \"Se lo presenté\", dijo en el minuto 9:30, al recordar que el encuentro fue en un hotel.",
+    "Ríos y García tampoco tienen una relación sin antecedentes. Ambos tuvieron un diferendo por el canal de YouTube Las voces del fútbol. El conflicto llegó a la justicia y terminó con un acuerdo para la devolución del canal. \"Tuvimos un diferendo y fuimos a la justicia y dirimimos el tema en la justicia\", repasó en el minuto 3:15.",
+    "Según Ríos, el propio García dio el asunto por terminado. En su relato, García dio una entrevista en la que lo primero que planteó fue que el tema ya había sido rectificado. \"La verdad ya rectificaron el tema, tema cerrado\", citó Ríos en el minuto 17:18.",
+    "De todos modos, Ríos dejó abierta la posibilidad de que la discusión continúe. Dijo tener documentos guardados y no descartó usarlos. \"Tengo una carta bajo la manga con documentos\", advirtió en el minuto 18:38, aunque no adelantó qué contienen ni en qué circunstancias los daría a conocer.",
+    "La polémica gira en torno a la información de Pérez sobre la participación de Damiani en la cura de García. Por ahora, el único que habló públicamente en el programa fue Ríos, que defendió su versión y apuntó contra la falta de rectificación de Pérez."
+  ],
+  "etiquetas": [
+    "Julio Ríos",
+    "Freddy García",
+    "Alberto Pérez",
+    "Damiani",
+    "Dirigencia"
+  ],
+  "categoria": "dirigencia",
+  "slug": "2026-11-07-julio-rios-niega-que-damiani-haya-pagado-la-cura-de-freddy-garcia",
+  "fecha": "2026-11-07",
+  "publicado_utc": "2026-11-07T10:38:52+00:00",
+  "importancia": 2,
+  "fuente": {
+    "nombre": "Dale Que Va Deportes",
+    "programa": "�FREDDY GARC�A GAN� LA POL�MICA! JULIO R�OS DESMIENTE LA INFORMACI�N DE ALBERTO P�REZ",
+    "video": "https://www.youtube.com/watch?v=wrS4YrsuP2Q"
+  },
+  "hechos": [
+    {
+      "hecho": "Julio Ríos afirma que no hubo dinero de Damiani para la cura de Freddy García.",
+      "cita": "no hay plata de por medio de parte de Damiani para la cura de Freddy",
+      "minuto": "00:12:03",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Julio Ríos afirma que Damiani y Freddy García tuvieron un vínculo, y que él se lo presentó en el hotel Hayan.",
+      "cita": "Se lo presenté en el hotel Hayan",
+      "minuto": "00:09:30",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Julio Ríos y Freddy García tuvieron un diferendo por el canal de YouTube 'Las voces del fútbol', que se dirimió en la justicia y terminó con un acuerdo para la devolución del canal.",
+      "cita": "Tuvimos un diferendo y fuimos a la justicia y dirimimos el tema en la justicia",
+      "minuto": "00:03:15",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Julio Ríos sostiene que Alberto Pérez no se retractó ni pidió disculpas por la información sobre Damiani.",
+      "cita": "Alberto Pérez no emitió una palabra sobre una disculpa, sobre que se retractaba",
+      "minuto": "00:00:44",
+      "tipo": "confirmado"
+    },
+    {
+      "hecho": "Julio Ríos afirma que Freddy García dio una entrevista rectificando el tema y dando por cerrada la cuestión.",
+      "cita": "Freddy mismo hoy en una entrevista que que le hacen lo primero que dice es eh la verdad ya rectificaron el tema, tema cerrado",
+      "minuto": "00:17:18",
+      "tipo": "version"
+    },
+    {
+      "hecho": "Julio Ríos dice tener documentos guardados como 'carta bajo la manga' y no descarta que el tema siga.",
+      "cita": "Tengo una carta bajo la manga con documentos",
+      "minuto": "00:18:38",
+      "tipo": "version"
+    }
+  ]
+}
