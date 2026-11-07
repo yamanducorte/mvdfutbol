@@ -40240,13 +40240,13 @@
   "nombre": "2026 AUFI Sub13 Torneo Final Serie B",
   "partidos": [
    {
-    "fecha": "2026-11-08T12:00:00",
-    "local": "Nacional Blanco",
-    "visita": "Peñarol",
+    "fecha": "2026-11-08T11:30:00",
+    "local": "Juventud",
+    "visita": "Liverpool N",
     "goles_local": null,
     "goles_visita": null,
     "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91399/"
+    "link_fuente": "https://lamovidaonline.net/event/91402/"
    },
    {
     "fecha": "2026-11-08T12:00:00",
@@ -40260,20 +40260,20 @@
    {
     "fecha": "2026-11-08T14:00:00",
     "local": "Juventud",
-    "visita": "Liverpool N",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91402/"
-   },
-   {
-    "fecha": "2026-11-08T14:00:00",
-    "local": "Juventud",
     "visita": "Nacional Blanco",
     "goles_local": null,
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91408/"
+   },
+   {
+    "fecha": "2026-11-11T19:00:00",
+    "local": "Nacional Blanco",
+    "visita": "Peñarol",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91399/"
    },
    {
     "fecha": "2026-11-15T12:00:00",
