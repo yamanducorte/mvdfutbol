@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-08T10:08:38+00:00",
+ "generado": "2026-11-08T16:59:33+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -1442,112 +1442,112 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "Cerro Largo",
-     "visita": "Central Español",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91740/"
-    },
-    {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "Deportivo LSM",
-     "visita": "Artigas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91756/"
-    },
-    {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "Potencia",
-     "visita": "Rocha",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91465/"
-    },
-    {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "Montevideo Boca Jrs.",
-     "visita": "Potencia",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91562/"
-    },
-    {
-     "fecha": "2026-11-08T13:00:00",
-     "local": "Cerro Largo",
-     "visita": "Central Español",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91750/"
-    },
-    {
-     "fecha": "2026-11-08T13:00:00",
-     "local": "Deportivo LSM",
-     "visita": "Artigas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91766/"
-    },
-    {
-     "fecha": "2026-11-08T13:00:00",
-     "local": "Dilio Sport",
-     "visita": "Uruguay Montevideo",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91468/"
-    },
-    {
-     "fecha": "2026-11-08T13:00:00",
-     "local": "Uruguay Montevideo",
-     "visita": "El Tanque Sisley",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91565/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Liffa",
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Artigas",
      "visita": "Villa Teresa",
      "goles_local": null,
      "goles_visita": null,
      "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90646/"
+     "link_fuente": "https://lamovidaonline.net/event/90398/"
     },
     {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Deportivo C.E.M.",
-     "visita": "Deportivo LSM",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90649/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Cerro",
-     "visita": "Artigas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90640/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Cerro Largo",
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Deportivo LSM",
      "visita": "Colon",
      "goles_local": null,
      "goles_visita": null,
      "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90637/"
+     "link_fuente": "https://lamovidaonline.net/event/90401/"
+    },
+    {
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Deportivo C.E.M.",
+     "visita": "Cerro",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90404/"
+    },
+    {
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Liffa",
+     "visita": "Central Español",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90407/"
+    },
+    {
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Artigas",
+     "visita": "Villa Teresa",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90534/"
+    },
+    {
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Deportivo LSM",
+     "visita": "Colon",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90537/"
+    },
+    {
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Deportivo C.E.M.",
+     "visita": "Cerro",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90540/"
+    },
+    {
+     "fecha": "2026-11-14T14:00:00",
+     "local": "Liffa",
+     "visita": "Central Español",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90543/"
+    },
+    {
+     "fecha": "2026-11-15T09:00:00",
+     "local": "Potencia",
+     "visita": "El Tanque Sisley",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91474/"
+    },
+    {
+     "fecha": "2026-11-15T09:00:00",
+     "local": "Montevideo Boca Jrs.",
+     "visita": "Dilio Sport",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91571/"
+    },
+    {
+     "fecha": "2026-11-15T11:00:00",
+     "local": "Dilio Sport",
+     "visita": "Frontera Rivera",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91477/"
+    },
+    {
+     "fecha": "2026-11-15T11:00:00",
+     "local": "Uruguay Montevideo",
+     "visita": "Huracán FC",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91574/"
     }
    ],
    "jugados": 55,
@@ -9382,33 +9382,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "Montevideo Boca Jrs.",
-     "visita": "Potencia",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91562/"
-    },
-    {
-     "fecha": "2026-11-08T13:00:00",
-     "local": "Uruguay Montevideo",
-     "visita": "El Tanque Sisley",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91565/"
-    },
-    {
-     "fecha": "2026-11-08T15:00:00",
-     "local": "Rocha",
-     "visita": "Mar de Fondo",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91568/"
-    },
-    {
      "fecha": "2026-11-14T14:00:00",
      "local": "Artigas",
      "visita": "Villa Teresa",
@@ -9488,6 +9461,33 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91583/"
+    },
+    {
+     "fecha": "2026-11-22T11:00:00",
+     "local": "Rocha",
+     "visita": "Montevideo Boca Jrs.",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91586/"
+    },
+    {
+     "fecha": "2026-11-22T13:00:00",
+     "local": "Mar de Fondo",
+     "visita": "Huracán FC",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91589/"
+    },
+    {
+     "fecha": "2026-11-22T15:00:00",
+     "local": "El Tanque Sisley",
+     "visita": "Potencia",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91592/"
     }
    ],
    "jugados": 12,
@@ -18083,33 +18083,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "Potencia",
-     "visita": "Rocha",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91465/"
-    },
-    {
-     "fecha": "2026-11-08T13:00:00",
-     "local": "Dilio Sport",
-     "visita": "Uruguay Montevideo",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91468/"
-    },
-    {
-     "fecha": "2026-11-08T15:00:00",
-     "local": "Montevideo Boca Jrs.",
-     "visita": "Huracán FC",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91471/"
-    },
-    {
      "fecha": "2026-11-14T14:00:00",
      "local": "Artigas",
      "visita": "Villa Teresa",
@@ -18189,6 +18162,33 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91486/"
+    },
+    {
+     "fecha": "2026-11-22T11:00:00",
+     "local": "Montevideo Boca Jrs.",
+     "visita": "El Tanque Sisley",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91489/"
+    },
+    {
+     "fecha": "2026-11-22T13:00:00",
+     "local": "Huracán FC",
+     "visita": "Frontera Rivera",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91492/"
+    },
+    {
+     "fecha": "2026-11-22T15:00:00",
+     "local": "Uruguay Montevideo",
+     "visita": "Rocha",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91495/"
     }
    ],
    "jugados": 11,
@@ -25096,51 +25096,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "Cerro Largo",
-     "visita": "Central Español",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91740/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Liffa",
-     "visita": "Villa Teresa",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90646/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Deportivo C.E.M.",
-     "visita": "Deportivo LSM",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90649/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Cerro",
-     "visita": "Artigas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90640/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Cerro Largo",
-     "visita": "Colon",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90637/"
-    },
-    {
      "fecha": "2026-11-15T14:00:00",
      "local": "Artigas",
      "visita": "Cerro Largo",
@@ -25202,6 +25157,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/90676/"
+    },
+    {
+     "fecha": "2026-11-22T14:00:00",
+     "local": "Central Español",
+     "visita": "Liffa",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90679/"
     }
    ],
    "jugados": 11,
@@ -32236,60 +32200,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "Deportivo LSM",
-     "visita": "Artigas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91756/"
-    },
-    {
-     "fecha": "2026-11-08T13:00:00",
-     "local": "Cerro Largo",
-     "visita": "Central Español",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91750/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Liffa",
-     "visita": "Villa Teresa",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90782/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Deportivo C.E.M.",
-     "visita": "Deportivo LSM",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90785/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Cerro",
-     "visita": "Artigas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90776/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Cerro Largo",
-     "visita": "Colon",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90773/"
-    },
-    {
      "fecha": "2026-11-15T14:00:00",
      "local": "Artigas",
      "visita": "Cerro Largo",
@@ -32342,6 +32252,24 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/90809/"
+    },
+    {
+     "fecha": "2026-11-22T14:00:00",
+     "local": "Cerro",
+     "visita": "Deportivo C.E.M.",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90812/"
+    },
+    {
+     "fecha": "2026-11-22T14:00:00",
+     "local": "Central Español",
+     "visita": "Liffa",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90815/"
     }
    ],
    "jugados": 11,
@@ -37360,60 +37288,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-08T13:00:00",
-     "local": "Deportivo LSM",
-     "visita": "Artigas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91766/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Liffa",
-     "visita": "Villa Teresa",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90918/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Deportivo C.E.M.",
-     "visita": "Deportivo LSM",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90921/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Cerro",
-     "visita": "Artigas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90912/"
-    },
-    {
-     "fecha": "2026-11-08T14:00:00",
-     "local": "Cerro Largo",
-     "visita": "Colon",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/90909/"
-    },
-    {
-     "fecha": "2026-11-08T15:00:00",
-     "local": "Cerro Largo",
-     "visita": "Central Español",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91760/"
-    },
-    {
      "fecha": "2026-11-15T14:00:00",
      "local": "Artigas",
      "visita": "Cerro Largo",
@@ -37466,6 +37340,24 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/90945/"
+    },
+    {
+     "fecha": "2026-11-22T14:00:00",
+     "local": "Cerro",
+     "visita": "Deportivo C.E.M.",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90948/"
+    },
+    {
+     "fecha": "2026-11-22T14:00:00",
+     "local": "Central Español",
+     "visita": "Liffa",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/90951/"
     }
    ],
    "jugados": 10,
@@ -43822,33 +43714,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "River Plate",
-     "visita": "Peñarol",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91300/"
-    },
-    {
-     "fecha": "2026-11-08T12:15:00",
-     "local": "Danubio",
-     "visita": "Fénix",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91306/"
-    },
-    {
-     "fecha": "2026-11-08T13:30:00",
-     "local": "Liverpool",
-     "visita": "Nacional",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91303/"
-    },
-    {
      "fecha": "2026-11-15T09:00:00",
      "local": "Nacional",
      "visita": "Fénix",
@@ -43928,6 +43793,33 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91333/"
+    },
+    {
+     "fecha": "2026-12-06T09:00:00",
+     "local": "River Plate",
+     "visita": "Fénix",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91336/"
+    },
+    {
+     "fecha": "2026-12-06T10:15:00",
+     "local": "Villa Teresa",
+     "visita": "Danubio",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91339/"
+    },
+    {
+     "fecha": "2026-12-06T11:30:00",
+     "local": "Peñarol",
+     "visita": "Nacional",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91342/"
     }
    ],
    "jugados": 39,
@@ -44099,33 +43991,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-08T11:00:00",
-     "local": "River Plate",
-     "visita": "Peñarol",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91300/"
-    },
-    {
-     "fecha": "2026-11-08T12:15:00",
-     "local": "Danubio",
-     "visita": "Fénix",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91306/"
-    },
-    {
-     "fecha": "2026-11-08T13:30:00",
-     "local": "Liverpool",
-     "visita": "Nacional",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91303/"
-    },
-    {
      "fecha": "2026-11-15T09:00:00",
      "local": "Nacional",
      "visita": "Fénix",
@@ -44205,6 +44070,33 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91333/"
+    },
+    {
+     "fecha": "2026-12-06T09:00:00",
+     "local": "River Plate",
+     "visita": "Fénix",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91336/"
+    },
+    {
+     "fecha": "2026-12-06T10:15:00",
+     "local": "Villa Teresa",
+     "visita": "Danubio",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91339/"
+    },
+    {
+     "fecha": "2026-12-06T11:30:00",
+     "local": "Peñarol",
+     "visita": "Nacional",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91342/"
     }
    ],
    "jugados": 3,
@@ -48117,15 +48009,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-08T15:00:00",
-     "local": "Peñarol",
-     "visita": "Liverpool",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91008/"
-    },
     {
      "fecha": "2026-11-08T20:00:00",
      "local": "M.C.Torque",
