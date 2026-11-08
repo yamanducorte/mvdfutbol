@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-08T16:59:33+00:00",
+ "generado": "2026-11-08T17:53:32+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -16720,15 +16720,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-08T17:00:00",
-     "local": "Peñarol",
-     "visita": "Liverpool",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91039/"
-    },
     {
      "fecha": "2026-11-14T14:00:00",
      "local": "Peñarol",
