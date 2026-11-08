@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-08T17:53:32+00:00",
+ "generado": "2026-11-08T21:57:56+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -43195,6 +43195,310 @@
   },
   {
    "grupo": "juveniles",
+   "categoria": "sub13",
+   "torneo": "final",
+   "division": null,
+   "serie": "A",
+   "subdivision": null,
+   "fase": null,
+   "nombre": "2026 AUFI Sub13 Torneo Final Serie A",
+   "titulo": "Sub 13 · Torneo Final · Serie A",
+   "titulo_categoria": "Sub 13",
+   "estado": "en_curso",
+   "orden_categoria": 80,
+   "tabla": [
+    {
+     "equipo": "Liverpool B",
+     "pj": 1,
+     "g": 1,
+     "e": 0,
+     "p": 0,
+     "gf": 4,
+     "gc": 1,
+     "dg": 3,
+     "pts": 3,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "River Plate",
+       "marcador": "4-1",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Nacional Rojo",
+     "pj": 1,
+     "g": 1,
+     "e": 0,
+     "p": 0,
+     "gf": 3,
+     "gc": 2,
+     "dg": 1,
+     "pts": 3,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Danubio",
+       "marcador": "3-2",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Danubio",
+     "pj": 1,
+     "g": 0,
+     "e": 0,
+     "p": 1,
+     "gf": 2,
+     "gc": 3,
+     "dg": -1,
+     "pts": 0,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Nacional Rojo",
+       "marcador": "2-3",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "River Plate",
+     "pj": 1,
+     "g": 0,
+     "e": 0,
+     "p": 1,
+     "gf": 1,
+     "gc": 4,
+     "dg": -3,
+     "pts": 0,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Liverpool B",
+       "marcador": "1-4",
+       "fecha": "2026-11-08"
+      }
+     ]
+    }
+   ],
+   "ultimos_resultados": [
+    {
+     "fecha": "2026-11-08T13:00:00",
+     "local": "River Plate",
+     "visita": "Liverpool B",
+     "goles_local": 1,
+     "goles_visita": 4,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91371/"
+    },
+    {
+     "fecha": "2026-11-08T10:00:00",
+     "local": "Danubio",
+     "visita": "Nacional Rojo",
+     "goles_local": 2,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91368/"
+    }
+   ],
+   "proximos_partidos": [
+    {
+     "fecha": "2026-11-15T09:00:00",
+     "local": "Boston River",
+     "visita": "Liverpool B",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91380/"
+    },
+    {
+     "fecha": "2026-11-15T10:15:00",
+     "local": "Nacional Rojo",
+     "visita": "River Plate",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91383/"
+    },
+    {
+     "fecha": "2026-11-22T09:00:00",
+     "local": "River Plate",
+     "visita": "Boston River",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91386/"
+    },
+    {
+     "fecha": "2026-11-22T10:15:00",
+     "local": "Danubio",
+     "visita": "Liverpool B",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91389/"
+    },
+    {
+     "fecha": "2026-11-29T09:00:00",
+     "local": "Boston River",
+     "visita": "Danubio",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91392/"
+    },
+    {
+     "fecha": "2026-11-29T10:15:00",
+     "local": "Liverpool B",
+     "visita": "Nacional Rojo",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91395/"
+    }
+   ],
+   "jugados": 2,
+   "programados": 10,
+   "id": 735
+  },
+  {
+   "grupo": "juveniles",
+   "categoria": "sub13",
+   "torneo": "final",
+   "division": null,
+   "serie": "B",
+   "subdivision": null,
+   "fase": null,
+   "nombre": "2026 AUFI Sub13 Torneo Final Serie B",
+   "titulo": "Sub 13 · Torneo Final · Serie B",
+   "titulo_categoria": "Sub 13",
+   "estado": "en_curso",
+   "orden_categoria": 80,
+   "tabla": [
+    {
+     "equipo": "Juventud",
+     "pj": 1,
+     "g": 1,
+     "e": 0,
+     "p": 0,
+     "gf": 1,
+     "gc": 0,
+     "dg": 1,
+     "pts": 3,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Liverpool N",
+       "marcador": "1-0",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Liverpool N",
+     "pj": 1,
+     "g": 0,
+     "e": 0,
+     "p": 1,
+     "gf": 0,
+     "gc": 1,
+     "dg": -1,
+     "pts": 0,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Juventud",
+       "marcador": "0-1",
+       "fecha": "2026-11-08"
+      }
+     ]
+    }
+   ],
+   "ultimos_resultados": [
+    {
+     "fecha": "2026-11-08T11:30:00",
+     "local": "Juventud",
+     "visita": "Liverpool N",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91402/"
+    }
+   ],
+   "proximos_partidos": [
+    {
+     "fecha": "2026-11-11T19:00:00",
+     "local": "Nacional Blanco",
+     "visita": "Peñarol",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91399/"
+    },
+    {
+     "fecha": "2026-11-15T12:00:00",
+     "local": "Villa Teresa",
+     "visita": "Liverpool N",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91411/"
+    },
+    {
+     "fecha": "2026-11-15T14:00:00",
+     "local": "Peñarol",
+     "visita": "Juventud",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91414/"
+    },
+    {
+     "fecha": "2026-11-22T12:00:00",
+     "local": "Juventud",
+     "visita": "Villa Teresa",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91417/"
+    },
+    {
+     "fecha": "2026-11-22T14:00:00",
+     "local": "Nacional Blanco",
+     "visita": "Liverpool N",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91420/"
+    },
+    {
+     "fecha": "2026-11-29T12:00:00",
+     "local": "Villa Teresa",
+     "visita": "Nacional Blanco",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91423/"
+    },
+    {
+     "fecha": "2026-11-29T14:00:00",
+     "local": "Liverpool N",
+     "visita": "Peñarol",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91426/"
+    }
+   ],
+   "jugados": 1,
+   "programados": 10,
+   "id": 736
+  },
+  {
+   "grupo": "juveniles",
    "categoria": "sub11",
    "division": null,
    "torneo": "anual",
@@ -43207,21 +43511,15 @@
    "tabla": [
     {
      "equipo": "Liverpool",
-     "pj": 9,
+     "pj": 10,
      "g": 8,
      "e": 1,
-     "p": 0,
-     "gf": 43,
-     "gc": 3,
-     "dg": 40,
+     "p": 1,
+     "gf": 46,
+     "gc": 7,
+     "dg": 39,
      "pts": 25,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Peñarol",
-       "marcador": "2-1",
-       "fecha": "2026-09-20"
-      },
       {
        "r": "V",
        "rival": "Villa del Cerro",
@@ -43245,26 +43543,26 @@
        "rival": "Danubio",
        "marcador": "8-0",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "D",
+       "rival": "Nacional",
+       "marcador": "3-4",
+       "fecha": "2026-11-08"
       }
      ]
     },
     {
      "equipo": "Peñarol",
-     "pj": 9,
-     "g": 7,
+     "pj": 10,
+     "g": 8,
      "e": 1,
      "p": 1,
-     "gf": 34,
+     "gf": 42,
      "gc": 5,
-     "dg": 29,
-     "pts": 22,
+     "dg": 37,
+     "pts": 25,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Danubio",
-       "marcador": "8-0",
-       "fecha": "2026-09-27"
-      },
       {
        "r": "V",
        "rival": "Villa Teresa",
@@ -43288,26 +43586,26 @@
        "rival": "Villa Teresa",
        "marcador": "3-0",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "River Plate",
+       "marcador": "8-0",
+       "fecha": "2026-11-08"
       }
      ]
     },
     {
      "equipo": "Nacional",
-     "pj": 9,
-     "g": 7,
+     "pj": 10,
+     "g": 8,
      "e": 1,
      "p": 1,
-     "gf": 36,
-     "gc": 9,
-     "dg": 27,
-     "pts": 22,
+     "gf": 40,
+     "gc": 12,
+     "dg": 28,
+     "pts": 25,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Villa Teresa",
-       "marcador": "3-2",
-       "fecha": "2026-09-27"
-      },
       {
        "r": "V",
        "rival": "Fénix",
@@ -43331,6 +43629,55 @@
        "rival": "River Plate",
        "marcador": "5-0",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "4-3",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Danubio",
+     "pj": 10,
+     "g": 5,
+     "e": 0,
+     "p": 5,
+     "gf": 17,
+     "gc": 33,
+     "dg": -16,
+     "pts": 15,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Peñarol",
+       "marcador": "0-8",
+       "fecha": "2026-09-27"
+      },
+      {
+       "r": "V",
+       "rival": "Villa del Cerro",
+       "marcador": "3-0",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "D",
+       "rival": "Liverpool",
+       "marcador": "1-6",
+       "fecha": "2026-10-18"
+      },
+      {
+       "r": "D",
+       "rival": "Liverpool",
+       "marcador": "0-8",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Fénix",
+       "marcador": "1-0",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -43379,21 +43726,15 @@
     },
     {
      "equipo": "Fénix",
-     "pj": 8,
+     "pj": 9,
      "g": 4,
      "e": 0,
-     "p": 4,
+     "p": 5,
      "gf": 11,
-     "gc": 13,
-     "dg": -2,
+     "gc": 14,
+     "dg": -3,
      "pts": 12,
      "forma": [
-      {
-       "r": "V",
-       "rival": "River Plate",
-       "marcador": "1-0",
-       "fecha": "2026-09-20"
-      },
       {
        "r": "V",
        "rival": "Cerro",
@@ -43417,49 +43758,12 @@
        "rival": "Villa del Cerro",
        "marcador": "3-0",
        "fecha": "2026-10-25"
-      }
-     ]
-    },
-    {
-     "equipo": "Danubio",
-     "pj": 9,
-     "g": 4,
-     "e": 0,
-     "p": 5,
-     "gf": 16,
-     "gc": 33,
-     "dg": -17,
-     "pts": 12,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Nacional",
-       "marcador": "0-7",
-       "fecha": "2026-09-20"
       },
       {
        "r": "D",
-       "rival": "Peñarol",
-       "marcador": "0-8",
-       "fecha": "2026-09-27"
-      },
-      {
-       "r": "V",
-       "rival": "Villa del Cerro",
-       "marcador": "3-0",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "D",
-       "rival": "Liverpool",
-       "marcador": "1-6",
-       "fecha": "2026-10-18"
-      },
-      {
-       "r": "D",
-       "rival": "Liverpool",
-       "marcador": "0-8",
-       "fecha": "2026-11-01"
+       "rival": "Danubio",
+       "marcador": "0-1",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -43508,21 +43812,15 @@
     },
     {
      "equipo": "River Plate",
-     "pj": 9,
+     "pj": 10,
      "g": 1,
      "e": 0,
-     "p": 8,
+     "p": 9,
      "gf": 3,
-     "gc": 39,
-     "dg": -36,
+     "gc": 47,
+     "dg": -44,
      "pts": 3,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Fénix",
-       "marcador": "0-1",
-       "fecha": "2026-09-20"
-      },
       {
        "r": "V",
        "rival": "Cerro",
@@ -43546,6 +43844,12 @@
        "rival": "Nacional",
        "marcador": "0-5",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "D",
+       "rival": "Peñarol",
+       "marcador": "0-8",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -43594,6 +43898,33 @@
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-08T13:30:00",
+     "local": "Liverpool",
+     "visita": "Nacional",
+     "goles_local": 3,
+     "goles_visita": 4,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91303/"
+    },
+    {
+     "fecha": "2026-11-08T12:15:00",
+     "local": "Danubio",
+     "visita": "Fénix",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91306/"
+    },
+    {
+     "fecha": "2026-11-08T11:00:00",
+     "local": "River Plate",
+     "visita": "Peñarol",
+     "goles_local": 0,
+     "goles_visita": 8,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91300/"
+    },
     {
      "fecha": "2026-11-01T13:30:00",
      "local": "Danubio",
@@ -43674,33 +44005,6 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/80676/"
-    },
-    {
-     "fecha": "2026-10-18T11:15:00",
-     "local": "Villa del Cerro",
-     "visita": "Villa Teresa",
-     "goles_local": 0,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/80682/"
-    },
-    {
-     "fecha": "2026-10-18T10:00:00",
-     "local": "Peñarol",
-     "visita": "Fénix",
-     "goles_local": 3,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/80679/"
-    },
-    {
-     "fecha": "2026-10-11T20:00:00",
-     "local": "River Plate",
-     "visita": "Cerro",
-     "goles_local": 3,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/80673/"
     }
    ],
    "proximos_partidos": [
@@ -43813,7 +44117,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91342/"
     }
    ],
-   "jugados": 39,
+   "jugados": 42,
    "programados": 57,
    "calculada": true,
    "suma_de": [
@@ -43837,14 +44141,64 @@
    "orden_categoria": 90,
    "tabla": [
     {
-     "equipo": "Liverpool",
-     "pj": 1,
-     "g": 1,
+     "equipo": "Peñarol",
+     "pj": 2,
+     "g": 2,
      "e": 0,
      "p": 0,
-     "gf": 8,
+     "gf": 11,
      "gc": 0,
-     "dg": 8,
+     "dg": 11,
+     "pts": 6,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Villa Teresa",
+       "marcador": "3-0",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "River Plate",
+       "marcador": "8-0",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Nacional",
+     "pj": 2,
+     "g": 2,
+     "e": 0,
+     "p": 0,
+     "gf": 9,
+     "gc": 3,
+     "dg": 6,
+     "pts": 6,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "River Plate",
+       "marcador": "5-0",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "4-3",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Liverpool",
+     "pj": 2,
+     "g": 1,
+     "e": 0,
+     "p": 1,
+     "gf": 11,
+     "gc": 4,
+     "dg": 7,
      "pts": 3,
      "forma": [
       {
@@ -43852,44 +44206,56 @@
        "rival": "Danubio",
        "marcador": "8-0",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "D",
+       "rival": "Nacional",
+       "marcador": "3-4",
+       "fecha": "2026-11-08"
       }
      ]
     },
     {
-     "equipo": "Nacional",
-     "pj": 1,
+     "equipo": "Danubio",
+     "pj": 2,
      "g": 1,
      "e": 0,
-     "p": 0,
-     "gf": 5,
-     "gc": 0,
-     "dg": 5,
+     "p": 1,
+     "gf": 1,
+     "gc": 8,
+     "dg": -7,
      "pts": 3,
      "forma": [
       {
-       "r": "V",
-       "rival": "River Plate",
-       "marcador": "5-0",
+       "r": "D",
+       "rival": "Liverpool",
+       "marcador": "0-8",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Fénix",
+       "marcador": "1-0",
+       "fecha": "2026-11-08"
       }
      ]
     },
     {
-     "equipo": "Peñarol",
+     "equipo": "Fénix",
      "pj": 1,
-     "g": 1,
+     "g": 0,
      "e": 0,
-     "p": 0,
-     "gf": 3,
-     "gc": 0,
-     "dg": 3,
-     "pts": 3,
+     "p": 1,
+     "gf": 0,
+     "gc": 1,
+     "dg": -1,
+     "pts": 0,
      "forma": [
       {
-       "r": "V",
-       "rival": "Villa Teresa",
-       "marcador": "3-0",
-       "fecha": "2026-11-01"
+       "r": "D",
+       "rival": "Danubio",
+       "marcador": "0-1",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -43914,13 +44280,13 @@
     },
     {
      "equipo": "River Plate",
-     "pj": 1,
+     "pj": 2,
      "g": 0,
      "e": 0,
-     "p": 1,
+     "p": 2,
      "gf": 0,
-     "gc": 5,
-     "dg": -5,
+     "gc": 13,
+     "dg": -13,
      "pts": 0,
      "forma": [
       {
@@ -43928,30 +44294,44 @@
        "rival": "Nacional",
        "marcador": "0-5",
        "fecha": "2026-11-01"
-      }
-     ]
-    },
-    {
-     "equipo": "Danubio",
-     "pj": 1,
-     "g": 0,
-     "e": 0,
-     "p": 1,
-     "gf": 0,
-     "gc": 8,
-     "dg": -8,
-     "pts": 0,
-     "forma": [
+      },
       {
        "r": "D",
-       "rival": "Liverpool",
+       "rival": "Peñarol",
        "marcador": "0-8",
-       "fecha": "2026-11-01"
+       "fecha": "2026-11-08"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-08T13:30:00",
+     "local": "Liverpool",
+     "visita": "Nacional",
+     "goles_local": 3,
+     "goles_visita": 4,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91303/"
+    },
+    {
+     "fecha": "2026-11-08T12:15:00",
+     "local": "Danubio",
+     "visita": "Fénix",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91306/"
+    },
+    {
+     "fecha": "2026-11-08T11:00:00",
+     "local": "River Plate",
+     "visita": "Peñarol",
+     "goles_local": 0,
+     "goles_visita": 8,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91300/"
+    },
     {
      "fecha": "2026-11-01T13:30:00",
      "local": "Danubio",
@@ -44090,7 +44470,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91342/"
     }
    ],
-   "jugados": 3,
+   "jugados": 6,
    "programados": 21,
    "id": 734
   },
@@ -47922,21 +48302,21 @@
      ]
     },
     {
-     "equipo": "Liverpool",
+     "equipo": "Peñarol",
      "pj": 1,
-     "g": 0,
-     "e": 1,
+     "g": 1,
+     "e": 0,
      "p": 0,
      "gf": 1,
-     "gc": 1,
-     "dg": 0,
-     "pts": 1,
+     "gc": 0,
+     "dg": 1,
+     "pts": 3,
      "forma": [
       {
-       "r": "E",
-       "rival": "M.C.Torque",
-       "marcador": "1-1",
-       "fecha": "2026-11-01"
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "1-0",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -47956,6 +48336,31 @@
        "rival": "Liverpool",
        "marcador": "1-1",
        "fecha": "2026-11-01"
+      }
+     ]
+    },
+    {
+     "equipo": "Liverpool",
+     "pj": 2,
+     "g": 0,
+     "e": 1,
+     "p": 1,
+     "gf": 1,
+     "gc": 2,
+     "dg": -1,
+     "pts": 1,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "M.C.Torque",
+       "marcador": "1-1",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "D",
+       "rival": "Peñarol",
+       "marcador": "0-1",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -47981,6 +48386,15 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-08T15:00:00",
+     "local": "Peñarol",
+     "visita": "Liverpool",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91008/"
+    },
+    {
      "fecha": "2026-11-01T14:30:00",
      "local": "Liverpool",
      "visita": "M.C.Torque",
@@ -48000,15 +48414,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-08T20:00:00",
-     "local": "M.C.Torque",
-     "visita": "Nacional",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91005/"
-    },
     {
      "fecha": "2026-11-14T14:00:00",
      "local": "Peñarol",
@@ -48064,7 +48469,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91026/"
     }
    ],
-   "jugados": 2,
+   "jugados": 3,
    "programados": 10,
    "id": 727
   },

@@ -39778,9 +39778,9 @@
     "fecha": "2026-11-08T15:00:00",
     "local": "Peñarol",
     "visita": "Liverpool",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91008/"
    },
    {
@@ -39979,27 +39979,27 @@
     "fecha": "2026-11-08T11:00:00",
     "local": "River Plate",
     "visita": "Peñarol",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 8,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91300/"
    },
    {
     "fecha": "2026-11-08T12:15:00",
     "local": "Danubio",
     "visita": "Fénix",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91306/"
    },
    {
     "fecha": "2026-11-08T13:30:00",
     "local": "Liverpool",
     "visita": "Nacional",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 4,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91303/"
    },
    {
@@ -40140,7 +40140,7 @@
   ]
  },
  "735": {
-  "estado": "sin_empezar",
+  "estado": "en_curso",
   "nombre": "2026 AUFI Sub13 Torneo Final Serie A",
   "partidos": [
    {
@@ -40156,9 +40156,9 @@
     "fecha": "2026-11-08T10:00:00",
     "local": "Danubio",
     "visita": "Nacional Rojo",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91368/"
    },
    {
@@ -40174,9 +40174,9 @@
     "fecha": "2026-11-08T13:00:00",
     "local": "River Plate",
     "visita": "Liverpool B",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 4,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91371/"
    },
    {
@@ -40236,16 +40236,16 @@
   ]
  },
  "736": {
-  "estado": "sin_empezar",
+  "estado": "en_curso",
   "nombre": "2026 AUFI Sub13 Torneo Final Serie B",
   "partidos": [
    {
     "fecha": "2026-11-08T11:30:00",
     "local": "Juventud",
     "visita": "Liverpool N",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91402/"
    },
    {
