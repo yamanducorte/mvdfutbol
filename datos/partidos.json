@@ -39787,9 +39787,9 @@
     "fecha": "2026-11-08T20:00:00",
     "local": "M.C.Torque",
     "visita": "Nacional",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91005/"
    },
    {
@@ -39874,18 +39874,18 @@
     "fecha": "2026-11-07T18:00:00",
     "local": "M.C.Torque",
     "visita": "Nacional",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 4,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91036/"
    },
    {
     "fecha": "2026-11-08T17:00:00",
     "local": "Peñarol",
     "visita": "Liverpool",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 4,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91039/"
    },
    {
