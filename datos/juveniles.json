@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-09T11:17:58+00:00",
+ "generado": "2026-11-09T22:15:45+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -949,6 +949,92 @@
    "orden_categoria": 5,
    "tabla": [
     {
+     "equipo": "Deportivo LSM",
+     "pj": 17,
+     "g": 12,
+     "e": 2,
+     "p": 3,
+     "gf": 73,
+     "gc": 19,
+     "dg": 54,
+     "pts": 38,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Artigas",
+       "marcador": "1-1",
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "D",
+       "rival": "Artigas",
+       "marcador": "1-2",
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "V",
+       "rival": "Artigas",
+       "marcador": "6-0",
+       "fecha": "2026-11-08"
+      },
+      {
+       "r": "E",
+       "rival": "Artigas",
+       "marcador": "2-2",
+       "fecha": "2026-11-08"
+      },
+      {
+       "r": "V",
+       "rival": "Artigas",
+       "marcador": "2-0",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 17,
+     "g": 11,
+     "e": 1,
+     "p": 5,
+     "gf": 48,
+     "gc": 20,
+     "dg": 28,
+     "pts": 34,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "7-0",
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "8-0",
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "D",
+       "rival": "Liffa",
+       "marcador": "1-2",
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "4-1",
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "E",
+       "rival": "Liffa",
+       "marcador": "3-3",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
      "equipo": "Colon",
      "pj": 18,
      "g": 10,
@@ -992,174 +1078,88 @@
      ]
     },
     {
-     "equipo": "Deportivo LSM",
-     "pj": 12,
-     "g": 10,
-     "e": 0,
-     "p": 2,
-     "gf": 61,
-     "gc": 14,
-     "dg": 47,
-     "pts": 30,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "4-2",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "11-0",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "7-1",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Cerro",
-       "marcador": "2-3",
-       "fecha": "2026-10-31"
-      },
-      {
-       "r": "V",
-       "rival": "Cerro",
-       "marcador": "3-2",
-       "fecha": "2026-10-31"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro",
-     "pj": 12,
+     "equipo": "Cerro Largo",
+     "pj": 20,
      "g": 8,
-     "e": 0,
-     "p": 4,
-     "gf": 25,
-     "gc": 14,
-     "dg": 11,
-     "pts": 24,
+     "e": 4,
+     "p": 8,
+     "gf": 40,
+     "gc": 30,
+     "dg": 10,
+     "pts": 28,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "4-0",
-       "fecha": "2026-10-16"
-      },
       {
        "r": "V",
        "rival": "Central Español",
        "marcador": "1-0",
-       "fecha": "2026-10-17"
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "D",
+       "rival": "Central Español",
+       "marcador": "0-4",
+       "fecha": "2026-11-07"
       },
       {
        "r": "V",
        "rival": "Central Español",
-       "marcador": "2-1",
-       "fecha": "2026-10-17"
+       "marcador": "5-2",
+       "fecha": "2026-11-08"
       },
       {
-       "r": "V",
-       "rival": "Deportivo LSM",
-       "marcador": "3-2",
-       "fecha": "2026-10-31"
+       "r": "E",
+       "rival": "Central Español",
+       "marcador": "0-0",
+       "fecha": "2026-11-08"
       },
       {
        "r": "D",
-       "rival": "Deportivo LSM",
-       "marcador": "2-3",
-       "fecha": "2026-10-31"
+       "rival": "Central Español",
+       "marcador": "0-1",
+       "fecha": "2026-11-08"
       }
      ]
     },
     {
      "equipo": "Artigas",
-     "pj": 10,
-     "g": 6,
-     "e": 3,
-     "p": 1,
-     "gf": 34,
-     "gc": 13,
-     "dg": 21,
-     "pts": 21,
+     "pj": 15,
+     "g": 7,
+     "e": 5,
+     "p": 3,
+     "gf": 39,
+     "gc": 25,
+     "dg": 14,
+     "pts": 26,
      "forma": [
       {
+       "r": "E",
+       "rival": "Deportivo LSM",
+       "marcador": "1-1",
+       "fecha": "2026-11-07"
+      },
+      {
        "r": "V",
-       "rival": "Colon",
-       "marcador": "4-2",
-       "fecha": "2026-10-24"
+       "rival": "Deportivo LSM",
+       "marcador": "2-1",
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "D",
+       "rival": "Deportivo LSM",
+       "marcador": "0-6",
+       "fecha": "2026-11-08"
       },
       {
        "r": "E",
-       "rival": "Colon",
+       "rival": "Deportivo LSM",
        "marcador": "2-2",
-       "fecha": "2026-10-25"
+       "fecha": "2026-11-08"
       },
       {
        "r": "D",
-       "rival": "Colon",
-       "marcador": "3-4",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "V",
-       "rival": "Colon",
-       "marcador": "4-1",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "V",
-       "rival": "Colon",
-       "marcador": "4-3",
-       "fecha": "2026-10-27"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro Largo",
-     "pj": 15,
-     "g": 6,
-     "e": 3,
-     "p": 6,
-     "gf": 34,
-     "gc": 23,
-     "dg": 11,
-     "pts": 21,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "4-0",
-       "fecha": "2026-10-31"
-      },
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "15-0",
-       "fecha": "2026-10-31"
-      },
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "1-0",
-       "fecha": "2026-11-01"
-      },
-      {
-       "r": "D",
-       "rival": "Liffa",
-       "marcador": "1-2",
-       "fecha": "2026-11-01"
-      },
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "3-0",
-       "fecha": "2026-11-01"
+       "rival": "Deportivo LSM",
+       "marcador": "0-2",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -1207,88 +1207,88 @@
      ]
     },
     {
-     "equipo": "Liffa",
-     "pj": 15,
-     "g": 2,
-     "e": 0,
-     "p": 13,
-     "gf": 11,
-     "gc": 84,
-     "dg": -73,
-     "pts": 6,
+     "equipo": "Central Español",
+     "pj": 16,
+     "g": 3,
+     "e": 3,
+     "p": 10,
+     "gf": 15,
+     "gc": 30,
+     "dg": -15,
+     "pts": 12,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Cerro Largo",
-       "marcador": "0-4",
-       "fecha": "2026-10-31"
-      },
-      {
-       "r": "D",
-       "rival": "Cerro Largo",
-       "marcador": "0-15",
-       "fecha": "2026-10-31"
-      },
       {
        "r": "D",
        "rival": "Cerro Largo",
        "marcador": "0-1",
-       "fecha": "2026-11-01"
+       "fecha": "2026-11-07"
       },
       {
        "r": "V",
        "rival": "Cerro Largo",
-       "marcador": "2-1",
-       "fecha": "2026-11-01"
+       "marcador": "4-0",
+       "fecha": "2026-11-07"
       },
       {
        "r": "D",
        "rival": "Cerro Largo",
-       "marcador": "0-3",
-       "fecha": "2026-11-01"
+       "marcador": "2-5",
+       "fecha": "2026-11-08"
+      },
+      {
+       "r": "E",
+       "rival": "Cerro Largo",
+       "marcador": "0-0",
+       "fecha": "2026-11-08"
+      },
+      {
+       "r": "V",
+       "rival": "Cerro Largo",
+       "marcador": "1-0",
+       "fecha": "2026-11-08"
       }
      ]
     },
     {
-     "equipo": "Central Español",
-     "pj": 11,
-     "g": 1,
-     "e": 2,
-     "p": 8,
-     "gf": 8,
-     "gc": 24,
-     "dg": -16,
-     "pts": 5,
+     "equipo": "Liffa",
+     "pj": 20,
+     "g": 3,
+     "e": 1,
+     "p": 16,
+     "gf": 17,
+     "gc": 107,
+     "dg": -90,
+     "pts": 10,
      "forma": [
       {
        "r": "D",
-       "rival": "Villa Teresa",
-       "marcador": "0-6",
-       "fecha": "2026-10-24"
-      },
-      {
-       "r": "E",
-       "rival": "Villa Teresa",
-       "marcador": "1-1",
-       "fecha": "2026-10-24"
+       "rival": "Cerro",
+       "marcador": "0-7",
+       "fecha": "2026-11-07"
       },
       {
        "r": "D",
-       "rival": "Villa Teresa",
-       "marcador": "1-2",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Villa Teresa",
-       "marcador": "0-2",
-       "fecha": "2026-10-25"
+       "rival": "Cerro",
+       "marcador": "0-8",
+       "fecha": "2026-11-07"
       },
       {
        "r": "V",
-       "rival": "Villa Teresa",
-       "marcador": "4-0",
-       "fecha": "2026-10-25"
+       "rival": "Cerro",
+       "marcador": "2-1",
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "1-4",
+       "fecha": "2026-11-07"
+      },
+      {
+       "r": "E",
+       "rival": "Cerro",
+       "marcador": "3-3",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -1332,112 +1332,112 @@
    ],
    "ultimos_resultados": [
     {
-     "fecha": "2026-11-01T16:00:00",
-     "local": "Liffa",
-     "visita": "Cerro Largo",
-     "goles_local": 0,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90592/"
-    },
-    {
-     "fecha": "2026-11-01T14:00:00",
-     "local": "Liffa",
-     "visita": "Cerro Largo",
-     "goles_local": 2,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90864/"
-    },
-    {
-     "fecha": "2026-11-01T13:00:00",
-     "local": "Colon",
-     "visita": "Villa Teresa",
-     "goles_local": 1,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90873/"
-    },
-    {
-     "fecha": "2026-11-01T12:00:00",
-     "local": "Liffa",
-     "visita": "Cerro Largo",
-     "goles_local": 0,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90728/"
-    },
-    {
-     "fecha": "2026-11-01T11:00:00",
-     "local": "Colon",
-     "visita": "Villa Teresa",
-     "goles_local": 4,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90737/"
-    },
-    {
-     "fecha": "2026-11-01T09:00:00",
-     "local": "Colon",
-     "visita": "Villa Teresa",
-     "goles_local": 2,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90601/"
-    },
-    {
-     "fecha": "2026-10-31T11:00:00",
+     "fecha": "2026-11-08T15:00:00",
      "local": "Cerro Largo",
-     "visita": "Liffa",
-     "goles_local": 15,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90456/"
-    },
-    {
-     "fecha": "2026-10-31T11:00:00",
-     "local": "Deportivo LSM",
-     "visita": "Cerro",
-     "goles_local": 3,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90462/"
-    },
-    {
-     "fecha": "2026-10-31T09:00:00",
-     "local": "Cerro Largo",
-     "visita": "Liffa",
-     "goles_local": 4,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90320/"
-    },
-    {
-     "fecha": "2026-10-31T09:00:00",
-     "local": "Deportivo LSM",
-     "visita": "Cerro",
-     "goles_local": 2,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90326/"
-    },
-    {
-     "fecha": "2026-10-27T13:00:00",
-     "local": "Artigas",
-     "visita": "Colon",
-     "goles_local": 4,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90453/"
-    },
-    {
-     "fecha": "2026-10-25T13:00:00",
-     "local": "Villa Teresa",
      "visita": "Central Español",
      "goles_local": 0,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91760/"
+    },
+    {
+     "fecha": "2026-11-08T13:00:00",
+     "local": "Deportivo LSM",
+     "visita": "Artigas",
+     "goles_local": 2,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91766/"
+    },
+    {
+     "fecha": "2026-11-08T13:00:00",
+     "local": "Cerro Largo",
+     "visita": "Central Español",
+     "goles_local": 0,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91750/"
+    },
+    {
+     "fecha": "2026-11-08T11:00:00",
+     "local": "Deportivo LSM",
+     "visita": "Artigas",
+     "goles_local": 2,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91756/"
+    },
+    {
+     "fecha": "2026-11-08T11:00:00",
+     "local": "Cerro Largo",
+     "visita": "Central Español",
+     "goles_local": 5,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91740/"
+    },
+    {
+     "fecha": "2026-11-08T09:00:00",
+     "local": "Deportivo LSM",
+     "visita": "Artigas",
+     "goles_local": 6,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91746/"
+    },
+    {
+     "fecha": "2026-11-07T18:00:00",
+     "local": "Liffa",
+     "visita": "Cerro",
+     "goles_local": 3,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91743/"
+    },
+    {
+     "fecha": "2026-11-07T16:00:00",
+     "local": "Liffa",
+     "visita": "Cerro",
+     "goles_local": 1,
      "goles_visita": 4,
      "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90855/"
+     "link_fuente": "https://lamovidaonline.net/event/91753/"
+    },
+    {
+     "fecha": "2026-11-07T14:00:00",
+     "local": "Liffa",
+     "visita": "Cerro",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91763/"
+    },
+    {
+     "fecha": "2026-11-07T13:00:00",
+     "local": "Artigas",
+     "visita": "Deportivo LSM",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91736/"
+    },
+    {
+     "fecha": "2026-11-07T12:00:00",
+     "local": "Cerro",
+     "visita": "Liffa",
+     "goles_local": 8,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91733/"
+    },
+    {
+     "fecha": "2026-11-07T11:00:00",
+     "local": "Central Español",
+     "visita": "Cerro Largo",
+     "goles_local": 4,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91730/"
     }
    ],
    "proximos_partidos": [
@@ -1550,7 +1550,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91574/"
     }
    ],
-   "jugados": 55,
+   "jugados": 70,
    "programados": 239,
    "general": true,
    "calculada": true,
@@ -5201,21 +5201,15 @@
    "tabla": [
     {
      "equipo": "Peñarol",
-     "pj": 32,
-     "g": 19,
+     "pj": 33,
+     "g": 20,
      "e": 8,
      "p": 5,
-     "gf": 51,
-     "gc": 26,
-     "dg": 25,
-     "pts": 65,
+     "gf": 54,
+     "gc": 27,
+     "dg": 27,
+     "pts": 68,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Dep. Maldonado",
-       "marcador": "3-1",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "E",
        "rival": "M.C.Torque",
@@ -5239,26 +5233,26 @@
        "rival": "Wanderers",
        "marcador": "4-1",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "3-1",
+       "fecha": "2026-11-05"
       }
      ]
     },
     {
      "equipo": "Nacional",
-     "pj": 33,
-     "g": 19,
+     "pj": 34,
+     "g": 20,
      "e": 7,
      "p": 7,
-     "gf": 66,
-     "gc": 26,
-     "dg": 40,
-     "pts": 64,
+     "gf": 68,
+     "gc": 27,
+     "dg": 41,
+     "pts": 67,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Albion",
-       "marcador": "1-0",
-       "fecha": "2026-10-06"
-      },
       {
        "r": "E",
        "rival": "Defensor Sp",
@@ -5282,26 +5276,26 @@
        "rival": "Oriental",
        "marcador": "2-1",
        "fecha": "2026-11-02"
+      },
+      {
+       "r": "V",
+       "rival": "Dep. Maldonado",
+       "marcador": "2-1",
+       "fecha": "2026-11-09"
       }
      ]
     },
     {
      "equipo": "Defensor Sp",
-     "pj": 32,
-     "g": 17,
+     "pj": 33,
+     "g": 18,
      "e": 10,
      "p": 5,
-     "gf": 61,
-     "gc": 32,
-     "dg": 29,
-     "pts": 61,
+     "gf": 63,
+     "gc": 33,
+     "dg": 30,
+     "pts": 64,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Progreso",
-       "marcador": "0-2",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "V",
        "rival": "Boston River",
@@ -5325,6 +5319,12 @@
        "rival": "Dep. Maldonado",
        "marcador": "2-1",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "V",
+       "rival": "M.C.Torque",
+       "marcador": "2-1",
+       "fecha": "2026-11-04"
       }
      ]
     },
@@ -5373,21 +5373,15 @@
     },
     {
      "equipo": "M.C.Torque",
-     "pj": 31,
+     "pj": 32,
      "g": 16,
      "e": 7,
-     "p": 8,
-     "gf": 49,
-     "gc": 32,
-     "dg": 17,
+     "p": 9,
+     "gf": 50,
+     "gc": 34,
+     "dg": 16,
      "pts": 55,
      "forma": [
-      {
-       "r": "V",
-       "rival": "River Plate",
-       "marcador": "3-1",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "E",
        "rival": "Peñarol",
@@ -5411,26 +5405,26 @@
        "rival": "Albion",
        "marcador": "4-0",
        "fecha": "2026-10-27"
+      },
+      {
+       "r": "D",
+       "rival": "Defensor Sp",
+       "marcador": "1-2",
+       "fecha": "2026-11-04"
       }
      ]
     },
     {
      "equipo": "Juventud",
-     "pj": 32,
-     "g": 13,
+     "pj": 33,
+     "g": 14,
      "e": 11,
      "p": 8,
-     "gf": 49,
-     "gc": 38,
-     "dg": 11,
-     "pts": 50,
+     "gf": 53,
+     "gc": 39,
+     "dg": 14,
+     "pts": 53,
      "forma": [
-      {
-       "r": "V",
-       "rival": "La Luz",
-       "marcador": "4-2",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "E",
        "rival": "Wanderers",
@@ -5454,6 +5448,12 @@
        "rival": "Racing",
        "marcador": "5-0",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "V",
+       "rival": "River Plate",
+       "marcador": "4-1",
+       "fecha": "2026-11-05"
       }
      ]
     },
@@ -5502,21 +5502,15 @@
     },
     {
      "equipo": "Dep. Maldonado",
-     "pj": 32,
+     "pj": 33,
      "g": 13,
      "e": 5,
-     "p": 14,
-     "gf": 46,
-     "gc": 50,
-     "dg": -4,
+     "p": 15,
+     "gf": 47,
+     "gc": 52,
+     "dg": -5,
      "pts": 44,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Cerro Largo",
-       "marcador": "0-4",
-       "fecha": "2026-10-05"
-      },
       {
        "r": "D",
        "rival": "Central Español",
@@ -5540,26 +5534,69 @@
        "rival": "Boston River",
        "marcador": "2-1",
        "fecha": "2026-11-02"
+      },
+      {
+       "r": "D",
+       "rival": "Nacional",
+       "marcador": "1-2",
+       "fecha": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "equipo": "Progreso",
+     "pj": 32,
+     "g": 13,
+     "e": 3,
+     "p": 16,
+     "gf": 35,
+     "gc": 45,
+     "dg": -10,
+     "pts": 42,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "2-1",
+       "fecha": "2026-10-05"
+      },
+      {
+       "r": "V",
+       "rival": "Boston River",
+       "marcador": "2-1",
+       "fecha": "2026-10-13"
+      },
+      {
+       "r": "D",
+       "rival": "Juventud",
+       "marcador": "0-2",
+       "fecha": "2026-10-19"
+      },
+      {
+       "r": "D",
+       "rival": "Nacional",
+       "marcador": "0-2",
+       "fecha": "2026-10-26"
+      },
+      {
+       "r": "V",
+       "rival": "Racing",
+       "marcador": "3-0",
+       "fecha": "2026-11-05"
       }
      ]
     },
     {
      "equipo": "River Plate",
-     "pj": 31,
+     "pj": 32,
      "g": 12,
      "e": 6,
-     "p": 13,
-     "gf": 52,
-     "gc": 60,
-     "dg": -8,
+     "p": 14,
+     "gf": 53,
+     "gc": 64,
+     "dg": -11,
      "pts": 42,
      "forma": [
-      {
-       "r": "D",
-       "rival": "M.C.Torque",
-       "marcador": "1-3",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "V",
        "rival": "Colon",
@@ -5583,6 +5620,12 @@
        "rival": "Liverpool",
        "marcador": "4-0",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "D",
+       "rival": "Juventud",
+       "marcador": "1-4",
+       "fecha": "2026-11-05"
       }
      ]
     },
@@ -5631,21 +5674,15 @@
     },
     {
      "equipo": "Liverpool",
-     "pj": 32,
+     "pj": 33,
      "g": 12,
      "e": 5,
-     "p": 15,
-     "gf": 49,
-     "gc": 59,
-     "dg": -10,
+     "p": 16,
+     "gf": 50,
+     "gc": 62,
+     "dg": -12,
      "pts": 41,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Wanderers",
-       "marcador": "1-0",
-       "fecha": "2026-09-29"
-      },
       {
        "r": "D",
        "rival": "Progreso",
@@ -5669,26 +5706,26 @@
        "rival": "River Plate",
        "marcador": "0-4",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "D",
+       "rival": "Peñarol",
+       "marcador": "1-3",
+       "fecha": "2026-11-05"
       }
      ]
     },
     {
      "equipo": "Racing",
-     "pj": 31,
+     "pj": 32,
      "g": 11,
      "e": 7,
-     "p": 13,
+     "p": 14,
      "gf": 43,
-     "gc": 53,
-     "dg": -10,
+     "gc": 56,
+     "dg": -13,
      "pts": 40,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Colon",
-       "marcador": "0-3",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "E",
        "rival": "La Luz",
@@ -5712,6 +5749,12 @@
        "rival": "Juventud",
        "marcador": "0-5",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "D",
+       "rival": "Progreso",
+       "marcador": "0-3",
+       "fecha": "2026-11-05"
       }
      ]
     },
@@ -5755,49 +5798,6 @@
        "rival": "Central Español",
        "marcador": "1-3",
        "fecha": "2026-11-02"
-      }
-     ]
-    },
-    {
-     "equipo": "Progreso",
-     "pj": 31,
-     "g": 12,
-     "e": 3,
-     "p": 16,
-     "gf": 32,
-     "gc": 45,
-     "dg": -13,
-     "pts": 39,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Defensor Sp",
-       "marcador": "2-0",
-       "fecha": "2026-09-28"
-      },
-      {
-       "r": "V",
-       "rival": "Liverpool",
-       "marcador": "2-1",
-       "fecha": "2026-10-05"
-      },
-      {
-       "r": "V",
-       "rival": "Boston River",
-       "marcador": "2-1",
-       "fecha": "2026-10-13"
-      },
-      {
-       "r": "D",
-       "rival": "Juventud",
-       "marcador": "0-2",
-       "fecha": "2026-10-19"
-      },
-      {
-       "r": "D",
-       "rival": "Nacional",
-       "marcador": "0-2",
-       "fecha": "2026-10-26"
       }
      ]
     },
@@ -5976,6 +5976,51 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-09T12:30:00",
+     "local": "Dep. Maldonado",
+     "visita": "Nacional",
+     "goles_local": 1,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91646/"
+    },
+    {
+     "fecha": "2026-11-05T16:00:00",
+     "local": "Liverpool",
+     "visita": "Peñarol",
+     "goles_local": 1,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81124/"
+    },
+    {
+     "fecha": "2026-11-05T14:00:00",
+     "local": "Progreso",
+     "visita": "Racing",
+     "goles_local": 3,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81112/"
+    },
+    {
+     "fecha": "2026-11-05T09:30:00",
+     "local": "Juventud",
+     "visita": "River Plate",
+     "goles_local": 4,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81118/"
+    },
+    {
+     "fecha": "2026-11-04T10:00:00",
+     "local": "Defensor Sp",
+     "visita": "M.C.Torque",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81127/"
+    },
+    {
      "fecha": "2026-11-03T09:00:00",
      "local": "Colon",
      "visita": "Albion",
@@ -6037,126 +6082,9 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/81103/"
-    },
-    {
-     "fecha": "2026-10-26T15:30:00",
-     "local": "Nacional",
-     "visita": "Progreso",
-     "goles_local": 2,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81085/"
-    },
-    {
-     "fecha": "2026-10-26T15:00:00",
-     "local": "Dep. Maldonado",
-     "visita": "Defensor Sp",
-     "goles_local": 1,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81097/"
-    },
-    {
-     "fecha": "2026-10-26T15:00:00",
-     "local": "River Plate",
-     "visita": "Liverpool",
-     "goles_local": 4,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81094/"
-    },
-    {
-     "fecha": "2026-10-26T14:00:00",
-     "local": "Colon",
-     "visita": "Central Español",
-     "goles_local": 0,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81109/"
-    },
-    {
-     "fecha": "2026-10-26T14:00:00",
-     "local": "Racing",
-     "visita": "Juventud",
-     "goles_local": 0,
-     "goles_visita": 5,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81088/"
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-09T12:30:00",
-     "local": "Dep. Maldonado",
-     "visita": "Nacional",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91646/"
-    },
-    {
-     "fecha": "2026-11-09T14:00:00",
-     "local": "Oriental",
-     "visita": "Progreso",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91640/"
-    },
-    {
-     "fecha": "2026-11-09T14:00:00",
-     "local": "Racing",
-     "visita": "River Plate",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91643/"
-    },
-    {
-     "fecha": "2026-11-09T14:00:00",
-     "local": "Central Español",
-     "visita": "Wanderers",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91658/"
-    },
-    {
-     "fecha": "2026-11-09T16:00:00",
-     "local": "Peñarol",
-     "visita": "Juventud",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91649/"
-    },
-    {
-     "fecha": "2026-11-09T16:00:00",
-     "local": "M.C.Torque",
-     "visita": "Boston River",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91652/"
-    },
-    {
-     "fecha": "2026-11-09T16:00:00",
-     "local": "Colon",
-     "visita": "Defensor Sp",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91655/"
-    },
-    {
-     "fecha": "2026-11-09T16:00:00",
-     "local": "La Luz",
-     "visita": "Albion",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91661/"
-    },
     {
      "fecha": "2026-11-10T09:00:00",
      "local": "Cerro Largo",
@@ -6167,7 +6095,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91664/"
     }
    ],
-   "jugados": 290,
+   "jugados": 295,
    "programados": 305,
    "calculada": true,
    "suma_de": [
@@ -6192,21 +6120,15 @@
    "tabla": [
     {
      "equipo": "Nacional",
-     "pj": 16,
-     "g": 9,
+     "pj": 17,
+     "g": 10,
      "e": 4,
      "p": 3,
-     "gf": 36,
-     "gc": 13,
-     "dg": 23,
-     "pts": 31,
+     "gf": 38,
+     "gc": 14,
+     "dg": 24,
+     "pts": 34,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Albion",
-       "marcador": "1-0",
-       "fecha": "2026-10-06"
-      },
       {
        "r": "E",
        "rival": "Defensor Sp",
@@ -6230,26 +6152,112 @@
        "rival": "Oriental",
        "marcador": "2-1",
        "fecha": "2026-11-02"
+      },
+      {
+       "r": "V",
+       "rival": "Dep. Maldonado",
+       "marcador": "2-1",
+       "fecha": "2026-11-09"
+      }
+     ]
+    },
+    {
+     "equipo": "Peñarol",
+     "pj": 16,
+     "g": 9,
+     "e": 5,
+     "p": 2,
+     "gf": 29,
+     "gc": 16,
+     "dg": 13,
+     "pts": 32,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "M.C.Torque",
+       "marcador": "1-1",
+       "fecha": "2026-10-06"
+      },
+      {
+       "r": "E",
+       "rival": "Colon",
+       "marcador": "3-3",
+       "fecha": "2026-10-12"
+      },
+      {
+       "r": "V",
+       "rival": "La Luz",
+       "marcador": "1-0",
+       "fecha": "2026-10-19"
+      },
+      {
+       "r": "V",
+       "rival": "Wanderers",
+       "marcador": "4-1",
+       "fecha": "2026-10-26"
+      },
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "3-1",
+       "fecha": "2026-11-05"
+      }
+     ]
+    },
+    {
+     "equipo": "Juventud",
+     "pj": 16,
+     "g": 9,
+     "e": 3,
+     "p": 4,
+     "gf": 34,
+     "gc": 18,
+     "dg": 16,
+     "pts": 30,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Wanderers",
+       "marcador": "1-1",
+       "fecha": "2026-10-05"
+      },
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "5-2",
+       "fecha": "2026-10-12"
+      },
+      {
+       "r": "V",
+       "rival": "Progreso",
+       "marcador": "2-0",
+       "fecha": "2026-10-19"
+      },
+      {
+       "r": "V",
+       "rival": "Racing",
+       "marcador": "5-0",
+       "fecha": "2026-10-26"
+      },
+      {
+       "r": "V",
+       "rival": "River Plate",
+       "marcador": "4-1",
+       "fecha": "2026-11-05"
       }
      ]
     },
     {
      "equipo": "M.C.Torque",
-     "pj": 14,
+     "pj": 15,
      "g": 9,
      "e": 3,
-     "p": 2,
-     "gf": 27,
-     "gc": 11,
-     "dg": 16,
+     "p": 3,
+     "gf": 28,
+     "gc": 13,
+     "dg": 15,
      "pts": 30,
      "forma": [
-      {
-       "r": "V",
-       "rival": "River Plate",
-       "marcador": "3-1",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "E",
        "rival": "Peñarol",
@@ -6273,6 +6281,12 @@
        "rival": "Albion",
        "marcador": "4-0",
        "fecha": "2026-10-27"
+      },
+      {
+       "r": "D",
+       "rival": "Defensor Sp",
+       "marcador": "1-2",
+       "fecha": "2026-11-04"
       }
      ]
     },
@@ -6320,108 +6334,16 @@
      ]
     },
     {
-     "equipo": "Peñarol",
-     "pj": 15,
-     "g": 8,
-     "e": 5,
-     "p": 2,
-     "gf": 26,
-     "gc": 15,
-     "dg": 11,
-     "pts": 29,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Dep. Maldonado",
-       "marcador": "3-1",
-       "fecha": "2026-09-28"
-      },
-      {
-       "r": "E",
-       "rival": "M.C.Torque",
-       "marcador": "1-1",
-       "fecha": "2026-10-06"
-      },
-      {
-       "r": "E",
-       "rival": "Colon",
-       "marcador": "3-3",
-       "fecha": "2026-10-12"
-      },
-      {
-       "r": "V",
-       "rival": "La Luz",
-       "marcador": "1-0",
-       "fecha": "2026-10-19"
-      },
-      {
-       "r": "V",
-       "rival": "Wanderers",
-       "marcador": "4-1",
-       "fecha": "2026-10-26"
-      }
-     ]
-    },
-    {
-     "equipo": "Juventud",
-     "pj": 15,
-     "g": 8,
-     "e": 3,
-     "p": 4,
-     "gf": 30,
-     "gc": 17,
-     "dg": 13,
-     "pts": 27,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "La Luz",
-       "marcador": "4-2",
-       "fecha": "2026-09-28"
-      },
-      {
-       "r": "E",
-       "rival": "Wanderers",
-       "marcador": "1-1",
-       "fecha": "2026-10-05"
-      },
-      {
-       "r": "V",
-       "rival": "Liverpool",
-       "marcador": "5-2",
-       "fecha": "2026-10-12"
-      },
-      {
-       "r": "V",
-       "rival": "Progreso",
-       "marcador": "2-0",
-       "fecha": "2026-10-19"
-      },
-      {
-       "r": "V",
-       "rival": "Racing",
-       "marcador": "5-0",
-       "fecha": "2026-10-26"
-      }
-     ]
-    },
-    {
      "equipo": "Defensor Sp",
-     "pj": 15,
-     "g": 7,
+     "pj": 16,
+     "g": 8,
      "e": 5,
      "p": 3,
-     "gf": 30,
-     "gc": 18,
-     "dg": 12,
-     "pts": 26,
+     "gf": 32,
+     "gc": 19,
+     "dg": 13,
+     "pts": 29,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Progreso",
-       "marcador": "0-2",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "V",
        "rival": "Boston River",
@@ -6445,6 +6367,12 @@
        "rival": "Dep. Maldonado",
        "marcador": "2-1",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "V",
+       "rival": "M.C.Torque",
+       "marcador": "2-1",
+       "fecha": "2026-11-04"
       }
      ]
     },
@@ -6493,21 +6421,15 @@
     },
     {
      "equipo": "Racing",
-     "pj": 14,
+     "pj": 15,
      "g": 6,
      "e": 3,
-     "p": 5,
+     "p": 6,
      "gf": 24,
-     "gc": 27,
-     "dg": -3,
+     "gc": 30,
+     "dg": -6,
      "pts": 21,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Colon",
-       "marcador": "0-3",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "E",
        "rival": "La Luz",
@@ -6531,6 +6453,12 @@
        "rival": "Juventud",
        "marcador": "0-5",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "D",
+       "rival": "Progreso",
+       "marcador": "0-3",
+       "fecha": "2026-11-05"
       }
      ]
     },
@@ -6579,21 +6507,15 @@
     },
     {
      "equipo": "Liverpool",
-     "pj": 15,
+     "pj": 16,
      "g": 6,
      "e": 2,
-     "p": 7,
-     "gf": 18,
-     "gc": 27,
-     "dg": -9,
+     "p": 8,
+     "gf": 19,
+     "gc": 30,
+     "dg": -11,
      "pts": 20,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Wanderers",
-       "marcador": "1-0",
-       "fecha": "2026-09-29"
-      },
       {
        "r": "D",
        "rival": "Progreso",
@@ -6617,6 +6539,12 @@
        "rival": "River Plate",
        "marcador": "0-4",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "D",
+       "rival": "Peñarol",
+       "marcador": "1-3",
+       "fecha": "2026-11-05"
       }
      ]
     },
@@ -6708,21 +6636,15 @@
     },
     {
      "equipo": "Dep. Maldonado",
-     "pj": 15,
+     "pj": 16,
      "g": 6,
      "e": 1,
-     "p": 8,
-     "gf": 20,
-     "gc": 24,
-     "dg": -4,
+     "p": 9,
+     "gf": 21,
+     "gc": 26,
+     "dg": -5,
      "pts": 19,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Cerro Largo",
-       "marcador": "0-4",
-       "fecha": "2026-10-05"
-      },
       {
        "r": "D",
        "rival": "Central Español",
@@ -6746,69 +6668,26 @@
        "rival": "Boston River",
        "marcador": "2-1",
        "fecha": "2026-11-02"
-      }
-     ]
-    },
-    {
-     "equipo": "River Plate",
-     "pj": 14,
-     "g": 5,
-     "e": 3,
-     "p": 6,
-     "gf": 29,
-     "gc": 36,
-     "dg": -7,
-     "pts": 18,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "M.C.Torque",
-       "marcador": "1-3",
-       "fecha": "2026-09-28"
-      },
-      {
-       "r": "V",
-       "rival": "Colon",
-       "marcador": "3-0",
-       "fecha": "2026-10-05"
       },
       {
        "r": "D",
-       "rival": "La Luz",
-       "marcador": "0-4",
-       "fecha": "2026-10-12"
-      },
-      {
-       "r": "E",
-       "rival": "Wanderers",
-       "marcador": "2-2",
-       "fecha": "2026-10-19"
-      },
-      {
-       "r": "V",
-       "rival": "Liverpool",
-       "marcador": "4-0",
-       "fecha": "2026-10-26"
+       "rival": "Nacional",
+       "marcador": "1-2",
+       "fecha": "2026-11-09"
       }
      ]
     },
     {
      "equipo": "Progreso",
-     "pj": 14,
-     "g": 5,
+     "pj": 15,
+     "g": 6,
      "e": 1,
      "p": 8,
-     "gf": 14,
+     "gf": 17,
      "gc": 27,
-     "dg": -13,
-     "pts": 16,
+     "dg": -10,
+     "pts": 19,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Defensor Sp",
-       "marcador": "2-0",
-       "fecha": "2026-09-28"
-      },
       {
        "r": "V",
        "rival": "Liverpool",
@@ -6832,6 +6711,55 @@
        "rival": "Nacional",
        "marcador": "0-2",
        "fecha": "2026-10-26"
+      },
+      {
+       "r": "V",
+       "rival": "Racing",
+       "marcador": "3-0",
+       "fecha": "2026-11-05"
+      }
+     ]
+    },
+    {
+     "equipo": "River Plate",
+     "pj": 15,
+     "g": 5,
+     "e": 3,
+     "p": 7,
+     "gf": 30,
+     "gc": 40,
+     "dg": -10,
+     "pts": 18,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Colon",
+       "marcador": "3-0",
+       "fecha": "2026-10-05"
+      },
+      {
+       "r": "D",
+       "rival": "La Luz",
+       "marcador": "0-4",
+       "fecha": "2026-10-12"
+      },
+      {
+       "r": "E",
+       "rival": "Wanderers",
+       "marcador": "2-2",
+       "fecha": "2026-10-19"
+      },
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "4-0",
+       "fecha": "2026-10-26"
+      },
+      {
+       "r": "D",
+       "rival": "Juventud",
+       "marcador": "1-4",
+       "fecha": "2026-11-05"
       }
      ]
     },
@@ -6967,6 +6895,51 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-09T12:30:00",
+     "local": "Dep. Maldonado",
+     "visita": "Nacional",
+     "goles_local": 1,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91646/"
+    },
+    {
+     "fecha": "2026-11-05T16:00:00",
+     "local": "Liverpool",
+     "visita": "Peñarol",
+     "goles_local": 1,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81124/"
+    },
+    {
+     "fecha": "2026-11-05T14:00:00",
+     "local": "Progreso",
+     "visita": "Racing",
+     "goles_local": 3,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81112/"
+    },
+    {
+     "fecha": "2026-11-05T09:30:00",
+     "local": "Juventud",
+     "visita": "River Plate",
+     "goles_local": 4,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81118/"
+    },
+    {
+     "fecha": "2026-11-04T10:00:00",
+     "local": "Defensor Sp",
+     "visita": "M.C.Torque",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/81127/"
+    },
+    {
      "fecha": "2026-11-03T09:00:00",
      "local": "Colon",
      "visita": "Albion",
@@ -7028,126 +7001,9 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/81103/"
-    },
-    {
-     "fecha": "2026-10-26T15:30:00",
-     "local": "Nacional",
-     "visita": "Progreso",
-     "goles_local": 2,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81085/"
-    },
-    {
-     "fecha": "2026-10-26T15:00:00",
-     "local": "Dep. Maldonado",
-     "visita": "Defensor Sp",
-     "goles_local": 1,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81097/"
-    },
-    {
-     "fecha": "2026-10-26T15:00:00",
-     "local": "River Plate",
-     "visita": "Liverpool",
-     "goles_local": 4,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81094/"
-    },
-    {
-     "fecha": "2026-10-26T14:00:00",
-     "local": "Colon",
-     "visita": "Central Español",
-     "goles_local": 0,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81109/"
-    },
-    {
-     "fecha": "2026-10-26T14:00:00",
-     "local": "Racing",
-     "visita": "Juventud",
-     "goles_local": 0,
-     "goles_visita": 5,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/81088/"
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-09T12:30:00",
-     "local": "Dep. Maldonado",
-     "visita": "Nacional",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91646/"
-    },
-    {
-     "fecha": "2026-11-09T14:00:00",
-     "local": "Oriental",
-     "visita": "Progreso",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91640/"
-    },
-    {
-     "fecha": "2026-11-09T14:00:00",
-     "local": "Racing",
-     "visita": "River Plate",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91643/"
-    },
-    {
-     "fecha": "2026-11-09T14:00:00",
-     "local": "Central Español",
-     "visita": "Wanderers",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91658/"
-    },
-    {
-     "fecha": "2026-11-09T16:00:00",
-     "local": "Peñarol",
-     "visita": "Juventud",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91649/"
-    },
-    {
-     "fecha": "2026-11-09T16:00:00",
-     "local": "M.C.Torque",
-     "visita": "Boston River",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91652/"
-    },
-    {
-     "fecha": "2026-11-09T16:00:00",
-     "local": "Colon",
-     "visita": "Defensor Sp",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91655/"
-    },
-    {
-     "fecha": "2026-11-09T16:00:00",
-     "local": "La Luz",
-     "visita": "Albion",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91661/"
-    },
     {
      "fecha": "2026-11-10T09:00:00",
      "local": "Cerro Largo",
@@ -7158,7 +7014,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91664/"
     }
    ],
-   "jugados": 137,
+   "jugados": 142,
    "programados": 152,
    "id": 671
   },
@@ -9009,46 +8865,15 @@
    "orden_categoria": 30,
    "tabla": [
     {
-     "equipo": "Artigas",
-     "pj": 3,
-     "g": 2,
+     "equipo": "Cerro Largo",
+     "pj": 4,
+     "g": 3,
      "e": 1,
      "p": 0,
      "gf": 9,
-     "gc": 2,
-     "dg": 7,
-     "pts": 7,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Central Español",
-       "marcador": "0-0",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "Deportivo C.E.M.",
-       "marcador": "5-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "V",
-       "rival": "Colon",
-       "marcador": "4-2",
-       "fecha": "2026-10-24"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro Largo",
-     "pj": 3,
-     "g": 2,
-     "e": 1,
-     "p": 0,
-     "gf": 8,
      "gc": 3,
-     "dg": 5,
-     "pts": 7,
+     "dg": 6,
+     "pts": 10,
      "forma": [
       {
        "r": "V",
@@ -9067,19 +8892,25 @@
        "rival": "Liffa",
        "marcador": "4-0",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "1-0",
+       "fecha": "2026-11-07"
       }
      ]
     },
     {
      "equipo": "Cerro",
-     "pj": 3,
-     "g": 2,
+     "pj": 4,
+     "g": 3,
      "e": 0,
      "p": 1,
-     "gf": 8,
+     "gf": 15,
      "gc": 4,
-     "dg": 4,
-     "pts": 6,
+     "dg": 11,
+     "pts": 9,
      "forma": [
       {
        "r": "D",
@@ -9098,6 +8929,49 @@
        "rival": "Deportivo LSM",
        "marcador": "3-2",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "7-0",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Artigas",
+     "pj": 4,
+     "g": 2,
+     "e": 2,
+     "p": 0,
+     "gf": 10,
+     "gc": 3,
+     "dg": 7,
+     "pts": 8,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Central Español",
+       "marcador": "0-0",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "5-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "V",
+       "rival": "Colon",
+       "marcador": "4-2",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "E",
+       "rival": "Deportivo LSM",
+       "marcador": "1-1",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -9159,14 +9033,14 @@
     },
     {
      "equipo": "Deportivo LSM",
-     "pj": 3,
+     "pj": 4,
      "g": 1,
-     "e": 0,
+     "e": 1,
      "p": 2,
-     "gf": 12,
-     "gc": 8,
+     "gf": 13,
+     "gc": 9,
      "dg": 4,
-     "pts": 3,
+     "pts": 4,
      "forma": [
       {
        "r": "D",
@@ -9185,18 +9059,24 @@
        "rival": "Cerro",
        "marcador": "2-3",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "E",
+       "rival": "Artigas",
+       "marcador": "1-1",
+       "fecha": "2026-11-07"
       }
      ]
     },
     {
      "equipo": "Central Español",
-     "pj": 3,
+     "pj": 4,
      "g": 0,
      "e": 1,
-     "p": 2,
+     "p": 3,
      "gf": 0,
-     "gc": 10,
-     "dg": -10,
+     "gc": 11,
+     "dg": -11,
      "pts": 1,
      "forma": [
       {
@@ -9216,6 +9096,12 @@
        "rival": "Villa Teresa",
        "marcador": "0-6",
        "fecha": "2026-10-24"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro Largo",
+       "marcador": "0-1",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -9240,13 +9126,13 @@
     },
     {
      "equipo": "Liffa",
-     "pj": 3,
+     "pj": 4,
      "g": 0,
      "e": 0,
-     "p": 3,
+     "p": 4,
      "gf": 1,
-     "gc": 15,
-     "dg": -14,
+     "gc": 22,
+     "dg": -21,
      "pts": 0,
      "forma": [
       {
@@ -9266,11 +9152,44 @@
        "rival": "Cerro Largo",
        "marcador": "0-4",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "0-7",
+       "fecha": "2026-11-07"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-07T11:00:00",
+     "local": "Artigas",
+     "visita": "Deportivo LSM",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91726/"
+    },
+    {
+     "fecha": "2026-11-07T10:00:00",
+     "local": "Cerro",
+     "visita": "Liffa",
+     "goles_local": 7,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91723/"
+    },
+    {
+     "fecha": "2026-11-07T09:00:00",
+     "local": "Central Español",
+     "visita": "Cerro Largo",
+     "goles_local": 0,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91720/"
+    },
     {
      "fecha": "2026-10-31T09:00:00",
      "local": "Cerro Largo",
@@ -9351,33 +9270,6 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/90299/"
-    },
-    {
-     "fecha": "2026-10-10T09:00:00",
-     "local": "Cerro",
-     "visita": "Colon",
-     "goles_local": 1,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90302/"
-    },
-    {
-     "fecha": "2026-10-10T09:00:00",
-     "local": "Cerro Largo",
-     "visita": "Deportivo LSM",
-     "goles_local": 4,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90290/"
-    },
-    {
-     "fecha": "2026-10-03T09:00:00",
-     "local": "Liffa",
-     "visita": "Colon",
-     "goles_local": 0,
-     "goles_visita": 4,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90284/"
     }
    ],
    "proximos_partidos": [
@@ -9490,7 +9382,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91592/"
     }
    ],
-   "jugados": 12,
+   "jugados": 15,
    "programados": 63,
    "calculada": true,
    "suma_de": [
@@ -11175,46 +11067,15 @@
    "orden_categoria": 30,
    "tabla": [
     {
-     "equipo": "Artigas",
-     "pj": 3,
-     "g": 2,
+     "equipo": "Cerro Largo",
+     "pj": 4,
+     "g": 3,
      "e": 1,
      "p": 0,
      "gf": 9,
-     "gc": 2,
-     "dg": 7,
-     "pts": 7,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Central Español",
-       "marcador": "0-0",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "Deportivo C.E.M.",
-       "marcador": "5-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "V",
-       "rival": "Colon",
-       "marcador": "4-2",
-       "fecha": "2026-10-24"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro Largo",
-     "pj": 3,
-     "g": 2,
-     "e": 1,
-     "p": 0,
-     "gf": 8,
      "gc": 3,
-     "dg": 5,
-     "pts": 7,
+     "dg": 6,
+     "pts": 10,
      "forma": [
       {
        "r": "V",
@@ -11233,19 +11094,25 @@
        "rival": "Liffa",
        "marcador": "4-0",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "1-0",
+       "fecha": "2026-11-07"
       }
      ]
     },
     {
      "equipo": "Cerro",
-     "pj": 3,
-     "g": 2,
+     "pj": 4,
+     "g": 3,
      "e": 0,
      "p": 1,
-     "gf": 8,
+     "gf": 15,
      "gc": 4,
-     "dg": 4,
-     "pts": 6,
+     "dg": 11,
+     "pts": 9,
      "forma": [
       {
        "r": "D",
@@ -11264,6 +11131,49 @@
        "rival": "Deportivo LSM",
        "marcador": "3-2",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "7-0",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Artigas",
+     "pj": 4,
+     "g": 2,
+     "e": 2,
+     "p": 0,
+     "gf": 10,
+     "gc": 3,
+     "dg": 7,
+     "pts": 8,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Central Español",
+       "marcador": "0-0",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "5-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "V",
+       "rival": "Colon",
+       "marcador": "4-2",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "E",
+       "rival": "Deportivo LSM",
+       "marcador": "1-1",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -11325,14 +11235,14 @@
     },
     {
      "equipo": "Deportivo LSM",
-     "pj": 3,
+     "pj": 4,
      "g": 1,
-     "e": 0,
+     "e": 1,
      "p": 2,
-     "gf": 12,
-     "gc": 8,
+     "gf": 13,
+     "gc": 9,
      "dg": 4,
-     "pts": 3,
+     "pts": 4,
      "forma": [
       {
        "r": "D",
@@ -11351,18 +11261,24 @@
        "rival": "Cerro",
        "marcador": "2-3",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "E",
+       "rival": "Artigas",
+       "marcador": "1-1",
+       "fecha": "2026-11-07"
       }
      ]
     },
     {
      "equipo": "Central Español",
-     "pj": 3,
+     "pj": 4,
      "g": 0,
      "e": 1,
-     "p": 2,
+     "p": 3,
      "gf": 0,
-     "gc": 10,
-     "dg": -10,
+     "gc": 11,
+     "dg": -11,
      "pts": 1,
      "forma": [
       {
@@ -11382,6 +11298,12 @@
        "rival": "Villa Teresa",
        "marcador": "0-6",
        "fecha": "2026-10-24"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro Largo",
+       "marcador": "0-1",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -11406,13 +11328,13 @@
     },
     {
      "equipo": "Liffa",
-     "pj": 3,
+     "pj": 4,
      "g": 0,
      "e": 0,
-     "p": 3,
+     "p": 4,
      "gf": 1,
-     "gc": 15,
-     "dg": -14,
+     "gc": 22,
+     "dg": -21,
      "pts": 0,
      "forma": [
       {
@@ -11432,11 +11354,44 @@
        "rival": "Cerro Largo",
        "marcador": "0-4",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "0-7",
+       "fecha": "2026-11-07"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-07T11:00:00",
+     "local": "Artigas",
+     "visita": "Deportivo LSM",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91726/"
+    },
+    {
+     "fecha": "2026-11-07T10:00:00",
+     "local": "Cerro",
+     "visita": "Liffa",
+     "goles_local": 7,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91723/"
+    },
+    {
+     "fecha": "2026-11-07T09:00:00",
+     "local": "Central Español",
+     "visita": "Cerro Largo",
+     "goles_local": 0,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91720/"
+    },
     {
      "fecha": "2026-10-31T09:00:00",
      "local": "Cerro Largo",
@@ -11517,33 +11472,6 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/90299/"
-    },
-    {
-     "fecha": "2026-10-10T09:00:00",
-     "local": "Cerro",
-     "visita": "Colon",
-     "goles_local": 1,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90302/"
-    },
-    {
-     "fecha": "2026-10-10T09:00:00",
-     "local": "Cerro Largo",
-     "visita": "Deportivo LSM",
-     "goles_local": 4,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90290/"
-    },
-    {
-     "fecha": "2026-10-03T09:00:00",
-     "local": "Liffa",
-     "visita": "Colon",
-     "goles_local": 0,
-     "goles_visita": 4,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90284/"
     }
    ],
    "proximos_partidos": [
@@ -11584,7 +11512,7 @@
      "link_fuente": "https://lamovidaonline.net/event/90407/"
     }
    ],
-   "jugados": 12,
+   "jugados": 15,
    "programados": 35,
    "id": 719
   },
@@ -17778,13 +17706,13 @@
    "tabla": [
     {
      "equipo": "Deportivo LSM",
-     "pj": 3,
+     "pj": 4,
      "g": 3,
      "e": 0,
-     "p": 0,
-     "gf": 16,
-     "gc": 2,
-     "dg": 14,
+     "p": 1,
+     "gf": 17,
+     "gc": 4,
+     "dg": 13,
      "pts": 9,
      "forma": [
       {
@@ -17804,6 +17732,80 @@
        "rival": "Cerro",
        "marcador": "3-2",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Artigas",
+       "marcador": "1-2",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Artigas",
+     "pj": 3,
+     "g": 3,
+     "e": 0,
+     "p": 0,
+     "gf": 8,
+     "gc": 4,
+     "dg": 4,
+     "pts": 9,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "2-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "V",
+       "rival": "Colon",
+       "marcador": "4-3",
+       "fecha": "2026-10-27"
+      },
+      {
+       "r": "V",
+       "rival": "Deportivo LSM",
+       "marcador": "2-1",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 4,
+     "g": 2,
+     "e": 0,
+     "p": 2,
+     "gf": 12,
+     "gc": 4,
+     "dg": 8,
+     "pts": 6,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "2-0",
+       "fecha": "2026-10-03"
+      },
+      {
+       "r": "D",
+       "rival": "Colon",
+       "marcador": "0-1",
+       "fecha": "2026-10-10"
+      },
+      {
+       "r": "D",
+       "rival": "Deportivo LSM",
+       "marcador": "2-3",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "8-0",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -17839,39 +17841,14 @@
      ]
     },
     {
-     "equipo": "Artigas",
-     "pj": 2,
-     "g": 2,
-     "e": 0,
-     "p": 0,
-     "gf": 6,
-     "gc": 3,
-     "dg": 3,
-     "pts": 6,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Deportivo C.E.M.",
-       "marcador": "2-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "V",
-       "rival": "Colon",
-       "marcador": "4-3",
-       "fecha": "2026-10-27"
-      }
-     ]
-    },
-    {
      "equipo": "Cerro Largo",
-     "pj": 3,
+     "pj": 4,
      "g": 1,
      "e": 1,
-     "p": 1,
+     "p": 2,
      "gf": 15,
-     "gc": 3,
-     "dg": 12,
+     "gc": 7,
+     "dg": 8,
      "pts": 4,
      "forma": [
       {
@@ -17891,37 +17868,43 @@
        "rival": "Liffa",
        "marcador": "15-0",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Central Español",
+       "marcador": "0-4",
+       "fecha": "2026-11-07"
       }
      ]
     },
     {
-     "equipo": "Cerro",
+     "equipo": "Central Español",
      "pj": 3,
      "g": 1,
-     "e": 0,
-     "p": 2,
-     "gf": 4,
-     "gc": 4,
-     "dg": 0,
-     "pts": 3,
+     "e": 1,
+     "p": 1,
+     "gf": 5,
+     "gc": 3,
+     "dg": 2,
+     "pts": 4,
      "forma": [
       {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "2-0",
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "0-2",
        "fecha": "2026-10-03"
       },
       {
-       "r": "D",
-       "rival": "Colon",
-       "marcador": "0-1",
-       "fecha": "2026-10-10"
+       "r": "E",
+       "rival": "Villa Teresa",
+       "marcador": "1-1",
+       "fecha": "2026-10-24"
       },
       {
-       "r": "D",
-       "rival": "Deportivo LSM",
-       "marcador": "2-3",
-       "fecha": "2026-10-31"
+       "r": "V",
+       "rival": "Cerro Largo",
+       "marcador": "4-0",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -17951,31 +17934,6 @@
      ]
     },
     {
-     "equipo": "Central Español",
-     "pj": 2,
-     "g": 0,
-     "e": 1,
-     "p": 1,
-     "gf": 1,
-     "gc": 3,
-     "dg": -2,
-     "pts": 1,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Cerro",
-       "marcador": "0-2",
-       "fecha": "2026-10-03"
-      },
-      {
-       "r": "E",
-       "rival": "Villa Teresa",
-       "marcador": "1-1",
-       "fecha": "2026-10-24"
-      }
-     ]
-    },
-    {
      "equipo": "Deportivo C.E.M.",
      "pj": 1,
      "g": 0,
@@ -17996,13 +17954,13 @@
     },
     {
      "equipo": "Liffa",
-     "pj": 3,
+     "pj": 4,
      "g": 0,
      "e": 0,
-     "p": 3,
+     "p": 4,
      "gf": 0,
-     "gc": 30,
-     "dg": -30,
+     "gc": 38,
+     "dg": -38,
      "pts": 0,
      "forma": [
       {
@@ -18022,11 +17980,44 @@
        "rival": "Cerro Largo",
        "marcador": "0-15",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "0-8",
+       "fecha": "2026-11-07"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-07T13:00:00",
+     "local": "Artigas",
+     "visita": "Deportivo LSM",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91736/"
+    },
+    {
+     "fecha": "2026-11-07T12:00:00",
+     "local": "Cerro",
+     "visita": "Liffa",
+     "goles_local": 8,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91733/"
+    },
+    {
+     "fecha": "2026-11-07T11:00:00",
+     "local": "Central Español",
+     "visita": "Cerro Largo",
+     "goles_local": 4,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91730/"
+    },
     {
      "fecha": "2026-10-31T11:00:00",
      "local": "Cerro Largo",
@@ -18107,24 +18098,6 @@
      "goles_visita": 3,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/90426/"
-    },
-    {
-     "fecha": "2026-10-03T11:00:00",
-     "local": "Central Español",
-     "visita": "Cerro",
-     "goles_local": 0,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90423/"
-    },
-    {
-     "fecha": "2026-10-03T11:00:00",
-     "local": "Liffa",
-     "visita": "Colon",
-     "goles_local": 0,
-     "goles_visita": 5,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90420/"
     }
    ],
    "proximos_partidos": [
@@ -18237,7 +18210,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91495/"
     }
    ],
-   "jugados": 11,
+   "jugados": 14,
    "programados": 68,
    "calculada": true,
    "suma_de": [
@@ -19188,13 +19161,13 @@
    "tabla": [
     {
      "equipo": "Deportivo LSM",
-     "pj": 3,
+     "pj": 4,
      "g": 3,
      "e": 0,
-     "p": 0,
-     "gf": 16,
-     "gc": 2,
-     "dg": 14,
+     "p": 1,
+     "gf": 17,
+     "gc": 4,
+     "dg": 13,
      "pts": 9,
      "forma": [
       {
@@ -19214,6 +19187,80 @@
        "rival": "Cerro",
        "marcador": "3-2",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Artigas",
+       "marcador": "1-2",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Artigas",
+     "pj": 3,
+     "g": 3,
+     "e": 0,
+     "p": 0,
+     "gf": 8,
+     "gc": 4,
+     "dg": 4,
+     "pts": 9,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "2-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "V",
+       "rival": "Colon",
+       "marcador": "4-3",
+       "fecha": "2026-10-27"
+      },
+      {
+       "r": "V",
+       "rival": "Deportivo LSM",
+       "marcador": "2-1",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 4,
+     "g": 2,
+     "e": 0,
+     "p": 2,
+     "gf": 12,
+     "gc": 4,
+     "dg": 8,
+     "pts": 6,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "2-0",
+       "fecha": "2026-10-03"
+      },
+      {
+       "r": "D",
+       "rival": "Colon",
+       "marcador": "0-1",
+       "fecha": "2026-10-10"
+      },
+      {
+       "r": "D",
+       "rival": "Deportivo LSM",
+       "marcador": "2-3",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "8-0",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -19249,39 +19296,14 @@
      ]
     },
     {
-     "equipo": "Artigas",
-     "pj": 2,
-     "g": 2,
-     "e": 0,
-     "p": 0,
-     "gf": 6,
-     "gc": 3,
-     "dg": 3,
-     "pts": 6,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Deportivo C.E.M.",
-       "marcador": "2-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "V",
-       "rival": "Colon",
-       "marcador": "4-3",
-       "fecha": "2026-10-27"
-      }
-     ]
-    },
-    {
      "equipo": "Cerro Largo",
-     "pj": 3,
+     "pj": 4,
      "g": 1,
      "e": 1,
-     "p": 1,
+     "p": 2,
      "gf": 15,
-     "gc": 3,
-     "dg": 12,
+     "gc": 7,
+     "dg": 8,
      "pts": 4,
      "forma": [
       {
@@ -19301,37 +19323,43 @@
        "rival": "Liffa",
        "marcador": "15-0",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Central Español",
+       "marcador": "0-4",
+       "fecha": "2026-11-07"
       }
      ]
     },
     {
-     "equipo": "Cerro",
+     "equipo": "Central Español",
      "pj": 3,
      "g": 1,
-     "e": 0,
-     "p": 2,
-     "gf": 4,
-     "gc": 4,
-     "dg": 0,
-     "pts": 3,
+     "e": 1,
+     "p": 1,
+     "gf": 5,
+     "gc": 3,
+     "dg": 2,
+     "pts": 4,
      "forma": [
       {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "2-0",
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "0-2",
        "fecha": "2026-10-03"
       },
       {
-       "r": "D",
-       "rival": "Colon",
-       "marcador": "0-1",
-       "fecha": "2026-10-10"
+       "r": "E",
+       "rival": "Villa Teresa",
+       "marcador": "1-1",
+       "fecha": "2026-10-24"
       },
       {
-       "r": "D",
-       "rival": "Deportivo LSM",
-       "marcador": "2-3",
-       "fecha": "2026-10-31"
+       "r": "V",
+       "rival": "Cerro Largo",
+       "marcador": "4-0",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -19361,31 +19389,6 @@
      ]
     },
     {
-     "equipo": "Central Español",
-     "pj": 2,
-     "g": 0,
-     "e": 1,
-     "p": 1,
-     "gf": 1,
-     "gc": 3,
-     "dg": -2,
-     "pts": 1,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Cerro",
-       "marcador": "0-2",
-       "fecha": "2026-10-03"
-      },
-      {
-       "r": "E",
-       "rival": "Villa Teresa",
-       "marcador": "1-1",
-       "fecha": "2026-10-24"
-      }
-     ]
-    },
-    {
      "equipo": "Deportivo C.E.M.",
      "pj": 1,
      "g": 0,
@@ -19406,13 +19409,13 @@
     },
     {
      "equipo": "Liffa",
-     "pj": 3,
+     "pj": 4,
      "g": 0,
      "e": 0,
-     "p": 3,
+     "p": 4,
      "gf": 0,
-     "gc": 30,
-     "dg": -30,
+     "gc": 38,
+     "dg": -38,
      "pts": 0,
      "forma": [
       {
@@ -19432,11 +19435,44 @@
        "rival": "Cerro Largo",
        "marcador": "0-15",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "0-8",
+       "fecha": "2026-11-07"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-07T13:00:00",
+     "local": "Artigas",
+     "visita": "Deportivo LSM",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91736/"
+    },
+    {
+     "fecha": "2026-11-07T12:00:00",
+     "local": "Cerro",
+     "visita": "Liffa",
+     "goles_local": 8,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91733/"
+    },
+    {
+     "fecha": "2026-11-07T11:00:00",
+     "local": "Central Español",
+     "visita": "Cerro Largo",
+     "goles_local": 4,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91730/"
+    },
     {
      "fecha": "2026-10-31T11:00:00",
      "local": "Cerro Largo",
@@ -19517,24 +19553,6 @@
      "goles_visita": 3,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/90426/"
-    },
-    {
-     "fecha": "2026-10-03T11:00:00",
-     "local": "Central Español",
-     "visita": "Cerro",
-     "goles_local": 0,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90423/"
-    },
-    {
-     "fecha": "2026-10-03T11:00:00",
-     "local": "Liffa",
-     "visita": "Colon",
-     "goles_local": 0,
-     "goles_visita": 5,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90420/"
     }
    ],
    "proximos_partidos": [
@@ -19575,7 +19593,7 @@
      "link_fuente": "https://lamovidaonline.net/event/90543/"
     }
    ],
-   "jugados": 11,
+   "jugados": 14,
    "programados": 36,
    "id": 720
   },
@@ -24790,6 +24808,74 @@
    "orden_categoria": 50,
    "tabla": [
     {
+     "equipo": "Deportivo LSM",
+     "pj": 3,
+     "g": 3,
+     "e": 0,
+     "p": 0,
+     "gf": 12,
+     "gc": 2,
+     "dg": 10,
+     "pts": 9,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Cerro Largo",
+       "marcador": "2-0",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "4-2",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "V",
+       "rival": "Artigas",
+       "marcador": "6-0",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Cerro Largo",
+     "pj": 4,
+     "g": 3,
+     "e": 0,
+     "p": 1,
+     "gf": 11,
+     "gc": 5,
+     "dg": 6,
+     "pts": 9,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Villa Teresa",
+       "marcador": "3-1",
+       "fecha": "2026-10-04"
+      },
+      {
+       "r": "D",
+       "rival": "Deportivo LSM",
+       "marcador": "0-2",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "3-0",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "5-2",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
      "equipo": "Colon",
      "pj": 4,
      "g": 3,
@@ -24828,14 +24914,14 @@
     },
     {
      "equipo": "Cerro",
-     "pj": 2,
+     "pj": 3,
      "g": 2,
-     "e": 0,
+     "e": 1,
      "p": 0,
-     "gf": 7,
-     "gc": 3,
+     "gf": 10,
+     "gc": 6,
      "dg": 4,
-     "pts": 6,
+     "pts": 7,
      "forma": [
       {
        "r": "V",
@@ -24848,62 +24934,12 @@
        "rival": "Central Español",
        "marcador": "2-1",
        "fecha": "2026-10-17"
-      }
-     ]
-    },
-    {
-     "equipo": "Deportivo LSM",
-     "pj": 2,
-     "g": 2,
-     "e": 0,
-     "p": 0,
-     "gf": 6,
-     "gc": 2,
-     "dg": 4,
-     "pts": 6,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Cerro Largo",
-       "marcador": "2-0",
-       "fecha": "2026-10-11"
       },
       {
-       "r": "V",
+       "r": "E",
        "rival": "Liffa",
-       "marcador": "4-2",
-       "fecha": "2026-10-25"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro Largo",
-     "pj": 3,
-     "g": 2,
-     "e": 0,
-     "p": 1,
-     "gf": 6,
-     "gc": 3,
-     "dg": 3,
-     "pts": 6,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Villa Teresa",
-       "marcador": "3-1",
-       "fecha": "2026-10-04"
-      },
-      {
-       "r": "D",
-       "rival": "Deportivo LSM",
-       "marcador": "0-2",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "3-0",
-       "fecha": "2026-11-01"
+       "marcador": "3-3",
+       "fecha": "2026-11-07"
       }
      ]
     },
@@ -24958,65 +24994,15 @@
      ]
     },
     {
-     "equipo": "Artigas",
-     "pj": 2,
+     "equipo": "Liffa",
+     "pj": 4,
      "g": 0,
      "e": 1,
-     "p": 1,
-     "gf": 4,
-     "gc": 5,
-     "dg": -1,
-     "pts": 1,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Deportivo C.E.M.",
-       "marcador": "1-1",
-       "fecha": "2026-10-18"
-      },
-      {
-       "r": "D",
-       "rival": "Colon",
-       "marcador": "3-4",
-       "fecha": "2026-10-25"
-      }
-     ]
-    },
-    {
-     "equipo": "Central Español",
-     "pj": 2,
-     "g": 0,
-     "e": 0,
-     "p": 2,
-     "gf": 2,
-     "gc": 4,
-     "dg": -2,
-     "pts": 0,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Cerro",
-       "marcador": "1-2",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "D",
-       "rival": "Villa Teresa",
-       "marcador": "1-2",
-       "fecha": "2026-10-25"
-      }
-     ]
-    },
-    {
-     "equipo": "Liffa",
-     "pj": 3,
-     "g": 0,
-     "e": 0,
      "p": 3,
-     "gf": 3,
-     "gc": 10,
+     "gf": 6,
+     "gc": 13,
      "dg": -7,
-     "pts": 0,
+     "pts": 1,
      "forma": [
       {
        "r": "D",
@@ -25035,11 +25021,106 @@
        "rival": "Cerro Largo",
        "marcador": "0-3",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Cerro",
+       "marcador": "3-3",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Artigas",
+     "pj": 3,
+     "g": 0,
+     "e": 1,
+     "p": 2,
+     "gf": 4,
+     "gc": 11,
+     "dg": -7,
+     "pts": 1,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "1-1",
+       "fecha": "2026-10-18"
+      },
+      {
+       "r": "D",
+       "rival": "Colon",
+       "marcador": "3-4",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Deportivo LSM",
+       "marcador": "0-6",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Central Español",
+     "pj": 3,
+     "g": 0,
+     "e": 0,
+     "p": 3,
+     "gf": 4,
+     "gc": 9,
+     "dg": -5,
+     "pts": 0,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "1-2",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "D",
+       "rival": "Villa Teresa",
+       "marcador": "1-2",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro Largo",
+       "marcador": "2-5",
+       "fecha": "2026-11-08"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-08T11:00:00",
+     "local": "Cerro Largo",
+     "visita": "Central Español",
+     "goles_local": 5,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91740/"
+    },
+    {
+     "fecha": "2026-11-08T09:00:00",
+     "local": "Deportivo LSM",
+     "visita": "Artigas",
+     "goles_local": 6,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91746/"
+    },
+    {
+     "fecha": "2026-11-07T18:00:00",
+     "local": "Liffa",
+     "visita": "Cerro",
+     "goles_local": 3,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91743/"
+    },
     {
      "fecha": "2026-11-01T16:00:00",
      "local": "Liffa",
@@ -25120,24 +25201,6 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/90562/"
-    },
-    {
-     "fecha": "2026-10-04T09:00:00",
-     "local": "Colon",
-     "visita": "Liffa",
-     "goles_local": 3,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90556/"
-    },
-    {
-     "fecha": "2026-10-04T09:00:00",
-     "local": "Cerro Largo",
-     "visita": "Villa Teresa",
-     "goles_local": 3,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90547/"
     }
    ],
    "proximos_partidos": [
@@ -25214,7 +25277,7 @@
      "link_fuente": "https://lamovidaonline.net/event/90679/"
     }
    ],
-   "jugados": 11,
+   "jugados": 14,
    "programados": 36,
    "id": 721
   },
@@ -27989,6 +28052,49 @@
      ]
     },
     {
+     "equipo": "Salto",
+     "pj": 9,
+     "g": 4,
+     "e": 0,
+     "p": 5,
+     "gf": 15,
+     "gc": 14,
+     "dg": 1,
+     "pts": 12,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Plaza Colonia",
+       "marcador": "1-0",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "D",
+       "rival": "Cerrito",
+       "marcador": "2-3",
+       "fecha": "2026-10-18"
+      },
+      {
+       "r": "D",
+       "rival": "Miramar Misiones",
+       "marcador": "0-1",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Terremoto",
+       "marcador": "1-2",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Atenas",
+       "marcador": "3-1",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
      "equipo": "Fénix",
      "pj": 9,
      "g": 2,
@@ -28033,21 +28139,15 @@
     },
     {
      "equipo": "Atenas",
-     "pj": 8,
+     "pj": 9,
      "g": 3,
      "e": 1,
-     "p": 4,
-     "gf": 10,
-     "gc": 18,
-     "dg": -8,
+     "p": 5,
+     "gf": 11,
+     "gc": 21,
+     "dg": -10,
      "pts": 10,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Oriental",
-       "marcador": "1-0",
-       "fecha": "2026-09-23"
-      },
       {
        "r": "D",
        "rival": "Plaza Colonia",
@@ -28071,49 +28171,12 @@
        "rival": "La Luz",
        "marcador": "2-1",
        "fecha": "2026-11-01"
-      }
-     ]
-    },
-    {
-     "equipo": "Salto",
-     "pj": 8,
-     "g": 3,
-     "e": 0,
-     "p": 5,
-     "gf": 12,
-     "gc": 13,
-     "dg": -1,
-     "pts": 9,
-     "forma": [
+      },
       {
        "r": "D",
-       "rival": "Oriental",
+       "rival": "Salto",
        "marcador": "1-3",
-       "fecha": "2026-09-27"
-      },
-      {
-       "r": "V",
-       "rival": "Plaza Colonia",
-       "marcador": "1-0",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "D",
-       "rival": "Cerrito",
-       "marcador": "2-3",
-       "fecha": "2026-10-18"
-      },
-      {
-       "r": "D",
-       "rival": "Miramar Misiones",
-       "marcador": "0-1",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Terremoto",
-       "marcador": "1-2",
-       "fecha": "2026-11-01"
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -28292,13 +28355,22 @@
    ],
    "ultimos_resultados": [
     {
-     "fecha": "2026-11-01T11:00:00",
-     "local": "La Luz",
+     "fecha": "2026-11-08T11:00:00",
+     "local": "Salto",
      "visita": "Atenas",
-     "goles_local": 1,
-     "goles_visita": 2,
+     "goles_local": 3,
+     "goles_visita": 1,
      "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88461/"
+     "link_fuente": "https://lamovidaonline.net/event/88383/"
+    },
+    {
+     "fecha": "2026-11-01T11:00:00",
+     "local": "Terremoto",
+     "visita": "Salto",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/88464/"
     },
     {
      "fecha": "2026-11-01T11:00:00",
@@ -28311,21 +28383,12 @@
     },
     {
      "fecha": "2026-11-01T11:00:00",
-     "local": "Terremoto",
-     "visita": "Salto",
-     "goles_local": 2,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88464/"
-    },
-    {
-     "fecha": "2026-11-01T09:00:00",
-     "local": "Fénix",
-     "visita": "Oriental",
+     "local": "La Luz",
+     "visita": "Atenas",
      "goles_local": 1,
-     "goles_visita": 1,
+     "goles_visita": 2,
      "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88458/"
+     "link_fuente": "https://lamovidaonline.net/event/88461/"
     },
     {
      "fecha": "2026-11-01T09:00:00",
@@ -28335,6 +28398,15 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/88455/"
+    },
+    {
+     "fecha": "2026-11-01T09:00:00",
+     "local": "Fénix",
+     "visita": "Oriental",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/88458/"
     },
     {
      "fecha": "2026-10-25T11:00:00",
@@ -28389,15 +28461,6 @@
      "goles_visita": 2,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/88437/"
-    },
-    {
-     "fecha": "2026-10-18T11:00:00",
-     "local": "Cerrito",
-     "visita": "Salto",
-     "goles_local": 3,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88425/"
     }
    ],
    "proximos_partidos": [
@@ -28493,12 +28556,12 @@
     },
     {
      "fecha": "2026-11-22T12:00:00",
-     "local": "La Luz",
-     "visita": "Cerrito",
+     "local": "Fénix",
+     "visita": "Salto",
      "goles_local": null,
      "goles_visita": null,
      "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/88506/"
+     "link_fuente": "https://lamovidaonline.net/event/88503/"
     },
     {
      "fecha": "2026-11-22T12:00:00",
@@ -28510,7 +28573,7 @@
      "link_fuente": "https://lamovidaonline.net/event/88500/"
     }
    ],
-   "jugados": 57,
+   "jugados": 58,
    "programados": 94,
    "id": 704
   },
@@ -31932,14 +31995,14 @@
     },
     {
      "equipo": "Deportivo LSM",
-     "pj": 2,
+     "pj": 3,
      "g": 2,
-     "e": 0,
+     "e": 1,
      "p": 0,
-     "gf": 14,
-     "gc": 0,
+     "gf": 16,
+     "gc": 2,
      "dg": 14,
-     "pts": 6,
+     "pts": 7,
      "forma": [
       {
        "r": "V",
@@ -31952,19 +32015,25 @@
        "rival": "Liffa",
        "marcador": "11-0",
        "fecha": "2026-10-25"
+      },
+      {
+       "r": "E",
+       "rival": "Artigas",
+       "marcador": "2-2",
+       "fecha": "2026-11-08"
       }
      ]
     },
     {
      "equipo": "Artigas",
-     "pj": 2,
+     "pj": 3,
      "g": 2,
-     "e": 0,
+     "e": 1,
      "p": 0,
-     "gf": 13,
-     "gc": 1,
+     "gf": 15,
+     "gc": 3,
      "dg": 12,
-     "pts": 6,
+     "pts": 7,
      "forma": [
       {
        "r": "V",
@@ -31977,6 +32046,80 @@
        "rival": "Colon",
        "marcador": "4-1",
        "fecha": "2026-10-25"
+      },
+      {
+       "r": "E",
+       "rival": "Deportivo LSM",
+       "marcador": "2-2",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 3,
+     "g": 2,
+     "e": 0,
+     "p": 1,
+     "gf": 5,
+     "gc": 3,
+     "dg": 2,
+     "pts": 6,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Colon",
+       "marcador": "0-2",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "1-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "4-1",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Cerro Largo",
+     "pj": 4,
+     "g": 1,
+     "e": 2,
+     "p": 1,
+     "gf": 2,
+     "gc": 4,
+     "dg": -2,
+     "pts": 5,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Villa Teresa",
+       "marcador": "1-1",
+       "fecha": "2026-10-04"
+      },
+      {
+       "r": "D",
+       "rival": "Deportivo LSM",
+       "marcador": "0-3",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "1-0",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Central Español",
+       "marcador": "0-0",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -32012,71 +32155,15 @@
      ]
     },
     {
-     "equipo": "Cerro Largo",
-     "pj": 3,
-     "g": 1,
-     "e": 1,
-     "p": 1,
-     "gf": 2,
-     "gc": 4,
-     "dg": -2,
-     "pts": 4,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Villa Teresa",
-       "marcador": "1-1",
-       "fecha": "2026-10-04"
-      },
-      {
-       "r": "D",
-       "rival": "Deportivo LSM",
-       "marcador": "0-3",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "1-0",
-       "fecha": "2026-11-01"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro",
-     "pj": 2,
-     "g": 1,
-     "e": 0,
-     "p": 1,
-     "gf": 1,
-     "gc": 2,
-     "dg": -1,
-     "pts": 3,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Colon",
-       "marcador": "0-2",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "1-0",
-       "fecha": "2026-10-17"
-      }
-     ]
-    },
-    {
      "equipo": "Central Español",
-     "pj": 2,
+     "pj": 3,
      "g": 0,
-     "e": 0,
+     "e": 1,
      "p": 2,
      "gf": 0,
      "gc": 3,
      "dg": -3,
-     "pts": 0,
+     "pts": 1,
      "forma": [
       {
        "r": "D",
@@ -32089,6 +32176,12 @@
        "rival": "Villa Teresa",
        "marcador": "0-2",
        "fecha": "2026-10-25"
+      },
+      {
+       "r": "E",
+       "rival": "Cerro Largo",
+       "marcador": "0-0",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -32113,13 +32206,13 @@
     },
     {
      "equipo": "Liffa",
-     "pj": 3,
+     "pj": 4,
      "g": 0,
      "e": 0,
-     "p": 3,
-     "gf": 1,
-     "gc": 19,
-     "dg": -18,
+     "p": 4,
+     "gf": 2,
+     "gc": 23,
+     "dg": -21,
      "pts": 0,
      "forma": [
       {
@@ -32139,11 +32232,44 @@
        "rival": "Cerro Largo",
        "marcador": "0-1",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "1-4",
+       "fecha": "2026-11-07"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-08T13:00:00",
+     "local": "Cerro Largo",
+     "visita": "Central Español",
+     "goles_local": 0,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91750/"
+    },
+    {
+     "fecha": "2026-11-08T11:00:00",
+     "local": "Deportivo LSM",
+     "visita": "Artigas",
+     "goles_local": 2,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91756/"
+    },
+    {
+     "fecha": "2026-11-07T16:00:00",
+     "local": "Liffa",
+     "visita": "Cerro",
+     "goles_local": 1,
+     "goles_visita": 4,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91753/"
+    },
     {
      "fecha": "2026-11-01T12:00:00",
      "local": "Liffa",
@@ -32224,24 +32350,6 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/90698/"
-    },
-    {
-     "fecha": "2026-10-04T11:00:00",
-     "local": "Colon",
-     "visita": "Liffa",
-     "goles_local": 7,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90692/"
-    },
-    {
-     "fecha": "2026-10-04T11:00:00",
-     "local": "Cerro Largo",
-     "visita": "Villa Teresa",
-     "goles_local": 1,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90683/"
     }
    ],
    "proximos_partidos": [
@@ -32318,7 +32426,7 @@
      "link_fuente": "https://lamovidaonline.net/event/90815/"
     }
    ],
-   "jugados": 11,
+   "jugados": 14,
    "programados": 36,
    "id": 722
   },
@@ -33930,6 +34038,49 @@
      ]
     },
     {
+     "equipo": "Salto",
+     "pj": 9,
+     "g": 5,
+     "e": 1,
+     "p": 3,
+     "gf": 22,
+     "gc": 9,
+     "dg": 13,
+     "pts": 16,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Plaza Colonia",
+       "marcador": "0-3",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "V",
+       "rival": "Cerrito",
+       "marcador": "9-0",
+       "fecha": "2026-10-18"
+      },
+      {
+       "r": "D",
+       "rival": "Miramar Misiones",
+       "marcador": "1-2",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Terremoto",
+       "marcador": "0-1",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Atenas",
+       "marcador": "2-1",
+       "fecha": "2026-11-08"
+      }
+     ]
+    },
+    {
      "equipo": "Fénix",
      "pj": 9,
      "g": 4,
@@ -34059,49 +34210,6 @@
      ]
     },
     {
-     "equipo": "Salto",
-     "pj": 8,
-     "g": 4,
-     "e": 1,
-     "p": 3,
-     "gf": 20,
-     "gc": 8,
-     "dg": 12,
-     "pts": 13,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Oriental",
-       "marcador": "2-1",
-       "fecha": "2026-09-27"
-      },
-      {
-       "r": "D",
-       "rival": "Plaza Colonia",
-       "marcador": "0-3",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "Cerrito",
-       "marcador": "9-0",
-       "fecha": "2026-10-18"
-      },
-      {
-       "r": "D",
-       "rival": "Miramar Misiones",
-       "marcador": "1-2",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Terremoto",
-       "marcador": "0-1",
-       "fecha": "2026-11-01"
-      }
-     ]
-    },
-    {
      "equipo": "Oriental",
      "pj": 10,
      "g": 3,
@@ -34189,21 +34297,15 @@
     },
     {
      "equipo": "Atenas",
-     "pj": 8,
+     "pj": 9,
      "g": 3,
      "e": 0,
-     "p": 5,
-     "gf": 15,
-     "gc": 17,
-     "dg": -2,
+     "p": 6,
+     "gf": 16,
+     "gc": 19,
+     "dg": -3,
      "pts": 9,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Oriental",
-       "marcador": "1-2",
-       "fecha": "2026-09-23"
-      },
       {
        "r": "V",
        "rival": "Plaza Colonia",
@@ -34227,6 +34329,12 @@
        "rival": "La Luz",
        "marcador": "3-0",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "D",
+       "rival": "Salto",
+       "marcador": "1-2",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -34405,13 +34513,13 @@
    ],
    "ultimos_resultados": [
     {
-     "fecha": "2026-11-01T13:00:00",
-     "local": "Estudiantes del Plata",
-     "visita": "Plaza Colonia",
-     "goles_local": 0,
-     "goles_visita": 8,
+     "fecha": "2026-11-08T13:00:00",
+     "local": "Salto",
+     "visita": "Atenas",
+     "goles_local": 2,
+     "goles_visita": 1,
      "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88736/"
+     "link_fuente": "https://lamovidaonline.net/event/88670/"
     },
     {
      "fecha": "2026-11-01T13:00:00",
@@ -34430,6 +34538,15 @@
      "goles_visita": 3,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/88748/"
+    },
+    {
+     "fecha": "2026-11-01T13:00:00",
+     "local": "Estudiantes del Plata",
+     "visita": "Plaza Colonia",
+     "goles_local": 0,
+     "goles_visita": 8,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/88736/"
     },
     {
      "fecha": "2026-11-01T11:00:00",
@@ -34502,15 +34619,6 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/88727/"
-    },
-    {
-     "fecha": "2026-10-25T11:00:00",
-     "local": "Oriental",
-     "visita": "La Luz",
-     "goles_local": 2,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88724/"
     }
    ],
    "proximos_partidos": [
@@ -34623,7 +34731,7 @@
      "link_fuente": "https://lamovidaonline.net/event/88787/"
     }
    ],
-   "jugados": 58,
+   "jugados": 59,
    "programados": 81,
    "id": 703
   },
@@ -37017,14 +37125,14 @@
    "tabla": [
     {
      "equipo": "Deportivo LSM",
-     "pj": 2,
-     "g": 2,
+     "pj": 3,
+     "g": 3,
      "e": 0,
      "p": 0,
-     "gf": 13,
+     "gf": 15,
      "gc": 2,
-     "dg": 11,
-     "pts": 6,
+     "dg": 13,
+     "pts": 9,
      "forma": [
       {
        "r": "V",
@@ -37037,44 +37145,25 @@
        "rival": "Liffa",
        "marcador": "7-1",
        "fecha": "2026-10-25"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro",
-     "pj": 2,
-     "g": 2,
-     "e": 0,
-     "p": 0,
-     "gf": 5,
-     "gc": 1,
-     "dg": 4,
-     "pts": 6,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "4-1",
-       "fecha": "2026-10-07"
       },
       {
        "r": "V",
-       "rival": "Colon",
-       "marcador": "1-0",
-       "fecha": "2026-10-11"
+       "rival": "Artigas",
+       "marcador": "2-0",
+       "fecha": "2026-11-08"
       }
      ]
     },
     {
      "equipo": "Liffa",
-     "pj": 3,
-     "g": 2,
+     "pj": 4,
+     "g": 3,
      "e": 0,
      "p": 1,
-     "gf": 6,
-     "gc": 10,
-     "dg": -4,
-     "pts": 6,
+     "gf": 8,
+     "gc": 11,
+     "dg": -3,
+     "pts": 9,
      "forma": [
       {
        "r": "V",
@@ -37093,6 +37182,74 @@
        "rival": "Cerro Largo",
        "marcador": "2-1",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Cerro",
+       "marcador": "2-1",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 3,
+     "g": 2,
+     "e": 0,
+     "p": 1,
+     "gf": 6,
+     "gc": 3,
+     "dg": 3,
+     "pts": 6,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "4-1",
+       "fecha": "2026-10-07"
+      },
+      {
+       "r": "V",
+       "rival": "Colon",
+       "marcador": "1-0",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "D",
+       "rival": "Liffa",
+       "marcador": "1-2",
+       "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Central Español",
+     "pj": 3,
+     "g": 2,
+     "e": 0,
+     "p": 1,
+     "gf": 6,
+     "gc": 4,
+     "dg": 2,
+     "pts": 6,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "1-4",
+       "fecha": "2026-10-07"
+      },
+      {
+       "r": "V",
+       "rival": "Villa Teresa",
+       "marcador": "4-0",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "V",
+       "rival": "Cerro Largo",
+       "marcador": "1-0",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -37124,31 +37281,6 @@
        "rival": "Colon",
        "marcador": "1-1",
        "fecha": "2026-11-01"
-      }
-     ]
-    },
-    {
-     "equipo": "Central Español",
-     "pj": 2,
-     "g": 1,
-     "e": 0,
-     "p": 1,
-     "gf": 5,
-     "gc": 4,
-     "dg": 1,
-     "pts": 3,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Cerro",
-       "marcador": "1-4",
-       "fecha": "2026-10-07"
-      },
-      {
-       "r": "V",
-       "rival": "Villa Teresa",
-       "marcador": "4-0",
-       "fecha": "2026-10-25"
       }
      ]
     },
@@ -37191,13 +37323,13 @@
     },
     {
      "equipo": "Artigas",
-     "pj": 1,
+     "pj": 2,
      "g": 0,
      "e": 1,
-     "p": 0,
+     "p": 1,
      "gf": 2,
-     "gc": 2,
-     "dg": 0,
+     "gc": 4,
+     "dg": -2,
      "pts": 1,
      "forma": [
       {
@@ -37205,18 +37337,24 @@
        "rival": "Colon",
        "marcador": "2-2",
        "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Deportivo LSM",
+       "marcador": "0-2",
+       "fecha": "2026-11-08"
       }
      ]
     },
     {
      "equipo": "Cerro Largo",
-     "pj": 3,
+     "pj": 4,
      "g": 0,
      "e": 0,
-     "p": 3,
+     "p": 4,
      "gf": 3,
-     "gc": 10,
-     "dg": -7,
+     "gc": 11,
+     "dg": -8,
      "pts": 0,
      "forma": [
       {
@@ -37236,11 +37374,44 @@
        "rival": "Liffa",
        "marcador": "1-2",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "D",
+       "rival": "Central Español",
+       "marcador": "0-1",
+       "fecha": "2026-11-08"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-08T15:00:00",
+     "local": "Cerro Largo",
+     "visita": "Central Español",
+     "goles_local": 0,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91760/"
+    },
+    {
+     "fecha": "2026-11-08T13:00:00",
+     "local": "Deportivo LSM",
+     "visita": "Artigas",
+     "goles_local": 2,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91766/"
+    },
+    {
+     "fecha": "2026-11-07T14:00:00",
+     "local": "Liffa",
+     "visita": "Cerro",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91763/"
+    },
     {
      "fecha": "2026-11-01T14:00:00",
      "local": "Liffa",
@@ -37321,15 +37492,6 @@
      "goles_visita": 3,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/90828/"
-    },
-    {
-     "fecha": "2026-10-04T13:00:00",
-     "local": "Cerro Largo",
-     "visita": "Villa Teresa",
-     "goles_local": 1,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90819/"
     }
    ],
    "proximos_partidos": [
@@ -37406,7 +37568,7 @@
      "link_fuente": "https://lamovidaonline.net/event/90951/"
     }
    ],
-   "jugados": 10,
+   "jugados": 13,
    "programados": 36,
    "id": 723
   },
@@ -39795,21 +39957,15 @@
    "tabla": [
     {
      "equipo": "Salto",
-     "pj": 8,
+     "pj": 9,
      "g": 8,
-     "e": 0,
+     "e": 1,
      "p": 0,
-     "gf": 28,
-     "gc": 5,
+     "gf": 30,
+     "gc": 7,
      "dg": 23,
-     "pts": 24,
+     "pts": 25,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Oriental",
-       "marcador": "4-0",
-       "fecha": "2026-09-27"
-      },
       {
        "r": "V",
        "rival": "Plaza Colonia",
@@ -39833,6 +39989,12 @@
        "rival": "Terremoto",
        "marcador": "2-1",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Atenas",
+       "marcador": "2-2",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -40139,21 +40301,15 @@
     },
     {
      "equipo": "Atenas",
-     "pj": 8,
+     "pj": 9,
      "g": 2,
-     "e": 3,
+     "e": 4,
      "p": 3,
-     "gf": 11,
-     "gc": 17,
+     "gf": 13,
+     "gc": 19,
      "dg": -6,
-     "pts": 9,
+     "pts": 10,
      "forma": [
-      {
-       "r": "E",
-       "rival": "Oriental",
-       "marcador": "1-1",
-       "fecha": "2026-09-23"
-      },
       {
        "r": "V",
        "rival": "Plaza Colonia",
@@ -40177,6 +40333,12 @@
        "rival": "La Luz",
        "marcador": "1-1",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Salto",
+       "marcador": "2-2",
+       "fecha": "2026-11-08"
       }
      ]
     },
@@ -40355,13 +40517,13 @@
    ],
    "ultimos_resultados": [
     {
-     "fecha": "2026-11-01T15:00:00",
-     "local": "Estudiantes del Plata",
-     "visita": "Plaza Colonia",
-     "goles_local": 1,
-     "goles_visita": 3,
+     "fecha": "2026-11-08T15:00:00",
+     "local": "Salto",
+     "visita": "Atenas",
+     "goles_local": 2,
+     "goles_visita": 2,
      "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/89010/"
+     "link_fuente": "https://lamovidaonline.net/event/88944/"
     },
     {
      "fecha": "2026-11-01T15:00:00",
@@ -40380,6 +40542,15 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/89022/"
+    },
+    {
+     "fecha": "2026-11-01T15:00:00",
+     "local": "Estudiantes del Plata",
+     "visita": "Plaza Colonia",
+     "goles_local": 1,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/89010/"
     },
     {
      "fecha": "2026-11-01T13:00:00",
@@ -40452,15 +40623,6 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/89001/"
-    },
-    {
-     "fecha": "2026-10-25T13:00:00",
-     "local": "Oriental",
-     "visita": "La Luz",
-     "goles_local": 1,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88998/"
     }
    ],
    "proximos_partidos": [
@@ -40573,7 +40735,7 @@
      "link_fuente": "https://lamovidaonline.net/event/89061/"
     }
    ],
-   "jugados": 58,
+   "jugados": 59,
    "programados": 81,
    "id": 702
   },
