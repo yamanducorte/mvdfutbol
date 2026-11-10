@@ -40144,15 +40144,6 @@
   "nombre": "2026 AUFI Sub13 Torneo Final Serie A",
   "partidos": [
    {
-    "fecha": "2026-11-08T09:00:00",
-    "local": "Nacional Rojo",
-    "visita": "Boston River",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91374/"
-   },
-   {
     "fecha": "2026-11-08T10:00:00",
     "local": "Danubio",
     "visita": "Nacional Rojo",
@@ -40162,15 +40153,6 @@
     "link_fuente": "https://lamovidaonline.net/event/91368/"
    },
    {
-    "fecha": "2026-11-08T10:15:00",
-    "local": "River Plate",
-    "visita": "Danubio",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91377/"
-   },
-   {
     "fecha": "2026-11-08T13:00:00",
     "local": "River Plate",
     "visita": "Liverpool B",
@@ -40178,6 +40160,15 @@
     "goles_visita": 4,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91371/"
+   },
+   {
+    "fecha": "2026-11-15T09:00:00",
+    "local": "Nacional Rojo",
+    "visita": "Boston River",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91374/"
    },
    {
     "fecha": "2026-11-15T09:00:00",
@@ -40196,6 +40187,15 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91383/"
+   },
+   {
+    "fecha": "2026-11-15T10:30:00",
+    "local": "River Plate",
+    "visita": "Danubio",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91377/"
    },
    {
     "fecha": "2026-11-22T09:00:00",
@@ -40249,24 +40249,6 @@
     "link_fuente": "https://lamovidaonline.net/event/91402/"
    },
    {
-    "fecha": "2026-11-08T12:00:00",
-    "local": "Peñarol",
-    "visita": "Villa Teresa",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91405/"
-   },
-   {
-    "fecha": "2026-11-08T14:00:00",
-    "local": "Juventud",
-    "visita": "Nacional Blanco",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91408/"
-   },
-   {
     "fecha": "2026-11-11T19:00:00",
     "local": "Nacional Blanco",
     "visita": "Peñarol",
@@ -40277,12 +40259,30 @@
    },
    {
     "fecha": "2026-11-15T12:00:00",
+    "local": "Juventud",
+    "visita": "Nacional Blanco",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91408/"
+   },
+   {
+    "fecha": "2026-11-15T12:00:00",
     "local": "Villa Teresa",
     "visita": "Liverpool N",
     "goles_local": null,
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91411/"
+   },
+   {
+    "fecha": "2026-11-15T14:00:00",
+    "local": "Peñarol",
+    "visita": "Villa Teresa",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91405/"
    },
    {
     "fecha": "2026-11-15T14:00:00",

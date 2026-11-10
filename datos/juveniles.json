@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-10T10:59:22+00:00",
+ "generado": "2026-11-10T18:35:57+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -43504,6 +43504,15 @@
    "proximos_partidos": [
     {
      "fecha": "2026-11-15T09:00:00",
+     "local": "Nacional Rojo",
+     "visita": "Boston River",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91374/"
+    },
+    {
+     "fecha": "2026-11-15T09:00:00",
      "local": "Boston River",
      "visita": "Liverpool B",
      "goles_local": null,
@@ -43519,6 +43528,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91383/"
+    },
+    {
+     "fecha": "2026-11-15T10:30:00",
+     "local": "River Plate",
+     "visita": "Danubio",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91377/"
     },
     {
      "fecha": "2026-11-22T09:00:00",
@@ -43637,12 +43655,30 @@
     },
     {
      "fecha": "2026-11-15T12:00:00",
+     "local": "Juventud",
+     "visita": "Nacional Blanco",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91408/"
+    },
+    {
+     "fecha": "2026-11-15T12:00:00",
      "local": "Villa Teresa",
      "visita": "Liverpool N",
      "goles_local": null,
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91411/"
+    },
+    {
+     "fecha": "2026-11-15T14:00:00",
+     "local": "Peñarol",
+     "visita": "Villa Teresa",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91405/"
     },
     {
      "fecha": "2026-11-15T14:00:00",
