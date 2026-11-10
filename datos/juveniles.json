@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-10T07:02:09+00:00",
+ "generado": "2026-11-10T10:59:22+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -5196,7 +5196,7 @@
    "nombre": "Tercera División · Tabla anual",
    "titulo": "Tercera División · Tabla anual",
    "titulo_categoria": "Tercera División",
-   "estado": "en_curso",
+   "estado": "terminado",
    "orden_categoria": 20,
    "tabla": [
     {
@@ -6084,17 +6084,7 @@
      "link_fuente": "https://lamovidaonline.net/event/81103/"
     }
    ],
-   "proximos_partidos": [
-    {
-     "fecha": "2026-11-10T09:00:00",
-     "local": "Cerro Largo",
-     "visita": "Liverpool",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91664/"
-    }
-   ],
+   "proximos_partidos": [],
    "jugados": 295,
    "programados": 305,
    "calculada": true,
@@ -6115,7 +6105,7 @@
    "nombre": "2026 Torneo Clausura Tercera División",
    "titulo": "Tercera División · Torneo Clausura",
    "titulo_categoria": "Tercera División",
-   "estado": "en_curso",
+   "estado": "terminado",
    "orden_categoria": 20,
    "tabla": [
     {
@@ -7003,17 +6993,7 @@
      "link_fuente": "https://lamovidaonline.net/event/81103/"
     }
    ],
-   "proximos_partidos": [
-    {
-     "fecha": "2026-11-10T09:00:00",
-     "local": "Cerro Largo",
-     "visita": "Liverpool",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91664/"
-    }
-   ],
+   "proximos_partidos": [],
    "jugados": 142,
    "programados": 152,
    "id": 671
