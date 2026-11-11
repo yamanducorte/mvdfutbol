@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T18:34:37+00:00",
+ "generado": "2026-11-11T19:32:09+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -43644,15 +43644,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-11T19:00:00",
-     "local": "Nacional Blanco",
-     "visita": "Peñarol",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91399/"
-    },
     {
      "fecha": "2026-11-15T12:00:00",
      "local": "Juventud",
