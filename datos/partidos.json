@@ -40252,9 +40252,9 @@
     "fecha": "2026-11-11T19:00:00",
     "local": "Nacional Blanco",
     "visita": "Peñarol",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91399/"
    },
    {

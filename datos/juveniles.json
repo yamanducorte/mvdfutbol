@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T19:32:09+00:00",
+ "generado": "2026-11-12T01:41:56+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -43613,6 +43613,44 @@
      ]
     },
     {
+     "equipo": "Nacional Blanco",
+     "pj": 1,
+     "g": 0,
+     "e": 1,
+     "p": 0,
+     "gf": 1,
+     "gc": 1,
+     "dg": 0,
+     "pts": 1,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Peñarol",
+       "marcador": "1-1",
+       "fecha": "2026-11-11"
+      }
+     ]
+    },
+    {
+     "equipo": "Peñarol",
+     "pj": 1,
+     "g": 0,
+     "e": 1,
+     "p": 0,
+     "gf": 1,
+     "gc": 1,
+     "dg": 0,
+     "pts": 1,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Nacional Blanco",
+       "marcador": "1-1",
+       "fecha": "2026-11-11"
+      }
+     ]
+    },
+    {
      "equipo": "Liverpool N",
      "pj": 1,
      "g": 0,
@@ -43633,6 +43671,15 @@
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-11T19:00:00",
+     "local": "Nacional Blanco",
+     "visita": "Peñarol",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91399/"
+    },
     {
      "fecha": "2026-11-08T11:30:00",
      "local": "Juventud",
@@ -43717,7 +43764,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91426/"
     }
    ],
-   "jugados": 1,
+   "jugados": 2,
    "programados": 10,
    "id": 736
   },
