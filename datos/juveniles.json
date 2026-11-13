@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-13T01:00:46+00:00",
+ "generado": "2026-11-13T06:23:11+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -992,6 +992,49 @@
      ]
     },
     {
+     "equipo": "Colon",
+     "pj": 20,
+     "g": 11,
+     "e": 3,
+     "p": 6,
+     "gf": 50,
+     "gc": 31,
+     "dg": 19,
+     "pts": 36,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Villa Teresa",
+       "marcador": "2-0",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Villa Teresa",
+       "marcador": "4-1",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Villa Teresa",
+       "marcador": "1-1",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Villa Teresa",
+       "marcador": "0-0",
+       "fecha": "2026-11-04"
+      },
+      {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "3-0",
+       "fecha": "2026-11-11"
+      }
+     ]
+    },
+    {
      "equipo": "Cerro",
      "pj": 17,
      "g": 11,
@@ -1035,58 +1078,15 @@
      ]
     },
     {
-     "equipo": "Colon",
-     "pj": 18,
-     "g": 10,
-     "e": 2,
-     "p": 6,
-     "gf": 47,
-     "gc": 31,
-     "dg": 16,
-     "pts": 32,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Artigas",
-       "marcador": "1-4",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Artigas",
-       "marcador": "3-4",
-       "fecha": "2026-10-27"
-      },
-      {
-       "r": "V",
-       "rival": "Villa Teresa",
-       "marcador": "2-0",
-       "fecha": "2026-11-01"
-      },
-      {
-       "r": "V",
-       "rival": "Villa Teresa",
-       "marcador": "4-1",
-       "fecha": "2026-11-01"
-      },
-      {
-       "r": "E",
-       "rival": "Villa Teresa",
-       "marcador": "1-1",
-       "fecha": "2026-11-01"
-      }
-     ]
-    },
-    {
      "equipo": "Cerro Largo",
-     "pj": 20,
-     "g": 8,
+     "pj": 21,
+     "g": 9,
      "e": 4,
      "p": 8,
-     "gf": 40,
+     "gf": 43,
      "gc": 30,
-     "dg": 10,
-     "pts": 28,
+     "dg": 13,
+     "pts": 31,
      "forma": [
       {
        "r": "V",
@@ -1165,21 +1165,15 @@
     },
     {
      "equipo": "Villa Teresa",
-     "pj": 13,
-     "g": 4,
-     "e": 5,
+     "pj": 15,
+     "g": 5,
+     "e": 6,
      "p": 4,
-     "gf": 17,
+     "gf": 20,
      "gc": 18,
-     "dg": -1,
-     "pts": 17,
+     "dg": 2,
+     "pts": 21,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "2-0",
-       "fecha": "2026-10-25"
-      },
       {
        "r": "D",
        "rival": "Central Español",
@@ -1203,19 +1197,25 @@
        "rival": "Colon",
        "marcador": "1-1",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Colon",
+       "marcador": "0-0",
+       "fecha": "2026-11-04"
       }
      ]
     },
     {
      "equipo": "Central Español",
-     "pj": 16,
-     "g": 3,
+     "pj": 17,
+     "g": 4,
      "e": 3,
      "p": 10,
-     "gf": 15,
+     "gf": 18,
      "gc": 30,
-     "dg": -15,
-     "pts": 12,
+     "dg": -12,
+     "pts": 15,
      "forma": [
       {
        "r": "D",
@@ -1294,27 +1294,15 @@
     },
     {
      "equipo": "Deportivo C.E.M.",
-     "pj": 4,
+     "pj": 8,
      "g": 0,
      "e": 1,
-     "p": 3,
+     "p": 7,
      "gf": 1,
-     "gc": 17,
-     "dg": -16,
+     "gc": 29,
+     "dg": -28,
      "pts": 1,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Artigas",
-       "marcador": "0-5",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "D",
-       "rival": "Artigas",
-       "marcador": "0-2",
-       "fecha": "2026-10-17"
-      },
       {
        "r": "E",
        "rival": "Artigas",
@@ -1326,11 +1314,38 @@
        "rival": "Artigas",
        "marcador": "0-9",
        "fecha": "2026-10-18"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro Largo",
+       "marcador": "0-3",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "D",
+       "rival": "Central Español",
+       "marcador": "0-3",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Colon",
+       "marcador": "0-3",
+       "fecha": "2026-11-11"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-11T14:00:00",
+     "local": "Colon",
+     "visita": "Deportivo C.E.M.",
+     "goles_local": 3,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/90341/"
+    },
     {
      "fecha": "2026-11-08T15:00:00",
      "local": "Cerro Largo",
@@ -1429,15 +1444,6 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/91733/"
-    },
-    {
-     "fecha": "2026-11-07T11:00:00",
-     "local": "Central Español",
-     "visita": "Cerro Largo",
-     "goles_local": 4,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/91730/"
     }
    ],
    "proximos_partidos": [
@@ -1550,8 +1556,8 @@
      "link_fuente": "https://lamovidaonline.net/event/90398/"
     }
    ],
-   "jugados": 70,
-   "programados": 239,
+   "jugados": 75,
+   "programados": 240,
    "general": true,
    "calculada": true,
    "suma_de": [
@@ -8846,14 +8852,14 @@
    "tabla": [
     {
      "equipo": "Cerro Largo",
-     "pj": 4,
-     "g": 3,
+     "pj": 5,
+     "g": 4,
      "e": 1,
      "p": 0,
-     "gf": 9,
+     "gf": 12,
      "gc": 3,
-     "dg": 6,
-     "pts": 10,
+     "dg": 9,
+     "pts": 13,
      "forma": [
       {
        "r": "V",
@@ -8869,6 +8875,12 @@
       },
       {
        "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "3-0",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "V",
        "rival": "Liffa",
        "marcador": "4-0",
        "fecha": "2026-10-31"
@@ -8878,6 +8890,49 @@
        "rival": "Central Español",
        "marcador": "1-0",
        "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Colon",
+     "pj": 5,
+     "g": 3,
+     "e": 1,
+     "p": 1,
+     "gf": 11,
+     "gc": 5,
+     "dg": 6,
+     "pts": 10,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "4-0",
+       "fecha": "2026-10-03"
+      },
+      {
+       "r": "V",
+       "rival": "Cerro",
+       "marcador": "2-1",
+       "fecha": "2026-10-10"
+      },
+      {
+       "r": "D",
+       "rival": "Artigas",
+       "marcador": "2-4",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "E",
+       "rival": "Villa Teresa",
+       "marcador": "0-0",
+       "fecha": "2026-11-04"
+      },
+      {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "3-0",
+       "fecha": "2026-11-11"
       }
      ]
     },
@@ -8919,6 +8974,43 @@
      ]
     },
     {
+     "equipo": "Villa Teresa",
+     "pj": 4,
+     "g": 2,
+     "e": 2,
+     "p": 0,
+     "gf": 9,
+     "gc": 0,
+     "dg": 9,
+     "pts": 8,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "3-0",
+       "fecha": "2026-10-12"
+      },
+      {
+       "r": "E",
+       "rival": "Cerro Largo",
+       "marcador": "0-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "6-0",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "E",
+       "rival": "Colon",
+       "marcador": "0-0",
+       "fecha": "2026-11-04"
+      }
+     ]
+    },
+    {
      "equipo": "Artigas",
      "pj": 4,
      "g": 2,
@@ -8952,62 +9044,6 @@
        "rival": "Deportivo LSM",
        "marcador": "1-1",
        "fecha": "2026-11-07"
-      }
-     ]
-    },
-    {
-     "equipo": "Colon",
-     "pj": 3,
-     "g": 2,
-     "e": 0,
-     "p": 1,
-     "gf": 8,
-     "gc": 5,
-     "dg": 3,
-     "pts": 6,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "4-0",
-       "fecha": "2026-10-03"
-      },
-      {
-       "r": "V",
-       "rival": "Cerro",
-       "marcador": "2-1",
-       "fecha": "2026-10-10"
-      },
-      {
-       "r": "D",
-       "rival": "Artigas",
-       "marcador": "2-4",
-       "fecha": "2026-10-24"
-      }
-     ]
-    },
-    {
-     "equipo": "Villa Teresa",
-     "pj": 2,
-     "g": 1,
-     "e": 1,
-     "p": 0,
-     "gf": 6,
-     "gc": 0,
-     "dg": 6,
-     "pts": 4,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Cerro Largo",
-       "marcador": "0-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "6-0",
-       "fecha": "2026-10-24"
       }
      ]
     },
@@ -9050,14 +9086,14 @@
     },
     {
      "equipo": "Central Español",
-     "pj": 4,
-     "g": 0,
+     "pj": 5,
+     "g": 1,
      "e": 1,
      "p": 3,
-     "gf": 0,
+     "gf": 3,
      "gc": 11,
-     "dg": -11,
-     "pts": 1,
+     "dg": -8,
+     "pts": 4,
      "forma": [
       {
        "r": "E",
@@ -9078,6 +9114,12 @@
        "fecha": "2026-10-24"
       },
       {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "3-0",
+       "fecha": "2026-10-31"
+      },
+      {
        "r": "D",
        "rival": "Cerro Largo",
        "marcador": "0-1",
@@ -9087,20 +9129,44 @@
     },
     {
      "equipo": "Deportivo C.E.M.",
-     "pj": 1,
+     "pj": 5,
      "g": 0,
      "e": 0,
-     "p": 1,
+     "p": 5,
      "gf": 0,
-     "gc": 5,
-     "dg": -5,
+     "gc": 17,
+     "dg": -17,
      "pts": 0,
      "forma": [
+      {
+       "r": "D",
+       "rival": "Villa Teresa",
+       "marcador": "0-3",
+       "fecha": "2026-10-12"
+      },
       {
        "r": "D",
        "rival": "Artigas",
        "marcador": "0-5",
        "fecha": "2026-10-17"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro Largo",
+       "marcador": "0-3",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "D",
+       "rival": "Central Español",
+       "marcador": "0-3",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Colon",
+       "marcador": "0-3",
+       "fecha": "2026-11-11"
       }
      ]
     },
@@ -9144,6 +9210,15 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-11T14:00:00",
+     "local": "Colon",
+     "visita": "Deportivo C.E.M.",
+     "goles_local": 3,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/90341/"
+    },
+    {
      "fecha": "2026-11-07T11:00:00",
      "local": "Artigas",
      "visita": "Deportivo LSM",
@@ -9171,6 +9246,15 @@
      "link_fuente": "https://lamovidaonline.net/event/91720/"
     },
     {
+     "fecha": "2026-11-04T11:00:00",
+     "local": "Villa Teresa",
+     "visita": "Colon",
+     "goles_local": 0,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/90329/"
+    },
+    {
      "fecha": "2026-10-31T09:00:00",
      "local": "Deportivo LSM",
      "visita": "Cerro",
@@ -9178,6 +9262,15 @@
      "goles_visita": 3,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/90326/"
+    },
+    {
+     "fecha": "2026-10-31T09:00:00",
+     "local": "Deportivo C.E.M.",
+     "visita": "Central Español",
+     "goles_local": 0,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/90323/"
     },
     {
      "fecha": "2026-10-31T09:00:00",
@@ -9216,40 +9309,13 @@
      "link_fuente": "https://lamovidaonline.net/event/90311/"
     },
     {
-     "fecha": "2026-10-17T09:00:00",
-     "local": "Villa Teresa",
+     "fecha": "2026-10-24T09:00:00",
+     "local": "Deportivo C.E.M.",
      "visita": "Cerro Largo",
      "goles_local": 0,
-     "goles_visita": 0,
+     "goles_visita": 3,
      "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90275/"
-    },
-    {
-     "fecha": "2026-10-17T09:00:00",
-     "local": "Deportivo C.E.M.",
-     "visita": "Artigas",
-     "goles_local": 0,
-     "goles_visita": 5,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90281/"
-    },
-    {
-     "fecha": "2026-10-16T08:30:00",
-     "local": "Central Español",
-     "visita": "Cerro",
-     "goles_local": 0,
-     "goles_visita": 4,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90287/"
-    },
-    {
-     "fecha": "2026-10-11T09:00:00",
-     "local": "Artigas",
-     "visita": "Central Español",
-     "goles_local": 0,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90299/"
+     "link_fuente": "https://lamovidaonline.net/event/90305/"
     }
    ],
    "proximos_partidos": [
@@ -9362,8 +9428,8 @@
      "link_fuente": "https://lamovidaonline.net/event/91580/"
     }
    ],
-   "jugados": 15,
-   "programados": 63,
+   "jugados": 20,
+   "programados": 64,
    "calculada": true,
    "suma_de": [
     "Torneo Clausura"
@@ -11048,14 +11114,14 @@
    "tabla": [
     {
      "equipo": "Cerro Largo",
-     "pj": 4,
-     "g": 3,
+     "pj": 5,
+     "g": 4,
      "e": 1,
      "p": 0,
-     "gf": 9,
+     "gf": 12,
      "gc": 3,
-     "dg": 6,
-     "pts": 10,
+     "dg": 9,
+     "pts": 13,
      "forma": [
       {
        "r": "V",
@@ -11071,6 +11137,12 @@
       },
       {
        "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "3-0",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "V",
        "rival": "Liffa",
        "marcador": "4-0",
        "fecha": "2026-10-31"
@@ -11080,6 +11152,49 @@
        "rival": "Central Español",
        "marcador": "1-0",
        "fecha": "2026-11-07"
+      }
+     ]
+    },
+    {
+     "equipo": "Colon",
+     "pj": 5,
+     "g": 3,
+     "e": 1,
+     "p": 1,
+     "gf": 11,
+     "gc": 5,
+     "dg": 6,
+     "pts": 10,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Liffa",
+       "marcador": "4-0",
+       "fecha": "2026-10-03"
+      },
+      {
+       "r": "V",
+       "rival": "Cerro",
+       "marcador": "2-1",
+       "fecha": "2026-10-10"
+      },
+      {
+       "r": "D",
+       "rival": "Artigas",
+       "marcador": "2-4",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "E",
+       "rival": "Villa Teresa",
+       "marcador": "0-0",
+       "fecha": "2026-11-04"
+      },
+      {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "3-0",
+       "fecha": "2026-11-11"
       }
      ]
     },
@@ -11121,6 +11236,43 @@
      ]
     },
     {
+     "equipo": "Villa Teresa",
+     "pj": 4,
+     "g": 2,
+     "e": 2,
+     "p": 0,
+     "gf": 9,
+     "gc": 0,
+     "dg": 9,
+     "pts": 8,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "3-0",
+       "fecha": "2026-10-12"
+      },
+      {
+       "r": "E",
+       "rival": "Cerro Largo",
+       "marcador": "0-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "6-0",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "E",
+       "rival": "Colon",
+       "marcador": "0-0",
+       "fecha": "2026-11-04"
+      }
+     ]
+    },
+    {
      "equipo": "Artigas",
      "pj": 4,
      "g": 2,
@@ -11154,62 +11306,6 @@
        "rival": "Deportivo LSM",
        "marcador": "1-1",
        "fecha": "2026-11-07"
-      }
-     ]
-    },
-    {
-     "equipo": "Colon",
-     "pj": 3,
-     "g": 2,
-     "e": 0,
-     "p": 1,
-     "gf": 8,
-     "gc": 5,
-     "dg": 3,
-     "pts": 6,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Liffa",
-       "marcador": "4-0",
-       "fecha": "2026-10-03"
-      },
-      {
-       "r": "V",
-       "rival": "Cerro",
-       "marcador": "2-1",
-       "fecha": "2026-10-10"
-      },
-      {
-       "r": "D",
-       "rival": "Artigas",
-       "marcador": "2-4",
-       "fecha": "2026-10-24"
-      }
-     ]
-    },
-    {
-     "equipo": "Villa Teresa",
-     "pj": 2,
-     "g": 1,
-     "e": 1,
-     "p": 0,
-     "gf": 6,
-     "gc": 0,
-     "dg": 6,
-     "pts": 4,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Cerro Largo",
-       "marcador": "0-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "6-0",
-       "fecha": "2026-10-24"
       }
      ]
     },
@@ -11252,14 +11348,14 @@
     },
     {
      "equipo": "Central Español",
-     "pj": 4,
-     "g": 0,
+     "pj": 5,
+     "g": 1,
      "e": 1,
      "p": 3,
-     "gf": 0,
+     "gf": 3,
      "gc": 11,
-     "dg": -11,
-     "pts": 1,
+     "dg": -8,
+     "pts": 4,
      "forma": [
       {
        "r": "E",
@@ -11280,6 +11376,12 @@
        "fecha": "2026-10-24"
       },
       {
+       "r": "V",
+       "rival": "Deportivo C.E.M.",
+       "marcador": "3-0",
+       "fecha": "2026-10-31"
+      },
+      {
        "r": "D",
        "rival": "Cerro Largo",
        "marcador": "0-1",
@@ -11289,20 +11391,44 @@
     },
     {
      "equipo": "Deportivo C.E.M.",
-     "pj": 1,
+     "pj": 5,
      "g": 0,
      "e": 0,
-     "p": 1,
+     "p": 5,
      "gf": 0,
-     "gc": 5,
-     "dg": -5,
+     "gc": 17,
+     "dg": -17,
      "pts": 0,
      "forma": [
+      {
+       "r": "D",
+       "rival": "Villa Teresa",
+       "marcador": "0-3",
+       "fecha": "2026-10-12"
+      },
       {
        "r": "D",
        "rival": "Artigas",
        "marcador": "0-5",
        "fecha": "2026-10-17"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro Largo",
+       "marcador": "0-3",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "D",
+       "rival": "Central Español",
+       "marcador": "0-3",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "D",
+       "rival": "Colon",
+       "marcador": "0-3",
+       "fecha": "2026-11-11"
       }
      ]
     },
@@ -11346,6 +11472,15 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-11T14:00:00",
+     "local": "Colon",
+     "visita": "Deportivo C.E.M.",
+     "goles_local": 3,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/90341/"
+    },
+    {
      "fecha": "2026-11-07T11:00:00",
      "local": "Artigas",
      "visita": "Deportivo LSM",
@@ -11373,6 +11508,15 @@
      "link_fuente": "https://lamovidaonline.net/event/91720/"
     },
     {
+     "fecha": "2026-11-04T11:00:00",
+     "local": "Villa Teresa",
+     "visita": "Colon",
+     "goles_local": 0,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/90329/"
+    },
+    {
      "fecha": "2026-10-31T09:00:00",
      "local": "Deportivo LSM",
      "visita": "Cerro",
@@ -11380,6 +11524,15 @@
      "goles_visita": 3,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/90326/"
+    },
+    {
+     "fecha": "2026-10-31T09:00:00",
+     "local": "Deportivo C.E.M.",
+     "visita": "Central Español",
+     "goles_local": 0,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/90323/"
     },
     {
      "fecha": "2026-10-31T09:00:00",
@@ -11418,40 +11571,13 @@
      "link_fuente": "https://lamovidaonline.net/event/90311/"
     },
     {
-     "fecha": "2026-10-17T09:00:00",
-     "local": "Villa Teresa",
+     "fecha": "2026-10-24T09:00:00",
+     "local": "Deportivo C.E.M.",
      "visita": "Cerro Largo",
      "goles_local": 0,
-     "goles_visita": 0,
+     "goles_visita": 3,
      "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90275/"
-    },
-    {
-     "fecha": "2026-10-17T09:00:00",
-     "local": "Deportivo C.E.M.",
-     "visita": "Artigas",
-     "goles_local": 0,
-     "goles_visita": 5,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90281/"
-    },
-    {
-     "fecha": "2026-10-16T08:30:00",
-     "local": "Central Español",
-     "visita": "Cerro",
-     "goles_local": 0,
-     "goles_visita": 4,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90287/"
-    },
-    {
-     "fecha": "2026-10-11T09:00:00",
-     "local": "Artigas",
-     "visita": "Central Español",
-     "goles_local": 0,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/90299/"
+     "link_fuente": "https://lamovidaonline.net/event/90305/"
     }
    ],
    "proximos_partidos": [
@@ -11528,8 +11654,8 @@
      "link_fuente": "https://lamovidaonline.net/event/90398/"
     }
    ],
-   "jugados": 15,
-   "programados": 35,
+   "jugados": 20,
+   "programados": 36,
    "id": 719
   },
   {
@@ -34253,9 +34379,9 @@
      "g": 5,
      "e": 0,
      "p": 4,
-     "gf": 25,
+     "gf": 26,
      "gc": 14,
-     "dg": 11,
+     "dg": 12,
      "pts": 15,
      "forma": [
       {
@@ -34285,7 +34411,7 @@
       {
        "r": "V",
        "rival": "Estudiantes del Plata",
-       "marcador": "8-0",
+       "marcador": "9-0",
        "fecha": "2026-11-01"
       }
      ]
@@ -34598,8 +34724,8 @@
      "e": 1,
      "p": 8,
      "gf": 4,
-     "gc": 37,
-     "dg": -33,
+     "gc": 38,
+     "dg": -34,
      "pts": 1,
      "forma": [
       {
@@ -34629,7 +34755,7 @@
       {
        "r": "D",
        "rival": "Plaza Colonia",
-       "marcador": "0-8",
+       "marcador": "0-9",
        "fecha": "2026-11-01"
       }
      ]
@@ -34668,7 +34794,7 @@
      "local": "Estudiantes del Plata",
      "visita": "Plaza Colonia",
      "goles_local": 0,
-     "goles_visita": 8,
+     "goles_visita": 9,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/88736/"
     },

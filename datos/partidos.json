@@ -35558,7 +35558,7 @@
     "local": "Estudiantes del Plata",
     "visita": "Plaza Colonia",
     "goles_local": 0,
-    "goles_visita": 8,
+    "goles_visita": 9,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/88736/"
    },
@@ -38110,9 +38110,9 @@
     "fecha": "2026-10-12T09:00:00",
     "local": "Villa Teresa",
     "visita": "Deportivo C.E.M.",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/90293/"
    },
    {
@@ -38146,9 +38146,9 @@
     "fecha": "2026-10-24T09:00:00",
     "local": "Deportivo C.E.M.",
     "visita": "Cerro Largo",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/90305/"
    },
    {
@@ -38191,9 +38191,9 @@
     "fecha": "2026-10-31T09:00:00",
     "local": "Deportivo C.E.M.",
     "visita": "Central Español",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/90323/"
    },
    {
@@ -38245,9 +38245,9 @@
     "fecha": "2026-11-04T11:00:00",
     "local": "Villa Teresa",
     "visita": "Colon",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/90329/"
    },
    {
@@ -38312,6 +38312,15 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/90392/"
+   },
+   {
+    "fecha": "2026-11-11T14:00:00",
+    "local": "Colon",
+    "visita": "Deportivo C.E.M.",
+    "goles_local": 3,
+    "goles_visita": 0,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/90341/"
    },
    {
     "fecha": "2026-11-14T08:30:00",
