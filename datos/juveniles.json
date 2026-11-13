@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-12T19:50:49+00:00",
+ "generado": "2026-11-13T01:00:46+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -2376,15 +2376,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-12T20:00:00",
-     "local": "Cerro Largo",
-     "visita": "Progreso",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83256/"
-    },
-    {
      "fecha": "2026-11-13T17:00:00",
      "local": "M.C.Torque",
      "visita": "Racing",
@@ -2482,6 +2473,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/83247/"
+    },
+    {
+     "fecha": "2026-11-14T20:00:00",
+     "local": "Nacional",
+     "visita": "Albion",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83244/"
     }
    ],
    "jugados": 280,
@@ -3309,15 +3309,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-12T20:00:00",
-     "local": "Cerro Largo",
-     "visita": "Progreso",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83256/"
-    },
-    {
      "fecha": "2026-11-13T17:00:00",
      "local": "M.C.Torque",
      "visita": "Racing",
@@ -3415,6 +3406,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/83247/"
+    },
+    {
+     "fecha": "2026-11-14T20:00:00",
+     "local": "Nacional",
+     "visita": "Albion",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83244/"
     }
    ],
    "jugados": 104,
