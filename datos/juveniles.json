@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-13T10:49:33+00:00",
+ "generado": "2026-11-13T18:28:17+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -815,24 +815,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-13T11:15:00",
-     "local": "M.C.Torque",
-     "visita": "Racing",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91881/"
-    },
-    {
-     "fecha": "2026-11-13T12:00:00",
-     "local": "Dep. Maldonado",
-     "visita": "Wanderers",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91915/"
-    },
-    {
      "fecha": "2026-11-14T08:00:00",
      "local": "Paysandú",
      "visita": "Peñarol",
@@ -921,6 +903,24 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91912/"
+    },
+    {
+     "fecha": "2026-11-14T09:00:00",
+     "local": "Danubio",
+     "visita": "Albion",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91918/"
+    },
+    {
+     "fecha": "2026-11-14T10:00:00",
+     "local": "Paysandú",
+     "visita": "Peñarol",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91978/"
     }
    ],
    "jugados": 1080,
@@ -2056,21 +2056,15 @@
     },
     {
      "equipo": "Cerro Largo",
-     "pj": 35,
+     "pj": 36,
      "g": 9,
-     "e": 10,
+     "e": 11,
      "p": 16,
-     "gf": 33,
-     "gc": 42,
+     "gf": 35,
+     "gc": 44,
      "dg": -9,
-     "pts": 37,
+     "pts": 38,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Danubio",
-       "marcador": "1-2",
-       "fecha": "2026-10-04"
-      },
       {
        "r": "D",
        "rival": "Albion",
@@ -2094,6 +2088,12 @@
        "rival": "Racing",
        "marcador": "1-3",
        "fecha": "2026-10-31"
+      },
+      {
+       "r": "E",
+       "rival": "Progreso",
+       "marcador": "2-2",
+       "fecha": "2026-11-12"
       }
      ]
     },
@@ -2185,21 +2185,15 @@
     },
     {
      "equipo": "Progreso",
-     "pj": 35,
+     "pj": 36,
      "g": 10,
-     "e": 5,
+     "e": 6,
      "p": 20,
-     "gf": 31,
-     "gc": 49,
+     "gf": 33,
+     "gc": 51,
      "dg": -18,
-     "pts": 35,
+     "pts": 36,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Liverpool",
-       "marcador": "2-3",
-       "fecha": "2026-10-03"
-      },
       {
        "r": "E",
        "rival": "Peñarol",
@@ -2223,6 +2217,12 @@
        "rival": "Defensor Sp",
        "marcador": "0-2",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Cerro Largo",
+       "marcador": "2-2",
+       "fecha": "2026-11-12"
       }
      ]
     },
@@ -2271,6 +2271,15 @@
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-12T20:00:00",
+     "local": "Cerro Largo",
+     "visita": "Progreso",
+     "goles_local": 2,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83256/"
+    },
     {
      "fecha": "2026-11-02T20:00:00",
      "local": "Albion",
@@ -2369,27 +2378,9 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/83202/"
-    },
-    {
-     "fecha": "2026-10-25T10:00:00",
-     "local": "Wanderers",
-     "visita": "Progreso",
-     "goles_local": 0,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83211/"
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-13T17:00:00",
-     "local": "M.C.Torque",
-     "visita": "Racing",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83253/"
-    },
     {
      "fecha": "2026-11-14T05:00:00",
      "local": "Liverpool",
@@ -2488,9 +2479,18 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/83244/"
+    },
+    {
+     "fecha": "2026-11-14T20:00:00",
+     "local": "Defensor Sp",
+     "visita": "Peñarol",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83259/"
     }
    ],
-   "jugados": 280,
+   "jugados": 281,
    "programados": 296,
    "calculada": true,
    "suma_de": [
@@ -2730,6 +2730,49 @@
      ]
     },
     {
+     "equipo": "Progreso",
+     "pj": 14,
+     "g": 6,
+     "e": 2,
+     "p": 6,
+     "gf": 15,
+     "gc": 17,
+     "dg": -2,
+     "pts": 20,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Peñarol",
+       "marcador": "1-1",
+       "fecha": "2026-10-10"
+      },
+      {
+       "r": "V",
+       "rival": "Juventud",
+       "marcador": "2-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "V",
+       "rival": "Wanderers",
+       "marcador": "1-0",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Defensor Sp",
+       "marcador": "0-2",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Cerro Largo",
+       "marcador": "2-2",
+       "fecha": "2026-11-12"
+      }
+     ]
+    },
+    {
      "equipo": "Racing",
      "pj": 13,
      "g": 5,
@@ -2769,49 +2812,6 @@
        "rival": "Cerro Largo",
        "marcador": "3-1",
        "fecha": "2026-10-31"
-      }
-     ]
-    },
-    {
-     "equipo": "Progreso",
-     "pj": 13,
-     "g": 6,
-     "e": 1,
-     "p": 6,
-     "gf": 13,
-     "gc": 15,
-     "dg": -2,
-     "pts": 19,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Liverpool",
-       "marcador": "2-3",
-       "fecha": "2026-10-03"
-      },
-      {
-       "r": "E",
-       "rival": "Peñarol",
-       "marcador": "1-1",
-       "fecha": "2026-10-10"
-      },
-      {
-       "r": "V",
-       "rival": "Juventud",
-       "marcador": "2-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "V",
-       "rival": "Wanderers",
-       "marcador": "1-0",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Defensor Sp",
-       "marcador": "0-2",
-       "fecha": "2026-11-01"
       }
      ]
     },
@@ -3074,6 +3074,49 @@
      ]
     },
     {
+     "equipo": "Cerro Largo",
+     "pj": 14,
+     "g": 1,
+     "e": 7,
+     "p": 6,
+     "gf": 12,
+     "gc": 19,
+     "dg": -7,
+     "pts": 10,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Albion",
+       "marcador": "0-1",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "E",
+       "rival": "Cerro",
+       "marcador": "1-1",
+       "fecha": "2026-10-16"
+      },
+      {
+       "r": "V",
+       "rival": "Boston River",
+       "marcador": "2-0",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Racing",
+       "marcador": "1-3",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "E",
+       "rival": "Progreso",
+       "marcador": "2-2",
+       "fecha": "2026-11-12"
+      }
+     ]
+    },
+    {
      "equipo": "Danubio",
      "pj": 13,
      "g": 2,
@@ -3113,49 +3156,6 @@
        "rival": "Nacional",
        "marcador": "1-2",
        "fecha": "2026-11-01"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro Largo",
-     "pj": 13,
-     "g": 1,
-     "e": 6,
-     "p": 6,
-     "gf": 10,
-     "gc": 17,
-     "dg": -7,
-     "pts": 9,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Danubio",
-       "marcador": "1-2",
-       "fecha": "2026-10-04"
-      },
-      {
-       "r": "D",
-       "rival": "Albion",
-       "marcador": "0-1",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "E",
-       "rival": "Cerro",
-       "marcador": "1-1",
-       "fecha": "2026-10-16"
-      },
-      {
-       "r": "V",
-       "rival": "Boston River",
-       "marcador": "2-0",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Racing",
-       "marcador": "1-3",
-       "fecha": "2026-10-31"
       }
      ]
     },
@@ -3204,6 +3204,15 @@
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-12T20:00:00",
+     "local": "Cerro Largo",
+     "visita": "Progreso",
+     "goles_local": 2,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83256/"
+    },
     {
      "fecha": "2026-11-02T20:00:00",
      "local": "Albion",
@@ -3302,27 +3311,9 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/83202/"
-    },
-    {
-     "fecha": "2026-10-25T10:00:00",
-     "local": "Wanderers",
-     "visita": "Progreso",
-     "goles_local": 0,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83211/"
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-13T17:00:00",
-     "local": "M.C.Torque",
-     "visita": "Racing",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83253/"
-    },
     {
      "fecha": "2026-11-14T05:00:00",
      "local": "Liverpool",
@@ -3421,9 +3412,18 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/83244/"
+    },
+    {
+     "fecha": "2026-11-14T20:00:00",
+     "local": "Defensor Sp",
+     "visita": "Peñarol",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/83259/"
     }
    ],
-   "jugados": 104,
+   "jugados": 105,
    "programados": 120,
    "id": 676
   },
@@ -8721,15 +8721,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-13T11:15:00",
-     "local": "M.C.Torque",
-     "visita": "Racing",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91881/"
-    },
-    {
      "fecha": "2026-11-14T08:00:00",
      "local": "Peñarol",
      "visita": "Paysandú",
@@ -8827,6 +8818,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/85445/"
+    },
+    {
+     "fecha": "2026-11-27T12:00:00",
+     "local": "M.C.Torque",
+     "visita": "Liverpool",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/85448/"
     }
    ],
    "jugados": 216,
@@ -10986,15 +10986,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-13T11:15:00",
-     "local": "M.C.Torque",
-     "visita": "Racing",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91881/"
-    },
-    {
      "fecha": "2026-11-14T08:00:00",
      "local": "Peñarol",
      "visita": "Paysandú",
@@ -11092,6 +11083,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/85445/"
+    },
+    {
+     "fecha": "2026-11-27T12:00:00",
+     "local": "M.C.Torque",
+     "visita": "Liverpool",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/85448/"
     }
    ],
    "jugados": 96,
@@ -16846,7 +16846,7 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-14T14:00:00",
+     "fecha": "2026-11-14T18:00:00",
      "local": "Peñarol",
      "visita": "M.C.Torque",
      "goles_local": null,
@@ -16855,7 +16855,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91042/"
     },
     {
-     "fecha": "2026-11-14T14:00:00",
+     "fecha": "2026-11-15T17:00:00",
      "local": "Defensor Sp",
      "visita": "Liverpool",
      "goles_local": null,
@@ -17717,15 +17717,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-13T12:00:00",
-     "local": "Dep. Maldonado",
-     "visita": "Wanderers",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91915/"
-    },
-    {
      "fecha": "2026-11-14T08:30:00",
      "local": "Nacional",
      "visita": "Rentistas",
@@ -17823,6 +17814,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/85789/"
+    },
+    {
+     "fecha": "2026-11-20T12:00:00",
+     "local": "Racing",
+     "visita": "Nacional",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/85792/"
     }
    ],
    "jugados": 216,
@@ -19175,15 +19175,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-13T12:00:00",
-     "local": "Dep. Maldonado",
-     "visita": "Wanderers",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91915/"
-    },
-    {
      "fecha": "2026-11-14T08:30:00",
      "local": "Nacional",
      "visita": "Rentistas",
@@ -19281,6 +19272,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/85789/"
+    },
+    {
+     "fecha": "2026-11-20T12:00:00",
+     "local": "Racing",
+     "visita": "Nacional",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/85792/"
     }
    ],
    "jugados": 96,
@@ -49013,7 +49013,7 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-14T14:00:00",
+     "fecha": "2026-11-14T16:00:00",
      "local": "Peñarol",
      "visita": "M.C.Torque",
      "goles_local": null,
@@ -49022,7 +49022,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91011/"
     },
     {
-     "fecha": "2026-11-14T14:00:00",
+     "fecha": "2026-11-15T15:00:00",
      "local": "Defensor Sp",
      "visita": "Liverpool",
      "goles_local": null,

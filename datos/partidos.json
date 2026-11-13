@@ -28147,9 +28147,9 @@
     "fecha": "2026-11-12T20:00:00",
     "local": "Cerro Largo",
     "visita": "Progreso",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83256/"
    },
    {
@@ -39757,7 +39757,7 @@
     "link_fuente": "https://lamovidaonline.net/event/91005/"
    },
    {
-    "fecha": "2026-11-14T14:00:00",
+    "fecha": "2026-11-14T16:00:00",
     "local": "Peñarol",
     "visita": "M.C.Torque",
     "goles_local": null,
@@ -39766,7 +39766,7 @@
     "link_fuente": "https://lamovidaonline.net/event/91011/"
    },
    {
-    "fecha": "2026-11-14T14:00:00",
+    "fecha": "2026-11-15T15:00:00",
     "local": "Defensor Sp",
     "visita": "Liverpool",
     "goles_local": null,
@@ -39853,7 +39853,7 @@
     "link_fuente": "https://lamovidaonline.net/event/91039/"
    },
    {
-    "fecha": "2026-11-14T14:00:00",
+    "fecha": "2026-11-14T18:00:00",
     "local": "Peñarol",
     "visita": "M.C.Torque",
     "goles_local": null,
@@ -39862,7 +39862,7 @@
     "link_fuente": "https://lamovidaonline.net/event/91042/"
    },
    {
-    "fecha": "2026-11-14T14:00:00",
+    "fecha": "2026-11-15T17:00:00",
     "local": "Defensor Sp",
     "visita": "Liverpool",
     "goles_local": null,
