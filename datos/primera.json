@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-13T19:36:07+00:00",
+ "generado": "2026-11-14T00:30:18+00:00",
  "fuente": "https://es.wikipedia.org/wiki/Campeonato_Uruguayo_de_Primera_Divisi%C3%B3n_2026",
  "credito": "Tabla: Wikipedia, «Campeonato Uruguayo de Primera División 2026» (CC BY-SA 4.0)",
  "ligas": [
@@ -26,6 +26,17 @@
      "pts": 65
     },
     {
+     "equipo": "Montevideo City",
+     "pj": 36,
+     "g": 19,
+     "e": 7,
+     "p": 10,
+     "gf": 61,
+     "gc": 43,
+     "dg": 18,
+     "pts": 64
+    },
+    {
      "equipo": "Deportivo Maldonado",
      "pj": 35,
      "g": 18,
@@ -37,15 +48,15 @@
      "pts": 63
     },
     {
-     "equipo": "Montevideo City",
-     "pj": 35,
-     "g": 19,
-     "e": 6,
-     "p": 10,
-     "gf": 59,
-     "gc": 41,
-     "dg": 18,
-     "pts": 63
+     "equipo": "Racing",
+     "pj": 36,
+     "g": 16,
+     "e": 13,
+     "p": 7,
+     "gf": 47,
+     "gc": 33,
+     "dg": 14,
+     "pts": 61
     },
     {
      "equipo": "Nacional",
@@ -57,17 +68,6 @@
      "gc": 42,
      "dg": 11,
      "pts": 61
-    },
-    {
-     "equipo": "Racing",
-     "pj": 35,
-     "g": 16,
-     "e": 12,
-     "p": 7,
-     "gf": 45,
-     "gc": 31,
-     "dg": 14,
-     "pts": 60
     },
     {
      "equipo": "Liverpool",
@@ -220,14 +220,14 @@
     },
     {
      "equipo": "Montevideo City",
-     "pj": 13,
+     "pj": 14,
      "g": 9,
-     "e": 1,
+     "e": 2,
      "p": 3,
-     "gf": 26,
-     "gc": 14,
+     "gf": 28,
+     "gc": 16,
      "dg": 12,
-     "pts": 28
+     "pts": 29
     },
     {
      "equipo": "Nacional",
@@ -263,6 +263,17 @@
      "pts": 22
     },
     {
+     "equipo": "Racing",
+     "pj": 14,
+     "g": 5,
+     "e": 5,
+     "p": 4,
+     "gf": 20,
+     "gc": 16,
+     "dg": 4,
+     "pts": 20
+    },
+    {
      "equipo": "Progreso",
      "pj": 14,
      "g": 6,
@@ -272,17 +283,6 @@
      "gc": 17,
      "dg": -2,
      "pts": 20
-    },
-    {
-     "equipo": "Racing",
-     "pj": 13,
-     "g": 5,
-     "e": 4,
-     "p": 4,
-     "gf": 18,
-     "gc": 14,
-     "dg": 4,
-     "pts": 19
     },
     {
      "equipo": "Juventud",

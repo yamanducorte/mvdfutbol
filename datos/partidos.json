@@ -28156,9 +28156,9 @@
     "fecha": "2026-11-13T17:00:00",
     "local": "M.C.Torque",
     "visita": "Racing",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83253/"
    },
    {
