@@ -28264,9 +28264,9 @@
     "fecha": "2026-11-15T16:30:00",
     "local": "Danubio",
     "visita": "Liverpool",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83241/"
    },
    {
@@ -39769,9 +39769,9 @@
     "fecha": "2026-11-15T15:00:00",
     "local": "Defensor Sp",
     "visita": "Liverpool",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91014/"
    },
    {
@@ -39865,9 +39865,9 @@
     "fecha": "2026-11-15T17:00:00",
     "local": "Defensor Sp",
     "visita": "Liverpool",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91045/"
    },
    {
@@ -40844,6 +40844,21 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91628/"
+   }
+  ]
+ },
+ "741": {
+  "estado": "sin_empezar",
+  "nombre": "2026 Tercera Div. Final CLAUSURA",
+  "partidos": [
+   {
+    "fecha": "2026-11-16T10:00:00",
+    "local": "M.C.Torque",
+    "visita": "Peñarol",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/92233/"
    }
   ]
  }
