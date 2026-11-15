@@ -35638,9 +35638,9 @@
     "fecha": "2026-11-15T14:00:00",
     "local": "Cerrito",
     "visita": "Terremoto",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 8,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92092/"
    },
    {
@@ -36472,18 +36472,18 @@
     "fecha": "2026-11-15T11:00:00",
     "local": "Plaza Colonia",
     "visita": "Miramar Misiones",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92070/"
    },
    {
     "fecha": "2026-11-15T12:00:00",
     "local": "Cerrito",
     "visita": "Terremoto",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92073/"
    },
    {
@@ -37171,9 +37171,9 @@
     "fecha": "2026-11-14T11:00:00",
     "local": "Fénix",
     "visita": "Atenas",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92060/"
    },
    {
@@ -37897,9 +37897,9 @@
     "fecha": "2026-11-14T09:00:00",
     "local": "Fénix",
     "visita": "Atenas",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 8,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92041/"
    },
    {
@@ -39970,27 +39970,27 @@
     "fecha": "2026-11-15T09:00:00",
     "local": "Nacional",
     "visita": "Fénix",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91309/"
    },
    {
     "fecha": "2026-11-15T10:15:00",
     "local": "Peñarol",
     "visita": "Liverpool",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91312/"
    },
    {
     "fecha": "2026-11-15T11:30:00",
     "local": "Villa Teresa",
     "visita": "River Plate",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 4,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91315/"
    },
    {
@@ -40129,9 +40129,9 @@
     "fecha": "2026-11-15T09:00:00",
     "local": "Nacional Rojo",
     "visita": "Boston River",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91374/"
    },
    {
@@ -40156,9 +40156,9 @@
     "fecha": "2026-11-15T10:30:00",
     "local": "River Plate",
     "visita": "Danubio",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91377/"
    },
    {
@@ -40225,9 +40225,9 @@
     "fecha": "2026-11-15T12:00:00",
     "local": "Juventud",
     "visita": "Nacional Blanco",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91408/"
    },
    {
@@ -40243,9 +40243,9 @@
     "fecha": "2026-11-15T14:00:00",
     "local": "Peñarol",
     "visita": "Villa Teresa",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91405/"
    },
    {
