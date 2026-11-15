@@ -28255,9 +28255,9 @@
     "fecha": "2026-11-14T20:00:00",
     "local": "Nacional",
     "visita": "Albion",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83244/"
    },
    {
@@ -39856,9 +39856,9 @@
     "fecha": "2026-11-14T18:00:00",
     "local": "Peñarol",
     "visita": "M.C.Torque",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 5,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91042/"
    },
    {

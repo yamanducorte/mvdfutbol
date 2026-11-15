@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-14T22:16:38+00:00",
+ "generado": "2026-11-15T02:02:00+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -1711,6 +1711,49 @@
      ]
     },
     {
+     "equipo": "Nacional",
+     "pj": 36,
+     "g": 19,
+     "e": 5,
+     "p": 12,
+     "gf": 55,
+     "gc": 43,
+     "dg": 12,
+     "pts": 62,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "1-0",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "V",
+       "rival": "Dep. Maldonado",
+       "marcador": "3-2",
+       "fecha": "2026-10-19"
+      },
+      {
+       "r": "D",
+       "rival": "Liverpool",
+       "marcador": "0-1",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "V",
+       "rival": "Danubio",
+       "marcador": "2-1",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Albion",
+       "marcador": "1-1",
+       "fecha": "2026-11-14"
+      }
+     ]
+    },
+    {
      "equipo": "Racing",
      "pj": 36,
      "g": 16,
@@ -1750,49 +1793,6 @@
        "rival": "M.C.Torque",
        "marcador": "2-2",
        "fecha": "2026-11-13"
-      }
-     ]
-    },
-    {
-     "equipo": "Nacional",
-     "pj": 35,
-     "g": 19,
-     "e": 4,
-     "p": 12,
-     "gf": 54,
-     "gc": 42,
-     "dg": 12,
-     "pts": 61,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "M.C.Torque",
-       "marcador": "2-0",
-       "fecha": "2026-10-05"
-      },
-      {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "1-0",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "Dep. Maldonado",
-       "marcador": "3-2",
-       "fecha": "2026-10-19"
-      },
-      {
-       "r": "D",
-       "rival": "Liverpool",
-       "marcador": "0-1",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "V",
-       "rival": "Danubio",
-       "marcador": "2-1",
-       "fecha": "2026-11-01"
       }
      ]
     },
@@ -1884,21 +1884,15 @@
     },
     {
      "equipo": "Albion",
-     "pj": 35,
+     "pj": 36,
      "g": 13,
-     "e": 8,
+     "e": 9,
      "p": 14,
-     "gf": 47,
-     "gc": 44,
+     "gf": 48,
+     "gc": 45,
      "dg": 3,
-     "pts": 47,
+     "pts": 48,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Defensor Sp",
-       "marcador": "3-2",
-       "fecha": "2026-10-03"
-      },
       {
        "r": "V",
        "rival": "Cerro Largo",
@@ -1922,6 +1916,12 @@
        "rival": "Dep. Maldonado",
        "marcador": "0-0",
        "fecha": "2026-11-02"
+      },
+      {
+       "r": "E",
+       "rival": "Nacional",
+       "marcador": "1-1",
+       "fecha": "2026-11-14"
       }
      ]
     },
@@ -2272,6 +2272,15 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-14T20:00:00",
+     "local": "Nacional",
+     "visita": "Albion",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83244/"
+    },
+    {
      "fecha": "2026-11-14T16:30:00",
      "local": "Dep. Maldonado",
      "visita": "Cerro",
@@ -2369,15 +2378,6 @@
      "goles_visita": 2,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/83232/"
-    },
-    {
-     "fecha": "2026-10-31T10:00:00",
-     "local": "Racing",
-     "visita": "Cerro Largo",
-     "goles_local": 3,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83226/"
     }
    ],
    "proximos_partidos": [
@@ -2409,7 +2409,7 @@
      "link_fuente": "https://lamovidaonline.net/event/83262/"
     }
    ],
-   "jugados": 284,
+   "jugados": 285,
    "programados": 296,
    "calculada": true,
    "suma_de": [
@@ -2521,21 +2521,15 @@
     },
     {
      "equipo": "Nacional",
-     "pj": 13,
+     "pj": 14,
      "g": 8,
-     "e": 2,
+     "e": 3,
      "p": 3,
-     "gf": 19,
-     "gc": 13,
+     "gf": 20,
+     "gc": 14,
      "dg": 6,
-     "pts": 26,
+     "pts": 27,
      "forma": [
-      {
-       "r": "V",
-       "rival": "M.C.Torque",
-       "marcador": "2-0",
-       "fecha": "2026-10-05"
-      },
       {
        "r": "V",
        "rival": "Central Español",
@@ -2559,6 +2553,12 @@
        "rival": "Danubio",
        "marcador": "2-1",
        "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Albion",
+       "marcador": "1-1",
+       "fecha": "2026-11-14"
       }
      ]
     },
@@ -2908,21 +2908,15 @@
     },
     {
      "equipo": "Albion",
-     "pj": 13,
+     "pj": 14,
      "g": 4,
-     "e": 1,
+     "e": 2,
      "p": 8,
-     "gf": 15,
-     "gc": 20,
+     "gf": 16,
+     "gc": 21,
      "dg": -5,
-     "pts": 13,
+     "pts": 14,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Defensor Sp",
-       "marcador": "3-2",
-       "fecha": "2026-10-03"
-      },
       {
        "r": "V",
        "rival": "Cerro Largo",
@@ -2946,6 +2940,12 @@
        "rival": "Dep. Maldonado",
        "marcador": "0-0",
        "fecha": "2026-11-02"
+      },
+      {
+       "r": "E",
+       "rival": "Nacional",
+       "marcador": "1-1",
+       "fecha": "2026-11-14"
       }
      ]
     },
@@ -3124,6 +3124,15 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-14T20:00:00",
+     "local": "Nacional",
+     "visita": "Albion",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83244/"
+    },
+    {
      "fecha": "2026-11-14T16:30:00",
      "local": "Dep. Maldonado",
      "visita": "Cerro",
@@ -3221,15 +3230,6 @@
      "goles_visita": 2,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/83232/"
-    },
-    {
-     "fecha": "2026-10-31T10:00:00",
-     "local": "Racing",
-     "visita": "Cerro Largo",
-     "goles_local": 3,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83226/"
     }
    ],
    "proximos_partidos": [
@@ -3261,7 +3261,7 @@
      "link_fuente": "https://lamovidaonline.net/event/83262/"
     }
    ],
-   "jugados": 108,
+   "jugados": 109,
    "programados": 120,
    "id": 676
   },
@@ -16458,6 +16458,31 @@
    "orden_categoria": 30,
    "tabla": [
     {
+     "equipo": "Peñarol",
+     "pj": 2,
+     "g": 2,
+     "e": 0,
+     "p": 0,
+     "gf": 9,
+     "gc": 2,
+     "dg": 7,
+     "pts": 6,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "4-1",
+       "fecha": "2026-11-08"
+      },
+      {
+       "r": "V",
+       "rival": "M.C.Torque",
+       "marcador": "5-1",
+       "fecha": "2026-11-14"
+      }
+     ]
+    },
+    {
      "equipo": "Nacional",
      "pj": 2,
      "g": 2,
@@ -16483,33 +16508,14 @@
      ]
     },
     {
-     "equipo": "Peñarol",
-     "pj": 1,
-     "g": 1,
-     "e": 0,
-     "p": 0,
-     "gf": 4,
-     "gc": 1,
-     "dg": 3,
-     "pts": 3,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Liverpool",
-       "marcador": "4-1",
-       "fecha": "2026-11-08"
-      }
-     ]
-    },
-    {
      "equipo": "M.C.Torque",
-     "pj": 2,
+     "pj": 3,
      "g": 1,
      "e": 0,
-     "p": 1,
-     "gf": 1,
-     "gc": 4,
-     "dg": -3,
+     "p": 2,
+     "gf": 2,
+     "gc": 9,
+     "dg": -7,
      "pts": 3,
      "forma": [
       {
@@ -16523,6 +16529,12 @@
        "rival": "Nacional",
        "marcador": "0-4",
        "fecha": "2026-11-07"
+      },
+      {
+       "r": "D",
+       "rival": "Peñarol",
+       "marcador": "1-5",
+       "fecha": "2026-11-14"
       }
      ]
     },
@@ -16572,6 +16584,15 @@
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-14T18:00:00",
+     "local": "Peñarol",
+     "visita": "M.C.Torque",
+     "goles_local": 5,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91042/"
+    },
     {
      "fecha": "2026-11-08T17:00:00",
      "local": "Peñarol",
@@ -16656,7 +16677,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91057/"
     }
    ],
-   "jugados": 4,
+   "jugados": 5,
    "programados": 10,
    "id": 728
   },
