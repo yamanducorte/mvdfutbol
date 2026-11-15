@@ -34876,9 +34876,9 @@
     "fecha": "2026-11-15T13:00:00",
     "local": "Oriental",
     "visita": "Tacuarembó",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 6,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92120/"
    },
    {
@@ -34912,9 +34912,9 @@
     "fecha": "2026-11-15T16:00:00",
     "local": "Cerrito",
     "visita": "Terremoto",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 6,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92111/"
    },
    {
@@ -35602,9 +35602,9 @@
     "fecha": "2026-11-15T11:00:00",
     "local": "Oriental",
     "visita": "Tacuarembó",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 7,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92101/"
    },
    {
@@ -35620,18 +35620,18 @@
     "fecha": "2026-11-15T13:00:00",
     "local": "Salto",
     "visita": "La Luz",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92095/"
    },
    {
     "fecha": "2026-11-15T13:00:00",
     "local": "Plaza Colonia",
     "visita": "Miramar Misiones",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92089/"
    },
    {
@@ -36445,9 +36445,9 @@
     "fecha": "2026-11-15T09:00:00",
     "local": "Oriental",
     "visita": "Tacuarembó",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 4,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92082/"
    },
    {
@@ -36463,9 +36463,9 @@
     "fecha": "2026-11-15T11:00:00",
     "local": "Salto",
     "visita": "La Luz",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92076/"
    },
    {
