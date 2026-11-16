@@ -28273,9 +28273,9 @@
     "fecha": "2026-11-15T20:00:00",
     "local": "Defensor Sp",
     "visita": "Peñarol",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83259/"
    },
    {
@@ -34885,27 +34885,27 @@
     "fecha": "2026-11-15T13:00:00",
     "local": "Atenas",
     "visita": "Fénix",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92117/"
    },
    {
     "fecha": "2026-11-15T15:00:00",
     "local": "Salto",
     "visita": "La Luz",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 6,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92114/"
    },
    {
     "fecha": "2026-11-15T15:00:00",
     "local": "Plaza Colonia",
     "visita": "Miramar Misiones",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92108/"
    },
    {
@@ -35611,9 +35611,9 @@
     "fecha": "2026-11-15T11:00:00",
     "local": "Atenas",
     "visita": "Fénix",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 6,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92098/"
    },
    {
@@ -36436,9 +36436,9 @@
     "fecha": "2026-11-15T09:00:00",
     "local": "Atenas",
     "visita": "Fénix",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 4,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92079/"
    },
    {
