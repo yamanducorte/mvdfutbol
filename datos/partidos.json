@@ -40135,7 +40135,16 @@
     "link_fuente": "https://lamovidaonline.net/event/91374/"
    },
    {
-    "fecha": "2026-11-15T09:00:00",
+    "fecha": "2026-11-15T10:30:00",
+    "local": "River Plate",
+    "visita": "Danubio",
+    "goles_local": 0,
+    "goles_visita": 0,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/91377/"
+   },
+   {
+    "fecha": "2026-11-20T19:00:00",
     "local": "Boston River",
     "visita": "Liverpool B",
     "goles_local": null,
@@ -40144,22 +40153,13 @@
     "link_fuente": "https://lamovidaonline.net/event/91380/"
    },
    {
-    "fecha": "2026-11-15T10:15:00",
+    "fecha": "2026-11-20T20:30:00",
     "local": "Nacional Rojo",
     "visita": "River Plate",
     "goles_local": null,
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91383/"
-   },
-   {
-    "fecha": "2026-11-15T10:30:00",
-    "local": "River Plate",
-    "visita": "Danubio",
-    "goles_local": 0,
-    "goles_visita": 0,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/91377/"
    },
    {
     "fecha": "2026-11-22T09:00:00",
@@ -40231,15 +40231,6 @@
     "link_fuente": "https://lamovidaonline.net/event/91408/"
    },
    {
-    "fecha": "2026-11-15T12:00:00",
-    "local": "Villa Teresa",
-    "visita": "Liverpool N",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91411/"
-   },
-   {
     "fecha": "2026-11-15T14:00:00",
     "local": "Peñarol",
     "visita": "Villa Teresa",
@@ -40249,7 +40240,16 @@
     "link_fuente": "https://lamovidaonline.net/event/91405/"
    },
    {
-    "fecha": "2026-11-15T14:00:00",
+    "fecha": "2026-11-19T18:00:00",
+    "local": "Villa Teresa",
+    "visita": "Liverpool N",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91411/"
+   },
+   {
+    "fecha": "2026-11-19T20:00:00",
     "local": "Peñarol",
     "visita": "Juventud",
     "goles_local": null,

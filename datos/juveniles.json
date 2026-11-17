@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T11:40:40+00:00",
+ "generado": "2026-11-17T20:48:00+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -43523,6 +43523,24 @@
    ],
    "proximos_partidos": [
     {
+     "fecha": "2026-11-20T19:00:00",
+     "local": "Boston River",
+     "visita": "Liverpool B",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91380/"
+    },
+    {
+     "fecha": "2026-11-20T20:30:00",
+     "local": "Nacional Rojo",
+     "visita": "River Plate",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91383/"
+    },
+    {
      "fecha": "2026-11-22T09:00:00",
      "local": "River Plate",
      "visita": "Boston River",
@@ -43730,6 +43748,24 @@
     }
    ],
    "proximos_partidos": [
+    {
+     "fecha": "2026-11-19T18:00:00",
+     "local": "Villa Teresa",
+     "visita": "Liverpool N",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91411/"
+    },
+    {
+     "fecha": "2026-11-19T20:00:00",
+     "local": "Peñarol",
+     "visita": "Juventud",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91414/"
+    },
     {
      "fecha": "2026-11-22T12:00:00",
      "local": "Juventud",
