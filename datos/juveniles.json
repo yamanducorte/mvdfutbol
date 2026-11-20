@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T01:54:47+00:00",
+ "generado": "2026-11-20T06:58:06+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -43767,14 +43767,45 @@
    "orden_categoria": 80,
    "tabla": [
     {
+     "equipo": "Peñarol",
+     "pj": 3,
+     "g": 2,
+     "e": 1,
+     "p": 0,
+     "gf": 6,
+     "gc": 2,
+     "dg": 4,
+     "pts": 7,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Nacional Blanco",
+       "marcador": "1-1",
+       "fecha": "2026-11-11"
+      },
+      {
+       "r": "V",
+       "rival": "Villa Teresa",
+       "marcador": "3-0",
+       "fecha": "2026-11-15"
+      },
+      {
+       "r": "V",
+       "rival": "Juventud",
+       "marcador": "2-1",
+       "fecha": "2026-11-19"
+      }
+     ]
+    },
+    {
      "equipo": "Juventud",
-     "pj": 2,
+     "pj": 3,
      "g": 2,
      "e": 0,
-     "p": 0,
-     "gf": 3,
-     "gc": 1,
-     "dg": 2,
+     "p": 1,
+     "gf": 4,
+     "gc": 3,
+     "dg": 1,
      "pts": 6,
      "forma": [
       {
@@ -43788,31 +43819,12 @@
        "rival": "Nacional Blanco",
        "marcador": "2-1",
        "fecha": "2026-11-15"
-      }
-     ]
-    },
-    {
-     "equipo": "Peñarol",
-     "pj": 2,
-     "g": 1,
-     "e": 1,
-     "p": 0,
-     "gf": 4,
-     "gc": 1,
-     "dg": 3,
-     "pts": 4,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Nacional Blanco",
-       "marcador": "1-1",
-       "fecha": "2026-11-11"
       },
       {
-       "r": "V",
-       "rival": "Villa Teresa",
-       "marcador": "3-0",
-       "fecha": "2026-11-15"
+       "r": "D",
+       "rival": "Peñarol",
+       "marcador": "1-2",
+       "fecha": "2026-11-19"
       }
      ]
     },
@@ -43893,6 +43905,15 @@
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-19T20:00:00",
+     "local": "Peñarol",
+     "visita": "Juventud",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91414/"
+    },
     {
      "fecha": "2026-11-19T18:00:00",
      "local": "Villa Teresa",
@@ -43977,7 +43998,7 @@
      "link_fuente": "https://lamovidaonline.net/event/91426/"
     }
    ],
-   "jugados": 5,
+   "jugados": 6,
    "programados": 10,
    "id": 736
   },
