@@ -28219,27 +28219,27 @@
     "fecha": "2026-11-19T16:30:00",
     "local": "Peñarol",
     "visita": "Cerro Largo",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83271/"
    },
    {
     "fecha": "2026-11-19T16:30:00",
     "local": "Progreso",
     "visita": "M.C.Torque",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83274/"
    },
    {
     "fecha": "2026-11-19T16:30:00",
     "local": "Boston River",
     "visita": "Dep. Maldonado",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83280/"
    },
    {

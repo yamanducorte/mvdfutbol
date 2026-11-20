@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T20:28:56+00:00",
+ "generado": "2026-11-20T01:55:20+00:00",
  "fuente": "https://es.wikipedia.org/wiki/Campeonato_Uruguayo_de_Primera_Divisi%C3%B3n_2026",
  "credito": "Tabla: Wikipedia, «Campeonato Uruguayo de Primera División 2026» (CC BY-SA 4.0)",
  "ligas": [
@@ -16,35 +16,35 @@
    "tabla": [
     {
      "equipo": "Peñarol",
-     "pj": 36,
-     "g": 19,
+     "pj": 37,
+     "g": 20,
      "e": 10,
      "p": 7,
-     "gf": 53,
+     "gf": 56,
      "gc": 29,
-     "dg": 24,
-     "pts": 66
+     "dg": 27,
+     "pts": 69
     },
     {
      "equipo": "Montevideo City",
-     "pj": 36,
+     "pj": 37,
      "g": 19,
-     "e": 7,
+     "e": 8,
      "p": 10,
-     "gf": 61,
-     "gc": 43,
+     "gf": 62,
+     "gc": 44,
      "dg": 18,
-     "pts": 64
+     "pts": 65
     },
     {
      "equipo": "Deportivo Maldonado",
-     "pj": 36,
+     "pj": 37,
      "g": 18,
      "e": 9,
-     "p": 9,
+     "p": 10,
      "gf": 54,
-     "gc": 33,
-     "dg": 21,
+     "gc": 34,
+     "dg": 20,
      "pts": 63
     },
     {
@@ -136,6 +136,17 @@
      "pts": 40
     },
     {
+     "equipo": "Boston River",
+     "pj": 37,
+     "g": 11,
+     "e": 7,
+     "p": 19,
+     "gf": 35,
+     "gc": 48,
+     "dg": -13,
+     "pts": 40
+    },
+    {
      "equipo": "Cerro",
      "pj": 36,
      "g": 11,
@@ -148,36 +159,25 @@
     },
     {
      "equipo": "Cerro Largo",
-     "pj": 36,
+     "pj": 37,
      "g": 9,
      "e": 11,
-     "p": 16,
+     "p": 17,
      "gf": 35,
-     "gc": 43,
-     "dg": -8,
+     "gc": 46,
+     "dg": -11,
      "pts": 38
     },
     {
-     "equipo": "Boston River",
-     "pj": 36,
+     "equipo": "Progreso",
+     "pj": 37,
      "g": 10,
      "e": 7,
-     "p": 19,
-     "gf": 34,
-     "gc": 48,
-     "dg": -14,
-     "pts": 37
-    },
-    {
-     "equipo": "Progreso",
-     "pj": 36,
-     "g": 10,
-     "e": 6,
      "p": 20,
-     "gf": 33,
-     "gc": 51,
+     "gf": 34,
+     "gc": 52,
      "dg": -18,
-     "pts": 36
+     "pts": 37
     },
     {
      "equipo": "Danubio",
@@ -220,14 +220,14 @@
     },
     {
      "equipo": "Montevideo City",
-     "pj": 14,
+     "pj": 15,
      "g": 9,
-     "e": 2,
+     "e": 3,
      "p": 3,
-     "gf": 28,
-     "gc": 16,
+     "gf": 29,
+     "gc": 17,
      "dg": 12,
-     "pts": 29
+     "pts": 30
     },
     {
      "equipo": "Nacional",
@@ -242,24 +242,24 @@
     },
     {
      "equipo": "Peñarol",
-     "pj": 14,
-     "g": 6,
+     "pj": 15,
+     "g": 7,
      "e": 6,
      "p": 2,
-     "gf": 18,
+     "gf": 21,
      "gc": 10,
-     "dg": 8,
-     "pts": 23
+     "dg": 11,
+     "pts": 26
     },
     {
      "equipo": "Deportivo Maldonado",
-     "pj": 14,
+     "pj": 15,
      "g": 6,
      "e": 4,
-     "p": 4,
+     "p": 5,
      "gf": 18,
-     "gc": 11,
-     "dg": 7,
+     "gc": 12,
+     "dg": 6,
      "pts": 22
     },
     {
@@ -286,14 +286,14 @@
     },
     {
      "equipo": "Progreso",
-     "pj": 14,
+     "pj": 15,
      "g": 6,
-     "e": 2,
+     "e": 3,
      "p": 6,
-     "gf": 15,
-     "gc": 17,
+     "gf": 16,
+     "gc": 18,
      "dg": -2,
-     "pts": 20
+     "pts": 21
     },
     {
      "equipo": "Montevideo Wanderers",
@@ -319,14 +319,14 @@
     },
     {
      "equipo": "Boston River",
-     "pj": 14,
-     "g": 4,
+     "pj": 15,
+     "g": 5,
      "e": 3,
      "p": 7,
-     "gf": 15,
+     "gf": 16,
      "gc": 18,
-     "dg": -3,
-     "pts": 15
+     "dg": -2,
+     "pts": 18
     },
     {
      "equipo": "Albion",
@@ -362,17 +362,6 @@
      "pts": 11
     },
     {
-     "equipo": "Cerro Largo",
-     "pj": 14,
-     "g": 1,
-     "e": 7,
-     "p": 6,
-     "gf": 12,
-     "gc": 19,
-     "dg": -7,
-     "pts": 10
-    },
-    {
      "equipo": "Danubio",
      "pj": 14,
      "g": 2,
@@ -381,6 +370,17 @@
      "gf": 8,
      "gc": 17,
      "dg": -9,
+     "pts": 10
+    },
+    {
+     "equipo": "Cerro Largo",
+     "pj": 15,
+     "g": 1,
+     "e": 7,
+     "p": 7,
+     "gf": 12,
+     "gc": 22,
+     "dg": -10,
      "pts": 10
     }
    ],
