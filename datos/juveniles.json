@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T20:02:24+00:00",
+ "generado": "2026-11-21T01:25:43+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -1668,6 +1668,49 @@
      ]
     },
     {
+     "equipo": "Racing",
+     "pj": 37,
+     "g": 17,
+     "e": 13,
+     "p": 7,
+     "gf": 48,
+     "gc": 33,
+     "dg": 15,
+     "pts": 64,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Wanderers",
+       "marcador": "3-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "E",
+       "rival": "Defensor Sp",
+       "marcador": "3-3",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "V",
+       "rival": "Cerro Largo",
+       "marcador": "3-1",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "E",
+       "rival": "M.C.Torque",
+       "marcador": "2-2",
+       "fecha": "2026-11-13"
+      },
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "1-0",
+       "fecha": "2026-11-20"
+      }
+     ]
+    },
+    {
      "equipo": "Dep. Maldonado",
      "pj": 37,
      "g": 18,
@@ -1712,21 +1755,15 @@
     },
     {
      "equipo": "Liverpool",
-     "pj": 36,
+     "pj": 37,
      "g": 17,
      "e": 11,
-     "p": 8,
+     "p": 9,
      "gf": 49,
-     "gc": 32,
-     "dg": 17,
+     "gc": 34,
+     "dg": 15,
      "pts": 62,
      "forma": [
-      {
-       "r": "E",
-       "rival": "Dep. Maldonado",
-       "marcador": "1-1",
-       "fecha": "2026-10-09"
-      },
       {
        "r": "V",
        "rival": "Peñarol",
@@ -1750,26 +1787,26 @@
        "rival": "Danubio",
        "marcador": "2-1",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "D",
+       "rival": "Wanderers",
+       "marcador": "0-2",
+       "fecha": "2026-11-20"
       }
      ]
     },
     {
      "equipo": "Nacional",
-     "pj": 36,
+     "pj": 37,
      "g": 19,
      "e": 5,
-     "p": 12,
+     "p": 13,
      "gf": 55,
-     "gc": 43,
-     "dg": 12,
+     "gc": 45,
+     "dg": 10,
      "pts": 62,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "1-0",
-       "fecha": "2026-10-11"
-      },
       {
        "r": "V",
        "rival": "Dep. Maldonado",
@@ -1793,69 +1830,26 @@
        "rival": "Albion",
        "marcador": "1-1",
        "fecha": "2026-11-14"
-      }
-     ]
-    },
-    {
-     "equipo": "Racing",
-     "pj": 36,
-     "g": 16,
-     "e": 13,
-     "p": 7,
-     "gf": 47,
-     "gc": 33,
-     "dg": 14,
-     "pts": 61,
-     "forma": [
+      },
       {
        "r": "D",
-       "rival": "Juventud",
+       "rival": "Cerro",
        "marcador": "0-2",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "Wanderers",
-       "marcador": "3-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "E",
-       "rival": "Defensor Sp",
-       "marcador": "3-3",
-       "fecha": "2026-10-24"
-      },
-      {
-       "r": "V",
-       "rival": "Cerro Largo",
-       "marcador": "3-1",
-       "fecha": "2026-10-31"
-      },
-      {
-       "r": "E",
-       "rival": "M.C.Torque",
-       "marcador": "2-2",
-       "fecha": "2026-11-13"
+       "fecha": "2026-11-20"
       }
      ]
     },
     {
      "equipo": "Wanderers",
-     "pj": 36,
-     "g": 15,
+     "pj": 37,
+     "g": 16,
      "e": 9,
      "p": 12,
-     "gf": 44,
+     "gf": 46,
      "gc": 45,
-     "dg": -1,
-     "pts": 54,
+     "dg": 1,
+     "pts": 57,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Boston River",
-       "marcador": "1-3",
-       "fecha": "2026-10-10"
-      },
       {
        "r": "D",
        "rival": "Racing",
@@ -1879,6 +1873,12 @@
        "rival": "Juventud",
        "marcador": "2-1",
        "fecha": "2026-11-16"
+      },
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "2-0",
+       "fecha": "2026-11-20"
       }
      ]
     },
@@ -1927,21 +1927,15 @@
     },
     {
      "equipo": "Central Español",
-     "pj": 36,
+     "pj": 37,
      "g": 12,
      "e": 8,
-     "p": 16,
+     "p": 17,
      "gf": 36,
-     "gc": 48,
-     "dg": -12,
+     "gc": 49,
+     "dg": -13,
      "pts": 44,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Nacional",
-       "marcador": "0-1",
-       "fecha": "2026-10-11"
-      },
       {
        "r": "D",
        "rival": "Danubio",
@@ -1965,6 +1959,55 @@
        "rival": "Boston River",
        "marcador": "1-0",
        "fecha": "2026-11-14"
+      },
+      {
+       "r": "D",
+       "rival": "Racing",
+       "marcador": "0-1",
+       "fecha": "2026-11-20"
+      }
+     ]
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 37,
+     "g": 12,
+     "e": 7,
+     "p": 18,
+     "gf": 32,
+     "gc": 53,
+     "dg": -21,
+     "pts": 43,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Cerro Largo",
+       "marcador": "1-1",
+       "fecha": "2026-10-16"
+      },
+      {
+       "r": "D",
+       "rival": "M.C.Torque",
+       "marcador": "1-3",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Central Español",
+       "marcador": "1-2",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "V",
+       "rival": "Dep. Maldonado",
+       "marcador": "1-0",
+       "fecha": "2026-11-14"
+      },
+      {
+       "r": "V",
+       "rival": "Nacional",
+       "marcador": "2-0",
+       "fecha": "2026-11-20"
       }
      ]
     },
@@ -2094,49 +2137,6 @@
        "rival": "Dep. Maldonado",
        "marcador": "1-0",
        "fecha": "2026-11-19"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro",
-     "pj": 36,
-     "g": 11,
-     "e": 7,
-     "p": 18,
-     "gf": 30,
-     "gc": 53,
-     "dg": -23,
-     "pts": 40,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Defensor Sp",
-       "marcador": "3-2",
-       "fecha": "2026-10-10"
-      },
-      {
-       "r": "E",
-       "rival": "Cerro Largo",
-       "marcador": "1-1",
-       "fecha": "2026-10-16"
-      },
-      {
-       "r": "D",
-       "rival": "M.C.Torque",
-       "marcador": "1-3",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Central Español",
-       "marcador": "1-2",
-       "fecha": "2026-10-31"
-      },
-      {
-       "r": "V",
-       "rival": "Dep. Maldonado",
-       "marcador": "1-0",
-       "fecha": "2026-11-14"
       }
      ]
     },
@@ -2272,6 +2272,33 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-20T16:30:00",
+     "local": "Cerro",
+     "visita": "Nacional",
+     "goles_local": 2,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83283/"
+    },
+    {
+     "fecha": "2026-11-20T16:30:00",
+     "local": "Racing",
+     "visita": "Central Español",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83277/"
+    },
+    {
+     "fecha": "2026-11-20T16:30:00",
+     "local": "Liverpool",
+     "visita": "Wanderers",
+     "goles_local": 0,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83265/"
+    },
+    {
      "fecha": "2026-11-19T16:30:00",
      "local": "Boston River",
      "visita": "Dep. Maldonado",
@@ -2351,33 +2378,6 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/83250/"
-    },
-    {
-     "fecha": "2026-11-13T17:00:00",
-     "local": "M.C.Torque",
-     "visita": "Racing",
-     "goles_local": 2,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83253/"
-    },
-    {
-     "fecha": "2026-11-12T20:00:00",
-     "local": "Cerro Largo",
-     "visita": "Progreso",
-     "goles_local": 2,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83256/"
-    },
-    {
-     "fecha": "2026-11-02T20:00:00",
-     "local": "Albion",
-     "visita": "Dep. Maldonado",
-     "goles_local": 0,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83235/"
     }
    ],
    "proximos_partidos": [
@@ -2400,7 +2400,7 @@
      "link_fuente": "https://lamovidaonline.net/event/83286/"
     }
    ],
-   "jugados": 291,
+   "jugados": 294,
    "programados": 296,
    "calculada": true,
    "suma_de": [
@@ -2426,21 +2426,15 @@
    "tabla": [
     {
      "equipo": "Liverpool",
-     "pj": 14,
+     "pj": 15,
      "g": 10,
      "e": 3,
-     "p": 1,
+     "p": 2,
      "gf": 24,
-     "gc": 9,
-     "dg": 15,
+     "gc": 11,
+     "dg": 13,
      "pts": 33,
      "forma": [
-      {
-       "r": "E",
-       "rival": "Dep. Maldonado",
-       "marcador": "1-1",
-       "fecha": "2026-10-09"
-      },
       {
        "r": "V",
        "rival": "Peñarol",
@@ -2464,6 +2458,12 @@
        "rival": "Danubio",
        "marcador": "2-1",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "D",
+       "rival": "Wanderers",
+       "marcador": "0-2",
+       "fecha": "2026-11-20"
       }
      ]
     },
@@ -2555,21 +2555,15 @@
     },
     {
      "equipo": "Nacional",
-     "pj": 14,
+     "pj": 15,
      "g": 8,
      "e": 3,
-     "p": 3,
+     "p": 4,
      "gf": 20,
-     "gc": 14,
-     "dg": 6,
+     "gc": 16,
+     "dg": 4,
      "pts": 27,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Central Español",
-       "marcador": "1-0",
-       "fecha": "2026-10-11"
-      },
       {
        "r": "V",
        "rival": "Dep. Maldonado",
@@ -2593,6 +2587,98 @@
        "rival": "Albion",
        "marcador": "1-1",
        "fecha": "2026-11-14"
+      },
+      {
+       "r": "D",
+       "rival": "Cerro",
+       "marcador": "0-2",
+       "fecha": "2026-11-20"
+      }
+     ]
+    },
+    {
+     "equipo": "Cerro",
+     "pj": 15,
+     "g": 7,
+     "e": 3,
+     "p": 5,
+     "gf": 18,
+     "gc": 19,
+     "dg": -1,
+     "pts": 24,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Cerro Largo",
+       "marcador": "1-1",
+       "fecha": "2026-10-16"
+      },
+      {
+       "r": "D",
+       "rival": "M.C.Torque",
+       "marcador": "1-3",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Central Español",
+       "marcador": "1-2",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "V",
+       "rival": "Dep. Maldonado",
+       "marcador": "1-0",
+       "fecha": "2026-11-14"
+      },
+      {
+       "r": "V",
+       "rival": "Nacional",
+       "marcador": "2-0",
+       "fecha": "2026-11-20"
+      }
+     ]
+    },
+    {
+     "equipo": "Racing",
+     "pj": 15,
+     "g": 6,
+     "e": 5,
+     "p": 4,
+     "gf": 21,
+     "gc": 16,
+     "dg": 5,
+     "pts": 23,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Wanderers",
+       "marcador": "3-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "E",
+       "rival": "Defensor Sp",
+       "marcador": "3-3",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "V",
+       "rival": "Cerro Largo",
+       "marcador": "3-1",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "E",
+       "rival": "M.C.Torque",
+       "marcador": "2-2",
+       "fecha": "2026-11-13"
+      },
+      {
+       "r": "V",
+       "rival": "Central Español",
+       "marcador": "1-0",
+       "fecha": "2026-11-20"
       }
      ]
     },
@@ -2640,6 +2726,49 @@
      ]
     },
     {
+     "equipo": "Wanderers",
+     "pj": 15,
+     "g": 6,
+     "e": 4,
+     "p": 5,
+     "gf": 18,
+     "gc": 20,
+     "dg": -2,
+     "pts": 22,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Racing",
+       "marcador": "0-3",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "D",
+       "rival": "Progreso",
+       "marcador": "0-1",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "E",
+       "rival": "Peñarol",
+       "marcador": "1-1",
+       "fecha": "2026-10-31"
+      },
+      {
+       "r": "V",
+       "rival": "Juventud",
+       "marcador": "2-1",
+       "fecha": "2026-11-16"
+      },
+      {
+       "r": "V",
+       "rival": "Liverpool",
+       "marcador": "2-0",
+       "fecha": "2026-11-20"
+      }
+     ]
+    },
+    {
      "equipo": "Progreso",
      "pj": 15,
      "g": 6,
@@ -2679,135 +2808,6 @@
        "rival": "M.C.Torque",
        "marcador": "1-1",
        "fecha": "2026-11-19"
-      }
-     ]
-    },
-    {
-     "equipo": "Cerro",
-     "pj": 14,
-     "g": 6,
-     "e": 3,
-     "p": 5,
-     "gf": 16,
-     "gc": 19,
-     "dg": -3,
-     "pts": 21,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Defensor Sp",
-       "marcador": "3-2",
-       "fecha": "2026-10-10"
-      },
-      {
-       "r": "E",
-       "rival": "Cerro Largo",
-       "marcador": "1-1",
-       "fecha": "2026-10-16"
-      },
-      {
-       "r": "D",
-       "rival": "M.C.Torque",
-       "marcador": "1-3",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Central Español",
-       "marcador": "1-2",
-       "fecha": "2026-10-31"
-      },
-      {
-       "r": "V",
-       "rival": "Dep. Maldonado",
-       "marcador": "1-0",
-       "fecha": "2026-11-14"
-      }
-     ]
-    },
-    {
-     "equipo": "Racing",
-     "pj": 14,
-     "g": 5,
-     "e": 5,
-     "p": 4,
-     "gf": 20,
-     "gc": 16,
-     "dg": 4,
-     "pts": 20,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Juventud",
-       "marcador": "0-2",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "Wanderers",
-       "marcador": "3-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "E",
-       "rival": "Defensor Sp",
-       "marcador": "3-3",
-       "fecha": "2026-10-24"
-      },
-      {
-       "r": "V",
-       "rival": "Cerro Largo",
-       "marcador": "3-1",
-       "fecha": "2026-10-31"
-      },
-      {
-       "r": "E",
-       "rival": "M.C.Torque",
-       "marcador": "2-2",
-       "fecha": "2026-11-13"
-      }
-     ]
-    },
-    {
-     "equipo": "Wanderers",
-     "pj": 14,
-     "g": 5,
-     "e": 4,
-     "p": 5,
-     "gf": 16,
-     "gc": 20,
-     "dg": -4,
-     "pts": 19,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Boston River",
-       "marcador": "1-3",
-       "fecha": "2026-10-10"
-      },
-      {
-       "r": "D",
-       "rival": "Racing",
-       "marcador": "0-3",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "D",
-       "rival": "Progreso",
-       "marcador": "0-1",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "E",
-       "rival": "Peñarol",
-       "marcador": "1-1",
-       "fecha": "2026-10-31"
-      },
-      {
-       "r": "V",
-       "rival": "Juventud",
-       "marcador": "2-1",
-       "fecha": "2026-11-16"
       }
      ]
     },
@@ -2985,21 +2985,15 @@
     },
     {
      "equipo": "Central Español",
-     "pj": 14,
+     "pj": 15,
      "g": 3,
      "e": 2,
-     "p": 9,
+     "p": 10,
      "gf": 9,
-     "gc": 22,
-     "dg": -13,
+     "gc": 23,
+     "dg": -14,
      "pts": 11,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Nacional",
-       "marcador": "0-1",
-       "fecha": "2026-10-11"
-      },
       {
        "r": "D",
        "rival": "Danubio",
@@ -3023,6 +3017,12 @@
        "rival": "Boston River",
        "marcador": "1-0",
        "fecha": "2026-11-14"
+      },
+      {
+       "r": "D",
+       "rival": "Racing",
+       "marcador": "0-1",
+       "fecha": "2026-11-20"
       }
      ]
     },
@@ -3115,6 +3115,33 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-20T16:30:00",
+     "local": "Cerro",
+     "visita": "Nacional",
+     "goles_local": 2,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83283/"
+    },
+    {
+     "fecha": "2026-11-20T16:30:00",
+     "local": "Racing",
+     "visita": "Central Español",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83277/"
+    },
+    {
+     "fecha": "2026-11-20T16:30:00",
+     "local": "Liverpool",
+     "visita": "Wanderers",
+     "goles_local": 0,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83265/"
+    },
+    {
      "fecha": "2026-11-19T16:30:00",
      "local": "Boston River",
      "visita": "Dep. Maldonado",
@@ -3194,33 +3221,6 @@
      "goles_visita": 0,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/83250/"
-    },
-    {
-     "fecha": "2026-11-13T17:00:00",
-     "local": "M.C.Torque",
-     "visita": "Racing",
-     "goles_local": 2,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83253/"
-    },
-    {
-     "fecha": "2026-11-12T20:00:00",
-     "local": "Cerro Largo",
-     "visita": "Progreso",
-     "goles_local": 2,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83256/"
-    },
-    {
-     "fecha": "2026-11-02T20:00:00",
-     "local": "Albion",
-     "visita": "Dep. Maldonado",
-     "goles_local": 0,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83235/"
     }
    ],
    "proximos_partidos": [
@@ -3243,7 +3243,7 @@
      "link_fuente": "https://lamovidaonline.net/event/83286/"
     }
    ],
-   "jugados": 115,
+   "jugados": 118,
    "programados": 120,
    "id": 676
   },
@@ -43586,7 +43586,16 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-20T20:30:00",
+     "fecha": "2026-11-21T20:00:00",
+     "local": "Boston River",
+     "visita": "Liverpool B",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91380/"
+    },
+    {
+     "fecha": "2026-11-22T09:00:00",
      "local": "Nacional Rojo",
      "visita": "River Plate",
      "goles_local": null,

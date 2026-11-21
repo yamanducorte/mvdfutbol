@@ -28246,27 +28246,27 @@
     "fecha": "2026-11-20T16:30:00",
     "local": "Liverpool",
     "visita": "Wanderers",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83265/"
    },
    {
     "fecha": "2026-11-20T16:30:00",
     "local": "Racing",
     "visita": "Central Español",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83277/"
    },
    {
     "fecha": "2026-11-20T16:30:00",
     "local": "Cerro",
     "visita": "Nacional",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83283/"
    },
    {
@@ -40144,7 +40144,7 @@
     "link_fuente": "https://lamovidaonline.net/event/91377/"
    },
    {
-    "fecha": "2026-11-20T19:00:00",
+    "fecha": "2026-11-21T20:00:00",
     "local": "Boston River",
     "visita": "Liverpool B",
     "goles_local": null,
@@ -40153,7 +40153,7 @@
     "link_fuente": "https://lamovidaonline.net/event/91380/"
    },
    {
-    "fecha": "2026-11-20T20:30:00",
+    "fecha": "2026-11-22T09:00:00",
     "local": "Nacional Rojo",
     "visita": "River Plate",
     "goles_local": null,
