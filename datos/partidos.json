@@ -39994,7 +39994,16 @@
     "link_fuente": "https://lamovidaonline.net/event/91315/"
    },
    {
-    "fecha": "2026-11-22T09:00:00",
+    "fecha": "2026-11-18T19:00:00",
+    "local": "Nacional",
+    "visita": "Danubio",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91324/"
+   },
+   {
+    "fecha": "2026-11-21T14:00:00",
     "local": "Liverpool",
     "visita": "Villa Teresa",
     "goles_local": null,
@@ -40003,22 +40012,13 @@
     "link_fuente": "https://lamovidaonline.net/event/91318/"
    },
    {
-    "fecha": "2026-11-22T10:15:00",
+    "fecha": "2026-11-22T10:00:00",
     "local": "Fénix",
     "visita": "Peñarol",
     "goles_local": null,
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91321/"
-   },
-   {
-    "fecha": "2026-11-22T11:30:00",
-    "local": "Nacional",
-    "visita": "Danubio",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91324/"
    },
    {
     "fecha": "2026-11-29T09:00:00",
