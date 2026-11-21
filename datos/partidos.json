@@ -29831,12 +29831,30 @@
    },
    {
     "fecha": "2026-11-20T11:00:00",
-    "local": "Nacional",
-    "visita": "Racing",
+    "local": "Racing",
+    "visita": "Nacional",
     "goles_local": 1,
     "goles_visita": 1,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92324/"
+   },
+   {
+    "fecha": "2026-11-21T10:00:00",
+    "local": "M.C.Torque",
+    "visita": "Paysandú",
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/92327/"
+   },
+   {
+    "fecha": "2026-11-21T14:00:00",
+    "local": "Dep. Maldonado",
+    "visita": "Danubio",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/92315/"
    },
    {
     "fecha": "2026-11-21T16:30:00",
@@ -29846,15 +29864,6 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/92312/"
-   },
-   {
-    "fecha": "2026-11-21T16:30:00",
-    "local": "Danubio",
-    "visita": "Dep. Maldonado",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/92315/"
    },
    {
     "fecha": "2026-11-21T16:30:00",
@@ -29873,15 +29882,6 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/92321/"
-   },
-   {
-    "fecha": "2026-11-21T16:30:00",
-    "local": "M.C.Torque",
-    "visita": "Paysandú",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/92327/"
    },
    {
     "fecha": "2026-11-21T16:30:00",
@@ -30916,6 +30916,42 @@
     "link_fuente": "https://lamovidaonline.net/event/91962/"
    },
    {
+    "fecha": "2026-11-21T08:00:00",
+    "local": "M.C.Torque",
+    "visita": "Paysandú",
+    "goles_local": 2,
+    "goles_visita": 2,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/92352/"
+   },
+   {
+    "fecha": "2026-11-21T12:00:00",
+    "local": "Dep. Maldonado",
+    "visita": "Danubio",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/92340/"
+   },
+   {
+    "fecha": "2026-11-21T13:00:00",
+    "local": "Racing",
+    "visita": "Nacional",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/92349/"
+   },
+   {
+    "fecha": "2026-11-21T13:00:00",
+    "local": "Peñarol",
+    "visita": "Liverpool",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/92355/"
+   },
+   {
     "fecha": "2026-11-21T14:30:00",
     "local": "Albion",
     "visita": "Boston River",
@@ -30923,15 +30959,6 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/92337/"
-   },
-   {
-    "fecha": "2026-11-21T14:30:00",
-    "local": "Danubio",
-    "visita": "Dep. Maldonado",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/92340/"
    },
    {
     "fecha": "2026-11-21T14:30:00",
@@ -30950,33 +30977,6 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/92346/"
-   },
-   {
-    "fecha": "2026-11-21T14:30:00",
-    "local": "Nacional",
-    "visita": "Racing",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/92349/"
-   },
-   {
-    "fecha": "2026-11-21T14:30:00",
-    "local": "M.C.Torque",
-    "visita": "Paysandú",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/92352/"
-   },
-   {
-    "fecha": "2026-11-21T14:30:00",
-    "local": "Peñarol",
-    "visita": "Liverpool",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/92355/"
    },
    {
     "fecha": "2026-11-21T14:30:00",
@@ -32005,45 +32005,45 @@
     "fecha": "2026-11-20T12:00:00",
     "local": "Dep. Maldonado",
     "visita": "Danubio",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92365/"
    },
    {
     "fecha": "2026-11-21T11:00:00",
     "local": "Boston River",
     "visita": "Albion",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 5,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92362/"
    },
    {
     "fecha": "2026-11-21T11:00:00",
     "local": "River Plate",
     "visita": "Wanderers",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92368/"
    },
    {
     "fecha": "2026-11-21T11:00:00",
     "local": "Rentistas",
     "visita": "Juventud",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92371/"
    },
    {
     "fecha": "2026-11-21T11:00:00",
     "local": "Racing",
     "visita": "Nacional",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 4,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92374/"
    },
    {
@@ -32056,12 +32056,12 @@
     "link_fuente": "https://lamovidaonline.net/event/92380/"
    },
    {
-    "fecha": "2026-11-21T13:00:00",
+    "fecha": "2026-11-21T11:00:00",
     "local": "Bella Vista",
     "visita": "Defensor Sp",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 4,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92383/"
    },
    {
@@ -33091,73 +33091,73 @@
     "fecha": "2026-11-21T09:00:00",
     "local": "Boston River",
     "visita": "Albion",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92387/"
    },
    {
     "fecha": "2026-11-21T09:00:00",
     "local": "River Plate",
     "visita": "Wanderers",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92393/"
    },
    {
     "fecha": "2026-11-21T09:00:00",
     "local": "Rentistas",
     "visita": "Juventud",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92396/"
    },
    {
     "fecha": "2026-11-21T09:00:00",
     "local": "Racing",
     "visita": "Nacional",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92399/"
    },
    {
     "fecha": "2026-11-21T09:00:00",
     "local": "Liverpool",
     "visita": "Peñarol",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92405/"
    },
    {
     "fecha": "2026-11-21T10:00:00",
     "local": "Dep. Maldonado",
     "visita": "Danubio",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 5,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92390/"
+   },
+   {
+    "fecha": "2026-11-21T10:00:00",
+    "local": "Paysandú",
+    "visita": "M.C.Torque",
+    "goles_local": 1,
+    "goles_visita": 1,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/92402/"
    },
    {
     "fecha": "2026-11-21T11:00:00",
     "local": "Bella Vista",
     "visita": "Defensor Sp",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92408/"
-   },
-   {
-    "fecha": "2026-11-21T13:00:00",
-    "local": "Paysandú",
-    "visita": "M.C.Torque",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/92402/"
    },
    {
     "fecha": "2026-11-27T12:00:00",
@@ -34240,9 +34240,9 @@
     "fecha": "2026-11-21T08:00:00",
     "local": "Paysandú",
     "visita": "M.C.Torque",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 5,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92427/"
    },
    {
