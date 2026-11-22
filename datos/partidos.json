@@ -39994,21 +39994,12 @@
     "link_fuente": "https://lamovidaonline.net/event/91315/"
    },
    {
-    "fecha": "2026-11-18T19:00:00",
-    "local": "Nacional",
-    "visita": "Danubio",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91324/"
-   },
-   {
     "fecha": "2026-11-21T14:00:00",
     "local": "Liverpool",
     "visita": "Villa Teresa",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91318/"
    },
    {
@@ -40019,6 +40010,15 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91321/"
+   },
+   {
+    "fecha": "2026-11-25T19:00:00",
+    "local": "Nacional",
+    "visita": "Danubio",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91324/"
    },
    {
     "fecha": "2026-11-29T09:00:00",
@@ -40147,9 +40147,9 @@
     "fecha": "2026-11-21T20:00:00",
     "local": "Boston River",
     "visita": "Liverpool B",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91380/"
    },
    {
