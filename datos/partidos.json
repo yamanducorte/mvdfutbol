@@ -37198,8 +37198,8 @@
     "fecha": "2026-11-21T11:00:00",
     "local": "Durazno F.C.",
     "visita": "Estudiantes del Plata",
-    "goles_local": 3,
-    "goles_visita": 0,
+    "goles_local": 2,
+    "goles_visita": 1,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92494/"
    },
@@ -38682,7 +38682,7 @@
   ]
  },
  "721": {
-  "estado": "en_curso",
+  "estado": "terminado",
   "nombre": "B2 Copa de Oro Sub16 Clausura 2026",
   "partidos": [
    {
@@ -39039,7 +39039,7 @@
   ]
  },
  "722": {
-  "estado": "en_curso",
+  "estado": "terminado",
   "nombre": "B2 Copa de Oro Sub15 Clausura 2026",
   "partidos": [
    {
@@ -39396,7 +39396,7 @@
   ]
  },
  "723": {
-  "estado": "en_curso",
+  "estado": "terminado",
   "nombre": "B2 Copa de Oro Sub14 Clausura 2026",
   "partidos": [
    {
@@ -40006,9 +40006,9 @@
     "fecha": "2026-11-22T10:00:00",
     "local": "Fénix",
     "visita": "Peñarol",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 4,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91321/"
    },
    {
@@ -40156,9 +40156,9 @@
     "fecha": "2026-11-22T09:00:00",
     "local": "Nacional Rojo",
     "visita": "River Plate",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91383/"
    },
    {
