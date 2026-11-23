@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T19:29:44+00:00",
+ "generado": "2026-11-23T00:29:47+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -15319,15 +15319,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-22T20:00:00",
-     "local": "Miramar Misiones",
-     "visita": "Terremoto",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/92487/"
-    },
-    {
      "fecha": "2026-11-28T12:00:00",
      "local": "Progreso",
      "visita": "Durazno F.C.",
@@ -20919,21 +20910,15 @@
     },
     {
      "equipo": "Terremoto",
-     "pj": 10,
+     "pj": 11,
      "g": 9,
      "e": 0,
-     "p": 1,
-     "gf": 39,
-     "gc": 2,
-     "dg": 37,
+     "p": 2,
+     "gf": 40,
+     "gc": 4,
+     "dg": 36,
      "pts": 27,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Durazno F.C.",
-       "marcador": "3-0",
-       "fecha": "2026-10-10"
-      },
       {
        "r": "V",
        "rival": "Oriental",
@@ -20957,6 +20942,12 @@
        "rival": "Cerrito",
        "marcador": "3-0",
        "fecha": "2026-11-14"
+      },
+      {
+       "r": "D",
+       "rival": "Miramar Misiones",
+       "marcador": "1-2",
+       "fecha": "2026-11-22"
       }
      ]
     },
@@ -21004,6 +20995,49 @@
      ]
     },
     {
+     "equipo": "Miramar Misiones",
+     "pj": 11,
+     "g": 7,
+     "e": 2,
+     "p": 2,
+     "gf": 19,
+     "gc": 8,
+     "dg": 11,
+     "pts": 23,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Atenas",
+       "marcador": "3-0",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "V",
+       "rival": "Salto",
+       "marcador": "3-0",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "V",
+       "rival": "Cerrito",
+       "marcador": "1-0",
+       "fecha": "2026-11-02"
+      },
+      {
+       "r": "V",
+       "rival": "Plaza Colonia",
+       "marcador": "3-1",
+       "fecha": "2026-11-14"
+      },
+      {
+       "r": "V",
+       "rival": "Terremoto",
+       "marcador": "2-1",
+       "fecha": "2026-11-22"
+      }
+     ]
+    },
+    {
      "equipo": "Oriental",
      "pj": 11,
      "g": 6,
@@ -21042,49 +21076,6 @@
        "r": "V",
        "rival": "Tacuarembó",
        "marcador": "5-0",
-       "fecha": "2026-11-14"
-      }
-     ]
-    },
-    {
-     "equipo": "Miramar Misiones",
-     "pj": 10,
-     "g": 6,
-     "e": 2,
-     "p": 2,
-     "gf": 17,
-     "gc": 7,
-     "dg": 10,
-     "pts": 20,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Oriental",
-       "marcador": "1-1",
-       "fecha": "2026-10-10"
-      },
-      {
-       "r": "V",
-       "rival": "Atenas",
-       "marcador": "3-0",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "V",
-       "rival": "Salto",
-       "marcador": "3-0",
-       "fecha": "2026-10-24"
-      },
-      {
-       "r": "V",
-       "rival": "Cerrito",
-       "marcador": "1-0",
-       "fecha": "2026-11-02"
-      },
-      {
-       "r": "V",
-       "rival": "Plaza Colonia",
-       "marcador": "3-1",
        "fecha": "2026-11-14"
       }
      ]
@@ -21436,6 +21427,15 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-22T18:00:00",
+     "local": "Miramar Misiones",
+     "visita": "Terremoto",
+     "goles_local": 2,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92506/"
+    },
+    {
      "fecha": "2026-11-21T13:00:00",
      "local": "Salto",
      "visita": "Fénix",
@@ -21533,15 +21533,6 @@
      "goles_visita": 4,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/92066/"
-    },
-    {
-     "fecha": "2026-11-02T13:00:00",
-     "local": "Cerrito",
-     "visita": "Miramar Misiones",
-     "goles_local": 0,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88193/"
     }
    ],
    "proximos_partidos": [
@@ -21609,7 +21600,7 @@
      "link_fuente": "https://lamovidaonline.net/event/88238/"
     }
    ],
-   "jugados": 69,
+   "jugados": 70,
    "programados": 79,
    "id": 705
   },
@@ -27494,6 +27485,49 @@
      ]
     },
     {
+     "equipo": "La Luz",
+     "pj": 11,
+     "g": 6,
+     "e": 1,
+     "p": 4,
+     "gf": 31,
+     "gc": 17,
+     "dg": 14,
+     "pts": 19,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Durazno F.C.",
+       "marcador": "3-1",
+       "fecha": "2026-10-18"
+      },
+      {
+       "r": "V",
+       "rival": "Oriental",
+       "marcador": "2-1",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Atenas",
+       "marcador": "1-2",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "D",
+       "rival": "Salto",
+       "marcador": "2-3",
+       "fecha": "2026-11-15"
+      },
+      {
+       "r": "V",
+       "rival": "Cerrito",
+       "marcador": "4-0",
+       "fecha": "2026-11-22"
+      }
+     ]
+    },
+    {
      "equipo": "Miramar Misiones",
      "pj": 9,
      "g": 6,
@@ -27537,65 +27571,59 @@
      ]
     },
     {
-     "equipo": "La Luz",
-     "pj": 10,
+     "equipo": "Durazno F.C.",
+     "pj": 11,
      "g": 5,
-     "e": 1,
+     "e": 2,
      "p": 4,
-     "gf": 27,
+     "gf": 21,
      "gc": 17,
-     "dg": 10,
-     "pts": 16,
+     "dg": 4,
+     "pts": 17,
      "forma": [
       {
        "r": "V",
-       "rival": "Tacuarembó",
-       "marcador": "7-2",
-       "fecha": "2026-10-14"
+       "rival": "Terremoto",
+       "marcador": "2-1",
+       "fecha": "2026-10-11"
       },
       {
-       "r": "V",
-       "rival": "Durazno F.C.",
-       "marcador": "3-1",
+       "r": "D",
+       "rival": "La Luz",
+       "marcador": "1-3",
        "fecha": "2026-10-18"
       },
       {
-       "r": "V",
-       "rival": "Oriental",
-       "marcador": "2-1",
+       "r": "E",
+       "rival": "Fénix",
+       "marcador": "1-1",
        "fecha": "2026-10-25"
       },
       {
        "r": "D",
-       "rival": "Atenas",
+       "rival": "Tacuarembó",
        "marcador": "1-2",
        "fecha": "2026-11-01"
       },
       {
-       "r": "D",
-       "rival": "Salto",
-       "marcador": "2-3",
-       "fecha": "2026-11-15"
+       "r": "V",
+       "rival": "Estudiantes del Plata",
+       "marcador": "5-2",
+       "fecha": "2026-11-22"
       }
      ]
     },
     {
      "equipo": "Salto",
-     "pj": 10,
+     "pj": 11,
      "g": 5,
-     "e": 0,
+     "e": 1,
      "p": 5,
-     "gf": 18,
-     "gc": 16,
+     "gf": 19,
+     "gc": 17,
      "dg": 2,
-     "pts": 15,
+     "pts": 16,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Cerrito",
-       "marcador": "2-3",
-       "fecha": "2026-10-18"
-      },
       {
        "r": "D",
        "rival": "Miramar Misiones",
@@ -27619,26 +27647,26 @@
        "rival": "La Luz",
        "marcador": "3-2",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "E",
+       "rival": "Fénix",
+       "marcador": "1-1",
+       "fecha": "2026-11-22"
       }
      ]
     },
     {
      "equipo": "Fénix",
-     "pj": 10,
+     "pj": 11,
      "g": 3,
-     "e": 5,
+     "e": 6,
      "p": 2,
-     "gf": 15,
-     "gc": 10,
+     "gf": 16,
+     "gc": 11,
      "dg": 5,
-     "pts": 14,
+     "pts": 15,
      "forma": [
-      {
-       "r": "E",
-       "rival": "Estudiantes del Plata",
-       "marcador": "1-1",
-       "fecha": "2026-10-11"
-      },
       {
        "r": "E",
        "rival": "Progreso",
@@ -27662,6 +27690,12 @@
        "rival": "Atenas",
        "marcador": "4-0",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "E",
+       "rival": "Salto",
+       "marcador": "1-1",
+       "fecha": "2026-11-22"
       }
      ]
     },
@@ -27705,49 +27739,6 @@
        "rival": "Cerrito",
        "marcador": "2-2",
        "fecha": "2026-11-15"
-      }
-     ]
-    },
-    {
-     "equipo": "Durazno F.C.",
-     "pj": 10,
-     "g": 4,
-     "e": 2,
-     "p": 4,
-     "gf": 16,
-     "gc": 15,
-     "dg": 1,
-     "pts": 14,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Miramar Misiones",
-       "marcador": "1-1",
-       "fecha": "2026-10-04"
-      },
-      {
-       "r": "V",
-       "rival": "Terremoto",
-       "marcador": "2-1",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "D",
-       "rival": "La Luz",
-       "marcador": "1-3",
-       "fecha": "2026-10-18"
-      },
-      {
-       "r": "E",
-       "rival": "Fénix",
-       "marcador": "1-1",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Tacuarembó",
-       "marcador": "1-2",
-       "fecha": "2026-11-01"
       }
      ]
     },
@@ -27838,49 +27829,6 @@
      ]
     },
     {
-     "equipo": "Cerrito",
-     "pj": 8,
-     "g": 2,
-     "e": 3,
-     "p": 3,
-     "gf": 14,
-     "gc": 19,
-     "dg": -5,
-     "pts": 9,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Durazno F.C.",
-       "marcador": "1-2",
-       "fecha": "2026-09-27"
-      },
-      {
-       "r": "E",
-       "rival": "Oriental",
-       "marcador": "0-0",
-       "fecha": "2026-10-04"
-      },
-      {
-       "r": "V",
-       "rival": "Salto",
-       "marcador": "3-2",
-       "fecha": "2026-10-18"
-      },
-      {
-       "r": "D",
-       "rival": "Plaza Colonia",
-       "marcador": "0-3",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "E",
-       "rival": "Terremoto",
-       "marcador": "2-2",
-       "fecha": "2026-11-15"
-      }
-     ]
-    },
-    {
      "equipo": "Oriental",
      "pj": 11,
      "g": 2,
@@ -27924,22 +27872,59 @@
      ]
     },
     {
-     "equipo": "Estudiantes del Plata",
-     "pj": 10,
-     "g": 0,
-     "e": 2,
-     "p": 8,
-     "gf": 8,
-     "gc": 27,
-     "dg": -19,
-     "pts": 2,
+     "equipo": "Cerrito",
+     "pj": 9,
+     "g": 2,
+     "e": 3,
+     "p": 4,
+     "gf": 14,
+     "gc": 23,
+     "dg": -9,
+     "pts": 9,
      "forma": [
+      {
+       "r": "E",
+       "rival": "Oriental",
+       "marcador": "0-0",
+       "fecha": "2026-10-04"
+      },
+      {
+       "r": "V",
+       "rival": "Salto",
+       "marcador": "3-2",
+       "fecha": "2026-10-18"
+      },
+      {
+       "r": "D",
+       "rival": "Plaza Colonia",
+       "marcador": "0-3",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "E",
+       "rival": "Terremoto",
+       "marcador": "2-2",
+       "fecha": "2026-11-15"
+      },
       {
        "r": "D",
        "rival": "La Luz",
-       "marcador": "1-6",
-       "fecha": "2026-10-04"
-      },
+       "marcador": "0-4",
+       "fecha": "2026-11-22"
+      }
+     ]
+    },
+    {
+     "equipo": "Estudiantes del Plata",
+     "pj": 11,
+     "g": 0,
+     "e": 2,
+     "p": 9,
+     "gf": 10,
+     "gc": 32,
+     "dg": -22,
+     "pts": 2,
+     "forma": [
       {
        "r": "E",
        "rival": "Fénix",
@@ -27963,11 +27948,44 @@
        "rival": "Progreso",
        "marcador": "1-2",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "D",
+       "rival": "Durazno F.C.",
+       "marcador": "2-5",
+       "fecha": "2026-11-22"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-22T11:00:00",
+     "local": "Fénix",
+     "visita": "Salto",
+     "goles_local": 1,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92519/"
+    },
+    {
+     "fecha": "2026-11-22T09:00:00",
+     "local": "La Luz",
+     "visita": "Cerrito",
+     "goles_local": 4,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92522/"
+    },
+    {
+     "fecha": "2026-11-22T09:00:00",
+     "local": "Estudiantes del Plata",
+     "visita": "Durazno F.C.",
+     "goles_local": 2,
+     "goles_visita": 5,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92513/"
+    },
     {
      "fecha": "2026-11-21T10:00:00",
      "local": "Progreso",
@@ -28048,33 +28066,6 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/88383/"
-    },
-    {
-     "fecha": "2026-11-01T11:00:00",
-     "local": "Estudiantes del Plata",
-     "visita": "Plaza Colonia",
-     "goles_local": 1,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88449/"
-    },
-    {
-     "fecha": "2026-11-01T11:00:00",
-     "local": "Terremoto",
-     "visita": "Salto",
-     "goles_local": 2,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88464/"
-    },
-    {
-     "fecha": "2026-11-01T11:00:00",
-     "local": "La Luz",
-     "visita": "Atenas",
-     "goles_local": 1,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88461/"
     }
    ],
    "proximos_partidos": [
@@ -28151,7 +28142,7 @@
      "link_fuente": "https://lamovidaonline.net/event/88512/"
     }
    ],
-   "jugados": 66,
+   "jugados": 69,
    "programados": 92,
    "id": 704
   },
@@ -33476,6 +33467,49 @@
      ]
     },
     {
+     "equipo": "Fénix",
+     "pj": 11,
+     "g": 6,
+     "e": 4,
+     "p": 1,
+     "gf": 24,
+     "gc": 11,
+     "dg": 13,
+     "pts": 22,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Progreso",
+       "marcador": "1-1",
+       "fecha": "2026-10-18"
+      },
+      {
+       "r": "V",
+       "rival": "Durazno F.C.",
+       "marcador": "1-0",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "V",
+       "rival": "Oriental",
+       "marcador": "1-0",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Atenas",
+       "marcador": "6-2",
+       "fecha": "2026-11-15"
+      },
+      {
+       "r": "V",
+       "rival": "Salto",
+       "marcador": "1-0",
+       "fecha": "2026-11-22"
+      }
+     ]
+    },
+    {
      "equipo": "Miramar Misiones",
      "pj": 10,
      "g": 6,
@@ -33520,21 +33554,15 @@
     },
     {
      "equipo": "Salto",
-     "pj": 10,
+     "pj": 11,
      "g": 6,
      "e": 1,
-     "p": 3,
+     "p": 4,
      "gf": 25,
-     "gc": 11,
-     "dg": 14,
+     "gc": 12,
+     "dg": 13,
      "pts": 19,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Cerrito",
-       "marcador": "9-0",
-       "fecha": "2026-10-18"
-      },
       {
        "r": "D",
        "rival": "Miramar Misiones",
@@ -33558,49 +33586,12 @@
        "rival": "La Luz",
        "marcador": "3-2",
        "fecha": "2026-11-15"
-      }
-     ]
-    },
-    {
-     "equipo": "Fénix",
-     "pj": 10,
-     "g": 5,
-     "e": 4,
-     "p": 1,
-     "gf": 23,
-     "gc": 11,
-     "dg": 12,
-     "pts": 19,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Estudiantes del Plata",
-       "marcador": "7-0",
-       "fecha": "2026-10-11"
       },
       {
-       "r": "E",
-       "rival": "Progreso",
-       "marcador": "1-1",
-       "fecha": "2026-10-18"
-      },
-      {
-       "r": "V",
-       "rival": "Durazno F.C.",
-       "marcador": "1-0",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "V",
-       "rival": "Oriental",
-       "marcador": "1-0",
-       "fecha": "2026-11-01"
-      },
-      {
-       "r": "V",
-       "rival": "Atenas",
-       "marcador": "6-2",
-       "fecha": "2026-11-15"
+       "r": "D",
+       "rival": "Fénix",
+       "marcador": "0-1",
+       "fecha": "2026-11-22"
       }
      ]
     },
@@ -33691,6 +33682,49 @@
      ]
     },
     {
+     "equipo": "La Luz",
+     "pj": 11,
+     "g": 5,
+     "e": 2,
+     "p": 4,
+     "gf": 17,
+     "gc": 20,
+     "dg": -3,
+     "pts": 17,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Durazno F.C.",
+       "marcador": "1-0",
+       "fecha": "2026-10-18"
+      },
+      {
+       "r": "D",
+       "rival": "Oriental",
+       "marcador": "0-2",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "D",
+       "rival": "Atenas",
+       "marcador": "0-3",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "D",
+       "rival": "Salto",
+       "marcador": "2-3",
+       "fecha": "2026-11-15"
+      },
+      {
+       "r": "V",
+       "rival": "Cerrito",
+       "marcador": "3-1",
+       "fecha": "2026-11-22"
+      }
+     ]
+    },
+    {
      "equipo": "Oriental",
      "pj": 11,
      "g": 4,
@@ -33734,45 +33768,45 @@
      ]
     },
     {
-     "equipo": "La Luz",
-     "pj": 10,
-     "g": 4,
-     "e": 2,
-     "p": 4,
-     "gf": 14,
-     "gc": 19,
-     "dg": -5,
-     "pts": 14,
+     "equipo": "Durazno F.C.",
+     "pj": 11,
+     "g": 3,
+     "e": 3,
+     "p": 5,
+     "gf": 16,
+     "gc": 14,
+     "dg": 2,
+     "pts": 12,
      "forma": [
       {
-       "r": "V",
-       "rival": "Tacuarembó",
-       "marcador": "2-0",
-       "fecha": "2026-10-14"
+       "r": "E",
+       "rival": "Terremoto",
+       "marcador": "1-1",
+       "fecha": "2026-10-11"
       },
       {
-       "r": "V",
-       "rival": "Durazno F.C.",
-       "marcador": "1-0",
+       "r": "D",
+       "rival": "La Luz",
+       "marcador": "0-1",
        "fecha": "2026-10-18"
       },
       {
        "r": "D",
-       "rival": "Oriental",
-       "marcador": "0-2",
+       "rival": "Fénix",
+       "marcador": "0-1",
        "fecha": "2026-10-25"
       },
       {
        "r": "D",
-       "rival": "Atenas",
-       "marcador": "0-3",
+       "rival": "Tacuarembó",
+       "marcador": "2-3",
        "fecha": "2026-11-01"
       },
       {
-       "r": "D",
-       "rival": "Salto",
-       "marcador": "2-3",
-       "fecha": "2026-11-15"
+       "r": "V",
+       "rival": "Estudiantes del Plata",
+       "marcador": "5-0",
+       "fecha": "2026-11-22"
       }
      ]
     },
@@ -33816,49 +33850,6 @@
        "rival": "Atenas",
        "marcador": "5-2",
        "fecha": "2026-11-21"
-      }
-     ]
-    },
-    {
-     "equipo": "Durazno F.C.",
-     "pj": 10,
-     "g": 2,
-     "e": 3,
-     "p": 5,
-     "gf": 11,
-     "gc": 14,
-     "dg": -3,
-     "pts": 9,
-     "forma": [
-      {
-       "r": "E",
-       "rival": "Miramar Misiones",
-       "marcador": "1-1",
-       "fecha": "2026-10-04"
-      },
-      {
-       "r": "E",
-       "rival": "Terremoto",
-       "marcador": "1-1",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "D",
-       "rival": "La Luz",
-       "marcador": "0-1",
-       "fecha": "2026-10-18"
-      },
-      {
-       "r": "D",
-       "rival": "Fénix",
-       "marcador": "0-1",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "D",
-       "rival": "Tacuarembó",
-       "marcador": "2-3",
-       "fecha": "2026-11-01"
       }
      ]
     },
@@ -33907,21 +33898,15 @@
     },
     {
      "equipo": "Cerrito",
-     "pj": 9,
+     "pj": 10,
      "g": 2,
      "e": 2,
-     "p": 5,
-     "gf": 13,
-     "gc": 31,
-     "dg": -18,
+     "p": 6,
+     "gf": 14,
+     "gc": 34,
+     "dg": -20,
      "pts": 8,
      "forma": [
-      {
-       "r": "E",
-       "rival": "Oriental",
-       "marcador": "3-3",
-       "fecha": "2026-10-04"
-      },
       {
        "r": "D",
        "rival": "Salto",
@@ -33945,26 +33930,26 @@
        "rival": "Terremoto",
        "marcador": "1-8",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "D",
+       "rival": "La Luz",
+       "marcador": "1-3",
+       "fecha": "2026-11-22"
       }
      ]
     },
     {
      "equipo": "Estudiantes del Plata",
-     "pj": 10,
+     "pj": 11,
      "g": 0,
      "e": 1,
-     "p": 9,
+     "p": 10,
      "gf": 5,
-     "gc": 40,
-     "dg": -35,
+     "gc": 45,
+     "dg": -40,
      "pts": 1,
      "forma": [
-      {
-       "r": "E",
-       "rival": "La Luz",
-       "marcador": "2-2",
-       "fecha": "2026-10-04"
-      },
       {
        "r": "D",
        "rival": "Fénix",
@@ -33988,11 +33973,44 @@
        "rival": "Progreso",
        "marcador": "1-2",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "D",
+       "rival": "Durazno F.C.",
+       "marcador": "0-5",
+       "fecha": "2026-11-22"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-22T13:00:00",
+     "local": "Fénix",
+     "visita": "Salto",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92538/"
+    },
+    {
+     "fecha": "2026-11-22T11:00:00",
+     "local": "La Luz",
+     "visita": "Cerrito",
+     "goles_local": 3,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92541/"
+    },
+    {
+     "fecha": "2026-11-22T11:00:00",
+     "local": "Estudiantes del Plata",
+     "visita": "Durazno F.C.",
+     "goles_local": 0,
+     "goles_visita": 5,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92532/"
+    },
     {
      "fecha": "2026-11-21T12:00:00",
      "local": "Progreso",
@@ -34073,33 +34091,6 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/88670/"
-    },
-    {
-     "fecha": "2026-11-01T13:00:00",
-     "local": "La Luz",
-     "visita": "Atenas",
-     "goles_local": 0,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88748/"
-    },
-    {
-     "fecha": "2026-11-01T13:00:00",
-     "local": "Estudiantes del Plata",
-     "visita": "Plaza Colonia",
-     "goles_local": 0,
-     "goles_visita": 9,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88736/"
-    },
-    {
-     "fecha": "2026-11-01T13:00:00",
-     "local": "Terremoto",
-     "visita": "Salto",
-     "goles_local": 1,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/88751/"
     }
    ],
    "proximos_partidos": [
@@ -34176,7 +34167,7 @@
      "link_fuente": "https://lamovidaonline.net/event/88799/"
     }
    ],
-   "jugados": 67,
+   "jugados": 70,
    "programados": 79,
    "id": 703
   },
@@ -39305,21 +39296,15 @@
    "tabla": [
     {
      "equipo": "Salto",
-     "pj": 10,
-     "g": 9,
+     "pj": 11,
+     "g": 10,
      "e": 1,
      "p": 0,
-     "gf": 36,
-     "gc": 7,
-     "dg": 29,
-     "pts": 28,
+     "gf": 40,
+     "gc": 8,
+     "dg": 32,
+     "pts": 31,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Cerrito",
-       "marcador": "5-1",
-       "fecha": "2026-10-18"
-      },
       {
        "r": "V",
        "rival": "Miramar Misiones",
@@ -39343,6 +39328,12 @@
        "rival": "La Luz",
        "marcador": "6-0",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "V",
+       "rival": "Fénix",
+       "marcador": "4-1",
+       "fecha": "2026-11-22"
       }
      ]
     },
@@ -39476,6 +39467,49 @@
      ]
     },
     {
+     "equipo": "Durazno F.C.",
+     "pj": 11,
+     "g": 5,
+     "e": 4,
+     "p": 2,
+     "gf": 22,
+     "gc": 21,
+     "dg": 1,
+     "pts": 19,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Terremoto",
+       "marcador": "1-2",
+       "fecha": "2026-10-11"
+      },
+      {
+       "r": "V",
+       "rival": "La Luz",
+       "marcador": "3-1",
+       "fecha": "2026-10-18"
+      },
+      {
+       "r": "V",
+       "rival": "Fénix",
+       "marcador": "2-1",
+       "fecha": "2026-10-25"
+      },
+      {
+       "r": "E",
+       "rival": "Tacuarembó",
+       "marcador": "2-2",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "Estudiantes del Plata",
+       "marcador": "4-2",
+       "fecha": "2026-11-22"
+      }
+     ]
+    },
+    {
      "equipo": "Plaza Colonia",
      "pj": 11,
      "g": 5,
@@ -39515,49 +39549,6 @@
        "rival": "Progreso",
        "marcador": "3-1",
        "fecha": "2026-11-21"
-      }
-     ]
-    },
-    {
-     "equipo": "Durazno F.C.",
-     "pj": 10,
-     "g": 4,
-     "e": 4,
-     "p": 2,
-     "gf": 18,
-     "gc": 19,
-     "dg": -1,
-     "pts": 16,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Miramar Misiones",
-       "marcador": "2-1",
-       "fecha": "2026-10-04"
-      },
-      {
-       "r": "D",
-       "rival": "Terremoto",
-       "marcador": "1-2",
-       "fecha": "2026-10-11"
-      },
-      {
-       "r": "V",
-       "rival": "La Luz",
-       "marcador": "3-1",
-       "fecha": "2026-10-18"
-      },
-      {
-       "r": "V",
-       "rival": "Fénix",
-       "marcador": "2-1",
-       "fecha": "2026-10-25"
-      },
-      {
-       "r": "E",
-       "rival": "Tacuarembó",
-       "marcador": "2-2",
-       "fecha": "2026-11-01"
       }
      ]
     },
@@ -39606,21 +39597,15 @@
     },
     {
      "equipo": "Fénix",
-     "pj": 10,
+     "pj": 11,
      "g": 4,
      "e": 3,
-     "p": 3,
-     "gf": 15,
-     "gc": 11,
-     "dg": 4,
+     "p": 4,
+     "gf": 16,
+     "gc": 15,
+     "dg": 1,
      "pts": 15,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Estudiantes del Plata",
-       "marcador": "7-0",
-       "fecha": "2026-10-11"
-      },
       {
        "r": "E",
        "rival": "Progreso",
@@ -39644,6 +39629,12 @@
        "rival": "Atenas",
        "marcador": "2-1",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "D",
+       "rival": "Salto",
+       "marcador": "1-4",
+       "fecha": "2026-11-22"
       }
      ]
     },
@@ -39735,21 +39726,15 @@
     },
     {
      "equipo": "Cerrito",
-     "pj": 9,
+     "pj": 10,
      "g": 2,
-     "e": 0,
+     "e": 1,
      "p": 7,
-     "gf": 11,
-     "gc": 28,
+     "gf": 13,
+     "gc": 30,
      "dg": -17,
-     "pts": 6,
+     "pts": 7,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Oriental",
-       "marcador": "1-2",
-       "fecha": "2026-10-04"
-      },
       {
        "r": "D",
        "rival": "Salto",
@@ -39773,26 +39758,26 @@
        "rival": "Terremoto",
        "marcador": "1-6",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "E",
+       "rival": "La Luz",
+       "marcador": "2-2",
+       "fecha": "2026-11-22"
       }
      ]
     },
     {
      "equipo": "La Luz",
-     "pj": 10,
+     "pj": 11,
      "g": 1,
-     "e": 2,
+     "e": 3,
      "p": 7,
-     "gf": 10,
-     "gc": 26,
+     "gf": 12,
+     "gc": 28,
      "dg": -16,
-     "pts": 5,
+     "pts": 6,
      "forma": [
-      {
-       "r": "D",
-       "rival": "Tacuarembó",
-       "marcador": "2-4",
-       "fecha": "2026-10-14"
-      },
       {
        "r": "D",
        "rival": "Durazno F.C.",
@@ -39816,26 +39801,26 @@
        "rival": "Salto",
        "marcador": "0-6",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "E",
+       "rival": "Cerrito",
+       "marcador": "2-2",
+       "fecha": "2026-11-22"
       }
      ]
     },
     {
      "equipo": "Estudiantes del Plata",
-     "pj": 10,
+     "pj": 11,
      "g": 0,
      "e": 0,
-     "p": 10,
-     "gf": 3,
-     "gc": 38,
-     "dg": -35,
+     "p": 11,
+     "gf": 5,
+     "gc": 42,
+     "dg": -37,
      "pts": 0,
      "forma": [
-      {
-       "r": "D",
-       "rival": "La Luz",
-       "marcador": "0-2",
-       "fecha": "2026-10-04"
-      },
       {
        "r": "D",
        "rival": "Fénix",
@@ -39859,11 +39844,44 @@
        "rival": "Progreso",
        "marcador": "0-4",
        "fecha": "2026-11-15"
+      },
+      {
+       "r": "D",
+       "rival": "Durazno F.C.",
+       "marcador": "2-4",
+       "fecha": "2026-11-22"
       }
      ]
     }
    ],
    "ultimos_resultados": [
+    {
+     "fecha": "2026-11-22T15:00:00",
+     "local": "Fénix",
+     "visita": "Salto",
+     "goles_local": 1,
+     "goles_visita": 4,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92557/"
+    },
+    {
+     "fecha": "2026-11-22T13:00:00",
+     "local": "La Luz",
+     "visita": "Cerrito",
+     "goles_local": 2,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92560/"
+    },
+    {
+     "fecha": "2026-11-22T13:00:00",
+     "local": "Estudiantes del Plata",
+     "visita": "Durazno F.C.",
+     "goles_local": 2,
+     "goles_visita": 4,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92551/"
+    },
     {
      "fecha": "2026-11-21T14:00:00",
      "local": "Progreso",
@@ -39944,33 +39962,6 @@
      "goles_visita": 2,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/88944/"
-    },
-    {
-     "fecha": "2026-11-01T15:00:00",
-     "local": "La Luz",
-     "visita": "Atenas",
-     "goles_local": 1,
-     "goles_visita": 1,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/89022/"
-    },
-    {
-     "fecha": "2026-11-01T15:00:00",
-     "local": "Estudiantes del Plata",
-     "visita": "Plaza Colonia",
-     "goles_local": 1,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/89010/"
-    },
-    {
-     "fecha": "2026-11-01T15:00:00",
-     "local": "Terremoto",
-     "visita": "Salto",
-     "goles_local": 1,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/89025/"
     }
    ],
    "proximos_partidos": [
@@ -40047,7 +40038,7 @@
      "link_fuente": "https://lamovidaonline.net/event/89073/"
     }
    ],
-   "jugados": 67,
+   "jugados": 70,
    "programados": 79,
    "id": 702
   },
