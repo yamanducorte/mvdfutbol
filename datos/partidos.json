@@ -37951,9 +37951,9 @@
     "fecha": "2026-11-22T20:00:00",
     "local": "Miramar Misiones",
     "visita": "Terremoto",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92487/"
    },
    {
