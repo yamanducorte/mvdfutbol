@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T12:12:24+00:00",
+ "generado": "2026-11-23T23:48:03+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -1578,7 +1578,7 @@
    "nombre": "Primera División · Tabla anual",
    "titulo": "Primera División · Tabla anual",
    "titulo_categoria": "Primera División",
-   "estado": "en_curso",
+   "estado": "terminado",
    "orden_categoria": 10,
    "tabla": [
     {
@@ -1969,6 +1969,49 @@
      ]
     },
     {
+     "equipo": "Defensor Sp",
+     "pj": 37,
+     "g": 10,
+     "e": 13,
+     "p": 14,
+     "gf": 37,
+     "gc": 44,
+     "dg": -7,
+     "pts": 43,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Boston River",
+       "marcador": "0-1",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "E",
+       "rival": "Racing",
+       "marcador": "3-3",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "V",
+       "rival": "Progreso",
+       "marcador": "2-0",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Peñarol",
+       "marcador": "1-1",
+       "fecha": "2026-11-15"
+      },
+      {
+       "r": "V",
+       "rival": "Juventud",
+       "marcador": "1-0",
+       "fecha": "2026-11-23"
+      }
+     ]
+    },
+    {
      "equipo": "Cerro",
      "pj": 37,
      "g": 12,
@@ -2013,21 +2056,15 @@
     },
     {
      "equipo": "Juventud",
-     "pj": 36,
+     "pj": 37,
      "g": 10,
      "e": 11,
-     "p": 15,
+     "p": 16,
      "gf": 38,
-     "gc": 45,
-     "dg": -7,
+     "gc": 46,
+     "dg": -8,
      "pts": 41,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Racing",
-       "marcador": "2-0",
-       "fecha": "2026-10-11"
-      },
       {
        "r": "D",
        "rival": "Progreso",
@@ -2051,49 +2088,12 @@
        "rival": "Wanderers",
        "marcador": "1-2",
        "fecha": "2026-11-16"
-      }
-     ]
-    },
-    {
-     "equipo": "Defensor Sp",
-     "pj": 36,
-     "g": 9,
-     "e": 13,
-     "p": 14,
-     "gf": 36,
-     "gc": 44,
-     "dg": -8,
-     "pts": 40,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Cerro",
-       "marcador": "2-3",
-       "fecha": "2026-10-10"
       },
       {
        "r": "D",
-       "rival": "Boston River",
+       "rival": "Defensor Sp",
        "marcador": "0-1",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "E",
-       "rival": "Racing",
-       "marcador": "3-3",
-       "fecha": "2026-10-24"
-      },
-      {
-       "r": "V",
-       "rival": "Progreso",
-       "marcador": "2-0",
-       "fecha": "2026-11-01"
-      },
-      {
-       "r": "E",
-       "rival": "Peñarol",
-       "marcador": "1-1",
-       "fecha": "2026-11-15"
+       "fecha": "2026-11-23"
       }
      ]
     },
@@ -2272,6 +2272,15 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-23T16:30:00",
+     "local": "Juventud",
+     "visita": "Defensor Sp",
+     "goles_local": 0,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83268/"
+    },
+    {
      "fecha": "2026-11-20T16:30:00",
      "local": "Cerro",
      "visita": "Nacional",
@@ -2369,38 +2378,10 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/83247/"
-    },
-    {
-     "fecha": "2026-11-14T10:00:00",
-     "local": "Central Español",
-     "visita": "Boston River",
-     "goles_local": 1,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83250/"
     }
    ],
-   "proximos_partidos": [
-    {
-     "fecha": "2026-11-23T16:30:00",
-     "local": "Juventud",
-     "visita": "Defensor Sp",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83268/"
-    },
-    {
-     "fecha": "2026-11-23T19:30:00",
-     "local": "Albion",
-     "visita": "Danubio",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83286/"
-    }
-   ],
-   "jugados": 294,
+   "proximos_partidos": [],
+   "jugados": 295,
    "programados": 296,
    "calculada": true,
    "suma_de": [
@@ -2421,7 +2402,7 @@
    "nombre": "Liga AUF Clausura 2026",
    "titulo": "Primera División · Torneo Clausura",
    "titulo_categoria": "Primera División",
-   "estado": "en_curso",
+   "estado": "terminado",
    "orden_categoria": 10,
    "tabla": [
     {
@@ -2813,21 +2794,15 @@
     },
     {
      "equipo": "Juventud",
-     "pj": 14,
+     "pj": 15,
      "g": 4,
      "e": 6,
-     "p": 4,
+     "p": 5,
      "gf": 13,
-     "gc": 12,
-     "dg": 1,
+     "gc": 13,
+     "dg": 0,
      "pts": 18,
      "forma": [
-      {
-       "r": "V",
-       "rival": "Racing",
-       "marcador": "2-0",
-       "fecha": "2026-10-11"
-      },
       {
        "r": "D",
        "rival": "Progreso",
@@ -2851,6 +2826,12 @@
        "rival": "Wanderers",
        "marcador": "1-2",
        "fecha": "2026-11-16"
+      },
+      {
+       "r": "D",
+       "rival": "Defensor Sp",
+       "marcador": "0-1",
+       "fecha": "2026-11-23"
       }
      ]
     },
@@ -2898,6 +2879,49 @@
      ]
     },
     {
+     "equipo": "Defensor Sp",
+     "pj": 15,
+     "g": 4,
+     "e": 4,
+     "p": 7,
+     "gf": 18,
+     "gc": 24,
+     "dg": -6,
+     "pts": 16,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Boston River",
+       "marcador": "0-1",
+       "fecha": "2026-10-17"
+      },
+      {
+       "r": "E",
+       "rival": "Racing",
+       "marcador": "3-3",
+       "fecha": "2026-10-24"
+      },
+      {
+       "r": "V",
+       "rival": "Progreso",
+       "marcador": "2-0",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "E",
+       "rival": "Peñarol",
+       "marcador": "1-1",
+       "fecha": "2026-11-15"
+      },
+      {
+       "r": "V",
+       "rival": "Juventud",
+       "marcador": "1-0",
+       "fecha": "2026-11-23"
+      }
+     ]
+    },
+    {
      "equipo": "Albion",
      "pj": 14,
      "g": 4,
@@ -2937,49 +2961,6 @@
        "rival": "Nacional",
        "marcador": "1-1",
        "fecha": "2026-11-14"
-      }
-     ]
-    },
-    {
-     "equipo": "Defensor Sp",
-     "pj": 14,
-     "g": 3,
-     "e": 4,
-     "p": 7,
-     "gf": 17,
-     "gc": 24,
-     "dg": -7,
-     "pts": 13,
-     "forma": [
-      {
-       "r": "D",
-       "rival": "Cerro",
-       "marcador": "2-3",
-       "fecha": "2026-10-10"
-      },
-      {
-       "r": "D",
-       "rival": "Boston River",
-       "marcador": "0-1",
-       "fecha": "2026-10-17"
-      },
-      {
-       "r": "E",
-       "rival": "Racing",
-       "marcador": "3-3",
-       "fecha": "2026-10-24"
-      },
-      {
-       "r": "V",
-       "rival": "Progreso",
-       "marcador": "2-0",
-       "fecha": "2026-11-01"
-      },
-      {
-       "r": "E",
-       "rival": "Peñarol",
-       "marcador": "1-1",
-       "fecha": "2026-11-15"
       }
      ]
     },
@@ -3115,6 +3096,15 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-23T16:30:00",
+     "local": "Juventud",
+     "visita": "Defensor Sp",
+     "goles_local": 0,
+     "goles_visita": 1,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/83268/"
+    },
+    {
      "fecha": "2026-11-20T16:30:00",
      "local": "Cerro",
      "visita": "Nacional",
@@ -3212,38 +3202,10 @@
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/83247/"
-    },
-    {
-     "fecha": "2026-11-14T10:00:00",
-     "local": "Central Español",
-     "visita": "Boston River",
-     "goles_local": 1,
-     "goles_visita": 0,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/83250/"
     }
    ],
-   "proximos_partidos": [
-    {
-     "fecha": "2026-11-23T16:30:00",
-     "local": "Juventud",
-     "visita": "Defensor Sp",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83268/"
-    },
-    {
-     "fecha": "2026-11-23T19:30:00",
-     "local": "Albion",
-     "visita": "Danubio",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/83286/"
-    }
-   ],
-   "jugados": 118,
+   "proximos_partidos": [],
+   "jugados": 119,
    "programados": 120,
    "id": 676
   },
@@ -7796,6 +7758,75 @@
    "jugados": 153,
    "programados": 153,
    "id": 607
+  },
+  {
+   "grupo": "juveniles",
+   "categoria": "tercera",
+   "torneo": "final",
+   "division": null,
+   "serie": null,
+   "subdivision": null,
+   "fase": null,
+   "nombre": "2026 Tercera Div. Final Campeonato Uruguayo",
+   "titulo": "Tercera División · Torneo Final",
+   "titulo_categoria": "Tercera División",
+   "estado": "terminado",
+   "orden_categoria": 20,
+   "tabla": [
+    {
+     "equipo": "Peñarol",
+     "pj": 1,
+     "g": 1,
+     "e": 0,
+     "p": 0,
+     "gf": 1,
+     "gc": 0,
+     "dg": 1,
+     "pts": 3,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Wanderers",
+       "marcador": "1-0",
+       "fecha": "2026-11-23"
+      }
+     ]
+    },
+    {
+     "equipo": "Wanderers",
+     "pj": 1,
+     "g": 0,
+     "e": 0,
+     "p": 1,
+     "gf": 0,
+     "gc": 1,
+     "dg": -1,
+     "pts": 0,
+     "forma": [
+      {
+       "r": "D",
+       "rival": "Peñarol",
+       "marcador": "0-1",
+       "fecha": "2026-11-23"
+      }
+     ]
+    }
+   ],
+   "ultimos_resultados": [
+    {
+     "fecha": "2026-11-23T18:00:00",
+     "local": "Peñarol",
+     "visita": "Wanderers",
+     "goles_local": 1,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92625/"
+    }
+   ],
+   "proximos_partidos": [],
+   "jugados": 1,
+   "programados": 1,
+   "id": 744
   },
   {
    "grupo": "juveniles",
@@ -15273,21 +15304,21 @@
     },
     {
      "fecha": "2026-11-14T11:00:00",
-     "local": "Tacuarembó",
-     "visita": "Oriental",
-     "goles_local": 3,
-     "goles_visita": 3,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/92044/"
-    },
-    {
-     "fecha": "2026-11-14T11:00:00",
      "local": "La Luz",
      "visita": "Salto",
      "goles_local": 0,
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/92038/"
+    },
+    {
+     "fecha": "2026-11-14T11:00:00",
+     "local": "Tacuarembó",
+     "visita": "Oriental",
+     "goles_local": 3,
+     "goles_visita": 3,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92044/"
     },
     {
      "fecha": "2026-11-14T10:00:00",
@@ -15318,6 +15349,15 @@
     }
    ],
    "proximos_partidos": [
+    {
+     "fecha": "2026-11-24T10:00:00",
+     "local": "Cerrito",
+     "visita": "Atenas",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/87841/"
+    },
     {
      "fecha": "2026-11-28T12:00:00",
      "local": "Progreso",
@@ -21455,21 +21495,21 @@
     },
     {
      "fecha": "2026-11-21T11:00:00",
-     "local": "Cerrito",
-     "visita": "La Luz",
-     "goles_local": 0,
-     "goles_visita": 2,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/92503/"
-    },
-    {
-     "fecha": "2026-11-21T11:00:00",
      "local": "Durazno F.C.",
      "visita": "Estudiantes del Plata",
      "goles_local": 2,
      "goles_visita": 1,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/92494/"
+    },
+    {
+     "fecha": "2026-11-21T11:00:00",
+     "local": "Cerrito",
+     "visita": "La Luz",
+     "goles_local": 0,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92503/"
     },
     {
      "fecha": "2026-11-20T11:00:00",
@@ -21491,21 +21531,21 @@
     },
     {
      "fecha": "2026-11-14T13:00:00",
-     "local": "Tacuarembó",
-     "visita": "Oriental",
-     "goles_local": 0,
-     "goles_visita": 5,
-     "jugado": true,
-     "link_fuente": "https://lamovidaonline.net/event/92063/"
-    },
-    {
-     "fecha": "2026-11-14T13:00:00",
      "local": "Cerrito",
      "visita": "Terremoto",
      "goles_local": 0,
      "goles_visita": 3,
      "jugado": true,
      "link_fuente": "https://lamovidaonline.net/event/92054/"
+    },
+    {
+     "fecha": "2026-11-14T13:00:00",
+     "local": "Tacuarembó",
+     "visita": "Oriental",
+     "goles_local": 0,
+     "goles_visita": 5,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92063/"
     },
     {
      "fecha": "2026-11-14T12:00:00",
@@ -21536,6 +21576,15 @@
     }
    ],
    "proximos_partidos": [
+    {
+     "fecha": "2026-11-24T12:00:00",
+     "local": "Cerrito",
+     "visita": "Atenas",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/88115/"
+    },
     {
      "fecha": "2026-11-28T12:00:00",
      "local": "Progreso",
@@ -28070,15 +28119,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-23T19:30:00",
-     "local": "Terremoto",
-     "visita": "Miramar Misiones",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/92525/"
-    },
-    {
      "fecha": "2026-11-29T12:00:00",
      "local": "Durazno F.C.",
      "visita": "Progreso",
@@ -34095,15 +34135,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-23T17:30:00",
-     "local": "Terremoto",
-     "visita": "Miramar Misiones",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/92544/"
-    },
-    {
      "fecha": "2026-11-29T12:00:00",
      "local": "Durazno F.C.",
      "visita": "Progreso",
@@ -39965,15 +39996,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-23T15:30:00",
-     "local": "Terremoto",
-     "visita": "Miramar Misiones",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/92563/"
-    },
     {
      "fecha": "2026-11-29T12:00:00",
      "local": "Durazno F.C.",

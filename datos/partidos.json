@@ -27204,7 +27204,7 @@
   ]
  },
  "676": {
-  "estado": "en_curso",
+  "estado": "terminado",
   "nombre": "Liga AUF Clausura 2026",
   "partidos": [
    {
@@ -28273,9 +28273,9 @@
     "fecha": "2026-11-23T16:30:00",
     "local": "Juventud",
     "visita": "Defensor Sp",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/83268/"
    },
    {
@@ -36944,15 +36944,6 @@
    },
    {
     "fecha": "2026-10-10T13:00:00",
-    "local": "Cerrito",
-    "visita": "Atenas",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/88115/"
-   },
-   {
-    "fecha": "2026-10-10T13:00:00",
     "local": "Salto",
     "visita": "Plaza Colonia",
     "goles_local": 1,
@@ -36998,21 +36989,21 @@
    },
    {
     "fecha": "2026-10-17T13:00:00",
-    "local": "Atenas",
-    "visita": "Miramar Misiones",
-    "goles_local": 0,
-    "goles_visita": 3,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/88148/"
-   },
-   {
-    "fecha": "2026-10-17T13:00:00",
     "local": "Salto",
     "visita": "Cerrito",
     "goles_local": 0,
     "goles_visita": 0,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/88151/"
+   },
+   {
+    "fecha": "2026-10-17T13:00:00",
+    "local": "Atenas",
+    "visita": "Miramar Misiones",
+    "goles_local": 0,
+    "goles_visita": 3,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/88148/"
    },
    {
     "fecha": "2026-10-21T09:00:00",
@@ -37025,12 +37016,12 @@
    },
    {
     "fecha": "2026-10-24T11:00:00",
-    "local": "Tacuarembó",
-    "visita": "Progreso",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/88169/"
+    "local": "La Luz",
+    "visita": "Oriental",
+    "goles_local": 0,
+    "goles_visita": 1,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/88163/"
    },
    {
     "fecha": "2026-10-24T11:00:00",
@@ -37043,12 +37034,12 @@
    },
    {
     "fecha": "2026-10-24T11:00:00",
-    "local": "La Luz",
-    "visita": "Oriental",
-    "goles_local": 0,
-    "goles_visita": 1,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/88163/"
+    "local": "Tacuarembó",
+    "visita": "Progreso",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/88169/"
    },
    {
     "fecha": "2026-10-24T13:00:00",
@@ -37079,21 +37070,21 @@
    },
    {
     "fecha": "2026-10-31T11:00:00",
-    "local": "Durazno F.C.",
-    "visita": "Tacuarembó",
-    "goles_local": 3,
-    "goles_visita": 0,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/88181/"
-   },
-   {
-    "fecha": "2026-10-31T11:00:00",
     "local": "Oriental",
     "visita": "Fénix",
     "goles_local": 3,
     "goles_visita": 1,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/88184/"
+   },
+   {
+    "fecha": "2026-10-31T11:00:00",
+    "local": "Durazno F.C.",
+    "visita": "Tacuarembó",
+    "goles_local": 3,
+    "goles_visita": 0,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/88181/"
    },
    {
     "fecha": "2026-10-31T12:00:00",
@@ -37106,21 +37097,21 @@
    },
    {
     "fecha": "2026-10-31T13:00:00",
-    "local": "Salto",
-    "visita": "Terremoto",
-    "goles_local": 0,
-    "goles_visita": 1,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/88190/"
-   },
-   {
-    "fecha": "2026-10-31T13:00:00",
     "local": "Atenas",
     "visita": "La Luz",
     "goles_local": 0,
     "goles_visita": 3,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/88187/"
+   },
+   {
+    "fecha": "2026-10-31T13:00:00",
+    "local": "Salto",
+    "visita": "Terremoto",
+    "goles_local": 0,
+    "goles_visita": 1,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/88190/"
    },
    {
     "fecha": "2026-11-02T13:00:00",
@@ -37160,21 +37151,21 @@
    },
    {
     "fecha": "2026-11-14T13:00:00",
-    "local": "Cerrito",
-    "visita": "Terremoto",
-    "goles_local": 0,
-    "goles_visita": 3,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/92054/"
-   },
-   {
-    "fecha": "2026-11-14T13:00:00",
     "local": "Tacuarembó",
     "visita": "Oriental",
     "goles_local": 0,
     "goles_visita": 5,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92063/"
+   },
+   {
+    "fecha": "2026-11-14T13:00:00",
+    "local": "Cerrito",
+    "visita": "Terremoto",
+    "goles_local": 0,
+    "goles_visita": 3,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/92054/"
    },
    {
     "fecha": "2026-11-14T13:00:00",
@@ -37196,21 +37187,21 @@
    },
    {
     "fecha": "2026-11-21T11:00:00",
-    "local": "Durazno F.C.",
-    "visita": "Estudiantes del Plata",
-    "goles_local": 2,
-    "goles_visita": 1,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/92494/"
-   },
-   {
-    "fecha": "2026-11-21T11:00:00",
     "local": "Cerrito",
     "visita": "La Luz",
     "goles_local": 0,
     "goles_visita": 2,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92503/"
+   },
+   {
+    "fecha": "2026-11-21T11:00:00",
+    "local": "Durazno F.C.",
+    "visita": "Estudiantes del Plata",
+    "goles_local": 2,
+    "goles_visita": 1,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/92494/"
    },
    {
     "fecha": "2026-11-21T12:00:00",
@@ -37238,6 +37229,15 @@
     "goles_visita": 1,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92506/"
+   },
+   {
+    "fecha": "2026-11-24T12:00:00",
+    "local": "Cerrito",
+    "visita": "Atenas",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/88115/"
    },
    {
     "fecha": "2026-11-28T12:00:00",
@@ -37670,15 +37670,6 @@
    },
    {
     "fecha": "2026-10-10T11:00:00",
-    "local": "Cerrito",
-    "visita": "Atenas",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/87841/"
-   },
-   {
-    "fecha": "2026-10-10T11:00:00",
     "local": "Salto",
     "visita": "Plaza Colonia",
     "goles_local": 3,
@@ -37742,12 +37733,12 @@
    },
    {
     "fecha": "2026-10-24T09:00:00",
-    "local": "Tacuarembó",
-    "visita": "Progreso",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/87895/"
+    "local": "La Luz",
+    "visita": "Oriental",
+    "goles_local": 0,
+    "goles_visita": 4,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/87889/"
    },
    {
     "fecha": "2026-10-24T09:00:00",
@@ -37760,21 +37751,12 @@
    },
    {
     "fecha": "2026-10-24T09:00:00",
-    "local": "La Luz",
-    "visita": "Oriental",
-    "goles_local": 0,
-    "goles_visita": 4,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/87889/"
-   },
-   {
-    "fecha": "2026-10-24T11:00:00",
-    "local": "Terremoto",
-    "visita": "Atenas",
-    "goles_local": 2,
-    "goles_visita": 1,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/87886/"
+    "local": "Tacuarembó",
+    "visita": "Progreso",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/87895/"
    },
    {
     "fecha": "2026-10-24T11:00:00",
@@ -37784,6 +37766,15 @@
     "goles_visita": 1,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/87883/"
+   },
+   {
+    "fecha": "2026-10-24T11:00:00",
+    "local": "Terremoto",
+    "visita": "Atenas",
+    "goles_local": 2,
+    "goles_visita": 1,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/87886/"
    },
    {
     "fecha": "2026-10-24T12:00:00",
@@ -37877,21 +37868,21 @@
    },
    {
     "fecha": "2026-11-14T11:00:00",
-    "local": "La Luz",
-    "visita": "Salto",
-    "goles_local": 0,
-    "goles_visita": 1,
-    "jugado": true,
-    "link_fuente": "https://lamovidaonline.net/event/92038/"
-   },
-   {
-    "fecha": "2026-11-14T11:00:00",
     "local": "Tacuarembó",
     "visita": "Oriental",
     "goles_local": 3,
     "goles_visita": 3,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92044/"
+   },
+   {
+    "fecha": "2026-11-14T11:00:00",
+    "local": "La Luz",
+    "visita": "Salto",
+    "goles_local": 0,
+    "goles_visita": 1,
+    "jugado": true,
+    "link_fuente": "https://lamovidaonline.net/event/92038/"
    },
    {
     "fecha": "2026-11-14T15:00:00",
@@ -37955,6 +37946,15 @@
     "goles_visita": 0,
     "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92487/"
+   },
+   {
+    "fecha": "2026-11-24T10:00:00",
+    "local": "Cerrito",
+    "visita": "Atenas",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/87841/"
    },
    {
     "fecha": "2026-11-28T12:00:00",
@@ -40863,16 +40863,16 @@
   ]
  },
  "744": {
-  "estado": "sin_empezar",
+  "estado": "terminado",
   "nombre": "2026 Tercera Div. Final Campeonato Uruguayo",
   "partidos": [
    {
     "fecha": "2026-11-23T18:00:00",
     "local": "Peñarol",
     "visita": "Wanderers",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92625/"
    }
   ]
