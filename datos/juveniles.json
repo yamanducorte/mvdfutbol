@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T09:41:08+00:00",
+ "generado": "2026-11-24T13:30:45+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -15350,15 +15350,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-24T10:00:00",
-     "local": "Cerrito",
-     "visita": "Atenas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/87841/"
-    },
-    {
      "fecha": "2026-11-28T12:00:00",
      "local": "Progreso",
      "visita": "Durazno F.C.",
@@ -21576,15 +21567,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-24T12:00:00",
-     "local": "Cerrito",
-     "visita": "Atenas",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/88115/"
-    },
     {
      "fecha": "2026-11-28T12:00:00",
      "local": "Progreso",
