@@ -39883,9 +39883,9 @@
     "fecha": "2026-11-24T15:15:00",
     "local": "Nacional",
     "visita": "Peñarol",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91048/"
    },
    {
