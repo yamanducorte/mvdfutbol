@@ -40876,5 +40876,20 @@
     "link_fuente": "https://lamovidaonline.net/event/92625/"
    }
   ]
+ },
+ "746": {
+  "estado": "sin_empezar",
+  "nombre": "2026 Semifinal Liga AUF",
+  "partidos": [
+   {
+    "fecha": "2026-11-27T20:30:00",
+    "local": "Liverpool",
+    "visita": "Racing",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/92677/"
+   }
+  ]
  }
 }

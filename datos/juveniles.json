@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T12:33:58+00:00",
+ "generado": "2026-11-25T21:36:17+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -43714,15 +43714,6 @@
    ],
    "proximos_partidos": [
     {
-     "fecha": "2026-11-25T19:00:00",
-     "local": "Nacional",
-     "visita": "Danubio",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91324/"
-    },
-    {
      "fecha": "2026-11-29T09:00:00",
      "local": "Danubio",
      "visita": "Peñarol",
@@ -44153,15 +44144,6 @@
     }
    ],
    "proximos_partidos": [
-    {
-     "fecha": "2026-11-25T19:00:00",
-     "local": "Nacional",
-     "visita": "Danubio",
-     "goles_local": null,
-     "goles_visita": null,
-     "jugado": false,
-     "link_fuente": "https://lamovidaonline.net/event/91324/"
-    },
     {
      "fecha": "2026-11-29T09:00:00",
      "local": "Danubio",
