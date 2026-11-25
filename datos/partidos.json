@@ -39775,21 +39775,12 @@
     "link_fuente": "https://lamovidaonline.net/event/91014/"
    },
    {
-    "fecha": "2026-11-21T14:00:00",
-    "local": "Defensor Sp",
-    "visita": "M.C.Torque",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91020/"
-   },
-   {
     "fecha": "2026-11-24T17:30:00",
     "local": "Nacional",
     "visita": "Peñarol",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 3,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/91017/"
    },
    {
@@ -39809,6 +39800,15 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91026/"
+   },
+   {
+    "fecha": "2026-11-29T00:00:00",
+    "local": "Defensor Sp",
+    "visita": "M.C.Torque",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91020/"
    }
   ]
  },
@@ -39871,15 +39871,6 @@
     "link_fuente": "https://lamovidaonline.net/event/91045/"
    },
    {
-    "fecha": "2026-11-21T14:00:00",
-    "local": "Defensor Sp",
-    "visita": "M.C.Torque",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
-    "link_fuente": "https://lamovidaonline.net/event/91051/"
-   },
-   {
     "fecha": "2026-11-24T15:15:00",
     "local": "Nacional",
     "visita": "Peñarol",
@@ -39905,6 +39896,15 @@
     "goles_visita": null,
     "jugado": false,
     "link_fuente": "https://lamovidaonline.net/event/91057/"
+   },
+   {
+    "fecha": "2026-11-29T00:00:00",
+    "local": "Defensor Sp",
+    "visita": "M.C.Torque",
+    "goles_local": null,
+    "goles_visita": null,
+    "jugado": false,
+    "link_fuente": "https://lamovidaonline.net/event/91051/"
    }
   ]
  },

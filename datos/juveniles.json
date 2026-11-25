@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T22:19:44+00:00",
+ "generado": "2026-11-25T04:58:01+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -16655,6 +16655,15 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91057/"
+    },
+    {
+     "fecha": "2026-11-29T00:00:00",
+     "local": "Defensor Sp",
+     "visita": "M.C.Torque",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91051/"
     }
    ],
    "jugados": 7,
@@ -48048,14 +48057,45 @@
    "orden_categoria": 999,
    "tabla": [
     {
-     "equipo": "Peñarol",
-     "pj": 2,
-     "g": 2,
+     "equipo": "Nacional",
+     "pj": 3,
+     "g": 3,
      "e": 0,
      "p": 0,
-     "gf": 7,
+     "gf": 8,
      "gc": 1,
-     "dg": 6,
+     "dg": 7,
+     "pts": 9,
+     "forma": [
+      {
+       "r": "V",
+       "rival": "Defensor Sp",
+       "marcador": "2-0",
+       "fecha": "2026-11-01"
+      },
+      {
+       "r": "V",
+       "rival": "M.C.Torque",
+       "marcador": "3-1",
+       "fecha": "2026-11-08"
+      },
+      {
+       "r": "V",
+       "rival": "Peñarol",
+       "marcador": "3-0",
+       "fecha": "2026-11-24"
+      }
+     ]
+    },
+    {
+     "equipo": "Peñarol",
+     "pj": 3,
+     "g": 2,
+     "e": 0,
+     "p": 1,
+     "gf": 7,
+     "gc": 4,
+     "dg": 3,
      "pts": 6,
      "forma": [
       {
@@ -48069,31 +48109,12 @@
        "rival": "M.C.Torque",
        "marcador": "6-1",
        "fecha": "2026-11-14"
-      }
-     ]
-    },
-    {
-     "equipo": "Nacional",
-     "pj": 2,
-     "g": 2,
-     "e": 0,
-     "p": 0,
-     "gf": 5,
-     "gc": 1,
-     "dg": 4,
-     "pts": 6,
-     "forma": [
-      {
-       "r": "V",
-       "rival": "Defensor Sp",
-       "marcador": "2-0",
-       "fecha": "2026-11-01"
       },
       {
-       "r": "V",
-       "rival": "M.C.Torque",
-       "marcador": "3-1",
-       "fecha": "2026-11-08"
+       "r": "D",
+       "rival": "Nacional",
+       "marcador": "0-3",
+       "fecha": "2026-11-24"
       }
      ]
     },
@@ -48187,6 +48208,15 @@
    ],
    "ultimos_resultados": [
     {
+     "fecha": "2026-11-24T17:30:00",
+     "local": "Nacional",
+     "visita": "Peñarol",
+     "goles_local": 3,
+     "goles_visita": 0,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/91017/"
+    },
+    {
      "fecha": "2026-11-15T15:00:00",
      "local": "Defensor Sp",
      "visita": "Liverpool",
@@ -48259,9 +48289,18 @@
      "goles_visita": null,
      "jugado": false,
      "link_fuente": "https://lamovidaonline.net/event/91026/"
+    },
+    {
+     "fecha": "2026-11-29T00:00:00",
+     "local": "Defensor Sp",
+     "visita": "M.C.Torque",
+     "goles_local": null,
+     "goles_visita": null,
+     "jugado": false,
+     "link_fuente": "https://lamovidaonline.net/event/91020/"
     }
    ],
-   "jugados": 6,
+   "jugados": 7,
    "programados": 10,
    "id": 727
   },
