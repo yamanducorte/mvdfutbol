@@ -34966,9 +34966,9 @@
     "fecha": "2026-11-23T15:30:00",
     "local": "Terremoto",
     "visita": "Miramar Misiones",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 2,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92563/"
    },
    {
@@ -35683,9 +35683,9 @@
     "fecha": "2026-11-23T17:30:00",
     "local": "Terremoto",
     "visita": "Miramar Misiones",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 2,
+    "goles_visita": 0,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92544/"
    },
    {
@@ -36355,9 +36355,9 @@
     "fecha": "2026-11-01T09:00:00",
     "local": "Cerrito",
     "visita": "Miramar Misiones",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 0,
+    "goles_visita": 3,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/88467/"
    },
    {
@@ -36517,9 +36517,9 @@
     "fecha": "2026-11-23T19:30:00",
     "local": "Terremoto",
     "visita": "Miramar Misiones",
-    "goles_local": null,
-    "goles_visita": null,
-    "jugado": false,
+    "goles_local": 1,
+    "goles_visita": 1,
+    "jugado": true,
     "link_fuente": "https://lamovidaonline.net/event/92525/"
    },
    {
