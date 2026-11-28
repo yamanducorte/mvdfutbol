@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-28T03:24:49+00:00",
+ "generado": "2026-11-28T07:31:29+00:00",
  "credito": "Datos: La Movida Online (https://lamovidaonline.net)",
  "ligas": [
   {
@@ -4974,6 +4974,75 @@
    "jugados": 120,
    "programados": 120,
    "id": 595
+  },
+  {
+   "grupo": "primera",
+   "categoria": "primera",
+   "torneo": "otro",
+   "division": null,
+   "serie": null,
+   "subdivision": null,
+   "fase": null,
+   "nombre": "2026 Semifinal Liga AUF",
+   "titulo": "Primera División",
+   "titulo_categoria": "Primera División",
+   "estado": "terminado",
+   "orden_categoria": 10,
+   "tabla": [
+    {
+     "equipo": "Liverpool",
+     "pj": 1,
+     "g": 0,
+     "e": 1,
+     "p": 0,
+     "gf": 2,
+     "gc": 2,
+     "dg": 0,
+     "pts": 1,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Racing",
+       "marcador": "2-2",
+       "fecha": "2026-11-27"
+      }
+     ]
+    },
+    {
+     "equipo": "Racing",
+     "pj": 1,
+     "g": 0,
+     "e": 1,
+     "p": 0,
+     "gf": 2,
+     "gc": 2,
+     "dg": 0,
+     "pts": 1,
+     "forma": [
+      {
+       "r": "E",
+       "rival": "Liverpool",
+       "marcador": "2-2",
+       "fecha": "2026-11-27"
+      }
+     ]
+    }
+   ],
+   "ultimos_resultados": [
+    {
+     "fecha": "2026-11-27T20:30:00",
+     "local": "Liverpool",
+     "visita": "Racing",
+     "goles_local": 2,
+     "goles_visita": 2,
+     "jugado": true,
+     "link_fuente": "https://lamovidaonline.net/event/92677/"
+    }
+   ],
+   "proximos_partidos": [],
+   "jugados": 1,
+   "programados": 1,
+   "id": 746
   },
   {
    "grupo": "juveniles",
